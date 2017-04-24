@@ -199,7 +199,7 @@ compileFinal "
 TON_fnc_cell_adminmsg =
 compileFinal "
     if (isServer) exitWith {};
-    if ((call life_adminlevel) < 1) exitWith {hint localize ""STR_CELLMSG_NoAdmin"";};
+    if ((call life_coplevel) < 4 && (call life_adminlevel) < 1 && (call life_mediclevel) < 4) exitWith {hint ""You are not coplevel 4 or MedicLevel 4 or Admin"";};
     private [""_msg"",""_to""];
     ctrlShow[3020,false];
     _msg = ctrlText 3003;
@@ -217,7 +217,7 @@ compileFinal "
 TON_fnc_cell_adminmsgall =
 compileFinal "
     if (isServer) exitWith {};
-    if ((call life_adminlevel) < 1) exitWith {hint localize ""STR_CELLMSG_NoAdmin"";};
+    if ((call life_coplevel) < 4 && (call life_adminlevel) < 1 && (call life_mediclevel) < 4) exitWith {hint ""You are not coplevel 4 or MedicLevel 4 or Admin"";};
     private [""_msg"",""_from""];
     ctrlShow[3021,false];
     _msg = ctrlText 3003;

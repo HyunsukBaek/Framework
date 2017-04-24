@@ -12,4 +12,8 @@ if (hasInterface) then {
 };
 [] execVM "KRON_Strings.sqf";
 
+//Custom Script
+[] execVM "Custom\statusbar_loop.sqf";  //Status Bar Loop
+[] execVM "admintools\loop.sqf";	//Admin Helper
+
 StartProgress = true;

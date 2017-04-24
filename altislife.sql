@@ -35,32 +35,32 @@ DELIMITER $$
 -- For external databases: Edit localhost to match arma3server IP
 --
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
   UPDATE `vehicles` SET `active`= 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
   DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldContainers`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldContainers`()
 BEGIN
   DELETE FROM `containers` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldWanted`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldWanted`()
 BEGIN
   DELETE FROM `wanted` WHERE `active` = 0;
 END$$
