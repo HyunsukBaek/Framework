@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "handcuffs", "keys" };
     };
 
     class gang {
@@ -46,7 +46,7 @@ class VirtualShops {
 
     class coffee {
         name = "STR_Shops_Coffee";
-        side = "civ";
+        side = "";
         conditions = "";
         items[] = { "coffee", "donuts" };
     };
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "handcuffs", "keys" };
     };
 };
 
@@ -854,5 +854,28 @@ class VirtualItems {
         illegal = false;
         edible = 100;
         icon = "icons\ico_muttonLeg.paa";
+    };
+    
+    // custom 
+    class handcuffs {
+        variable = "handcuffs";
+        displayName = "STR_Item_lol";
+        weight = 1;
+        buyPrice = 25;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\Custom\cuffs.paa";
+    };	
+	
+    class keys {
+        variable = "keys";
+        displayName = "STR_Item_Keys";
+        weight = 1;
+        buyPrice = 25;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\Custom\icon_keys.paa";
     };
 };
