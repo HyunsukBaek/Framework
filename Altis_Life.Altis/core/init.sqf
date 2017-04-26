@@ -97,6 +97,7 @@ player setVariable ["playerSurrender",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
+[] spawn life_fnc_speaking; // 말할때 태그 표시
 
 diag_log "Executing client.fsm";
 waitUntil {!(isNull (findDisplay 46))};

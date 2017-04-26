@@ -218,6 +218,7 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+        class speaking {}; // 말할때 아이콘 표시 기능
     };
 
     class Gangs {
