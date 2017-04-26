@@ -1,17 +1,17 @@
 #include "..\..\script_macros.hpp"
 /*
- File: fn_playerTags.sqf
- Author: Bryan "Tonic" Boardwine
+    File: fn_playerTags.sqf
+    Author: Bryan "Tonic" Boardwine
 
- Description:
- Adds the tags above other players heads when close and have visible range.
- */
+    Description:
+    Adds the tags above other players heads when close and have visible range.
+*/
 if (!life_settings_tagson) exitWith {};
 private ["_ui","_units","_masks"];
 #define iconID 78000
 #define scale 0.8
 
-if (visibleMap || {!alive player}|| {dialog}) exitWith {
+if (visibleMap || {!alive player} || {dialog}) exitWith {
     500 cutText["","PLAIN"];
 };
 
@@ -28,7 +28,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 
 private _index = -1;
 {
-private "_text";
+    private "_text";
     _idc = _ui displayCtrl (iconID + _forEachIndex);
     if (!(lineIntersects [eyePos player, eyePos _x, player, _x]) && alive _x && {!isNil {_x getVariable "realname"}}) then {
         _pos = switch (typeOf _x) do {
@@ -43,14 +43,14 @@ private "_text";
                 _text = switch (true) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-                            case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-                            case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-                            case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-                            case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-                            case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-                            case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-                            case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-                            default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                        case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
+                        case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
+                        case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
+                        case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
+                        case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
+                        case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
+                        case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
+                        default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
                         },_x getVariable ["realname",name _x]]};
                     case (side _x isEqualTo independent): {format ["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
                     default {
@@ -70,7 +70,7 @@ private "_text";
 
                 _idc ctrlSetStructuredText parseText _text;
                 _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
-
+				// 말할때 머리위 닉네임 표시 기능
                 if(_x GVAR ["speaking",false]) then {_text = "<t color='#12cc12'>[Speaking] " + _text};
                 _idc ctrlSetStructuredText parseText _text;
                 _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
@@ -88,5 +88,5 @@ private "_text";
         _idc ctrlShow false;
     };
     _index = _forEachIndex;
-}forEach _units;
+} forEach _units;
 (_ui displayCtrl (iconID + _index + 1)) ctrlSetStructuredText parseText "";
