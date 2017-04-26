@@ -1,5 +1,5 @@
 #include "..\..\script_macros.hpp"
-/*
+/*//AOSoul added
  File: fn_speaking.sqf
  Desc: Finds out if the player is speaking or not.
  If they are speaking then we will set a variable onto them that states they are speaking. This will then update their nametag ingame.

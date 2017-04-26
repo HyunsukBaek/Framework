@@ -374,7 +374,7 @@ class Life_Client_Core {
         class vInteractionMenu {};
     };
 
-    //ADMIN Panel
+    //ADMIN Panel     //AOSoul added
     class AdminMenu {
         file = "AS_AdminMenu";
         class openMenu {};
