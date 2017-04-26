@@ -1,5 +1,41 @@
+
+//0 = Default behavior, available only in editor
+//1 = Available in SP and for hosts / logged in admins
+//2 = Available for everyone
+
+//Channel Number
+//0 = Global
+//1 = Side
+//2 = Command
+//3 = Group
+//4 = Vehicle
+//5 = Direct
+//6 = System
+
 disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+
+//HUD Setting
+showHUD[] = {
+    true,   // Scripted HUD (same as showHUD command)
+    true,   // Vehicle + soldier info
+    true,   // Vehicle radar [HIDDEN]
+    true,   // Vehicle compass [HIDDEN]
+    true,   // Tank direction indicator
+    true,   // Commanding menu
+    true,  // Group Bar
+    true,    // HUD Weapon Cursors
+    true
+};
+
+
+respawn = 3;
+respawndelay = 10;
+disabledAI=0;
+joinUnassigned = 0;
+enableDebugConsole = 1;
+allowFunctionsLog = 1;
+author = "Psychobastard";
 
 #include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
@@ -21,10 +57,12 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
     #include "dialog\statusBar.hpp"
+    #include "Custom\ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
+    #include "Custom\ais_injury\cfgFunctionsAIS.hpp"
 };
 
 class CfgSounds {
