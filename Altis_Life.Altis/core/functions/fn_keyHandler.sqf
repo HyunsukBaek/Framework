@@ -369,6 +369,21 @@ switch (_code) do {
             };
         };
     };
+
+    //AOSoul 
+    //Admin Menu Shift + `
+    case 41:
+    {
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                //createDialog "life_admin_menu";
+                closeDialog 0;[] spawn life_fnc_openMenu;
+            };
+        };
+    };
 };
 
 _handled;
