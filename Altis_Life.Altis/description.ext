@@ -29,14 +29,7 @@ showHUD[] = {
 };
 
 //AOSoul added
-respawn = 3;
-respawndelay = 10;
-disabledAI=0;
-joinUnassigned = 0;
 enableDebugConsole = 1;
-allowFunctionsLog = 1;
-author = "Psychobastard";
-//AOSoul added
 
 #include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
@@ -60,14 +53,14 @@ class RscTitles {
 	
 	//AOSoul added
     #include "dialog\statusBar.hpp"
-    #include "Custom\ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
+    #include "ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
 	
 	//AOSoul added
-    #include "Custom\ais_injury\cfgFunctionsAIS.hpp"
+    #include "ais_injury\cfgFunctionsAIS.hpp"
 };
 
 class CfgSounds {
