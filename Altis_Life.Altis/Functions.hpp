@@ -71,6 +71,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+		class cook {};	//AOSOUL Cooking
     };
 
     class Admin {
@@ -271,7 +272,8 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
-		class huntingKit {};
+		class huntingKit {};	//AOSOUL Hunting Kit
+		class campFire {};	//AOSOUL Campfire
     };
 
     class Medical_System {

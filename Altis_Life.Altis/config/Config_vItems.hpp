@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "huntingKit" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "huntingKit", "firewood" };
     };
 
     class med_market {
@@ -600,6 +600,7 @@ class VirtualItems {
         sellPrice = 95;
         illegal = false;
         edible = -1;
+		cooked = "rabbit";	//AOSOUL
         icon = "icons\ico_rabbitRaw.paa";
     };
 
@@ -622,6 +623,7 @@ class VirtualItems {
         sellPrice = 45;
         illegal = false;
         edible = -1;
+		cooked = "salema";	//AOSOUL
         icon = "icons\ico_salemaRaw.paa";
     };
 
@@ -644,6 +646,7 @@ class VirtualItems {
         sellPrice = 40;
         illegal = false;
         edible = -1;
+		cooked = "ornate";	//AOSOUL
         icon = "icons\ico_ornateRaw.paa";
     };
 
@@ -666,6 +669,7 @@ class VirtualItems {
         sellPrice = 175;
         illegal = false;
         edible = -1;
+		cooked = "mackerel";	//AOSOUL
         icon = "icons\ico_mackerelRaw.paa";
     };
 
@@ -688,6 +692,7 @@ class VirtualItems {
         sellPrice = 700;
         illegal = false;
         edible = -1;
+		cooked = "tuna";	//AOSOUL
         icon = "icons\ico_tunaRaw.paa";
     };
 
@@ -710,6 +715,7 @@ class VirtualItems {
         sellPrice = 250;
         illegal = false;
         edible = -1;
+		cooked = "mullet";	//AOSOUL
         icon = "icons\ico_mulletRaw.paa";
     };
 
@@ -732,6 +738,7 @@ class VirtualItems {
         sellPrice = 300;
         illegal = false;
         edible = -1;
+		cooked = "catshark";	//AOSOUL
         icon = "icons\ico_catsharkRaw.paa";
     };
 
@@ -754,6 +761,7 @@ class VirtualItems {
         sellPrice = 3000;
         illegal = true;
         edible = -1;
+		cooked = "turtle_soup";	//AOSOUL
         icon = "icons\ico_turtleRaw.paa";
     };
 
@@ -776,6 +784,7 @@ class VirtualItems {
         sellPrice = 65;
         illegal = false;
         edible = -1;
+		cooked = "hen";	//AOSOUL
         icon = "icons\ico_wholeChickenRaw.paa";
     };
 
@@ -798,6 +807,7 @@ class VirtualItems {
         sellPrice = 65;
         illegal = false;
         edible = -1;
+		cooked = "rooster";	//AOSOUL
         icon = "icons\ico_chickenDrumstickRaw.paa";
     };
 
@@ -820,6 +830,7 @@ class VirtualItems {
         sellPrice = 95;
         illegal = false;
         edible = -1;
+		cooked = "sheep";	//AOSOUL
         icon = "icons\ico_lambChopRaw.paa";
     };
 
@@ -842,6 +853,7 @@ class VirtualItems {
         sellPrice = 115;
         illegal = false;
         edible = -1;
+		cooked = "goat";	//AOSOUL
         icon = "icons\ico_muttonLegRaw.paa";
     };
 
@@ -889,4 +901,15 @@ class VirtualItems {
         edible = -1;
         icon = "icons\custom\ico_huntingKit.paa";
     };
+	
+	class firewood {
+		variable = "firewood";
+		displayName = "STR_AOSOUL_Items_Firewood";
+		weight = 5;
+		buyPrice = 50000;
+		sellPrice = 25000;
+		illegal = false;
+		edible = -1;
+		icon = "icons\custom\ico_FireWood.paa";
+	};
 };

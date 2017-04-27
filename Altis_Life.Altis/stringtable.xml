@@ -12135,5 +12135,23 @@
         <Key ID="STR_AOSOUL_Items_huntingkit">
             <Original>Hunting Kit</Original>
         </Key>
+        <Key ID="STR_AOSOUL_Items_Firewood">
+            <Original>캠프파이어 장작</Original>
+        </Key>
+		<Key ID="STR_Cook_Closer">
+            <Original>요리를 하려면 불 가까이 가세요!!</Original>
+        </Key>
+        <Key ID="STR_Cook_Light">
+            <Original>요리를 하려면 불을 먼저 켜야 합니다!!</Original>
+        </Key>
+        <Key ID="STR_Cook_Sitting">
+            <Original>요리를 하려면 불 가까이 앉으세요!! (앉는 키는 ' 입니다.)</Original>
+        </Key>
+        <Key ID="STR_Cook_Closer2">
+            <Original>요리는 모닥불 주변 3m 에서만 가능합니다!!</Original>
+        </Key>
+        <Key ID="STR_Cook_Cooked">
+            <Original>%1 를 완성했습니다!!</Original>
+        </Key>
 	</Package>
 </Project>

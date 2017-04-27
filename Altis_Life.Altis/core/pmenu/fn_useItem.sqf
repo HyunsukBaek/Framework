@@ -95,6 +95,20 @@ switch (true) do {
 	case (_item isEqualTo "huntingKit"): {
 		[] spawn life_fnc_huntingKit;
 	};
+	
+	//Cooking System
+	case (_item isEqualTo "firewood"): {
+    if ((player distance (getMarkerPos "hunting_marker")) > 1000) exitWith {hint "캠프파이어는 사냥 지역에서만 사용 가능합니다!!";};
+        [] spawn life_fnc_campFire;
+        closeDialog 0;
+    };
+    
+    case (_item in ["rabbit_raw","salema_raw","ornate_raw","mackerel_raw","tuna_raw","mullet_raw","catshark_raw","turtle_raw","hen_raw","rooster_raw","sheep_raw","goat_raw"]): {
+    if !(typeOf cursorObject isEqualTo "Land_Campfire_F") exitWith {hint "캠프파이어에서 요리를 할 수 있습니다!!"};
+        [cursorObject,_item] spawn life_fnc_cook;
+        closeDialog 0;
+    };
+	
 
     default {
         hint localize "STR_ISTR_NotUsable";

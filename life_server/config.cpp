@@ -77,6 +77,7 @@ class CfgFunctions {
             class recupkeyforHC {};
             class handleBlastingCharge {};
             class terrainSort {};
+			class timers {};//Cooking Timer
         };
 
         class Housing {

@@ -49,6 +49,10 @@ life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
 
+//AOSOUL Added
+Life_cooking = false;
+Life_fire = false;
+
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel",true];
