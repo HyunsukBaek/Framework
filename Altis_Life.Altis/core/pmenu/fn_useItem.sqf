@@ -90,6 +90,11 @@ switch (true) do {
             };
         };
     };
+	
+	//Hunting Kit
+	case (_item isEqualTo "huntingKit"): {
+		[] spawn life_fnc_huntingKit;
+	};
 
     default {
         hint localize "STR_ISTR_NotUsable";

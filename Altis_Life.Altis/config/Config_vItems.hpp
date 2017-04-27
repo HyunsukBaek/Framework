@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "huntingKit" };
     };
 
     class med_market {
@@ -877,5 +877,16 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\Custom\icon_keys.paa";
+    };
+	
+	class huntingKit {
+        variable = "huntingKit";
+        displayName = "STR_AOSOUL_Items_huntingkit";
+        weight = 2;
+        buyPrice = 800;
+        sellPrice = 300;
+        illegal = false;
+        edible = -1;
+        icon = "icons\custom\ico_huntingKit.paa";
     };
 };

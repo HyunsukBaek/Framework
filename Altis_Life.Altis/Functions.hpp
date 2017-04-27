@@ -271,6 +271,7 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+		class huntingKit {};
     };
 
     class Medical_System {

@@ -12131,4 +12131,9 @@
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
     </Package>
+	<Package name="AOSOUL_Custom">
+        <Key ID="STR_AOSOUL_Items_huntingkit">
+            <Original>Hunting Kit</Original>
+        </Key>
+	</Package>
 </Project>
