@@ -384,6 +384,125 @@ switch (_code) do {
             };
         };
     };
+	
+	//Mobile open Shift + 1
+    case 2:
+    {
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+			if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+			if(!_alt && !_ctrlKey && !dialog) then
+            {
+                createDialog "Life_cell_phone";
+            };
+        };
+    };
+
+    //손인사 높게 Shift + 2
+    case 3:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureHi";
+        };
+    };
+
+    //손인사 낮게 Shift + 3
+    case 4:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureHiC";
+        };
+    };
+
+    //노노 사인 Shift + 4
+    case 5:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureHiB";
+        };
+    };
+
+    //한번 끄덕이기 Shift + 5
+    case 6:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureNod";
+        };
+    };
+
+    //무술 Shifh + 6
+    case 7:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format ["태권도!!!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
+        };
+    };
+
+    //앉았다 느리게 일어나기 Shifh + 7
+    case 8:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format ["쪼그려뛰기 천천히!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+        };
+    };
+
+    //앉았다 일어나기 Shifh + 8
+    case 9:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format ["쪼그려뛰기 빠르게!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
+        };
+    };
+
+    //팔굽혀펴기 Shifh + 9
+    case 10:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format ["팔굽혀펴기!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+        };
+    };
 };
 
 _handled;
