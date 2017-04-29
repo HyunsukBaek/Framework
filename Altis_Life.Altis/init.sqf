@@ -24,7 +24,7 @@ enableTeamswitch false;// TcB AIS wont support teamswitch
 
 // TcB AIS Wounding System --------------------------------------------------------------------------
 
-TCB_AIS_PATH = "ais_injury\";
+TCB_AIS_PATH = "Custom\ais_injury\";
 [] spawn {
     {   [_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")}forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits}); // execute for every playable unit
 

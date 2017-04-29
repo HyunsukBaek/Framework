@@ -16,7 +16,7 @@ tcb_ais_random_lifetime_factor = 200;// A higher value means you have more time 
 // The time mostly depends on the damage the unit takes before loose consciousness. The time is randomized and not exact.
 tcb_ais_delTime = 60;// Time in seconds until dead bodys are removed. If zero seconds are selected, this feature is disabled. (only units that have been handled by AIS Injury System will be deleted!).
 tcb_ais_allways_walk = false;// If set to true, the units are always able to walk/run. False means broken legs are possible (Vanilla).
-tcb_ais_toggleTFAR = true;// If set to true, injured player cannot use his TFAR radio (if TFAR is in use - auto detection).
+tcb_ais_toggleTFAR = false;// If set to true, injured player cannot use his TFAR radio (if TFAR is in use - auto detection).
 tcb_ais_noChat = true;// If set to true, an injured player cannot use text chat.
 
 //__________________________________________________________________________________________________________________________________________________________________

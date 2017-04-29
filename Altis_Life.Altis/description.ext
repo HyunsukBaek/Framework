@@ -13,7 +13,7 @@
 //6 = System
 
 disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
-overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+overviewText = "$STR_MISC_overviewText";    // Text to bePicture on the mission selection screen when the mission is available to play.
 //AOSoul added
 //HUD Setting
 showHUD[] = {
@@ -54,14 +54,14 @@ class RscTitles {
 	
 	//AOSoul added
     #include "dialog\statusBar.hpp"
-    #include "ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
+    #include "Custom\ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
 	
 	//AOSoul added
-    #include "ais_injury\cfgFunctionsAIS.hpp"
+    #include "Custom\ais_injury\cfgFunctionsAIS.hpp"
 };
 
 class CfgSounds {
