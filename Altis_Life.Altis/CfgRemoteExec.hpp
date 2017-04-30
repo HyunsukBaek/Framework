@@ -175,7 +175,6 @@ class CfgRemoteExec {
         F(bis_fnc_setovercast,ANYONE)
         F(bis_fnc_bloodeffect,ANYONE)
         F(bis_fnc_saymessage)
-        F(bis_fnc_switchmove,ANYONE)
     };
 
     class Commands {
