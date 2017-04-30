@@ -16,6 +16,7 @@ if (hasInterface) then {
 [] execVM "AOSoul\statusbar_loop.sqf";//Status Bar Loop
 [] execVM "admintools\loop.sqf";//Admin Helper
 [] execVM "AOSoul\dlc_unlocker.sqf";// dlc 없이도 차량/헬기/비행기/JET 탈수 있게 
+[] execVM "AOSoul\teargas.sqf"; //TearGas
 
 //AOSoul Added : 상처시스템 
 ["%1 --- Executing TcB AIS init.sqf",diag_ticktime] call BIS_fnc_logFormat;

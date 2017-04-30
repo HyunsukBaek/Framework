@@ -163,7 +163,9 @@ class WeaponShops {
             { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
             { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
             { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" } //Apex DLC Sniper
+            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" }, //Apex DLC Sniper
+			//AOSoul Added
+			{ "SmokeShellRed", "최루탄", 32000, 16000, "call life_coplevel >= 1" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
