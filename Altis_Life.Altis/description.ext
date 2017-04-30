@@ -57,7 +57,7 @@ class RscTitles {
 	//AOSoul added
     #include "dialog\statusBar.hpp"
     #include "AOSoul\ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
-	#include "dialog\slotmachine.hpp"	//슬롯머신
+    #include "dialog\slotmachine.hpp"	//슬롯머신
 };
 
 class CfgFunctions {
