@@ -367,6 +367,11 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
+		//AOSOUL Added
+		class blackjack {};  //BlackJack
+        class BJbet {};  //BlackJack
+        class BJhit {};  //BlackJack
+        class BJstay {};  //BlackJack
     };
 
     class Vehicle {
