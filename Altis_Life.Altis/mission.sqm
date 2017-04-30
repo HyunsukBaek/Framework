@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=1962;
+		nextID=2049;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8464.4072,161.86072,25157.379};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={17022.254,262.50156,13277.596};
+		dir[]={-0.46898675,-0.49995133,-0.72814548};
+		up[]={-0.27076408,0.8659907,-0.42038739};
+		aside[]={-0.84075189,-1.7252751e-007,0.54151314};
 	};
 };
 binarizationWanted=0;
@@ -62,7 +62,6 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
-	"A3_Characters_F_Exp_Civil",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Naval_Piers",
 	"A3_Structures_F_Bootcamp_VR_Blocks",
@@ -85,7 +84,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=17;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -172,40 +171,33 @@ class AddonsMetaData
 		};
 		class Item12
 		{
-			className="A3_Characters_F_Exp";
-			name="Arma 3 Apex - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item13
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Structures_F_Exp_A";
 			name="Arma 3 Nexus Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and Structures";
@@ -246,6 +238,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -260,24 +270,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -336,7 +328,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1413;
+		items=1418;
 		class Item0
 		{
 			dataType="Marker";
@@ -717,7 +709,7 @@ class Mission
 			position[]={3508.6143,10.226318,13008.378};
 			name="civ_car_1";
 			type="Empty";
-			angle=190.63135;
+			angle=190.63133;
 			id=39;
 			atlOffset=1.921773;
 		};
@@ -727,7 +719,7 @@ class Mission
 			position[]={3515.5452,10.28235,13006.978};
 			name="civ_car_1_1";
 			type="Empty";
-			angle=193.69151;
+			angle=193.6915;
 			id=40;
 			atlOffset=1.820569;
 		};
@@ -1449,7 +1441,7 @@ class Mission
 			text="@STR_MAR_Boat_Spawn";
 			type="loc_Quay";
 			colorName="ColorOrange";
-			angle=327.60104;
+			angle=327.60101;
 			id=113;
 			atlOffset=8.0115347;
 		};
@@ -19604,7 +19596,7 @@ class Mission
 			};
 			id=633;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.067394733;
+			atlOffset=0.067400932;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24477,13 +24469,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24524,6 +24516,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24766,6 +24759,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25173,7 +25167,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_1";
-						description="Public Slot - Cop 1";
+						description="WhiteListed - Cop 1";
 						isPlayable=1;
 					};
 					id=769;
@@ -25193,7 +25187,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_2";
-						description="Public Slot - Cop 2";
+						description="WhiteListed - Cop 2";
 						isPlayable=1;
 					};
 					id=770;
@@ -25213,7 +25207,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_3";
-						description="Public Slot - Cop 3";
+						description="WhiteListed - Cop 3";
 						isPlayable=1;
 					};
 					id=771;
@@ -25233,7 +25227,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="cop_4";
-						description="Public Slot - Cop 4";
+						description="WhiteListed - Cop 4";
 						isPlayable=1;
 					};
 					id=772;
@@ -25392,8 +25386,8 @@ class Mission
 						description="Civilian 1";
 						isPlayable=1;
 					};
-					id=789;
-					type="C_man_1";
+					id=1964;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -25450,8 +25444,8 @@ class Mission
 						description="Civilian 2";
 						isPlayable=1;
 					};
-					id=791;
-					type="C_man_1";
+					id=1965;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -25508,8 +25502,8 @@ class Mission
 						description="Civilian 3";
 						isPlayable=1;
 					};
-					id=793;
-					type="C_man_1";
+					id=1966;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -25566,8 +25560,8 @@ class Mission
 						description="Civilian 4";
 						isPlayable=1;
 					};
-					id=795;
-					type="C_man_1";
+					id=1967;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -25622,8 +25616,8 @@ class Mission
 						description="Civilian 5";
 						isPlayable=1;
 					};
-					id=797;
-					type="C_man_1";
+					id=1968;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -25678,8 +25672,8 @@ class Mission
 						description="Civilian 6";
 						isPlayable=1;
 					};
-					id=799;
-					type="C_man_1";
+					id=1969;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -25736,8 +25730,8 @@ class Mission
 						description="Civilian 7";
 						isPlayable=1;
 					};
-					id=801;
-					type="C_man_1";
+					id=1970;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -25792,8 +25786,8 @@ class Mission
 						description="Civilian 8";
 						isPlayable=1;
 					};
-					id=803;
-					type="C_man_1";
+					id=1971;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -25848,8 +25842,8 @@ class Mission
 						description="Civilian 9";
 						isPlayable=1;
 					};
-					id=805;
-					type="C_man_1";
+					id=1972;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -25904,8 +25898,8 @@ class Mission
 						description="Civilian 10";
 						isPlayable=1;
 					};
-					id=807;
-					type="C_man_1";
+					id=1973;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -25960,8 +25954,8 @@ class Mission
 						description="Civilian 11";
 						isPlayable=1;
 					};
-					id=809;
-					type="C_man_1";
+					id=1974;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -26018,8 +26012,8 @@ class Mission
 						description="Civilian 12";
 						isPlayable=1;
 					};
-					id=811;
-					type="C_man_1";
+					id=1975;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26074,8 +26068,8 @@ class Mission
 						description="Civilian 13";
 						isPlayable=1;
 					};
-					id=813;
-					type="C_man_1";
+					id=1976;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26130,8 +26124,8 @@ class Mission
 						description="Civilian 14";
 						isPlayable=1;
 					};
-					id=815;
-					type="C_man_1";
+					id=1977;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26186,8 +26180,8 @@ class Mission
 						description="Civilian 15";
 						isPlayable=1;
 					};
-					id=817;
-					type="C_man_1";
+					id=1978;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26242,8 +26236,8 @@ class Mission
 						description="Civilian 16";
 						isPlayable=1;
 					};
-					id=819;
-					type="C_man_1";
+					id=1979;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26298,8 +26292,8 @@ class Mission
 						description="Civilian 17";
 						isPlayable=1;
 					};
-					id=821;
-					type="C_man_1";
+					id=1980;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26354,8 +26348,8 @@ class Mission
 						description="Civilian 18";
 						isPlayable=1;
 					};
-					id=823;
-					type="C_man_1";
+					id=1981;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26410,8 +26404,8 @@ class Mission
 						description="Civilian 19";
 						isPlayable=1;
 					};
-					id=825;
-					type="C_man_1";
+					id=1982;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26466,8 +26460,8 @@ class Mission
 						description="Civilian 20";
 						isPlayable=1;
 					};
-					id=827;
-					type="C_man_1";
+					id=1983;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26522,8 +26516,8 @@ class Mission
 						description="Civilian 21";
 						isPlayable=1;
 					};
-					id=829;
-					type="C_man_1";
+					id=1984;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26578,8 +26572,8 @@ class Mission
 						description="Civilian 22";
 						isPlayable=1;
 					};
-					id=831;
-					type="C_man_1";
+					id=1985;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -26636,8 +26630,8 @@ class Mission
 						description="Civilian 23";
 						isPlayable=1;
 					};
-					id=833;
-					type="C_man_1";
+					id=1986;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26692,8 +26686,8 @@ class Mission
 						description="Civilian 24";
 						isPlayable=1;
 					};
-					id=835;
-					type="C_man_1";
+					id=1987;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26748,8 +26742,8 @@ class Mission
 						description="Civilian 25";
 						isPlayable=1;
 					};
-					id=837;
-					type="C_man_1";
+					id=1988;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26804,8 +26798,8 @@ class Mission
 						description="Civilian 26";
 						isPlayable=1;
 					};
-					id=839;
-					type="C_man_1";
+					id=1989;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -26862,8 +26856,8 @@ class Mission
 						description="Civilian 27";
 						isPlayable=1;
 					};
-					id=841;
-					type="C_man_1";
+					id=1990;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -26920,8 +26914,8 @@ class Mission
 						description="Civilian 28";
 						isPlayable=1;
 					};
-					id=843;
-					type="C_man_1";
+					id=1991;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -26976,8 +26970,8 @@ class Mission
 						description="Civilian 29";
 						isPlayable=1;
 					};
-					id=845;
-					type="C_man_1";
+					id=1992;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27032,8 +27026,8 @@ class Mission
 						description="Civilian 30";
 						isPlayable=1;
 					};
-					id=847;
-					type="C_man_1";
+					id=1993;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27088,8 +27082,8 @@ class Mission
 						description="Civilian 31";
 						isPlayable=1;
 					};
-					id=849;
-					type="C_man_1";
+					id=1994;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -27146,8 +27140,8 @@ class Mission
 						description="Civilian 32";
 						isPlayable=1;
 					};
-					id=851;
-					type="C_man_1";
+					id=1995;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -27204,8 +27198,8 @@ class Mission
 						description="Civilian 33";
 						isPlayable=1;
 					};
-					id=853;
-					type="C_man_1";
+					id=1996;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27260,8 +27254,8 @@ class Mission
 						description="Civilian 34";
 						isPlayable=1;
 					};
-					id=855;
-					type="C_man_1";
+					id=1997;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27316,8 +27310,8 @@ class Mission
 						description="Civilian 35";
 						isPlayable=1;
 					};
-					id=857;
-					type="C_man_1";
+					id=1998;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27372,8 +27366,8 @@ class Mission
 						description="Civilian 36";
 						isPlayable=1;
 					};
-					id=859;
-					type="C_man_1";
+					id=1999;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27428,8 +27422,8 @@ class Mission
 						description="Civilian 37";
 						isPlayable=1;
 					};
-					id=861;
-					type="C_man_1";
+					id=2000;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27484,8 +27478,8 @@ class Mission
 						description="Civilian 38";
 						isPlayable=1;
 					};
-					id=863;
-					type="C_man_1";
+					id=2001;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -27542,8 +27536,8 @@ class Mission
 						description="Civilian 39";
 						isPlayable=1;
 					};
-					id=865;
-					type="C_man_1";
+					id=2002;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27598,8 +27592,8 @@ class Mission
 						description="Civilian 40";
 						isPlayable=1;
 					};
-					id=867;
-					type="C_man_1";
+					id=2003;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27654,8 +27648,8 @@ class Mission
 						description="Civilian 41";
 						isPlayable=1;
 					};
-					id=869;
-					type="C_man_1";
+					id=2004;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27710,8 +27704,8 @@ class Mission
 						description="Civilian 42";
 						isPlayable=1;
 					};
-					id=871;
-					type="C_man_1";
+					id=2005;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27766,8 +27760,8 @@ class Mission
 						description="Civilian 43";
 						isPlayable=1;
 					};
-					id=873;
-					type="C_man_1";
+					id=2006;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -27824,8 +27818,8 @@ class Mission
 						description="Civilian 44";
 						isPlayable=1;
 					};
-					id=875;
-					type="C_man_1";
+					id=2007;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27880,8 +27874,8 @@ class Mission
 						description="Civilian 45";
 						isPlayable=1;
 					};
-					id=877;
-					type="C_man_1";
+					id=2008;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27936,8 +27930,8 @@ class Mission
 						description="Civilian 46";
 						isPlayable=1;
 					};
-					id=879;
-					type="C_man_1";
+					id=2009;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -27992,8 +27986,8 @@ class Mission
 						description="Civilian 47";
 						isPlayable=1;
 					};
-					id=881;
-					type="C_man_1";
+					id=2010;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28048,8 +28042,8 @@ class Mission
 						description="Civilian 48";
 						isPlayable=1;
 					};
-					id=883;
-					type="C_man_1";
+					id=2011;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -28106,8 +28100,8 @@ class Mission
 						description="Civilian 49";
 						isPlayable=1;
 					};
-					id=885;
-					type="C_man_1";
+					id=2012;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -28164,8 +28158,8 @@ class Mission
 						description="Civilian 50";
 						isPlayable=1;
 					};
-					id=887;
-					type="C_man_1";
+					id=2013;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28220,8 +28214,8 @@ class Mission
 						description="Civilian 51";
 						isPlayable=1;
 					};
-					id=889;
-					type="C_man_1";
+					id=2014;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28276,8 +28270,8 @@ class Mission
 						description="Civilian 52";
 						isPlayable=1;
 					};
-					id=891;
-					type="C_man_1";
+					id=2015;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28332,8 +28326,8 @@ class Mission
 						description="Civilian 53";
 						isPlayable=1;
 					};
-					id=893;
-					type="C_man_1";
+					id=2016;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28388,8 +28382,8 @@ class Mission
 						description="Civilian 54";
 						isPlayable=1;
 					};
-					id=895;
-					type="C_man_1";
+					id=2017;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28444,8 +28438,8 @@ class Mission
 						description="Civilian 55";
 						isPlayable=1;
 					};
-					id=897;
-					type="C_man_1";
+					id=2018;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28500,8 +28494,8 @@ class Mission
 						description="Civilian 56";
 						isPlayable=1;
 					};
-					id=899;
-					type="C_man_1";
+					id=2019;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -28558,8 +28552,8 @@ class Mission
 						description="Civilian 57";
 						isPlayable=1;
 					};
-					id=901;
-					type="C_man_1";
+					id=2020;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28614,8 +28608,8 @@ class Mission
 						description="Civilian 58";
 						isPlayable=1;
 					};
-					id=903;
-					type="C_man_1";
+					id=2021;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28670,8 +28664,8 @@ class Mission
 						description="Civilian 59";
 						isPlayable=1;
 					};
-					id=905;
-					type="C_man_1";
+					id=2022;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28726,8 +28720,8 @@ class Mission
 						description="Civilian 60";
 						isPlayable=1;
 					};
-					id=907;
-					type="C_man_1";
+					id=2023;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28782,8 +28776,8 @@ class Mission
 						description="Civilian 61";
 						isPlayable=1;
 					};
-					id=909;
-					type="C_man_1";
+					id=2024;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -28840,8 +28834,8 @@ class Mission
 						description="Civilian 62";
 						isPlayable=1;
 					};
-					id=911;
-					type="C_man_1";
+					id=2025;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -28898,8 +28892,8 @@ class Mission
 						description="Civilian 63";
 						isPlayable=1;
 					};
-					id=913;
-					type="C_man_1";
+					id=2026;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -28954,8 +28948,8 @@ class Mission
 						description="Civilian 64";
 						isPlayable=1;
 					};
-					id=915;
-					type="C_man_1";
+					id=2027;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29010,8 +29004,8 @@ class Mission
 						description="Civilian 65";
 						isPlayable=1;
 					};
-					id=917;
-					type="C_man_1";
+					id=2028;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29066,8 +29060,8 @@ class Mission
 						description="Civilian 66";
 						isPlayable=1;
 					};
-					id=919;
-					type="C_man_1";
+					id=2029;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29122,8 +29116,8 @@ class Mission
 						description="Civilian 67";
 						isPlayable=1;
 					};
-					id=921;
-					type="C_man_1";
+					id=2030;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29178,8 +29172,8 @@ class Mission
 						description="Civilian 68";
 						isPlayable=1;
 					};
-					id=923;
-					type="C_man_1";
+					id=2031;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29234,8 +29228,8 @@ class Mission
 						description="Civilian 69";
 						isPlayable=1;
 					};
-					id=925;
-					type="C_man_1";
+					id=2032;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -29292,8 +29286,8 @@ class Mission
 						description="Civilian 70";
 						isPlayable=1;
 					};
-					id=927;
-					type="C_man_1";
+					id=2033;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29348,8 +29342,8 @@ class Mission
 						description="Civilian 71";
 						isPlayable=1;
 					};
-					id=929;
-					type="C_man_1";
+					id=2034;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29404,8 +29398,8 @@ class Mission
 						description="Civilian 72";
 						isPlayable=1;
 					};
-					id=931;
-					type="C_man_1";
+					id=2035;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -29460,8 +29454,8 @@ class Mission
 						description="Civilian 73";
 						isPlayable=1;
 					};
-					id=933;
-					type="C_man_1";
+					id=2036;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -29518,8 +29512,8 @@ class Mission
 						description="Civilian 74";
 						isPlayable=1;
 					};
-					id=935;
-					type="C_man_1";
+					id=2037;
+					type="C_man_polo_1_F";
 					atlOffset=7.6293945e-006;
 				};
 			};
@@ -29576,8 +29570,8 @@ class Mission
 						description="Civilian 75";
 						isPlayable=1;
 					};
-					id=937;
-					type="C_man_1";
+					id=2038;
+					type="C_man_polo_1_F";
 				};
 			};
 			class Attributes
@@ -32866,7 +32860,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -32875,6 +32868,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32917,6 +32911,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
+					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33169,6 +33164,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34889,6 +34885,7 @@ class Mission
 					};
 					id=1947;
 					type="C_man_polo_4_F";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35822,8 +35819,8 @@ class Mission
 						description="Civilian 76";
 						isPlayable=1;
 					};
-					id=1112;
-					type="C_man_1";
+					id=2039;
+					type="C_man_polo_1_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35920,8 +35917,8 @@ class Mission
 						description="Civilian 77";
 						isPlayable=1;
 					};
-					id=1114;
-					type="C_man_1";
+					id=2040;
+					type="C_man_polo_1_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36018,8 +36015,8 @@ class Mission
 						description="Civilian 78";
 						isPlayable=1;
 					};
-					id=1116;
-					type="C_man_1";
+					id=2041;
+					type="C_man_polo_1_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36116,8 +36113,8 @@ class Mission
 						description="Civilian 79";
 						isPlayable=1;
 					};
-					id=1118;
-					type="C_man_1";
+					id=1963;
+					type="C_man_polo_1_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36214,8 +36211,8 @@ class Mission
 						description="Civilian 80";
 						isPlayable=1;
 					};
-					id=1120;
-					type="C_man_1";
+					id=1962;
+					type="C_man_polo_1_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -40209,34 +40206,33 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3624.1343,10.693306,13100.34};
-				angles[]={0.0039967569,4.8340015,6.2818484};
+				position[]={3625.0669,10.643395,13106.756};
+				angles[]={0.0039968039,4.8340034,6.2818413};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; ";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
 			};
 			id=1434;
 			type="Land_Bench_01_F";
-			atlOffset=0.004576683;
 		};
 		class Item1062
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3623.7776,10.708485,13097.59};
-				angles[]={0.0039967569,4.8340015,6.2818484};
+				position[]={3624.8811,10.661764,13104.49};
+				angles[]={0.0039968039,4.8340034,6.2818413};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; ";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
 			};
 			id=1435;
 			type="Land_Bench_01_F";
@@ -40612,36 +40608,37 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3671.2461,11.322179,13099.835};
-				angles[]={0.0039967569,3.1824665,6.2791886};
+				position[]={3671.2461,11.322118,13099.835};
+				angles[]={0.0039968039,3.1824682,6.2791882};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; ";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
 			};
 			id=1457;
 			type="Land_Bench_F";
+			atlOffset=0.64400005;
 		};
 		class Item1084
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3669.3047,11.315886,13103.351};
-				angles[]={0.0039967569,3.1824665,6.2791886};
+				position[]={3669.3049,11.316216,13103.351};
+				angles[]={0.0039968039,3.1824682,6.2791882};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; ";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
 			};
 			id=1458;
 			type="Land_Bench_F";
-			atlOffset=0.63566875;
+			atlOffset=0.00033092499;
 		};
 		class Item1085
 		{
@@ -40891,15 +40888,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3640.1196,10.655583,13119.934};
-				angles[]={0.0039967569,0.031616759,0.0093286335};
+				position[]={3640.1201,10.655587,13119.934};
+				angles[]={0.0039968039,0.031625368,0.0093200579};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false;";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
 			};
 			id=1472;
 			type="Land_Bench_01_F";
@@ -40992,7 +40989,6 @@ class Mission
 			};
 			id=1478;
 			type="Campfire_burning_F";
-			atlOffset=0.00011062622;
 		};
 		class Item1104
 		{
@@ -41549,13 +41545,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16676.434,15.820218,13598.316};
-				angles[]={0,3.7127531,0};
+				angles[]={0,3.7127516,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\board\Casino.jpg""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\Casino.jpg""];";
 			};
 			id=1526;
 			type="Land_Billboard_F";
@@ -41750,7 +41746,7 @@ class Mission
 		class Item1148
 		{
 			dataType="Trigger";
-			position[]={16667.48,49.637207,13581.934};
+			position[]={16667.48,49.636932,13581.934};
 			class Attributes
 			{
 				name="safe_casino";
@@ -41762,7 +41758,7 @@ class Mission
 			};
 			id=1612;
 			type="EmptyDetectorAreaR50";
-			atlOffset=11.954048;
+			atlOffset=11.953773;
 		};
 		class Item1149
 		{
@@ -44900,7 +44896,7 @@ class Mission
 			};
 			id=1827;
 			type="Land_Pier_Box_F";
-			atlOffset=10.230335;
+			atlOffset=10.23041;
 		};
 		class Item1331
 		{
@@ -44951,7 +44947,7 @@ class Mission
 			};
 			id=1830;
 			type="Land_BagBunker_Tower_F";
-			atlOffset=5.7220459e-006;
+			atlOffset=6.6757202e-006;
 		};
 		class Item1334
 		{
@@ -44997,7 +44993,7 @@ class Mission
 			colorName="ColorGUER";
 			a=840;
 			b=25;
-			angle=56.523838;
+			angle=56.523834;
 			id=1833;
 			atlOffset=5.6155014;
 		};
@@ -45006,7 +45002,7 @@ class Mission
 			dataType="Marker";
 			position[]={14736.494,0,12242.887};
 			name="marker11112_3";
-			text="퍽킹 대교 ";
+			text="Fucking Bridge";
 			type="mil_box";
 			colorName="ColorGreen";
 			alpha=0.59328753;
@@ -45061,7 +45057,7 @@ class Mission
 			};
 			id=1837;
 			type="Land_LampDecor_F";
-			atlOffset=5.7220459e-006;
+			atlOffset=4.7683716e-006;
 		};
 		class Item1341
 		{
@@ -45944,7 +45940,7 @@ class Mission
 			};
 			id=1890;
 			type="Land_Pier_addon";
-			atlOffset=82.021774;
+			atlOffset=82.021576;
 		};
 		class Item1393
 		{
@@ -45995,7 +45991,7 @@ class Mission
 			};
 			id=1893;
 			type="Land_LampDecor_F";
-			atlOffset=0.00043296814;
+			atlOffset=0.00043201447;
 		};
 		class Item1396
 		{
@@ -46012,7 +46008,7 @@ class Mission
 			};
 			id=1894;
 			type="Land_LampDecor_F";
-			atlOffset=21.565525;
+			atlOffset=21.565523;
 		};
 		class Item1397
 		{
@@ -46029,7 +46025,7 @@ class Mission
 			};
 			id=1895;
 			type="Land_LampDecor_F";
-			atlOffset=4.196167e-005;
+			atlOffset=4.1007996e-005;
 		};
 		class Item1398
 		{
@@ -46063,7 +46059,7 @@ class Mission
 			};
 			id=1897;
 			type="Land_LampDecor_F";
-			atlOffset=0.00016403198;
+			atlOffset=0.00016307831;
 		};
 		class Item1400
 		{
@@ -46114,7 +46110,7 @@ class Mission
 			};
 			id=1900;
 			type="Land_LampDecor_F";
-			atlOffset=0.0008354187;
+			atlOffset=0.00083446503;
 		};
 		class Item1403
 		{
@@ -46131,7 +46127,7 @@ class Mission
 			};
 			id=1901;
 			type="Land_LampDecor_F";
-			atlOffset=0.00019454956;
+			atlOffset=0.00019359589;
 		};
 		class Item1404
 		{
@@ -46148,7 +46144,7 @@ class Mission
 			};
 			id=1902;
 			type="Land_LampDecor_F";
-			atlOffset=0.00085067749;
+			atlOffset=0.00084972382;
 		};
 		class Item1405
 		{
@@ -46182,7 +46178,7 @@ class Mission
 			};
 			id=1904;
 			type="Land_LampDecor_F";
-			atlOffset=77.818527;
+			atlOffset=77.81852;
 		};
 		class Item1407
 		{
@@ -46199,7 +46195,7 @@ class Mission
 			};
 			id=1905;
 			type="Land_LampDecor_F";
-			atlOffset=68.629028;
+			atlOffset=68.629021;
 		};
 		class Item1408
 		{
@@ -46216,7 +46212,7 @@ class Mission
 			};
 			id=1906;
 			type="Land_LampDecor_F";
-			atlOffset=40.185867;
+			atlOffset=40.185863;
 		};
 		class Item1409
 		{
@@ -46250,7 +46246,7 @@ class Mission
 			};
 			id=1908;
 			type="Land_LampDecor_F";
-			atlOffset=-0.46849537;
+			atlOffset=-0.46849632;
 		};
 		class Item1411
 		{
@@ -46267,7 +46263,7 @@ class Mission
 			};
 			id=1909;
 			type="Land_LampDecor_F";
-			atlOffset=10.863516;
+			atlOffset=10.863514;
 		};
 		class Item1412
 		{
@@ -46285,6 +46281,93 @@ class Mission
 			id=1913;
 			type="Land_nav_pier_m_F";
 			atlOffset=-6.0970716;
+		};
+		class Item1413
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3633.0984,10.593892,13120.37};
+				angles[]={0.0066671576,0,0.0053232545};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+			};
+			id=2042;
+			type="Land_CampingChair_V2_F";
+		};
+		class Item1414
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3633.9873,10.598931,13120.325};
+				angles[]={0.0066671576,0,0.0053232545};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+			};
+			id=2045;
+			type="Land_CampingChair_V2_F";
+		};
+		class Item1415
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3634.8503,10.604375,13120.233};
+				angles[]={0.0066671576,0,0.0053232545};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+			};
+			id=2046;
+			type="Land_CampingChair_V2_F";
+		};
+		class Item1416
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3278.8169,3.0523562,12976.258};
+				angles[]={0,6.2468123,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.40000001;
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+			};
+			id=2047;
+			type="Land_Bench_01_F";
+			atlOffset=0.30599999;
+		};
+		class Item1417
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16699.311,18.23893,13619.123};
+				angles[]={0,3.7127516,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\CasinoIntro.jpg""];";
+			};
+			id=2048;
+			type="Land_Billboard_F";
+			atlOffset=0.31392097;
 		};
 	};
 };
