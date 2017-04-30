@@ -43,7 +43,7 @@ _light1 attachTo [(vehicle player),[0,-0.3,0.3]];
 
 	_aircraft = _this select 0;
 	// remove the action and initialise a few variables
-	_aircraft removeAction Rockets;
+	//_aircraft removeAction Rockets;
 	_speed = 30;   // 가속도설정
 	_rockettype = "M_NLAW_AT_F"; // 로켓 종류 기본값 M_NLAW_AT_F
 	_boostcycle = 0;
