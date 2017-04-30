@@ -503,6 +503,371 @@ switch (_code) do {
             player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
         };
     };
+	
+	//Shift + Num1
+    case 79:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num2
+    case 80:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num3
+    case 81:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num4
+    case 75:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num5
+    case 76:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num6
+    case 77:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num7
+    case 71:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num8
+    case 72:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num9
+    case 73:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + 0
+    case 11:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + -
+    case 12:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + =
+    case 13:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + *
+    case 55:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+
+    // Shift + Num-
+    case 74:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	//
+	// Shift + F1
+    case 59:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F2
+    case 60:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F3
+    case 61:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F4
+    case 62:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F5
+    case 63:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F6
+    case 64:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F7
+    case 65:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F8
+    case 66:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F9
+    case 67:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+	
+	// Shift + F10
+    case 68:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+    
+	// Shift + F11
+    case 87:
+    {
+        if(_shift) then {_handled = true;};
+		if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
+    
+	// Shift + F12
+    case 88:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "";
+            player playMoveNow "";
+        };
+    };
 };
 
 _handled;
