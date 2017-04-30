@@ -28,8 +28,9 @@
 #include "compensate.hpp"
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
+
+//AOSOUL Added
 #include "AS_AdminMenu.hpp"
 #include "AS_Refund.hpp"
-//AOSOUL Added
 #include "slotmachine.hpp"	//Slot
 #include "blackjack.hpp"	//Blackjack
