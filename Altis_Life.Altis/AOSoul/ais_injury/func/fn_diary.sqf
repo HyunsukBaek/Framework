@@ -1,5 +1,5 @@
 // by psycho
-if (isDedicated) exitWith {};
+if (isServer) exitWith {};
 
 _subject = player createDiarySubject ["ais", "First Aid System"];
 _log_briefing = player createDiaryRecord ["ais", ["About and Credits", "

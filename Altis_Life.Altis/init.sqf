@@ -18,16 +18,6 @@ if (hasInterface) then {
 [] execVM "AOSoul\dlc_unlocker.sqf";// dlc 없이도 차량/헬기/비행기/JET 탈수 있게 
 [] execVM "AOSoul\teargas.sqf"; //TearGas
 
-//AOSoul Added : 상처시스템 
-["%1 --- Executing TcB AIS init.sqf",diag_ticktime] call BIS_fnc_logFormat;
-enableSaving [false,false];
-enableTeamswitch false;// TcB AIS wont support teamswitch
-TCB_AIS_PATH = "AOSoul\ais_injury\";
-[] spawn {
-    {   [_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")}forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits}); // execute for every playable unit
-
-};
-
 setTerrainGrid 40;
 setViewDistance 1000;
 setObjectViewDistance [800,50];
@@ -38,6 +28,16 @@ MAC_fnc_switchMove = {
     _object = _this select 0;
     _anim = _this select 1;
     _object switchMove _anim;
+};
+
+//AOSoul Added : 상처시스템 
+["%1 --- Executing TcB AIS init.sqf",diag_ticktime] call BIS_fnc_logFormat;
+enableSaving [false,false];
+enableTeamswitch false;// TcB AIS wont support teamswitch
+TCB_AIS_PATH = "AOSoul\ais_injury\";
+[] spawn {
+    {   [_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")}forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits}); // execute for every playable unit
+
 };
 // --------------------------------------------------------------------------------------------------------------
 

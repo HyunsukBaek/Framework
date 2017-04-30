@@ -35,7 +35,7 @@ class FSM
                          "" \n
                          "private [""_isPlayer""];" \n
                          "" \n
-                         "_isPlayer = if ((!isDedicated && {!hasInterface}) || {isDedicated}) then {false} else {true};" \n
+                         "_isPlayer = if (!hasInterface) then {false} else {true};" \n
                          "" \n
                          "if (isNil ""tcb_ais_areBleeding"") then {tcb_ais_areBleeding = []};" \n
                          "tcb_ais_areBleeding = tcb_ais_areBleeding - [-1];"/*%FSM</STATEINIT""">*/;

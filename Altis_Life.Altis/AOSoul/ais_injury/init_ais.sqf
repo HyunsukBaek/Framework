@@ -1,7 +1,7 @@
+#include "ais_setup.sqf"
+
 // by psycho - dont edit!
 private "_ais_exit";
-if (isDedicated && isPlayer _unit) exitWith {};// no player unit controlled on a dedicated server
-if (!isDedicated && !hasInterface) exitWith {};	// no headless client
 _unit = _this select 0;
 
 // checking for failed player init
@@ -19,7 +19,6 @@ if (_ais_exit) exitWith {};
 if (isNil "_unit") exitWith {diag_log "AIS: unit is Nil - AIS init abborted"};
 if (!isNil {_unit getVariable "tcb_ais_aisInit"}) exitWith {};// prevent that a unit run the init twice
 _unit setVariable ["tcb_ais_aisInit",true];
-#include "ais_setup.sqf"
 
 "tcb_ais_in_agony" addPublicVariableEventHandler {
 private ["_unit","_in_agony","_side","_fa_action","_drag_action"];

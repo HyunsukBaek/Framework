@@ -1,6 +1,6 @@
 // by psycho
 private ["_pos","_deadcam"];
-if (!isDedicated && {!hasInterface}) exitWith {};
+if (!hasInterface) exitWith {};
 params ["_victim","_killer"];
 
 _pos = [(getPosATL _victim select 0)-(vectorDir _victim select 0)*3,(getPosATL _victim select 1)-(vectorDir _victim select 1)*3,(getPosATL _victim select 2)+1];

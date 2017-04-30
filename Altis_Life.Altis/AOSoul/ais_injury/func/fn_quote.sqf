@@ -6,7 +6,7 @@
  * _this select 2: (optional) time to display (default 10)
  */
 disableSerialization;
-if (!isDedicated && {!hasInterface}) exitWith {};
+if (!hasInterface) exitWith {};
 if (!isNil {uinamespace getvariable "tcb_title"}) exitWith {};		// compatibility with original quote
 
 _quote = _this select 0;
