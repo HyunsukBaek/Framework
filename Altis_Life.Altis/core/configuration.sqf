@@ -52,6 +52,7 @@ life_canpay_bail = true;
 //AOSOUL Added
 Life_cooking = false;
 Life_fire = false;
+life_jetpack = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
