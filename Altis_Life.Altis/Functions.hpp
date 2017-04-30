@@ -394,7 +394,7 @@ class Life_Client_Core {
 
     //ADMIN Panel     //AOSoul added
     class AdminMenu {
-        file = "AS_AdminMenu";
+        file = "AOSoul\AS_AdminMenu";
         class openMenu {};
         class ASreceiver {};
         class execute {};
