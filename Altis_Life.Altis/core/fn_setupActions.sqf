@@ -40,6 +40,7 @@ switch (playerSide) do {
         //AOSoul Added : drop fishing, roket pack, sitdown, standup
         //Drop fishing net
         life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",0,false,false,"",'
+
  (surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
         //RocketHelmet
         life_actions = life_actions + [player addAction["<t color='#FF0000'>Active RocketPack</t>",life_fnc_JetRocket,"",0,false,false,"",'
@@ -49,3 +50,4 @@ switch (playerSide) do {
         //Standup
         life_actions = life_actions + [player addAction["Standup", life_fnc_sitDown,cursorTarget,10,false,false,"",'life_sitting']];
     };
+};
