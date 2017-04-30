@@ -14,7 +14,7 @@ if (hasInterface) then {
 
 //AOSoul Added : Custom Script
 [] execVM "AOSoul\statusbar_loop.sqf";//Status Bar Loop
-[] execVM "AOSoul\AOSoul\admintools\loop.sqf";//Admin Helper
+[] execVM "AOSoul\admintools\loop.sqf";//Admin Helper
 [] execVM "AOSoul\dlc_unlocker.sqf";// dlc 없이도 차량/헬기/비행기/JET 탈수 있게 
 [] execVM "AOSoul\teargas.sqf"; //TearGas
 [] execVM "AOSoul\fastrope.sqf"; //Load Fastrope

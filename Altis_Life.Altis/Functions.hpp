@@ -401,8 +401,8 @@ class Life_Client_Core {
         class ASrefund {};
     };
 	
-	class AOSOULCustom {
-		file = "AOSOUL\Functions"
-		class pee {};
-	};
+    class AOSOULCustom {
+        file = "AOSOUL\Functions";
+        class pee {};
+    };
 };
