@@ -1,8 +1,8 @@
 /*
 한글깨짐
  */
-_pathtotools = "admintools\tools\";
-_pathtovehicles = "admintools\vehicles\";
+_pathtotools = "AOSoul\admintools\tools\";
+_pathtovehicles = "AOSoul\admintools\vehicles\";
 _EXECscript1 = 'player execVM "'+_pathtotools+'%1"';
 _EXECscript2 = 'player execVM "'+_pathtovehicles+'%1"';
 //customise these menus to fit your server

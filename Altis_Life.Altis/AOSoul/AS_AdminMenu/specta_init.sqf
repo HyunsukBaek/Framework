@@ -3,7 +3,7 @@
 // RESTRICT VIEWABLE UNITS
 // We use the array KEGsShownSides to restrict which sides will be visible to 
 // spectating players:
-	
+
 // KEGsShownSides = [west, east, resistance, civilian];
 
 // if (side player == west) then {KEGsShownSides = [west];};
@@ -14,19 +14,19 @@
 // ====================================================================================
 
 // Connect handler for spectating script, check if camera on seagull for first 10 seconds and launch spectating script
-for "_i" from 0 to 20 do 
+for "_i" from 0 to 20 do
 {
-	scopeName "SpectaLoop";
-	if(typeof cameraOn == "SeaGull") then 
-	{
-		[player] execVM "AS_AdminMenu\specta.sqf";
-		breakOut "SpectaLoop";
-	}
-	else
-	{
-		_this execVM "AS_AdminMenu\specta.sqf";
-	};
-	
-	sleep 0.5;
+    scopeName "SpectaLoop";
+    if(typeof cameraOn == "SeaGull") then
+    {
+        [player] execVM "AOSoul\AS_AdminMenu\specta.sqf";
+        breakOut "SpectaLoop";
+    }
+    else
+    {
+        _this execVM "AOSoul\AS_AdminMenu\specta.sqf";
+    };
+
+    sleep 0.5;
 };
 

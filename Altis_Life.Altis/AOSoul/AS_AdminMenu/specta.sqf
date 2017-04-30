@@ -111,13 +111,13 @@ KEGs_CTRL_PRESS = false;
 
 CameraLoop_count = 0;
 
-spectate_events = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\specta_events.sqf",""];
-RefreshPlayerList = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\RefreshPlayerList.sqf",""];
-FreeLookMovementHandler = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\FreeLookMovementHandler.sqf",""];
-CameraMenuHandler = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\CameraMenuHandler.sqf",""];
-PlayerMenuHandler = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\PlayerMenuHandler.sqf",""];
-KEGsShowCombatMode = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\specta_combatmode.sqf",""];
-KEGsShowUnitLocator = compile preprocessFileLineNumbers format ["%1AS_AdminMenu\specta_locator.sqf",""];
+spectate_events = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\specta_events.sqf",""];
+RefreshPlayerList = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\RefreshPlayerList.sqf",""];
+FreeLookMovementHandler = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\FreeLookMovementHandler.sqf",""];
+CameraMenuHandler = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\CameraMenuHandler.sqf",""];
+PlayerMenuHandler = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\PlayerMenuHandler.sqf",""];
+KEGsShowCombatMode = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\specta_combatmode.sqf",""];
+KEGsShowUnitLocator = compile preprocessFileLineNumbers format ["%1AOSoul\AS_AdminMenu\specta_locator.sqf",""];
 
 // Unit sides shown - Show all if sides not set
 if(isNil "KEGsShownSides") then {

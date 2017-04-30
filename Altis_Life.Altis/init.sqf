@@ -14,13 +14,15 @@ if (hasInterface) then {
 
 //AOSoul Added : Custom Script
 [] execVM "AOSoul\statusbar_loop.sqf";//Status Bar Loop
-[] execVM "admintools\loop.sqf";//Admin Helper
+[] execVM "AOSoul\AOSoul\admintools\loop.sqf";//Admin Helper
 [] execVM "AOSoul\dlc_unlocker.sqf";// dlc 없이도 차량/헬기/비행기/JET 탈수 있게 
 [] execVM "AOSoul\teargas.sqf"; //TearGas
-
+[] execVM "AOSoul\fastrope.sqf"; //Load Fastrope
+[] execVM "AOSoul\DynWeather.sqf"; // 날씨 
+        
 setTerrainGrid 40;
-setViewDistance 1000;
-setObjectViewDistance [800,50];
+//setViewDistance 1000;
+//setObjectViewDistance [800,50];
 
 //AOSoul Added : sitdown
 MAC_fnc_switchMove = {
