@@ -151,6 +151,14 @@ class CfgSounds {
         sound[] = {"\sounds\casino\slot_payoff.ogg", 1.25, 1};
         titles[] = {};
     };
+    
+    //AOSoul Added : lockpick sound
+    //UseLockpick
+    class Lockpick {
+        name = "Lockpick";
+        sound[] = { "\sounds\lockpick.ogg", 0.5, 1 };
+        titles[] = { };
+    };
 };
 
 class CfgDebriefing {

@@ -25,6 +25,7 @@ if (_curTarget getVariable "NPC") exitWith {hint localize "STR_NPC_Protected"};
 
 _title = format [localize "STR_ISTR_Lock_Process",if (!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
+[_curTarget,"Lockpick"] remoteExec ["life_fnc_say3D",RANY];	//Lockpick Sound
 
 //Setup the progress bar
 disableSerialization;
