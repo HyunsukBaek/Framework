@@ -80,8 +80,8 @@ class Life_Settings {
 
     /* Housing System Configurations */
     house_limit = 5; //Maximum number of houses a player can own.
-    houseGarage_buyPrice = 1200000;
-    houseGarage_sellPrice = 600000;
+    houseGarage_buyPrice = 2200000;
+    houseGarage_sellPrice = 1000000;
 
     /* Hunting & Fishing System Configurations */
     animaltypes_fish[] = { "Salema_F", "Ornate_random_F", "Mackerel_F", "Tuna_F", "Mullet_F", "CatShark_F", "Turtle_F" }; //Classnames of fish you can catch
@@ -104,7 +104,7 @@ class Life_Settings {
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_civ = false; //true to enable civs the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_east = false; //true to enable opfor the ability to revive everyone or false for only medics/ems or medic/ems/cops.
-    revive_fee = 50000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
+    revive_fee = 30000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
     hospital_heal_fee = 2000; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */

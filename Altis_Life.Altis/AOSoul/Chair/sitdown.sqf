@@ -1,11 +1,4 @@
 #include "..\..\script_macros.hpp"
-/*
- File: sitdown.sqf
- Author: John "Paratus" VanderZwet
- 
- Description:
- Sit in a chair!
- */
 
 private ["_chair","_unit","_dir","_z"];
 
@@ -47,7 +40,7 @@ life_sitting = _obj;
 _chair setVariable ["sitting", _unit, true];
 
 [_unit,"Crew","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-_action = _unit addAction ["<t color='#B45F04'>Otur</t>","AOSoul\Chair\standup.sqf"];
+_action = _unit addAction ["<t color='#B45F04'>SitDown</t>","AOSoul\Chair\standup.sqf"];
 
 waitUntil {isNull life_sitting || !(alive _unit) || player distance (getPos _chair) > 2};
 

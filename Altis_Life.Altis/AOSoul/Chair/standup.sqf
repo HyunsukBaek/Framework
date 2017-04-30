@@ -1,10 +1,4 @@
 #include "..\..\script_macros.hpp"
-/*
- File: standup.sqf
- Author: John "Paratus" VanderZwet
- Description:
- Stand up from chair
-*/
 
 detach player;
 [player,"","switch",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
