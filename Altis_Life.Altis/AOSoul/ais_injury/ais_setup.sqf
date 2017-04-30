@@ -24,8 +24,8 @@ tcb_ais_noChat = true;// If set to true, an injured player cannot use text chat.
 
 tcb_ais_show_injury_marker = true;// If set to true, a marker will show injured units on the map.
 tcb_ais_show_3d_icons = true;// If set to true, an in-game visible 3D-icon shows you the position of injured units (within a range of 30 meters).
-tcb_ais_dead_dialog = true;// Set to true to enable the deadcam and the dead dialog.
+tcb_ais_dead_dialog = false;// Set to true to enable the deadcam and the dead dialog.
 tcb_ais_bloodParticle = true;// If set to true, extra blood particles are randomly generated on wounded units. Set false to disable this feature.
 tcb_ais_impactEffects = true;// Set to true to enable visible impact effects. Set to false to disable this feature.
 tcb_ais_showCountdown = true;// If set to true, an unconscious unit will be able to see the bleed out timer.
-tcb_ais_showDiaryInfo = true;// If set to true, a diary entry with some informations about the AIS (Credits, features, How to) is added.
+tcb_ais_showDiaryInfo = false;// If set to true, a diary entry with some informations about the AIS (Credits, features, How to) is added.

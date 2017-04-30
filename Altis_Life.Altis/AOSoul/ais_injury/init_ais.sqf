@@ -6,7 +6,7 @@ _unit = _this select 0;
 
 // checking for failed player init
 _ais_exit = false;
-if (isMultiplayer && !isServer) then {// only players on dedicated environment
+if (isMultiplayer && !isServer) then { // only players on dedicated environment
     true spawn {
     private "_puid";
         waitUntil {player == player && local player};
@@ -17,7 +17,7 @@ if (isMultiplayer && !isServer) then {// only players on dedicated environment
 };
 if (_ais_exit) exitWith {};
 if (isNil "_unit") exitWith {diag_log "AIS: unit is Nil - AIS init abborted"};
-if (!isNil {_unit getVariable "tcb_ais_aisInit"}) exitWith {};// prevent that a unit run the init twice
+if (!isNil {_unit getVariable "tcb_ais_aisInit"}) exitWith {}; // prevent that a unit run the init twice
 _unit setVariable ["tcb_ais_aisInit",true];
 
 "tcb_ais_in_agony" addPublicVariableEventHandler {
@@ -128,7 +128,7 @@ if (tcb_ais_showDiaryInfo && {_unit == player}) then {call tcb_fnc_diary};
 [_unit] spawn {
     _unit = _this select 0;
     _timeend = time + 1.213;
-    waitUntil {!isNil {_unit getVariable "BIS_fnc_feedback_hitArrayHandler"}|| {time > _timeend}};// work around to ensure this EH is the last one that was added
+    waitUntil {!isNil {_unit getVariable "BIS_fnc_feedback_hitArrayHandler"}|| {time > _timeend}}; // work around to ensure this EH is the last one that was added
     ["%1 --- adding wounding handleDamage eventhandler first time",diag_ticktime] call BIS_fnc_logFormat;
     _unit addEventHandler ["HandleDamage", {_this call tcb_fnc_handleDamage2}];
 };
