@@ -1,7 +1,7 @@
 // by psycho - dont edit!
 private "_ais_exit";
 if (isDedicated && {isPlayer _unit}) exitWith {};// no player unit controlled on a dedicated server
-if (!isDedicated && {!hasInterface}) exitWith {};	// no headless client
+//if (!isDedicated && !hasInterface) exitWith {};	// no headless client
 _unit = _this select 0;
 
 // checking for failed player init

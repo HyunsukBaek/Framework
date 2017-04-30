@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=2049;
+		nextID=2052;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17022.254,262.50156,13277.596};
-		dir[]={-0.46898675,-0.49995133,-0.72814548};
-		up[]={-0.27076408,0.8659907,-0.42038739};
-		aside[]={-0.84075189,-1.7252751e-007,0.54151314};
+		pos[]={3628.7581,19.915831,13116.394};
+		dir[]={0.69644541,-0.71667677,-0.03695289};
+		up[]={0.71568,0.69739354,-0.037973098};
+		aside[]={-0.052984662,-6.8524969e-008,-0.99860835};
 	};
 };
 binarizationWanted=0;
@@ -238,24 +238,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -270,6 +252,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -328,7 +328,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1418;
+		items=1419;
 		class Item0
 		{
 			dataType="Marker";
@@ -709,7 +709,7 @@ class Mission
 			position[]={3508.6143,10.226318,13008.378};
 			name="civ_car_1";
 			type="Empty";
-			angle=190.63133;
+			angle=190.63132;
 			id=39;
 			atlOffset=1.921773;
 		};
@@ -1441,7 +1441,7 @@ class Mission
 			text="@STR_MAR_Boat_Spawn";
 			type="loc_Quay";
 			colorName="ColorOrange";
-			angle=327.60101;
+			angle=327.60098;
 			id=113;
 			atlOffset=8.0115347;
 		};
@@ -24516,7 +24516,6 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
-			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24759,7 +24758,6 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
-			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32911,7 +32909,6 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
-					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33164,7 +33161,6 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
-					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34497,6 +34493,7 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -34505,7 +34502,6 @@ class Mission
 					};
 					id=1938;
 					type="C_man_polo_4_F";
-					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -40215,7 +40211,6 @@ class Mission
 			{
 				skill=0.40000001;
 				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
-
 			};
 			id=1434;
 			type="Land_Bench_01_F";
@@ -40627,7 +40622,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3669.3049,11.316216,13103.351};
+				position[]={3637.1929,10.370637,13118.395};
 				angles[]={0.0039968039,3.1824682,6.2791882};
 			};
 			side="Empty";
@@ -40635,11 +40630,10 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=1458;
 			type="Land_Bench_F";
-			atlOffset=0.00033092499;
 		};
 		class Item1085
 		{
@@ -40897,7 +40891,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=1472;
 			type="Land_Bench_01_F";
@@ -44994,7 +44988,7 @@ class Mission
 			colorName="ColorGUER";
 			a=840;
 			b=25;
-			angle=56.523834;
+			angle=56.52383;
 			id=1833;
 			atlOffset=5.6155014;
 		};
@@ -46305,40 +46299,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3633.9873,10.598931,13120.325};
-				angles[]={0.0066671576,0,0.0053232545};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
-			};
-			id=2045;
-			type="Land_CampingChair_V2_F";
-		};
-		class Item1415
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3634.8503,10.604375,13120.233};
-				angles[]={0.0066671576,0,0.0053232545};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
-			};
-			id=2046;
-			type="Land_CampingChair_V2_F";
-		};
-		class Item1416
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={3278.8169,3.0523562,12976.258};
 				angles[]={0,6.2468123,0};
 			};
@@ -46350,9 +46310,9 @@ class Mission
 			};
 			id=2047;
 			type="Land_Bench_01_F";
-			atlOffset=0.30599999;
+			atlOffset=0.30600023;
 		};
-		class Item1417
+		class Item1415
 		{
 			dataType="Object";
 			class PositionInfo
@@ -46369,6 +46329,60 @@ class Mission
 			id=2048;
 			type="Land_Billboard_F";
 			atlOffset=0.31392097;
+		};
+		class Item1416
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3634.0732,10.092272,13120.275};
+				angles[]={0,0.088069312,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
+			};
+			id=2049;
+			type="Land_ChairWood_F";
+		};
+		class Item1417
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3635.1165,10.098984,13120.322};
+				angles[]={0,0.088069312,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
+			};
+			id=2050;
+			type="Land_ChairWood_F";
+		};
+		class Item1418
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3631.7297,10.586306,13120.407};
+				angles[]={0.0066671576,0,0.0053232545};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
+			};
+			id=2051;
+			type="Land_CampingChair_V2_F";
+			atlOffset=-3.7193298e-005;
 		};
 	};
 };
