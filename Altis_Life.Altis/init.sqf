@@ -28,8 +28,12 @@ TCB_AIS_PATH = "AOSoul\ais_injury\";
 
 };
 
+setTerrainGrid 40;
+setViewDistance 1000;
+setObjectViewDistance [800,50];
+
 //AOSoul Added : sitdown
-AOSoul_fnc_switchMove = {
+MAC_fnc_switchMove = {
     private["_object","_anim"];
     _object = _this select 0;
     _anim = _this select 1;
