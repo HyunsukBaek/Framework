@@ -40214,7 +40214,8 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
+
 			};
 			id=1434;
 			type="Land_Bench_01_F";
@@ -40232,7 +40233,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=1435;
 			type="Land_Bench_01_F";
@@ -40615,7 +40616,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=1457;
 			type="Land_Bench_F";
@@ -40634,7 +40635,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=1458;
 			type="Land_Bench_F";
@@ -40896,7 +40897,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=1472;
 			type="Land_Bench_01_F";
@@ -46294,7 +46295,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=2042;
 			type="Land_CampingChair_V2_F";
@@ -46311,7 +46312,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=2045;
 			type="Land_CampingChair_V2_F";
@@ -46328,7 +46329,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=2046;
 			type="Land_CampingChair_V2_F";
@@ -46345,7 +46346,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.40000001;
-				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""]";
+				init="this allowDamage false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf"","""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 '];";
 			};
 			id=2047;
 			type="Land_Bench_01_F";

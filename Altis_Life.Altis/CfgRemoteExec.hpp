@@ -110,8 +110,7 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
-			F(TON_fnc_timers,SERVER)	//AOSOUL Cooking Timer
-		
+
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
         F(HC_fnc_addHouse,HC)
@@ -165,7 +164,9 @@ class CfgRemoteExec {
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
 
-		/* bis_fnc */
+        /* bis_fnc */
+        //AOSoul Added
+        F(TON_fnc_timers,SERVER) //AOSOUL Cooking Timer
         F(bis_fnc_setdate,ANYONE)
         F(bis_fnc_setppeffecttemplate,ANYONE)
         F(bis_fnc_setidentity,ANYONE)
@@ -174,6 +175,7 @@ class CfgRemoteExec {
         F(bis_fnc_setovercast,ANYONE)
         F(bis_fnc_bloodeffect,ANYONE)
         F(bis_fnc_saymessage)
+        F(bis_fnc_switchmove,ANYONE)
     };
 
     class Commands {
