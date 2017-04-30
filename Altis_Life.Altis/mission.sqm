@@ -41383,7 +41383,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,1,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine100.paa""];";
+				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,1,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine100.paa""];";
 			};
 			id=1512;
 			type="Land_InfoStand_V2_F";
@@ -41400,7 +41400,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine500.paa""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine500.paa""];";
 			};
 			id=1513;
 			type="Land_InfoStand_V2_F";
@@ -41418,7 +41418,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine500.paa""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine500.paa""];";
 			};
 			id=1514;
 			type="Land_InfoStand_V2_F";
@@ -41435,7 +41435,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,1,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine100.paa""];";
+				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,1,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine100.paa""];";
 			};
 			id=1515;
 			type="Land_InfoStand_V2_F";
@@ -41452,7 +41452,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine1000.paa""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine1000.paa""];";
 			};
 			id=1516;
 			type="Land_InfoStand_V2_F";
@@ -41470,7 +41470,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine1000.paa""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine1000.paa""];";
 			};
 			id=1517;
 			type="Land_InfoStand_V2_F";
@@ -41724,7 +41724,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,0,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\Slots\slotmachine100.paa""];";
+				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,0,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine100.paa""];";
 			};
 			id=1598;
 			type="Land_InfoStand_V2_F";

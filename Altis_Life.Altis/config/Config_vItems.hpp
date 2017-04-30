@@ -877,7 +877,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "icons\Custom\cuffs.paa";
+        icon = "icons\AOSoul\cuffs.paa";
     };	
 	
     class keys {
@@ -888,7 +888,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = false;
         edible = -1;
-        icon = "icons\Custom\icon_keys.paa";
+        icon = "icons\AOSoul\icon_keys.paa";
     };
 	
 	class huntingKit {
@@ -899,7 +899,7 @@ class VirtualItems {
         sellPrice = 300;
         illegal = false;
         edible = -1;
-        icon = "icons\custom\ico_huntingKit.paa";
+        icon = "icons\AOSoul\ico_huntingKit.paa";
     };
 	
 	class firewood {
@@ -910,6 +910,6 @@ class VirtualItems {
 		sellPrice = 25000;
 		illegal = false;
 		edible = -1;
-		icon = "icons\custom\ico_FireWood.paa";
+		icon = "icons\AOSoul\ico_FireWood.paa";
 	};
 };

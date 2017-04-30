@@ -12,27 +12,28 @@ if (hasInterface) then {
 };
 [] execVM "KRON_Strings.sqf";
 
-//Custom Script
+//AOSoul Added : Custom Script
 [] execVM "Custom\statusbar_loop.sqf";//Status Bar Loop
 [] execVM "admintools\loop.sqf";//Admin Helper
 [] execVM "Custom\dlc_unlocker.sqf";// dlc 없이도 차량/헬기/비행기/JET 탈수 있게 
 
-//by psycho
+//AOSoul Added : 상처시스템 
 ["%1 --- Executing TcB AIS init.sqf",diag_ticktime] call BIS_fnc_logFormat;
 enableSaving [false,false];
 enableTeamswitch false;// TcB AIS wont support teamswitch
-
-// TcB AIS Wounding System --------------------------------------------------------------------------
-
 TCB_AIS_PATH = "Custom\ais_injury\";
 [] spawn {
     {   [_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")}forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits}); // execute for every playable unit
 
-    //{[_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")} forEach (units group player);             // only own group - you cant help strange group members
-
-    //{[_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")} forEach [p1,p2,p3,p4,p5];              // only some defined units
 };
 
+//AOSoul Added : sitdown
+AOSoul_fnc_switchMove = {
+    private["_object","_anim"];
+    _object = _this select 0;
+    _anim = _this select 1;
+    _object switchMove _anim;
+};
 // --------------------------------------------------------------------------------------------------------------
 
 StartProgress = true;

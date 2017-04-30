@@ -10560,6 +10560,15 @@
             <Polish>Zapłać kaucję</Polish>
             <Italian>Paga cauzione</Italian>
         </Key>
+        
+        <!--  AOSoul Added  -->
+        <Key ID="STR_MAR_FED_aoscasino">
+            <Original>Federal Reserve - AOSoul Casino</Original>
+        </Key>
+        <Key ID="STR_MAR_FED_illcasino">
+            <Original>Federal Reserve - illegal Casino</Original>
+        </Key>
+        
     </Package>
     <Package name="displayNames">
         <Key ID="STR_C_Remove_uniforms">

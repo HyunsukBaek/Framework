@@ -71,7 +71,12 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
-		class cook {};	//AOSOUL Cooking
+
+        //AOSoul Added :
+        class cook {};	//AOSOUL Cooking
+        class processCasinoSlots {}; //Casino process
+        class JetRocket {}; //JetPack
+        //////////////////
     };
 
     class Admin {
@@ -219,7 +224,12 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+
+        //AOSoul Added:
         class speaking {}; // 말할때 아이콘 표시 기능
+        class slotMachineRewards {};  //Casino
+        class slotMachineRandomizer {};  //Casino
+        ////////////////
     };
 
     class Gangs {
