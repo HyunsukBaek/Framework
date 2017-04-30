@@ -380,7 +380,8 @@ switch (_code) do {
             if(!_alt && !_ctrlKey && !dialog) then
             {
                 //createDialog "life_admin_menu";
-                closeDialog 0;[] spawn life_fnc_openMenu;
+                closeDialog 0;
+				[] spawn life_fnc_openMenu;
             };
         };
     };
@@ -504,7 +505,21 @@ switch (_code) do {
         };
     };
 	
-	//Shift + Num1
+	// 모션 복구 Shift + Num0
+    case 82:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AmovPercMstpSnonWnonDnon",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AmovPercMstpSnonWnonDnon";
+            player playMoveNow "AmovPercMstpSnonWnonDnon";
+        };
+    };
+	
+	// 쉬야 Shift + Num1
     case 79:
     {
         if(_shift) then {_handled = true;};
@@ -512,27 +527,28 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"Acts_AidlPercMstpSlowWrflDnon_pissing",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_AidlPercMstpSlowWrflDnon_pissing";
+            player playMoveNow "Acts_AidlPercMstpSlowWrflDnon_pissing";
+			[] call life_fnc_Pee;
         };
     };
 
-    // Shift + Num2
+    // 뒤로 물러나 총쏘기 Shift + Num2
     case 80:
     {
         if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
-        {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
-        };
+		{
+			[player,"Acts_ViperMeeting_A_End",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+			player switchMove "Acts_ViperMeeting_A_End";
+			player playMoveNow "Acts_ViperMeeting_A_End";
+		};
     };
 
-    // Shift + Num3
+    // 다리 찢기 Shift + Num3
     case 81:
     {
         if(_shift) then {_handled = true;};
@@ -540,13 +556,13 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"Acts_EpicSplit",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_EpicSplit";
+            player playMoveNow "Acts_EpicSplit";
         };
     };
 
-    // Shift + Num4
+    // 주저 앉기 Shift + Num4
     case 75:
     {
         if(_shift) then {_handled = true;};
@@ -554,13 +570,13 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"passenger_flatground_2_Idle_Unarmed",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "passenger_flatground_2_Idle_Unarmed";
+            player playMoveNow "passenger_flatground_2_Idle_Unarmed";
         };
     };
 
-    // Shift + Num5
+    // 양반다리 앉기 Shift + Num5
     case 76:
     {
         if(_shift) then {_handled = true;};
@@ -568,13 +584,13 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"passenger_flatground_3_Idle_Unarmed",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "passenger_flatground_3_Idle_Unarmed";
+            player playMoveNow "passenger_flatground_3_Idle_Unarmed";
         };
     };
 
-    // Shift + Num6
+    // 조신하게 앉기 Shift + Num6
     case 77:
     {
         if(_shift) then {_handled = true;};
@@ -582,13 +598,13 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"passenger_flatground_4_Idle_Unarmed",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "passenger_flatground_4_Idle_Unarmed";
+            player playMoveNow "passenger_flatground_4_Idle_Unarmed";
         };
     };
 
-    // Shift + Num7
+    // 누워있다 일어나기 Shift + Num7
     case 71:
     {
         if(_shift) then {_handled = true;};
@@ -596,13 +612,13 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"Acts_UnconsciousStandUp_part1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_UnconsciousStandUp_part1";
+            player playMoveNow "Acts_UnconsciousStandUp_part1";
         };
     };
 
-    // Shift + Num8
+    // 뒷짐지고 체조 Shift + Num8
     case 72:
     {
         if(_shift) then {_handled = true;};
@@ -610,13 +626,13 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"Acts_AidlPercMstpSnonWnonDnon_warmup_3_loop",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_AidlPercMstpSnonWnonDnon_warmup_3_loop";
+            player playMoveNow "Acts_AidlPercMstpSnonWnonDnon_warmup_3_loop";
         };
     };
 
-    // Shift + Num9
+    // 일어선체 체조Shift + Num9
     case 73:
     {
         if(_shift) then {_handled = true;};
@@ -624,13 +640,41 @@ switch (_code) do {
 		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [player,"Acts_AidlPercMstpSnonWnonDnon_warmup_7_loop",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_AidlPercMstpSnonWnonDnon_warmup_7_loop";
+            player playMoveNow "Acts_AidlPercMstpSnonWnonDnon_warmup_7_loop";
         };
     };
 
-    // Shift + 0
+    // 불량하게 앉기 Shift + Num*
+    case 55:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"Acts_AidlPercMstpSnonWnonDnon_warmup_4_loop",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_AidlPercMstpSnonWnonDnon_warmup_4_loop";
+            player playMoveNow "Acts_AidlPercMstpSnonWnonDnon_warmup_4_loop";
+        };
+    };
+
+    // 포박당해 앉기 Shift + Num-
+    case 74:
+    {
+        if(_shift) then {_handled = true;};
+        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"Acts_AidlPsitMstpSsurWnonDnon02",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "Acts_AidlPsitMstpSsurWnonDnon02";
+            player playMoveNow "Acts_AidlPsitMstpSsurWnonDnon02";
+        };
+    };
+	
+	// Shift + 0
     case 11:
     {
         if(_shift) then {_handled = true;};
@@ -671,36 +715,7 @@ switch (_code) do {
             player playMoveNow "";
         };
     };
-
-    // Shift + *
-    case 55:
-    {
-        if(_shift) then {_handled = true;};
-        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
-		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
-		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
-        {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
-        };
-    };
-
-    // Shift + Num-
-    case 74:
-    {
-        if(_shift) then {_handled = true;};
-        if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
-		if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
-		if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
-        {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
-        };
-    };
 	
-	//
 	// Shift + F1
     case 59:
     {

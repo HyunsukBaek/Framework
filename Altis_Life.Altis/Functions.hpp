@@ -401,4 +401,9 @@ class Life_Client_Core {
         class execute {};
         class ASrefund {};
     };
+	
+	class AOSOULCustom {
+		file = "AOSOUL\Functions"
+		class pee {};
+	};
 };
