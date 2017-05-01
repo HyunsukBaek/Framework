@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "handcuffs", "keys" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "handcuffs", "keys", "electricfishing" };
     };
 
     class gang {
@@ -917,10 +917,21 @@ class VirtualItems {
 	    variable = "stringfishing";
 	    displayName = "STR_AOSOUL_Items_StringFishing";
 	    weight = 5;
-	    buyPrice = 50000;
-	    sellPrice = 25000;
+	    buyPrice = 30000;
+	    sellPrice = 10000;
 	    illegal = false;
 	    edible = -1;
 	    icon = "icons\AOSoul\ico_stringfishing.paa";
     };
+
+	class electricfishing {
+	        variable = "electricfishing";
+	        displayName = "STR_AOSOUL_Items_electricfishing";
+	        weight = 5;
+	        buyPrice = 500000;
+	        sellPrice = 250000;
+	        illegal = true;
+	        edible = -1;
+	        icon = "icons\AOSoul\ico_electricfishing.paa";
+	};
 };

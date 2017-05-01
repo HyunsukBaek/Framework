@@ -176,6 +176,7 @@ class CfgRemoteExec {
         F(bis_fnc_bloodeffect,ANYONE)
         F(bis_fnc_saymessage)
         F(life_fnc_stringfishing,CLIENT)    //AOSOUL StringFishing
+        F(life_fnc_Electricfishing,CLIENT)    //AOSOUL ElectricFishing
     };
 
     class Commands {

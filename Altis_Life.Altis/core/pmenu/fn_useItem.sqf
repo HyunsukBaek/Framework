@@ -114,6 +114,12 @@ switch (true) do {
         [] spawn life_fnc_stringfishing;
         closeDialog 0;
     };
+    
+    //Electric Fishing
+    case (_item isEqualTo "electricfishing"): {
+        [] spawn life_fnc_electricfishing;
+        closeDialog 0;
+    };
 
     default {
         hint localize "STR_ISTR_NotUsable";

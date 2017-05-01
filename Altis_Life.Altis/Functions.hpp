@@ -405,5 +405,6 @@ class Life_Client_Core {
         file = "AOSOUL\Functions";
         class pee {};
         class stringfishing {};
+        class ElectricFishing {};
     };
 };
