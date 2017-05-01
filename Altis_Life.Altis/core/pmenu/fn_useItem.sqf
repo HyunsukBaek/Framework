@@ -112,6 +112,7 @@ switch (true) do {
     //String Fishing
     case (_item isEqualTo "stringfishing"): {
         [] spawn life_fnc_stringfishing;
+        closeDialog 0;
     };
 
     default {
