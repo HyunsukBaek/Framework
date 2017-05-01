@@ -76,7 +76,7 @@ class VirtualShops {
         name = "STR_Shops_FishMarket";
         side = "civ";
         conditions = "";
-        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
+        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark", "stringfishing" };
     };
 
     class glass {
