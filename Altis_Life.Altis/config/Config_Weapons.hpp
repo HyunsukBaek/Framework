@@ -147,7 +147,7 @@ class WeaponShops {
     class cop_basic {
         name = "Altis Cop Shop";
         side = "cop";
-        conditions = "";
+        conditions = "call life_coplevel >= 1";
         items[] = {
             { "Binocular", "", 150, 75, "" },
             { "ItemGPS", "", 100, 50, "" },
@@ -157,7 +157,7 @@ class WeaponShops {
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
             { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
             { "hgun_P07_F", "", 7500, 3750, "" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
+            { "hgun_P07_khk_F", "", 7500, 3750, "call life_donorlevel >= 1" }, //Apex DLC
             { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
             { "SMG_02_F", "", 30000, 15000, "call life_coplevel >= 2" },
             { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
