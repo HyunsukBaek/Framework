@@ -12153,6 +12153,12 @@
 		<Key ID="STR_AOSOUL_Items_electricfishing">
             <Original>폭파 낚시 도구</Original>
         </Key>
+		<Key ID="STR_AOSOUL_Items_Handcuffs">
+            <Original>수갑</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Items_keys">
+            <Original>수갑 열쇠</Original>
+        </Key>
 		<Key ID="STR_Cook_Closer">
             <Original>요리를 하려면 불 가까이 가세요!!</Original>
         </Key>

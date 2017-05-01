@@ -871,7 +871,7 @@ class VirtualItems {
     // custom 
     class handcuffs {
         variable = "handcuffs";
-        displayName = "STR_Item_lol";
+        displayName = "STR_AOSOUL_Items_Handcuffs";
         weight = 1;
         buyPrice = 25;
         sellPrice = -1;
@@ -882,7 +882,7 @@ class VirtualItems {
 	
     class keys {
         variable = "keys";
-        displayName = "STR_Item_Keys";
+        displayName = "STR_AOSOUL_Items_keys";
         weight = 1;
         buyPrice = 25;
         sellPrice = -1;
@@ -925,13 +925,13 @@ class VirtualItems {
     };
 
 	class electricfishing {
-	        variable = "electricfishing";
-	        displayName = "STR_AOSOUL_Items_electricfishing";
-	        weight = 5;
-	        buyPrice = 500000;
-	        sellPrice = 250000;
-	        illegal = true;
-	        edible = -1;
-	        icon = "icons\AOSoul\ico_electricfishing.paa";
+        variable = "electricfishing";
+        displayName = "STR_AOSOUL_Items_electricfishing";
+        weight = 5;
+        buyPrice = 500000;
+        sellPrice = 250000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\AOSoul\ico_electricfishing.paa";
 	};
 };
