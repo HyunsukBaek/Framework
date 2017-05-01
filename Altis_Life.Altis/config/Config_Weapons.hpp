@@ -19,6 +19,16 @@
 *    Item classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Items
 *
 */
+
+
+/* AOSoul Added
+ * 시민레벨 3이 살수 있는 무기 : license_civ_level1 || license_civ_level2 || license_civ_level3
+ * 시민레벨 5'만' 살수 있는 무기 : license_civ_level5
+ * [시민레벨 4이상]와 [경찰레벨3이상] 그리고 [후원자레벨2]가 살수 있게 : license_civ_level4 || license_civ_level5 || call life_coplevel > 3 || call life_donorlevel == 2
+ * commented by soulfucker
+ */
+
+
 class WeaponShops {
     //Armory Shops
     class gun {
