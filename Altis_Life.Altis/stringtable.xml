@@ -12147,6 +12147,9 @@
         <Key ID="STR_AOSOUL_Items_Firewood">
             <Original>캠프파이어 장작</Original>
         </Key>
+		<Key ID="STR_AOSOUL_Items_StringFishing">
+            <Original>줄 낚시 도구</Original>
+        </Key>
 		<Key ID="STR_Cook_Closer">
             <Original>요리를 하려면 불 가까이 가세요!!</Original>
         </Key>

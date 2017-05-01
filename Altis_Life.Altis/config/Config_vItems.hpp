@@ -912,4 +912,15 @@ class VirtualItems {
 		edible = -1;
 		icon = "icons\AOSoul\ico_FireWood.paa";
 	};
+
+	class stringfishing {
+	    variable = "stringfishing";
+	    displayName = "STR_AOSOUL_Items_StringFishing";
+	    weight = 5;
+	    buyPrice = 50000;
+	    sellPrice = 25000;
+	    illegal = false;
+	    edible = -1;
+	    icon = "icons\AOSoul\ico_stringfishing.paa";
+    };
 };

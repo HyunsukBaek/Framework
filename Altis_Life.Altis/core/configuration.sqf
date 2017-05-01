@@ -53,6 +53,7 @@ life_canpay_bail = true;
 Life_cooking = false;
 Life_fire = false;
 life_jetpack = false;
+Life_fishing = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

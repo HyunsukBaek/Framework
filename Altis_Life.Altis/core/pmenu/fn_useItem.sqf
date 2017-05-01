@@ -109,6 +109,10 @@ switch (true) do {
         closeDialog 0;
     };
 	
+    //String Fishing
+    case (_item isEqualTo "stringfishing"): {
+        [] spawn life_fnc_stringfishing;
+    };
 
     default {
         hint localize "STR_ISTR_NotUsable";
