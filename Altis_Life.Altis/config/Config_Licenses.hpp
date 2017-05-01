@@ -187,4 +187,48 @@ class Licenses {
         illegal = false;
         side = "med";
     };
+
+    // AOSoul Added
+    // this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level1"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level1"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level1"",0,false,false,"""",' !license_civ_level1 '];
+
+    // level 1
+    class level1 {
+        variable = "level1";
+        displayName = "Level 1";
+        price = 500000;
+        illegal = false;
+        side = "";
+    };
+    // level 2
+    class level2 {
+        variable = "level2";
+        displayName = "Level 2";
+        price = 1000000;
+        illegal = false;
+        side = "";
+    };
+    // level 3
+    class level3 {
+        variable = "level3";
+        displayName = "Level 3";
+        price = 3000000;
+        illegal = false;
+        side = "";
+    };
+    // level 4
+    class level4 {
+        variable = "level4";
+        displayName = "Level 4";
+        price = 5000000;
+        illegal = false;
+        side = "";
+    };
+    // level 5
+    class level5 {
+        variable = "level5";
+        displayName = "Level 5";
+        price = 7000000;
+        illegal = false;
+        side = "";
+    };
 };

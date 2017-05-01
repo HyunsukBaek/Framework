@@ -22,7 +22,7 @@
 class WeaponShops {
     //Armory Shops
     class gun {
-        name = "Billy Joe's Firearms";
+        name = "gun shop";
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
@@ -47,7 +47,7 @@ class WeaponShops {
     };
 
     class rebel {
-        name = "Mohammed's Jihadi Shop";
+        name = "Rebel Shop";
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
@@ -164,8 +164,8 @@ class WeaponShops {
             { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
             { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
             { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" }, //Apex DLC Sniper
-			//AOSoul Added
-			{ "SmokeShellRed", "최루탄", 32000, 16000, "call life_coplevel >= 1" }
+            //AOSoul Added
+            { "SmokeShellRed", "최루탄", 32000, 16000, "call life_coplevel >= 1" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, 60, "" },
