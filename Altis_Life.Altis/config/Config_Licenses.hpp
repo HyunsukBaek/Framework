@@ -197,7 +197,7 @@ class Licenses {
         displayName = "Level 1";
         price = 500000;
         illegal = false;
-        side = "";
+        side = "civ";
     };
     // level 2
     class level2 {
@@ -205,7 +205,7 @@ class Licenses {
         displayName = "Level 2";
         price = 1000000;
         illegal = false;
-        side = "";
+        side = "civ";
     };
     // level 3
     class level3 {
@@ -213,7 +213,7 @@ class Licenses {
         displayName = "Level 3";
         price = 3000000;
         illegal = false;
-        side = "";
+        side = "civ";
     };
     // level 4
     class level4 {
@@ -221,7 +221,7 @@ class Licenses {
         displayName = "Level 4";
         price = 5000000;
         illegal = false;
-        side = "";
+        side = "civ";
     };
     // level 5
     class level5 {
@@ -229,6 +229,6 @@ class Licenses {
         displayName = "Level 5";
         price = 7000000;
         illegal = false;
-        side = "";
+        side = "civ";
     };
 };
