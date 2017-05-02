@@ -194,7 +194,7 @@ class Licenses {
     // level 1
     class level1 {
         variable = "level1";
-        displayName = "Level 1";
+        displayName = "STR_License_Level1";
         price = 500000;
         illegal = false;
         side = "civ";
@@ -202,7 +202,7 @@ class Licenses {
     // level 2
     class level2 {
         variable = "level2";
-        displayName = "Level 2";
+        displayName = "STR_License_Level2";
         price = 1000000;
         illegal = false;
         side = "civ";
@@ -210,7 +210,7 @@ class Licenses {
     // level 3
     class level3 {
         variable = "level3";
-        displayName = "Level 3";
+        displayName = "STR_License_Level3";
         price = 3000000;
         illegal = false;
         side = "civ";
@@ -218,7 +218,7 @@ class Licenses {
     // level 4
     class level4 {
         variable = "level4";
-        displayName = "Level 4";
+        displayName = "STR_License_Level4";
         price = 5000000;
         illegal = false;
         side = "civ";
@@ -226,7 +226,7 @@ class Licenses {
     // level 5
     class level5 {
         variable = "level5";
-        displayName = "Level 5";
+        displayName = "STR_License_Level5";
         price = 7000000;
         illegal = false;
         side = "civ";
