@@ -406,5 +406,6 @@ class Life_Client_Core {
         class pee {};
         class stringfishing {};
         class ElectricFishing {};
+        class robstore {};
     };
 };
