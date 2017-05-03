@@ -73,6 +73,7 @@ if (_type isEqualType "") then {_type = call compile format ["%1", _type];};
         case "24": {_x = "STR_Crime_24"};
         case "25": {_x = "STR_Crime_25"};
         case "26": {_x = "STR_Crime_26"};
+        case "27": {_x = "STR_Crime_27"};
     };
     _crimesArr pushBack _x;
 }forEach _type;

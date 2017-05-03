@@ -63,16 +63,22 @@ if(_rip) then
     };
     5 cutText ["","PLAIN"];
 
-    titleText[format["주유소에서 $%1 를 털었습니다, 경찰오기전에 어서 튀세요!",[_kassa] call life_fnc_numberText],"PLAIN"];
     deleteMarker "Marker200"; // by ehno delete maker
-    life_cash = life_cash + _kassa;
+    if(_rip) then {
+        life_cash = life_cash + _kassa;
+        titleText[format["주유소에서 $%1 를 털었습니다, 단 10분간 atm을 이용할 수 없습니다. 어서튀셈!",[_kassa] call life_fnc_numberText],"PLAIN"];
+        [getPlayerUID _robber,name _robber,"26"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+        _rip = false;
+        life_use_atm = false;
+        sleep 600; // 10분
+        life_use_atm = true;
+    } else {
+        hint "주유소 강도 실패, 강도미수 범죄항목이 경찰에게 기록됩니다.";
+        [getPlayerUID _robber,name _robber,"27"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+    };
 
-    _rip = false;
-    life_use_atm = false;
-    sleep (30 + random(180));
-    life_use_atm = true;
     if!(alive _robber) exitWith {};
-    [getPlayerUID _robber,name _robber,"26"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+    
 };
 [] spawn life_fnc_hudUpdate;
 [6] call SOCK_fnc_updatePartial; // DB 업데이트

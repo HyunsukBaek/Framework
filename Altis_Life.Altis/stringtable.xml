@@ -11400,7 +11400,10 @@
         </Key>
         <Key ID="STR_Crime_26">
             <Original>주유소강도</Original>
-        </Key>        
+        </Key>
+        <Key ID="STR_Crime_27">
+            <Original>주유강도미수</Original>
+        </Key>          
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">
