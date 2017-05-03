@@ -45,9 +45,9 @@ if(_rip) then
     while {true}do
     {
         sleep 3;
-        _cP = _cP + 0.01;
+        _cP = _cP + 0.015;
         _progress progressSetPosition _cP;
-        _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
+        _pgText ctrlSetText format["주유소 강도 진행중.., 10m 이내 유지하세요. (%1%2)...",round(_cP * 100),"%"];
         _Pos = position player; // by ehno: get player pos
         _marker = createMarker ["Marker200", _Pos];//by ehno: Place a Maker on the map
         "Marker200" setMarkerColor "ColorRed";
