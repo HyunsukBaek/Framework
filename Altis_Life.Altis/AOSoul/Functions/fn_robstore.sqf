@@ -41,7 +41,7 @@ _cP = 0.0001;
 if(_rip) then
 {
     _elased = 0;
-    [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY]; //Lockpick Sound
+    [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY];
     while{true} do
     {
         sleep 2.5;
@@ -58,7 +58,7 @@ if(_rip) then
         if!(alive _robber) exitWith {};
         _elased = _elased + 1;
         if(_elased isEqualTo 3 ) then {
-            [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY]; //Lockpick Sound
+            [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY];
             _elased = 0;
         };
     };
