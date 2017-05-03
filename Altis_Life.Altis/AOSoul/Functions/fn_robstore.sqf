@@ -81,7 +81,6 @@ if(_rip) then
     
 };
 [] spawn life_fnc_hudUpdate;
-[6] call SOCK_fnc_updatePartial; // DB 업데이트
 sleep 300;
 _action = _shop addAction["Rob the Gas Station",life_fnc_robstore];
 _shop switchMove "AmovPercMstpSnonWnonDnon";
