@@ -121,10 +121,10 @@ private ["_currentOvercast", "_currentFog", "_currentRain", "_currentWeatherChan
     setWind [_currentWindX, _currentWindZ, true];
 
 // Set forecast
-    if (_currentWeatherChange == "OVERCAST") then {
+    if (_currentWeatherChange isEqualTo "OVERCAST") then {
         _timeUntilCompletion setOvercast _targetWeatherValue;
     };
-    if (_currentWeatherChange == "FOG") then {
+    if (_currentWeatherChange isEqualTo "FOG") then {
         _timeUntilCompletion setFog _targetWeatherValue;
     };
 };
@@ -165,7 +165,7 @@ if (isServer) then {
     drn_DynamicWeather_WindX = _initialWind select 0;
     drn_DynamicWeather_WindZ = _initialWind select 1;
 
-    if (_initialFog == -1) then {
+    if (_initialFog isEqualTo -1) then {
         _initialFog = (_minimumFog + random (_maximumFog - _minimumFog));
     }
     else {
@@ -179,7 +179,7 @@ if (isServer) then {
 
     0 setFog _initialFog;
 
-    if (_initialOvercast == -1) then {
+    if (_initialOvercast isEqualTo -1) then {
         _initialOvercast = (_minimumOvercast + random (_maximumOvercast - _minimumOvercast));
     }
     else {
@@ -194,7 +194,7 @@ if (isServer) then {
     0 setOvercast _initialOvercast;
 
     if (_initialOvercast >= 0.75) then {
-        if (_initialRain == -1) then {
+        if (_initialRain isEqualTo -1) then {
             _initialRain = (_minimumRain + random (_minimumRain - _minimumRain));
         }
         else {
@@ -215,7 +215,7 @@ if (isServer) then {
 
     _maxWind = _minimumWind + random (_maximumWind - _minimumWind);
 
-    if (drn_DynamicWeather_WindX == -1) then {
+    if (drn_DynamicWeather_WindX isEqualTo -1) then {
         if (random 100 < 50) then {
             drn_DynamicWeather_WindX = -_minimumWind - random (_maxWind - _minimumWind);
         }
@@ -224,7 +224,7 @@ if (isServer) then {
         };
     };
 
-    if (drn_DynamicWeather_WindZ == -1) then {
+    if (drn_DynamicWeather_WindZ isEqualTo -1) then {
         if (random 100 < 50) then {
             drn_DynamicWeather_WindZ = -_minimumWind - random (_maxWind - _minimumWind);
         }
@@ -267,27 +267,27 @@ if (isServer) then {
             // Sleep a while until next weather change
             sleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
 
-            if (_minimumFog == _maximumFog && _minimumOvercast != _maximumOvercast) then {
+            if (_minimumFog isEqualTo _maximumFog && _minimumOvercast != _maximumOvercast) then {
                 _weatherType = "OVERCAST";
             };
-            if (_minimumFog != _maximumFog && _minimumOvercast == _maximumOvercast) then {
+            if (_minimumFog != _maximumFog && _minimumOvercast isEqualTo _maximumOvercast) then {
                 _weatherType = "FOG";
             };
             if (_minimumFog != _maximumFog && _minimumOvercast != _maximumOvercast) then {
 
                 // Select type of weather to change
-//                if ((random 100) < 50) then {
-//                    _weatherType = "OVERCAST";
-//                }
-//                else {
-//                    _weatherType = "FOG";
-//                };
+                if ((random 100) < 50) then {
+                    _weatherType = "OVERCAST";
+                }
+                else {
+                    _weatherType = "FOG";
+                };
             };
 
             // DEBUG
             //_weatherType = "OVERCAST";
 
-            if (_weatherType == "FOG") then {
+            if (_weatherType isEqualTo "FOG") then {
 
                 drn_DynamicWeather_CurrentWeatherChange = "FOG";
 
@@ -295,20 +295,20 @@ if (isServer) then {
                 _oldFogLevel = _fogLevel;
                 _fogLevel = floor ((random 100) / 25);
 
-                while {_fogLevel == _oldFogLevel}do {
+                while {_fogLevel isEqualTo _oldFogLevel}do {
                     _fogLevel = floor ((random 100) / 25);
                 };
 
-                if (_fogLevel == 0) then {
+                if (_fogLevel isEqualTo 0) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumFog + (_maximumFog - _minimumFog) * random 0.05;
                 };
-                if (_fogLevel == 1) then {
+                if (_fogLevel isEqualTo 1) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumFog + (_maximumFog - _minimumFog) * (0.05 + random 0.2);
                 };
-                if (_fogLevel == 2) then {
+                if (_fogLevel isEqualTo 2) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumFog + (_maximumFog - _minimumFog) * (0.25 + random 0.3);
                 };
-                if (_fogLevel == 3) then {
+                if (_fogLevel isEqualTo 3) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumFog + (_maximumFog - _minimumFog) * (0.55 + random 0.45);
                 };
 
@@ -321,7 +321,7 @@ if (isServer) then {
                 };
             };
 
-            if (_weatherType == "OVERCAST") then {
+            if (_weatherType isEqualTo "OVERCAST") then {
 
                 drn_DynamicWeather_CurrentWeatherChange = "OVERCAST";
 
@@ -330,20 +330,20 @@ if (isServer) then {
                 //_overcastLevel = floor ((random 100) / 25);
                 _overcastLevel = 3;
 
-                while {_overcastLevel == _oldOvercastLevel}do {
+                while {_overcastLevel isEqualTo _oldOvercastLevel}do {
                     _overcastLevel = floor ((random 100) / 25);
                 };
 
-                if (_overcastLevel == 0) then {
+                if (_overcastLevel isEqualTo 0) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumOvercast + (_maximumOvercast - _minimumOvercast) * random 0.05;
                 };
-                if (_overcastLevel == 1) then {
+                if (_overcastLevel isEqualTo 1) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumOvercast + (_maximumOvercast - _minimumOvercast) * (0.05 + random 0.3);
                 };
-                if (_overcastLevel == 2) then {
+                if (_overcastLevel isEqualTo 2) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumOvercast + (_maximumOvercast - _minimumOvercast) * (0.35 + random 0.35);
                 };
-                if (_overcastLevel == 3) then {
+                if (_overcastLevel isEqualTo 3) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumOvercast + (_maximumOvercast - _minimumOvercast) * (0.7 + random 0.3);
                 };
 
