@@ -1,4 +1,4 @@
-While{true} do
+while{true} do
 {
     "dynamicBlur" ppEffectEnable true; // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0]; // enables normal vision
