@@ -44,8 +44,13 @@ if(_rip) then
     [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY];
     while{true} do
     {
-        sleep 2.5;
-        _cP = _cP + 0.015;
+        sleep 1.5; // 150초 넘으면 프로그레스바 사라지므로 150초로 세팅. (100 * 1.5 = 150)
+        _cP = _cP + 0.01;
+        _elased = _elased + 1;
+        if(_elased isEqualTo 5 ) then {
+            [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY];
+            _elased = 0;
+        };
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format["주유소 강도 진행중.. 점원과 10m 이내 유지하세요. (%1%2)...",round(_cP * 100),"%"];
         _Pos = position player; // by ehno: get player pos
@@ -56,16 +61,12 @@ if(_rip) then
         if( round(_cP * 100) >= 100) exitWith {};
         if(_robber distance _shop > 11) exitWith {};
         if!(alive _robber) exitWith {};
-        _elased = _elased + 1;
-        if(_elased isEqualTo 3 ) then {
-            [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY];
-            _elased = 0;
-        };
     };
     if!(alive _robber) exitWith {_rip = false;};
     if(_robber distance _shop > 11) exitWith {
         deleteMarker "Marker200"; _shop switchMove ""; 
-        hint "10m이내에서 강도가 머물러야합니다. 주유소 금고가 닫혔습니다."; 5 cutText ["","PLAIN"];
+        hint "10m이내에서 강도가 머물러야합니다. 주유소 금고가 닫혔습니다.";
+        5 cutText ["","PLAIN"];
         _rip = false;
     };
     5 cutText ["","PLAIN"];
@@ -80,12 +81,9 @@ if(_rip) then
         sleep (60 * (LIFE_SETTINGS(getNumber,"noatm_timer"))); // 15분
         life_use_atm = true;
     } else {
-        hint "주유소 강도 실패, 강도미수 범죄항목이 경찰에게 기록됩니다.";
         [getPlayerUID _robber,name _robber,"27"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
     };
-
     if!(alive _robber) exitWith {};
-    
 };
 [] spawn life_fnc_hudUpdate;
 sleep 300;
