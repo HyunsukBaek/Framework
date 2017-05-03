@@ -66,11 +66,11 @@ if(_rip) then
     deleteMarker "Marker200"; // by ehno delete maker
     if(_rip) then {
         life_cash = life_cash + _kassa;
-        titleText[format["주유소에서 $%1 를 털었습니다, 단 10분간 atm을 이용할 수 없습니다. 어서튀셈!",[_kassa] call life_fnc_numberText],"PLAIN"];
+        titleText[format["주유소에서 $%1 를 털었습니다. 경찰오기전에 어서튀셈!",[_kassa] call life_fnc_numberText],"PLAIN"];
         [getPlayerUID _robber,name _robber,"26"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         _rip = false;
         life_use_atm = false;
-        sleep 600; // 10분
+        sleep (60 * (LIFE_SETTINGS(getNumber,"noatm_timer"))); // 15분
         life_use_atm = true;
     } else {
         hint "주유소 강도 실패, 강도미수 범죄항목이 경찰에게 기록됩니다.";
