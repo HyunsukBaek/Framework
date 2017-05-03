@@ -276,12 +276,12 @@ if (isServer) then {
             if (_minimumFog != _maximumFog && _minimumOvercast != _maximumOvercast) then {
 
                 // Select type of weather to change
-                if ((random 100) < 50) then {
-                    _weatherType = "OVERCAST";
-                }
-                else {
-                    _weatherType = "FOG";
-                };
+//                if ((random 100) < 50) then {
+//                    _weatherType = "OVERCAST";
+//                }
+//                else {
+//                    _weatherType = "FOG";
+//                };
             };
 
             // DEBUG
