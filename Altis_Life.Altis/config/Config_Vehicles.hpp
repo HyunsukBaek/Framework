@@ -265,9 +265,7 @@ class CarShops {
             //고스트 호크
             { "B_Heli_Transport_01_F", "call life_coplevel >= 4" },
             //휴론
-            { "B_Heli_Transport_03_F", "call life_coplevel >= 4" },
-            //무인헬기
-            { "B_T_UAV_03_F", "call life_coplevel >= 4" }
+            { "B_Heli_Transport_03_F", "call life_coplevel >= 4" }
 
         };
     };
@@ -575,13 +573,6 @@ class LifeCfgVehicles {
         vItemSpace = 300;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
         price = 10000000;
-        textures[] = {};
-    };
-
-    class B_T_UAV_03_F {
-        vItemSpace = 0;
-        conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
-        price = 5000000;
         textures[] = {};
     };
 
