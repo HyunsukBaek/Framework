@@ -106,6 +106,13 @@ class WeaponShops {
             { "srifle_DMR_06_olive_F", "", 420000, 240000, "license_civ_level5 || call life_donorlevel >= 2" },
             { "arifle_AKM_F", "", 160000, 165000, "" },
 
+            // 기관총
+            { "LMG_Mk200_F", "", 750000, 370000, "license_civ_level4" },
+            { "LMG_Mk200_BI_F", "", 750000, 370000, "license_civ_level4 && call life_donorlevel >= 1" },
+            { "MMG_02_camo_F", "", 700000, 370000, "license_civ_level3 || call life_donorlevel >= 2" },
+            { "MMG_02_black_F", "", 700000, 350000, "license_civ_level3 || call life_donorlevel >= 1" },
+            { "MMG_02_sand_F", "", 700000, 350000, "license_civ_level3 || call life_donorlevel >= 1" },
+            { "LMG_03_F", "", 720000, 350000, "license_civ_level4 || call life_donorlevel >= 3" },
             //저격, 대구경
             { "srifle_DMR_02_F", "", 550000, 300000, "license_civ_level4" },
             { "srifle_DMR_02_camo_F", "", 550000, 300000, "call life_donorlevel >= 2" },
@@ -115,7 +122,6 @@ class WeaponShops {
             { "srifle_DMR_05_blk_F", "", 630000, 330000, "license_civ_level4" },
             { "srifle_DMR_05_hex_F", "", 630000, 330000, "call life_donorlevel >= 3" },
             { "srifle_DMR_05_tan_f", "", 630000, 330000, "call life_donorlevel >= 2" },
-
             //런쳐
             { "launch_RPG7_F", "", 630000, 330000, "license_civ_level4" },
             { "launch_RPG32_F", "", 630000, 330000, "license_civ_level5" },
@@ -152,6 +158,13 @@ class WeaponShops {
             { "10Rnd_127x54_Mag", "", 10000, 5000, "" },
             //srifle_DMR_05
             { "10Rnd_93x64_DMR_05_Mag", "", 10000, 5000, "" },
+            //LMG_Mk200_F
+            { "200Rnd_65x39_cased_Box_Tracer", "", 20000, 10000, "" },
+            //LMG_03_F
+            { "200Rnd_556x45_Box_Red_F", "", 20000, 10000, "" },
+            { "200Rnd_556x45_Box_Tracer_Red_F", "", 20000, 10000, "" },
+            //MMG
+            { "130Rnd_338_Mag", "", 20000, 10000, "" },
             //launcher
             { "RPG32_F", "", 50000, 25000, "" },
             { "RPG32_HE_F", "", 50000, 25000, "" },
