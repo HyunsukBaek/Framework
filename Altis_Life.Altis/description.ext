@@ -160,6 +160,12 @@ class CfgSounds {
         sound[] = { "\sounds\lockpick.ogg", 0.5, 1 };
         titles[] = { };
     };
+    
+    class alert {
+        name = "alert";
+        sound[] = { "\sounds\alert.ogg", 1.0, 1 };
+        titles[] = { };
+    };
 };
 
 class CfgDebriefing {

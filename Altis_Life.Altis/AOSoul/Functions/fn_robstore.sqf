@@ -1,5 +1,5 @@
 #include "..\..\script_macros.hpp"
-private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_pos"];
+private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_pos", "_elased"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alright, it's the player, or the "caller". The object is 0, the person activating the object is 1
  //_kassa = 1000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bistudio.com/wiki/addAction). Give it a try and post below ;)
@@ -40,10 +40,12 @@ _cP = 0.0001;
 
 if(_rip) then
 {
+    _elased = 0;
+    [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY]; //Lockpick Sound
     while{true} do
     {
-        sleep 3;
-        _cP = _cP + 0.02;
+        sleep 2.5;
+        _cP = _cP + 0.015;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format["주유소 강도 진행중.. 점원과 10m 이내 유지하세요. (%1%2)...",round(_cP * 100),"%"];
         _Pos = position player; // by ehno: get player pos
@@ -54,6 +56,11 @@ if(_rip) then
         if( round(_cP * 100) >= 100) exitWith {};
         if(_robber distance _shop > 11) exitWith {};
         if!(alive _robber) exitWith {};
+        _elased = _elased + 1;
+        if(_elased isEqualTo 3 ) then {
+            [_shop,"alert"] remoteExec ["life_fnc_say3D",RANY]; //Lockpick Sound
+            _elased = 0;
+        };
     };
     if!(alive _robber) exitWith {_rip = false;};
     if(_robber distance _shop > 11) exitWith {
