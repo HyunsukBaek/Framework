@@ -31,6 +31,31 @@ switch (typeOf _vehicle) do
         _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
     };
 
+    case "B_MRAP_01_hmg_F": //hunter
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.12]];
+    };
+
+    case "O_MRAP_02_F": //ifrit
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.5]];
+    };
+
+    case "O_MRAP_02_hmg_F"://ifrit
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.12]];
+    };
+
+    case "I_MRAP_03_F": //strider
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.2]];
+    };
+
+    case "I_MRAP_03_hmg_F": //strider
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.2]];
+    };
+
     case "C_SUV_01_F":
     {
         _lightleft lightAttachObject [_vehicle, [-0.37,-1.2,0.42]];
@@ -41,12 +66,52 @@ switch (typeOf _vehicle) do
         _lightleft lightAttachObject [_vehicle, [-0.35,-0.2,0.25]];
     };
 
-    case "B_Heli_Light_01_F":
+    case "B_Heli_Light_01_F": //huming
     {
         _lightleft lightAttachObject [_vehicle,[-0.37, 0.0, -0.80]];
     };
 
-    case "B_Heli_Transport_01_F":
+    case "B_Heli_Light_01_armed_F": //huming
+    {
+        _lightleft lightAttachObject [_vehicle,[-0.37, 0.0, 0.81]];
+    };
+
+    case "B_Heli_Transport_01_F": //ghost hawk
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "O_Heli_Light_02_unarmed_F": //orca
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "O_Heli_Light_02_v2_F": //orca
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "I_Heli_light_03_F": //orca
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "B_Heli_Attack_01_F": //blackfoot
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "B_Heli_Transport_03_unarmed_F": // huron
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "I_Heli_Transport_02_F": //mohawk
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+
+    case "O_Heli_Transport_04_F": //taru
     {
         _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
      };
@@ -76,6 +141,31 @@ switch (typeOf _vehicle) do
         _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
     };
 
+    case "B_MRAP_01_hmg_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.12]];
+    };
+
+   case "O_MRAP_02_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.5]];
+    };
+
+    case "O_MRAP_02_hmg_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.12]];
+    };
+
+    case "I_MRAP_03_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.2]];
+    };
+
+    case "I_MRAP_03_hmg_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.2]];
+    };
+
     case "C_SUV_01_F":
     {
         _lightright lightAttachObject [_vehicle, [0.37,-1.2,0.42]];
@@ -91,10 +181,50 @@ switch (typeOf _vehicle) do
         _lightright lightAttachObject [_vehicle,[0.37, 0.0, -0.80]];
     };
 
+    case "B_Heli_Light_01_armed_F": //huming
+    {
+        _lightright lightAttachObject [_vehicle,[0.37, 0.0, -0.80]];
+    };
+
     case "B_Heli_Transport_01_F":
     {
         _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
-     };
+    };
+
+    case "O_Heli_Light_02_unarmed_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+
+    case "O_Heli_Light_02_v2_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+
+    case "I_Heli_light_03_F": //hellcat
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+
+    case "B_Heli_Attack_01_F": //blackfoot
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+
+    case "B_Heli_Transport_03_unarmed_F": // huron
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+
+    case "I_Heli_Transport_02_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+
+    case "O_Heli_Transport_04_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
 };
 
 _lightright setLightAttenuation [0.181, 0, 1000, 130];
