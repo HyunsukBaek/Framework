@@ -913,7 +913,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\AOSoul\vehicles\hatchback_EMS.paa"
             }, "" },
             { "EMS UK", "med", {
-                "textures\AOSoul\vehicles\hatchback_paramedic.paa"
+                "textures\AOSoul\vehicles\hatchback_EMSUK.paa"
             }, "call life_donorlevel >= 1" },
             { "Police", "cop", {
                 "textures\AOSoul\vehicles\hatchback_cop.paa"
@@ -961,7 +961,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\AOSoul\vehicles\hatchback_EMS.paa"
             }, "" },
             { "EMS UK", "med", {
-                "textures\AOSoul\vehicles\hatchback_paramedic.paa"
+                "textures\AOSoul\vehicles\hatchback_EMSUK.paa"
             }, "call life_donorlevel >= 1" },
             { "Police", "cop", {
                 "textures\AOSoul\vehicles\hatchback_cop.paa"
