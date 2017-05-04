@@ -60754,7 +60754,7 @@ class Mission
 			class Attributes
 			{
 				skill=1;
-				init="this enableSimulation false; this allowDamage false; this addEventHandler[""handleDamage"",{false}]; this setVectorUp [0,0,1];";
+				init="this enableSimulation false; this allowDamage false; this addEventHandler[""handleDamage"",{false}];";
 			};
 			id=3839;
 			type="CamoNet_OPFOR_big_F";
@@ -74418,7 +74418,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
+				init="this allowDamage false; this enableSimulation false;";
 			};
 			id=4650;
 			type="Land_i_Barracks_V1_F";
@@ -76269,7 +76269,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
+				init="this allowDamage false; this enableSimulation false;";
 			};
 			id=4750;
 			type="Land_SportGround_fence_F";
@@ -76917,7 +76917,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
+				init="this allowDamage false; this enableSimulation false;";
 			};
 			id=4785;
 			type="Land_i_Barracks_V1_F";
@@ -77199,7 +77199,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4800;
 			type="Land_LampHalogen_F";
@@ -77218,7 +77218,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4801;
 			type="Land_LampHalogen_F";
@@ -77237,7 +77237,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4802;
 			type="Land_LampHalogen_F";
@@ -77273,7 +77273,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4804;
 			type="Land_LampHalogen_F";
@@ -77292,7 +77292,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4805;
 			type="Land_LampHalogen_F";
@@ -77311,7 +77311,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4806;
 			type="Land_LampHalogen_F";
@@ -77329,7 +77329,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4807;
 			type="Land_LampHalogen_F";
@@ -77347,7 +77347,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4808;
 			type="Land_LampHarbour_F";
@@ -77365,7 +77365,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4809;
 			type="Land_LampHarbour_F";
@@ -77383,7 +77383,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+				init=" this allowDamage false; this allowDamage false;";
 			};
 			id=4810;
 			type="Land_LampHarbour_F";
