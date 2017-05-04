@@ -173,6 +173,8 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
+            //쿼드바이크
+            { "B_Quadbike_01_F", "" },
             //오프로드
             { "C_Offroad_01_F", "" },
             //스트라이더
@@ -791,42 +793,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Kart_01_Red_F : C_Kart_01_Blu_F{};
     class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
 
-    class C_Hatchback_01_sport_F {
-        vItemSpace = 50;
-        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 150000;
-        textures[] = {
-            { "Red", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
-            }, "" },
-            { "Dark Blue", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport02_co.paa"
-            }, "" },
-            { "Orange", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport03_co.paa"
-            }, "" },
-            { "Black / White", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
-            }, "" },
-            { "Beige", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport05_co.paa"
-            }, "" },
-            { "Green", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" }
-        };
-    };
-
     class B_Quadbike_01_F {
         vItemSpace = 30;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 30000;
         textures[] = {
-            { "Brown", "cop", {
-                "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
+            { "Police", "cop", {
+                "textures\AOSoul\vehicles\quad_police.paa"
             }, "" },
             { "Digi Desert", "reb", {
                 "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
@@ -851,7 +824,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            }, "" }
+            }, "" },
+            { "EMS", "med", {
+                "textures\AOSoul\vehicles\quad_med.paa"
+            }, "" },
+            { "LADY", "civ", {
+                "textures\AOSoul\vehicles\quad_lady.paa"
+            }, "call " }
         };
     };
 
@@ -920,7 +899,79 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
-            }, "" }
+            }, "" },
+            { "Security", "civ", {
+                "textures\AOSoul\vehicles\hatchback_secure.paa"
+            }, "" },
+            { "Subaru", "civ", {
+                "textures\AOSoul\vehicles\hatchback_subaru.paa"
+            }, "" },
+            { "monster", "civ", {
+                "textures\AOSoul\vehicles\hatchback_monster.paa"
+            }, "" },
+            { "EMS Red", "med", {
+                "textures\AOSoul\vehicles\hatchback_EMS.paa"
+            }, "" },
+            { "EMS UK", "med", {
+                "textures\AOSoul\vehicles\hatchback_paramedic.paa"
+            }, "call life_donorlevel >= 1" },
+            { "Police", "cop", {
+                "textures\AOSoul\vehicles\hatchback_cop.paa"
+            }, "" },
+            { "LAPD", "cop", {
+                "textures\AOSoul\vehicles\hatchback_lapd.paa"
+            }, "call life_donorlevel >= 2" },
+            { "UKPD", "cop", {
+                "textures\AOSoul\vehicles\hatchback_UKpolice.paa"
+            }, "call life_donorlevel >= 1" }
+
+        };
+    };
+
+    class C_Hatchback_01_sport_F {
+        vItemSpace = 50;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 150000;
+        textures[] = {
+            { "Red", "civ", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
+            }, "" },
+            { "Dark Blue", "civ", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport02_co.paa"
+            }, "" },
+            { "Orange", "civ", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport03_co.paa"
+            }, "" },
+            { "Black / White", "civ", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
+            }, "" },
+            { "Beige", "civ", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport05_co.paa"
+            }, "" },
+            { "Green", "civ", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
+            }, "" },
+            { "porsche", "civ", {
+                "textures\AOSoul\vehicles\hatchback_porsche.paa"
+            }, "" },
+            { "Ferrari", "civ", {
+                "textures\AOSoul\vehicles\hatchback_ferrari.paa"
+            }, "" },
+            { "EMS Red", "med", {
+                "textures\AOSoul\vehicles\hatchback_EMS.paa"
+            }, "" },
+            { "EMS UK", "med", {
+                "textures\AOSoul\vehicles\hatchback_paramedic.paa"
+            }, "call life_donorlevel >= 1" },
+            { "Police", "cop", {
+                "textures\AOSoul\vehicles\hatchback_cop.paa"
+            }, "" },
+            { "LAPD", "cop", {
+                "textures\AOSoul\vehicles\hatchback_lapd.paa"
+            }, "call life_donorlevel >= 2" },
+            { "UKPD", "cop", {
+                "textures\AOSoul\vehicles\hatchback_UKpolice.paa"
+            }, "call life_donorlevel >= 1" }
         };
     };
 
