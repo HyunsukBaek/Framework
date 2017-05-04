@@ -19,7 +19,9 @@ if (hasInterface) then {
 [] execVM "AOSoul\teargas.sqf"; //TearGas
 [] execVM "AOSoul\fastrope.sqf"; //Load Fastrope
 [] execVM "AOSoul\DynWeather.sqf"; // 날씨 
-        
+[] execVM "AOSoul\CL.sqf"; //돔 네온
+[] execVM "AOSoul\CL2.sqf";
+[] execVM "AOSoul\safezone.sqf";//세이프존 
 setTerrainGrid 40;
 //setViewDistance 1000;
 //setObjectViewDistance [800,50];

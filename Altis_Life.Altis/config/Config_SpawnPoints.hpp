@@ -47,9 +47,16 @@ class CfgSpawnPoints {
                 conditions = "license_civ_rebel";
             };
 
-            class RebelS {
-                displayName = $STR_SP_Reb_S;
+            class KinghillRed {
+                displayName = "Battle-RedTeam";
                 spawnMarker = "Rebelop_1";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_rebel";
+            };
+
+            class KinghillBlue {
+                displayName = "Battle-BlueTeam";
+                spawnMarker = "Rebelop_3";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
