@@ -830,7 +830,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "LADY", "civ", {
                 "textures\AOSoul\vehicles\quad_lady.paa"
-            }, "call " }
+            }, "call life_donorlevel > 0" },
+            { "Cube", "civ", {
+                "textures\AOSoul\vehicles\quad_cube.paa"
+            }, "call life_donorlevel > 0" }
         };
     };
 
