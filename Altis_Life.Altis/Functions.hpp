@@ -8,6 +8,7 @@ class Socket_Reciever {
         class syncData {};
         class updatePartial {};
         class updateRequest {};
+        class tazeRagdoll {};   //AOSoul added : Real Ragdoll effect
     };
 };
 
