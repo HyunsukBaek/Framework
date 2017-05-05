@@ -210,6 +210,11 @@ CREATE TABLE IF NOT EXISTS `wanted` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
+CREATE TABLE `dynmarket` (
+  `id` INT NOT NULL DEFAULT 1,
+  `prices` TEXT NOT NULL,
+  PRIMARY KEY (`id`));
+INSERT INTO `dynmarket` VALUES (1,'[]');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

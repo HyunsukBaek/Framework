@@ -34,3 +34,5 @@
 #include "AS_Refund.hpp"
 #include "slotmachine.hpp"	//Slot
 #include "blackjack.hpp"	//Blackjack
+#include "dynmarket_changeprice.hpp" //market
+#include "dynmarket_prices.hpp" //market

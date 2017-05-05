@@ -120,6 +120,16 @@ class CfgFunctions {
                 class config {};
                 class getActions {};
         };
+
+        class DynMarket {
+            file = "\life_server\Functions\DynMarket";
+                class calculatePrices {};
+                class config {};
+                class getUpdate {};
+                class HandleDB {};
+                class playerLogged {};
+                class sleeper {};
+        };
     };
 };
 

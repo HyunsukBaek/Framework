@@ -412,4 +412,15 @@ class Life_Client_Core {
         class ElectricFishing {};
         class robstore {};
     };
+
+    //Market System
+    class DynMarket {
+       file = "AOSOUL\DynMarket";
+       class bought {};
+       class update {};
+       class DisplayPrices {};
+       class LoadIntoListbox {};
+       class ForcePrice {};
+       class DYNMARKET_getPrice {};
+   };
 };

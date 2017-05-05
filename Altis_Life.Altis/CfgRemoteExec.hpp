@@ -179,6 +179,11 @@ class CfgRemoteExec {
         F(life_fnc_Electricfishing,CLIENT)    //AOSOUL ElectricFishing
         F(life_fnc_robstore,CLIENT)    //AOSOUL RobGasStation
         F(life_fnc_tazed,CLIENT)    //AOSOUL Real ragdoll effect
+
+        F(TON_fnc_playerLogged,SERVER) //DynMarket
+        F(TON_fnc_getUpdate,SERVER) //DynMarket
+        F(TON_fnc_changePrice, SERVER) //DynMarket
+        F(life_fnc_update,CLIENT) //DynMarket
     };
 
     class Commands {
