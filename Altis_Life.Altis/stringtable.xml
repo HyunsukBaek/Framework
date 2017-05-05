@@ -12201,5 +12201,8 @@
         <Key ID="STR_Cook_Cooked">
             <Original>%1 를 완성했습니다!!</Original>
         </Key>
+		<Key ID="STR_Garage_Title_air">
+            <Original>비행기 차고</Original>
+        </Key>
 	</Package>
 </Project>
