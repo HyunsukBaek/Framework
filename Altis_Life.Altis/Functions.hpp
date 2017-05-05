@@ -229,6 +229,7 @@ class Life_Client_Core {
         class speaking {}; // 말할때 아이콘 표시 기능
         class slotMachineRewards {};  //Casino
         class slotMachineRandomizer {};  //Casino
+        class seatbelt {};  //안전벨트
         ////////////////
     };
 
