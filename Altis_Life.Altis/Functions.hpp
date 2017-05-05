@@ -390,6 +390,8 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+        class vehTakeAllItem {};    //Vehicle Trunk
+        class vehStoreAllItem {};   //Vehicle Trunk
     };
 
     //ADMIN Panel     //AOSoul added
