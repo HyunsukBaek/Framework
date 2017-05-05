@@ -15,17 +15,17 @@ if (isNull _unit) exitWith {};
 switch (_side) do {
     case west: {
         if (_bool) then {
-            life_radio_west radioChannelAdd [_unit];
+            life_radio_custom radioChannelAdd [_unit];
         } else {
-            life_radio_west radioChannelRemove [_unit];
+            life_radio_custom radioChannelRemove [_unit];
         };
     };
 
     case independent: {
         if (_bool) then {
-            life_radio_indep radioChannelAdd [_unit];
+            life_radio_custom radioChannelAdd [_unit];
         } else {
-            life_radio_indep radioChannelRemove [_unit];
+            life_radio_custom radioChannelRemove [_unit];
         };
     };
     
