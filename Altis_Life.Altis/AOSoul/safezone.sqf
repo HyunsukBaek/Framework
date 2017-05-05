@@ -1,4 +1,4 @@
-#define SAFETY_ZONES    [["Safe_Kav", 250]] // Syntax: [["marker1", radius1], ["marker2", radius2], ...]
+#define SAFETY_ZONES    [["Safe_Kav", 250],["Safe_Casino",30]] // Syntax: [["marker1", radius1], ["marker2", radius2], ...]
 #define MESSAGE "!!!!!!세이프존 안입니다. 총쏘지마세요!!!!!!"
 
      if (isDedicated) exitWith {};

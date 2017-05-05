@@ -35251,19 +35251,21 @@ class Mission
 		class Item873
 		{
 			dataType="Trigger";
-			position[]={16667.479,49.634842,13581.788};
+			position[]={16667.49,49.633846,13581.722};
 			class Attributes
 			{
 				name="safe_casino";
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="player allowdamage false; vehicle player allowDamage false; life_knockout = false; life_jetpack = true;hint ""You are in Safe Zone""; ";
-				onDeactivation="player allowdamage true; life_knockout = true; vehicle player allowDamage true;life_jetpack = false;hint ""You left the safe zone."";";
+				onActivation="player allowdamage false;  " \n "vehicle player allowDamage false;  " \n "life_knockout = false;  " \n "Life_cooking = true; " \n "Life_fire = true; " \n "life_jetpack = true; " \n "Life_fishing = true; " \n "life_knockout = true; " \n "hint ""You are in Safe Zone""; ";
+				onDeactivation="player allowdamage true;  " \n "vehicle player allowDamage true; " \n "life_knockout = true;  " \n "Life_cooking = false; " \n "Life_fire = false; " \n "life_jetpack = false; " \n "Life_fishing = false; " \n "life_knockout = false; " \n "hint ""You left the safe zone."";";
 				sizeA=30;
 				sizeB=30;
+				repeatable=1;
+				activationBy="ANYPLAYER";
 			};
 			id=1612;
 			type="EmptyDetectorAreaR50";
-			atlOffset=11.962654;
+			atlOffset=11.967442;
 		};
 		class Item874
 		{
@@ -38290,7 +38292,7 @@ class Mission
 			colorName="ColorGUER";
 			a=840;
 			b=25;
-			angle=56.523746;
+			angle=56.523739;
 			id=1833;
 			atlOffset=5.6155014;
 		};
@@ -55662,28 +55664,28 @@ class Mission
 		class Item1955
 		{
 			dataType="Trigger";
-			position[]={3596.0354,22.756868,13038.514};
+			position[]={3597.469,22.884758,13036.983};
 			class Attributes
 			{
 				name="Safe_kav_trigger";
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="player allowdamage false; vehicle player allowDamage false; life_knockout = false; life_jetpack = true;hint ""You are in Safe Zone""; ";
-				onDeactivation="player allowdamage true; life_knockout = true; vehicle player allowDamage true;life_jetpack = false;hint ""You left the safe zone."";";
+				onActivation="player allowdamage false;  " \n "vehicle player allowDamage false;  " \n "life_knockout = false;  " \n "Life_cooking = true; " \n "Life_fire = true; " \n "life_jetpack = true; " \n "Life_fishing = true; " \n "life_knockout = true; " \n "hint ""You are in Safe Zone""; ";
+				onDeactivation="player allowdamage true;  " \n "vehicle player allowDamage true; " \n "life_knockout = true;  " \n "Life_cooking = false; " \n "Life_fire = false; " \n "life_jetpack = false; " \n "Life_fishing = false; " \n "life_knockout = false; " \n "hint ""You left the safe zone."";";
 				sizeA=250;
 				sizeB=250;
 				repeatable=1;
-				isRectangle=1;
+				activationBy="ANYPLAYER";
 			};
 			id=3299;
 			type="EmptyDetectorAreaR50";
-			atlOffset=3.8144741;
+			atlOffset=3.894865;
 		};
 		class Item1956
 		{
 			dataType="Marker";
-			position[]={3597.3657,-0.57763672,13036.925};
+			position[]={3597.366,0,13036.925};
 			name="Safe_Kav";
-			markerType="RECTANGLE";
+			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorBlue";
 			alpha=0.42975941;
@@ -55691,7 +55693,7 @@ class Mission
 			a=250;
 			b=250;
 			id=3300;
-			atlOffset=-11.498114;
+			atlOffset=-10.920509;
 		};
 		class Item1957
 		{
@@ -82810,7 +82812,7 @@ class Mission
 			position[]={9233.3457,41.869675,8063.2896};
 			name="reb_v_3";
 			type="Empty";
-			angle=86.885551;
+			angle=86.885544;
 			id=4961;
 		};
 		class Item3486
