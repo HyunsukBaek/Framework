@@ -630,7 +630,7 @@ class LifeCfgVehicles {
     class O_Truck_03_device_F {
         vItemSpace = 350;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 800000;
+        price = 1800000;
         textures[] = { };
     };
 

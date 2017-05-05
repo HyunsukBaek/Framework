@@ -151,8 +151,8 @@ class Clothing {
             { "H_MilCap_gen_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_tna_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_oucamo", "", 1200, "call life_coplevel >= 2" },
-			//AOSoul Added
-			{ "H_CrewHelmetHeli_B", "방독면", 1200, "call life_coplevel >= 1" }
+			         //AOSoul Added
+            { "H_CrewHelmetHeli_B", "방독면", 1200, "call life_coplevel >= 1" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
