@@ -1106,7 +1106,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
-            }, "" }
+            }, "" },
+            { "Custom 1", "civ", {
+                "textures\AOSOUL\vehicles\Civ_Humming_1.paa"
+            }, "call life_donorlevel >= 1" },
+            { "Custom 2", "civ", {
+                "textures\AOSOUL\vehicles\Civ_Humming_2.paa"
+            }, "call life_donorlevel >= 1" },
+            { "Custom 3", "civ", {
+                "textures\AOSOUL\vehicles\Civ_Humming_3.paa"
+            }, "call life_donorlevel >= 1" },
+            { "Gay Kitty", "civ", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Kitty.paa"
+            }, "call life_donorlevel >= 3" },
+            { "Reb 1", "reb", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Reb_1.paa"
+            }, "call life_donorlevel >= 2" },
+            { "Reb 2", "reb", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Reb_2.paa"
+            }, "call life_donorlevel >= 2" },
+            { "Reb 2", "reb", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Reb_3.paa"
+            }, "call life_donorlevel >= 2" }
         };
     };
 
