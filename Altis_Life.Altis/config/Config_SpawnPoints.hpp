@@ -23,21 +23,21 @@ class CfgSpawnPoints {
                 displayName = "Athira";
                 spawnMarker = "civ_spawn_3";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "license_civ_level3 || {!(playerSide isEqualTo civilian)}";
+                conditions = "license_civ_level3";
             };
 
             class Pyrgos {
                 displayName = "Pyrgos";
                 spawnMarker = "civ_spawn_2";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "license_civ_level2 || {!(playerSide isEqualTo civilian)}";
+                conditions = "license_civ_level2";
             };
 
             class Sofia {
                 displayName = "Sofia";
                 spawnMarker = "civ_spawn_4";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "license_civ_level4 || {!(playerSide isEqualTo civilian)}";
+                conditions = "license_civ_level4";
             };
 
             class RebelN {
@@ -51,14 +51,14 @@ class CfgSpawnPoints {
                 displayName = "Battle-RedTeam";
                 spawnMarker = "Rebelop_1";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-                conditions = "license_civ_level1 || {!(playerSide isEqualTo civilian)}";
+                conditions = "license_civ_level1";
             };
 
             class KinghillBlue {
                 displayName = "Battle-BlueTeam";
                 spawnMarker = "Rebelop_3";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-                conditions = "license_civ_level1 || {!(playerSide isEqualTo civilian)}";
+                conditions = "license_civ_level1";
             };
 
             class RebelE {
