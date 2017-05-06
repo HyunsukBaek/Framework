@@ -164,6 +164,8 @@ class CarShops {
             { "B_T_VTOL_01_vehicle_F", "license_civ_level5" },
             //PO-30 무장
             { "O_Heli_Light_02_F", "license_civ_level5" },
+            //고스트 호크
+            { "B_Heli_Transport_01_F", "license_civ_level5" },
             //Mi-48 카이만
             { "O_Heli_Attack_02_F", "license_civ_level5" },
             //WY-55 핼켓
@@ -570,7 +572,23 @@ class LifeCfgVehicles {
         vItemSpace = 100;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
         price = 6000000;
-        textures[] = {};
+        textures[] = {
+                { "Black", "cop", {
+                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+                }, "" },
+                { "Beautiful", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Gay_1.paa",
+                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Gay_2.paa",
+                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Gay_3.paa"
+                }, "" },
+                { "Kitty", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Kitty_1.paa",
+                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Kitty_2.paa",
+                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Kitty_3.paa"
+                }, "" }
+        };
     };
 
     class B_Heli_Transport_03_F {
