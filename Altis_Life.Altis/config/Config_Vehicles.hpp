@@ -1180,8 +1180,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "EMS Red", "med", {
+               "textures\AOSOUL\vehicles\humming_EMS_red.paa"
             }, "" },
             { "Custom 1", "civ", {
                 "textures\AOSOUL\vehicles\Civ_Humming_1.paa"
