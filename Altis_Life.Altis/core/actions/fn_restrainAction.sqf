@@ -17,8 +17,8 @@ if (!isPlayer _unit) exitWith {};
 //Broadcast!
 
 ///// 수갑 아이템 체크 /// 
-if(!([false,"handcuff",1] call life_fnc_handleInv)) exitWith { hint "수갑이 없습니다"; };
-[true,"handcuff",1] call life_fnc_handleInv;  // 풀었을 때 수갑 돌려 받지 않으려면 이 부분 주석처리 hsbaek  
+if(!([false,"handcuffs",1] call life_fnc_handleInv)) exitWith { hint "수갑이 없습니다"; };
+[true,"handcuffs",1] call life_fnc_handleInv;  // 풀었을 때 수갑 돌려 받지 않으려면 이 부분 주석처리 hsbaek  
 /////////////////////
 
 _unit setVariable ["playerSurrender",false,true];
