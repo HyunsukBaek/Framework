@@ -26,10 +26,10 @@ _text2 = _display displayCtrl 1102;
 
 _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
-_message = _message + "Useful links (click on the links to open your browser)<br /><br />";
-_message = _message + " <a href='https://github.com/AsYetUntitled/Framework' color='#56BDD6'>AsYetUntitled</a> -- The official repository for the project.<br /><br />";
-_message = _message + "TeamSpeak 3 address: ADDRESS HERE  <br /><br />";
-_message = _message + "Discord invite: <a href='https://discord.gg/sEcQdPn' color='#56BDD6'>ArmA RPG Life</a>  <br /><br />";
+_message = _message + "Welcome to AoSoul 24h Life Mod Server!!!<br />";
+_message = _message + " <a href='http://cafe.naver.com/alflrss' color='#56BDD6'>AOSOUL Life Homepage 클릭!!</a> <br />위의 카페링크 클릭하여 가입하시고 규칙 및 공지사항 확인하세요.<br />";
+_message = _message + "AOSoul 시즌3! 베타서비스입니다. 정식서비스 오픈은 5/8 예정입니다. 카페가입 및 공지사항을 꼭 필독해주세요. <br /><br />아프리카 TV  http://afreeca.com/mixkorea <br /><br />";
+_message = _message + "카페 공지사항 및 서버 룰을 읽지않고 발생하는 피해 및 복구는 무시됩니다. <br /> 본 서버는 365일  24시간 운영됩니다.  <br /> 물건줍기가 잘 안되시면 window키 + T또는 shift +T 누른 후 1인칭 모드로 물건을 바라보며 재시도해보세요<br /><br/> 디스코드 운영중입니다. https://discord.gg/tVyFjzm ";
 
 //Fill only the first text
 _text1 ctrlSetStructuredText (parseText _message);
