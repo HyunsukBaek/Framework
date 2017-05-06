@@ -23,131 +23,128 @@ DYNMARKET_UserNotification     = false; // Should the user be informed with a hi
 
 DYNMARKET_UserNotification_Text = 
 [
-	"Your prices have been updated!",
-	"The new prices are being calculated by the server..."
+ "Your prices have been updated!",
+ "The new prices are being calculated by the server..."
 ];
 
 // █████████████████ ITEM GROUP CONFIGURATION █████████████████
 
 DYNMARKET_Items_Groups =
 [
-	["Food",
-		[
-			/*["아이템 코드",-1,최소,최대],*/
-			//Food
-			["apple",-1,100,500],
-			["peach",-1,100,500]
-			//Mined
-		],
-		0.3
-	],
-	["Fish",
-		[
-			["salema_raw",-1,450,2450],
-			["salema",-1,800,3300],
-			["ornate_raw",-1,450,2450],
-			["ornate",-1,600,3000],
-			["mackerel_raw",-1,550,3000],
-			["mackerel",-1,700,3500],
-			["tuna_raw",-1,1000,6500],
-			["tuna",-1,1200,7000],
-			["mullet_raw",-1,700,4000],
-			["mullet",-1,800,4300],
-			["catshark_raw",-1,1500,9000],
-			["catshark",-1,2000,10000]
-		],
-		0.5
-	],
-	["Animal",
-		[
-			["rabbit_raw",-1,200,3000],
-			["rabbit",-1,400,5000],
-			["hen_raw",-1,500,6000],
-			["hen",-1,600,7000],
-			["rooster_raw",-1,250,27000],
-			["rooster",-1,270,29000],
-			["sheep_raw",-1,1000,80000],
-			["sheep",-1,1200,82000],
-			["goat_raw",-1,2200,82000],
-			["goat",-1,2400,84000]
-		],
-		0.4
-	],
-	["Mined",
-		[
-			["oil_unprocessed",-1,100,3000],
-			["oil_processed",-1,200,4200],
-			["copper_refined",-1,250,3600],
-			["iron_refined",-1,400,5300],
-			["salt_refined",-1,300,2500],
-			["glass",-1,250,4500],
-			["diamond_uncut",-1,300,4000],
-			["diamond_cut",-1,350,7100],
-			["cement",-1,350,4400]
-		],
-		0.5
-	],
-	["Illegal", 
-		[
-			/*["아이템 코드",-1,최소,최대],*/
-			["heroin_processed",-1,400,9000],
-			["marijuana",-1,280,7800],
-			["cocaine_processed",-1,500,10000],
-			["turtle_raw",-1,1000,31000],
-			["turtle_soup",-1,1500,46000]
-		],
-		0.6
-	]
+ ["Food",
+  [
+   /*["아이템 코드",-1,최소,최대],*/
+   //Food
+   ["apple",-1,280,420],
+   ["peach",-1,260,400]
+  ],
+  0.3
+ ],
+ ["Fish",
+  [
+   ["salema_raw",-1,360,540],
+   ["salema",-1,800,1200],
+   ["ornate_raw",-1,720,1080],
+   ["ornate",-1,880,1320],
+   ["mackerel_raw",-1,920,1380],
+   ["mackerel",-1,1320,2000],
+   ["tuna_raw",-1,3200,4800],
+   ["tuna",-1,4240,6360],
+   ["mullet_raw",-1,2000,3000],
+   ["mullet",-1,2720,4080],
+   ["catshark_raw",-1,6400,10000],
+   ["catshark",-1,6600,10000]
+  ],
+  0.5
+ ],
+ ["Animal",
+  [
+   ["rabbit_raw",-1,400,600],
+   ["rabbit",-1,600,900],
+   ["hen_raw",-1,2640,4000],
+   ["hen",-1,3600,5500],
+   ["rooster_raw",-1,4800,7200],
+   ["rooster",-1,5200,8300],
+   ["sheep_raw",-1,8000,15000],
+   ["sheep",-1,10000,16000],
+   ["goat_raw",-1,10400,15600],
+   ["goat",-1,9200,17000]
+  ],
+  0.4
+ ],
+ ["Mined",
+  [
+   ["oil_processed",-1,2200,4500],
+   ["copper_refined",-1,1300,2500],
+   ["iron_refined",-1,2200,4100],
+   ["salt_refined",-1,1100,2000],
+   ["glass",-1,1200,2150],
+   ["diamond_uncut",-1,400,1000],
+   ["diamond_cut",-1,2100,3300],
+   ["cement",-1,1500,2500]
+  ],
+  0.5
+ ],
+ ["Illegal", 
+  [
+   /*["아이템 코드",-1,최소,최대],*/
+   ["heroin_processed",-1,2500,4900],
+   ["marijuana",-1,1600,3050],
+   ["cocaine_processed",-1,3900,6500],
+   ["turtle_raw",-1,5000,12800],
+   ["turtle_soup",-1,6500,14000]
+  ],
+  0.6
+ ]
 ];
 
 // █████████████████    ALL SELLABLE ITEMS    █████████████████
 
 DYNMARKET_Items_ToTrack        = 
 [
-	/* ["아이템코드",기본가격], */
-	//Food
-	["apple",300],
-	["peach",300],
-	//Fish
-	["salema_raw",1450],
-	["salema",2300],
-	["ornate_raw",1450],
-	["ornate",2000],
-	["mackerel_raw",2000],
-	["mackerel",2500],
-	["tuna_raw",5500],
-	["tuna",6000],
-	["mullet_raw",3000],
-	["mullet",3300],
-	["catshark_raw",8000],
-	["catshark",9000],
-	//Animal
-	["rabbit_raw",2000],
-	["rabbit",4000],
-	["hen_raw",5000],
-	["hen",6000],
-	["rooster_raw",25000],
-	["rooster",27000],
-	["sheep_raw",70000],
-	["sheep",72000],
-	["goat_raw",80000],
-	["goat",82000],
-	//Mined
-	["oil_unprocessed",2000],
-	["oil_processed",3200],
-	["copper_refined",2600],
-	["iron_refined",4300],
-	["salt_refined",1500],
-	["glass",3500],
-	["diamond_uncut",3000],
-	["diamond_cut",6100],
-	["cement",3400],
-	//Illegal
-	["heroin_processed",8000],
-	["marijuana",6800],
-	["cocaine_processed",9000],
-	["turtle_raw",30000],
-	["turtle_soup",45000]
+ /* ["아이템코드",기본가격], */
+ //Food
+ ["apple",350],
+ ["peach",330],
+ //Fish
+ ["salema_raw",450],
+ ["salema",1000],
+ ["ornate_raw",900],
+ ["ornate",1100],
+ ["mackerel_raw",1150],
+ ["mackerel",1650],
+ ["tuna_raw",9000],
+ ["tuna",10000],
+ ["mullet_raw",2500],
+ ["mullet",3400],
+ ["catshark_raw",8000],
+ ["catshark",8300],
+ //Animal
+ ["rabbit_raw",500],
+ ["rabbit",750],
+ ["hen_raw",3300],
+ ["hen",4500],
+ ["rooster_raw",6000],
+ ["rooster",6800],
+ ["sheep_raw",12000],
+ ["sheep",13300],
+ ["goat_raw",13000],
+ ["goat",14000],
+ //Mined
+ ["oil_processed",3500],
+ ["copper_refined",2000],
+ ["iron_refined",3400],
+ ["salt_refined",1600],
+ ["glass",1800],
+ ["diamond_uncut",750],
+ ["diamond_cut",2500],
+ ["cement",2150],
+ //Illegal
+ ["heroin_processed",4000],
+ ["marijuana",2550],
+ ["cocaine_processed",5600],
+ ["turtle_raw",10000],
+ ["turtle_soup",12000]
 ];
 
 //███████████████████████████████████████████████████████████████████████
@@ -158,20 +155,20 @@ DYNMARKET_Items_CurrentPriceArr = [];
 DYNMARKET_sellarraycopy = DYNMARKET_Items_ToTrack;
 DYNMARKET_Serveruptime = (DYNMARKET_Serveruptime * 3600) - 300;
 {
-	_currentArray = _x;
-	DYNMARKET_Items_CurrentPriceArr pushBack [_currentArray select 0,_currentArray select 1,0];
+ _currentArray = _x;
+ DYNMARKET_Items_CurrentPriceArr pushBack [_currentArray select 0,_currentArray select 1,0];
 } forEach DYNMARKET_Items_ToTrack;
 publicVariable "DYNMARKET_UserNotification";
 publicVariable "DYNMARKET_UserNotification_Text";
 if (DYNMARKET_UseExternalDatabase) then {[1] call TON_fnc_HandleDB;};
 DYNMARKET_UpdateCount = 0;
 if (DYNMARKET_UseExternalDatabase) then {
-	[] spawn {
-		sleep DYNMARKET_Serveruptime;
-		diag_log "### DYNMARKET >> CURRENT PRICES ARE BEING WRITTEN TO THE DATABASE    ###";
-		diag_log "### DYNMARKET >> AS PLANNED, AWAITING RESULT...                      ###";
-		[0] call TON_fnc_HandleDB;
-	};
+ [] spawn {
+  sleep DYNMARKET_Serveruptime;
+  diag_log "### DYNMARKET >> CURRENT PRICES ARE BEING WRITTEN TO THE DATABASE    ###";
+  diag_log "### DYNMARKET >> AS PLANNED, AWAITING RESULT...                      ###";
+  [0] call TON_fnc_HandleDB;
+ };
 };
 sleep 5;
 [] call TON_fnc_sleeper;
