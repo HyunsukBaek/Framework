@@ -146,6 +146,8 @@ class CarShops {
             { "O_T_LSV_02_armed_F", "" }, //APEX DLC
             //MH-9 허밍버드(반군)
             { "B_Heli_Light_01_stripped_F", "" },
+            //오르카(비무장)
+            { "O_Heli_Light_02_unarmed_F", "" },
             //헬켓
             { "I_Heli_light_03_unarmed_F", "" },
             //타루 기본
@@ -1053,7 +1055,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            }, "" }
+            }, "" },
+            { "Reb 1", "reb", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Reb_1.paa"
+            }, "call life_donorlevel >= 2" },
+            { "Reb 2", "reb", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Reb_2.paa"
+            }, "call life_donorlevel >= 2" },
+            { "Reb 2", "reb", {
+                "textures\AOSOUL\vehicles\Civ_Humming_Reb_3.paa"
+            }, "call life_donorlevel >= 2" }
         };
     };
 
@@ -1118,16 +1129,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "call life_donorlevel >= 1" },
             { "Gay Kitty", "civ", {
                 "textures\AOSOUL\vehicles\Civ_Humming_Kitty.paa"
-            }, "call life_donorlevel >= 3" },
-            { "Reb 1", "reb", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Reb_1.paa"
-            }, "call life_donorlevel >= 2" },
-            { "Reb 2", "reb", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Reb_2.paa"
-            }, "call life_donorlevel >= 2" },
-            { "Reb 2", "reb", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Reb_3.paa"
-            }, "call life_donorlevel >= 2" }
+            }, "call life_donorlevel >= 3" }
         };
     };
 
@@ -1147,7 +1149,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "White / Blue", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
             }, "" },
-            { "Digi Green", "civ", {
+            { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
             }, "" },
             { "Desert Digi", "reb", {
