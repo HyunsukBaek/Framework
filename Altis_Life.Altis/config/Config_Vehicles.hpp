@@ -162,7 +162,7 @@ class CarShops {
             { "B_T_VTOL_01_infantry_F", "license_civ_level5" },
             //V-44X 블랙피쉬 차량수송
             { "B_T_VTOL_01_vehicle_F", "license_civ_level5" },
-            //PO-30 무장
+            //PO-30 오르카 무장
             { "O_Heli_Light_02_F", "license_civ_level5" },
             //고스트 호크
             { "B_Heli_Transport_01_F", "license_civ_level5" },
@@ -604,7 +604,29 @@ class LifeCfgVehicles {
         vItemSpace = 80;
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 5000000;
-        textures[] = {};
+        textures[] = {
+                { "Digi Green", "reb", {
+                    "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
+                }, "" },
+                { "Desert Digi", "reb", {
+                    "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
+                }, "" },
+                { "Reb Custom 1", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_1.paa"
+                }, "" },
+                { "Reb Custom 2", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_2.paa"
+                }, "" },
+                { "Reb Custom 3", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_3.paa"
+                }, "" },
+                { "Reb Custom 4", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_4.paa"
+                }, "" },
+                { "Reb Custom 5", "reb", {
+                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_5.paa"
+                }, "" }
+        };
     };
 
     class O_Heli_Attack_02_F {
@@ -1191,14 +1213,35 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "White / Blue", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
             }, "" },
+            { "EMS White", "med", {
+                "#(argb,8,8,3)color(1,1,1,0.8)"
+            }, "" },
+            { "Civ Custom 1", "civ", {
+                "textures\AOSoul\vehicles\Civ_Orca_Civ_Custom_1.paa"
+            }, "" },
+            { "Civ Custom 2", "civ", {
+                "textures\AOSoul\vehicles\Civ_Orca_Civ_Custom_2.paa"
+            }, "" },
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
             }, "" },
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Reb Custom 1", "reb", {
+                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_1.paa"
+            }, "" },
+            { "Reb Custom 2", "reb", {
+                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_2.paa"
+            }, "" },
+            { "Reb Custom 3", "reb", {
+                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_3.paa"
+            }, "" },
+            { "Reb Custom 4", "reb", {
+                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_4.paa"
+            }, "" },
+            { "Reb Custom 5", "reb", {
+                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_5.paa"
             }, "" }
         };
     };
