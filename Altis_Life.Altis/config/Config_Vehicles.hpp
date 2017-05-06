@@ -1021,9 +1021,24 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
-            { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-            }, "" }
+            { "Sticker", "civ",        {"textures\AOSoul\vehicles\suv_sticker.paa"}, "call life_donorlevel >= 2" },
+            { "Hello kitty", "civ",    {"textures\AOSoul\vehicles\suv_kitty.paa"}, "call life_donorlevel >= 1" },
+            { "Cube", "civ",           {"textures\AOSoul\vehicles\sub_cube.paa"}, "" },
+            { "Hunters", "civ",        {"textures\AOSoul\vehicles\suv_hunter.paa"}, "" },
+            { "Channel8 News", "civ",  {"textures\AOSoul\vehicles\suv_channel8.paa"}, "call life_donorlevel >= 2" },
+            { "VIP", "civ",            {"textures\AOSoul\vehicles\suv_vip.paa"}, "" },
+            { "Security", "civ",       {"textures\AOSoul\vehicles\suv_security.paa"}, "" },
+            { "Ferrari", "civ",        {"textures\AOSoul\vehicles\suv_ferrari.paa"}, "call life_donorlevel >= 3" },
+            { "blueflames", "civ",     {"textures\AOSoul\vehicles\suv_flames.paa"}, "" },
+            { "5taku", "civ",          {"textures\AOSoul\vehicles\suv_otaku.paa"}, "call life_donorlevel >= 1" },
+            { "ghostRider", "civ",     {"textures\AOSoul\vehicles\suv_ghostrider.paa"}, "call life_donorlevel >= 2" },
+            { "TAXI", "civ",           {"textures\AOSoul\vehicles\suv_taxi.paa"}, "" },
+            { "EMS red", "med",        {"textures\AOSoul\vehicles\suv_EMS_red.paa"}, "call life_donorlevel >= 1" },
+            { "EMS white", "med",      {"textures\AOSoul\vehicles\suv_EMS_white.paa"}, "" },
+            { "EMS 119", "med",        {"textures\AOSoul\vehicles\suv_EMS_119.paa"}, "" },
+            { "Police112", "cop",      {"textures\AOSoul\vehicles\suv_112.paa"}, "call life_donorlevel >= 2" },
+            { "UKPD", "cop",           {"textures\AOSoul\vehicles\suv_police_uk.paa"}, "" },
+            { "LAPD", "cop",           {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" }
         };
     };
 
