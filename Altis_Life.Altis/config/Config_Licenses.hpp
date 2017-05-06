@@ -227,7 +227,7 @@ class Licenses {
     class level5 {
         variable = "level5";
         displayName = "STR_License_Level5";
-        price = 7000000;
+        price = 9000000;
         illegal = false;
         side = "civ";
     };
