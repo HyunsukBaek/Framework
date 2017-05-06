@@ -148,7 +148,7 @@ class CarShops {
             { "B_Heli_Light_01_stripped_F", "" },
             //오르카(비무장)
             { "O_Heli_Light_02_unarmed_F", "" },
-            //헬켓
+            //헬켓(비무장)
             { "I_Heli_light_03_unarmed_F", "" },
             //타루 기본
             { "O_Heli_Transport_04_F", "" },
@@ -168,7 +168,7 @@ class CarShops {
             { "B_Heli_Transport_01_F", "license_civ_level5" },
             //Mi-48 카이만
             { "O_Heli_Attack_02_F", "license_civ_level5" },
-            //WY-55 핼켓
+            //WY-55 핼켓(무장)
             { "I_Heli_light_03_F", "license_civ_level5" }
         };
     };
@@ -254,7 +254,7 @@ class CarShops {
             { "B_Heli_Light_01_F", "" },
             //모호크
             { "I_Heli_Transport_02_F", "" },
-            //헬켓
+            //헬켓(비무장)
             { "I_Heli_light_03_unarmed_F", "" },
             //타루 기본
             { "O_Heli_Transport_04_F", "" },
@@ -266,6 +266,8 @@ class CarShops {
             { "B_Heli_Transport_03_unarmed_F", "" },
             //포니
             { "B_Heli_Light_01_armed_F", "call life_coplevel >= 4" },
+            //WY-55 핼켓(무장)
+            { "I_Heli_light_03_F", "call life_coplevel >= 4" },
             //블랙풋
             { "B_Heli_Attack_01_F", "call life_coplevel >= 4" },
             //고스트 호크
@@ -570,7 +572,7 @@ class LifeCfgVehicles {
 
     class B_Heli_Transport_01_F {
         vItemSpace = 100;
-        conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
+        conditions = "license_cop_cAir || {!(playerSide isEqualTo west)} || license_civ_rebel";
         price = 6000000;
         textures[] = {
                 { "Black", "cop", {
@@ -614,9 +616,16 @@ class LifeCfgVehicles {
 
     class I_Heli_light_03_F {
         vItemSpace = 50;
-        conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir} || license_civ_rebel";
         price = 8000000;
-        textures[] = {};
+        textures[] = {
+            { "Swat", "cop", {
+                "textures\AOSoul\vehicles\Civ_Hellcat_Cop_Swat_1.paa",
+            }, "" },
+            { "Dragon", "reb", {
+                "textures\AOSoul\vehicles\Civ_Hellcat_Reb_Dragon_1.paa",
+            }, "" }
+        };
     };
 
     class B_MRAP_01_hmg_F {
@@ -1188,9 +1197,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class I_Heli_light_03_unarmed_F {
         vItemSpace = 120;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir} || license_civ_rebel";
         price = 1300000;
-        textures[] = {};
+        textures[] = {
+            { "Swat", "cop", {
+                "textures\AOSoul\vehicles\Civ_Hellcat_Cop_Swat_1.paa",
+            }, "" },
+            { "Dragon", "reb", {
+                "textures\AOSoul\vehicles\Civ_Hellcat_Reb_Dragon_1.paa",
+            }, "" }
+        };
     };
 
     class B_Heli_Transport_03_unarmed_F {
