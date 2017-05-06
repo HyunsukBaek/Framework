@@ -290,9 +290,9 @@ class CarShops {
             //RHIB 낚시배
             { "C_Boat_Transport_02_F", "" }, //Apex DLC
             //쾌속정 미니건
-            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 3" },
+            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 4" },
             //쾌속정 HMG
-            { "O_Boat_Armed_01_hmg_F", "call life_coplevel >= 3" },
+            { "O_Boat_Armed_01_hmg_F", "call life_coplevel >= 4" },
             //SDV 잠수함
             { "B_SDV_01_F", "" },
             { "O_SDV_01_F", "" },
@@ -328,9 +328,9 @@ class LifeCfgVehicles {
     */
 
     class Default {
-        vItemSpace = -1;
+        vItemSpace = 50;
         conditions = "";
-        price = -1;
+        price = 500000;
         textures[] = {};
     };
 
