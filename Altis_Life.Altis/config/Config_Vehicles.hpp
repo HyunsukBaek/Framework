@@ -232,11 +232,11 @@ class CarShops {
             //스트라이더
             { "I_MRAP_03_F", "" },
             //스트라이더 HMG
-            { "I_MRAP_03_hmg_F", "" },
+            { "I_MRAP_03_hmg_F", "call life_coplevel >= 4" },
             //헌터
             { "B_MRAP_01_F", "call life_coplevel >= 2" },
             //헌터 HMG
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" },
+            { "B_MRAP_01_hmg_F", "call life_coplevel >= 5" },
             //자마크 탄약
             { "I_Truck_02_ammo_F", "" },
             //템페스트 탄약
@@ -816,12 +816,13 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             }, "" },
-            { "Taxi", "civ", {
-                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
-            }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            }, "" }
+            { "Hello kitty", "civ",    {"textures\AOSoul\vehicles\offroad_kitty.paa"}, "" },
+            { "EMS Red", "med",        {"textures\AOSoul\vehicles\offroad_EMS_red.paa"}, "" },
+            { "MetroCop", "cop",       {"textures\AOSoul\vehicles\offroad_met_police.paa"}, "" },
+            { "UKPD", "cop",           {"textures\AOSoul\vehicles\offroad_uk.paa"}, "" },
+            { "LAPD", "cop",           {"textures\AOSoul\vehicles\offroad_lapd.paa"}, "" },
+            { "Traffic police", "cop", {"textures\AOSoul\vehicles\offroad_traffic.paa"}, "" },
+            { "SWAT", "cop",           {"textures\AOSoul\vehicles\offroad_swat.paa"}, "" }
         };
     };
 
