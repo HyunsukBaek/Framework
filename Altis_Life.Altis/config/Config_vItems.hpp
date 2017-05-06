@@ -149,8 +149,8 @@ class VirtualItems {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";
         weight = 2;
-        buyPrice = 750;
-        sellPrice = 350;
+        buyPrice = 3000;
+        sellPrice = 1000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_pickaxe.paa";
