@@ -1192,7 +1192,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 150;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 1500000;
-        textures[] = {};
+        textures[] = {
+            { "Black", "cop", {
+                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            }, "" },
+            { "Rescue Y", "med", {
+                    "textures\AOSoul\vehicles\Med_Mohawk_Yellow_1.paa",
+                    "textures\AOSoul\vehicles\Med_Mohawk_Yellow_2.paa",
+                    "textures\AOSoul\vehicles\Med_Mohawk_Yellow_3.paa"
+            }, "" },
+            { "Rescue R", "med", {
+                    "textures\AOSoul\vehicles\Med_Mohawk_Red_1.paa",
+                    "textures\AOSoul\vehicles\Med_Mohawk_Red_2.paa",
+                    "textures\AOSoul\vehicles\Med_Mohawk_Red_3.paa"
+            }, "" },
+        };
     };
 
     class I_Heli_light_03_unarmed_F {
