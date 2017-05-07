@@ -77,13 +77,13 @@ class Life_Settings {
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
-    gang_price = 75000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_price = 200000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
     gang_upgradeBase = 10000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 5; //Maximum number of houses a player can own.
-    houseGarage_buyPrice = 2200000;
+    house_limit = 3; //Maximum number of houses a player can own.
+    houseGarage_buyPrice = 2000000;
     houseGarage_sellPrice = 1000000;
 
     /* Hunting & Fishing System Configurations */
