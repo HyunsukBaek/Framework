@@ -1,7 +1,7 @@
 private["_chance"];
 if(Life_fishing) exitwith {};
 Life_fishing = true;
-	//³¬½Ã´ë ´øÁö±â
+	//ï¿½ï¿½ï¿½Ã´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
@@ -14,14 +14,14 @@ Life_fishing = true;
 	
 	sleep 2.5;
 
-	//¹Ù´Ú¿¡ ³¬½Ã´ë ´øÁ³À»¶§
+	//ï¿½Ù´Ú¿ï¿½ ï¿½ï¿½ï¿½Ã´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
 		hint "You lost your bait!!";
 		deletevehicle _vehicle;
 		Life_fishing = false;
 	};
 
-	//Âî ´øÁú¶§
+	//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	hint "Successful Cast";
 	playSound3D ["", player, false, getPosASL _vehicle, 25, 1, 85];
 
@@ -90,8 +90,8 @@ Life_fishing = true;
 		_chance = round (random 100);
 		if(vehicle player != player) then { _chance = _chance + 10; };
 		if(_curUniform == "U_I_Wetsuit" && _chance > 80) then { [true,_myFish,1] call life_fnc_handleInv; };
-		if(_curUniform == "U_O_Wetsuit" && _chance > 60) then { [true,_myFish,1] call life_fnc_handleInv; };
-		if(_curUniform == "U_B_Wetsuit" && _chance > 40) then { [true,_myFish,1] call life_fnc_handleInv; };
+		if(_curUniform == "U_O_Wetsuit" && _chance > 80) then { [true,_myFish,1] call life_fnc_handleInv; };
+		if(_curUniform == "U_B_Wetsuit" && _chance > 80) then { [true,_myFish,1] call life_fnc_handleInv; };
 		if(_curUniform == "U_I_Protagonist_VR") then { [true,_myFish,1] call life_fnc_handleInv; };
 
 Life_fishing = false;
