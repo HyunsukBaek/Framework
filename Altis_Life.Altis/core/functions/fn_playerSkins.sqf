@@ -49,7 +49,7 @@ switch (playerSide) do {
 
     case independent: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+            player setObjectTextureGlobal [0, "textures\AOSoul\clothes\medic_uniform.jpg"];
         };
         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
             player setObjectTextureGlobal [0, "textures\AOSOUL\clothes\Medic\paramedic_uniform_hv.paa"];
