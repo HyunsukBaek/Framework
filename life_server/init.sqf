@@ -219,6 +219,25 @@ publicVariable "life_attachment_point";
 //MarketSystem
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 
+_markername1="deteteArea1";
+_terrainobjects1=nearestTerrainObjects [(getMarkerPos _markername1),[],(getmarkersize _markername1)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects1; 
+_markername2="deteteArea2";
+_terrainobjects2=nearestTerrainObjects [(getMarkerPos _markername2),[],(getmarkersize _markername2)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects2; 
+_markername3="deteteArea3";
+_terrainobjects3=nearestTerrainObjects [(getMarkerPos _markername3),[],(getmarkersize _markername3)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects3; 
+_markername4="deteteArea4";
+_terrainobjects4=nearestTerrainObjects [(getMarkerPos _markername4),[],(getmarkersize _markername4)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects4; 
+_markername5="deteteArea5";
+_terrainobjects5=nearestTerrainObjects [(getMarkerPos _markername5),[],(getmarkersize _markername5)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects5; 
+_markername6="deteteArea6";
+_terrainobjects6=nearestTerrainObjects [(getMarkerPos _markername6),[],(getmarkersize _markername6)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects6; 
+
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
