@@ -40,6 +40,6 @@ if (life_is_alive && !life_is_arrested) then {
 life_is_alive = true;
 
 //AOSOUL Added
-//[] execVM "AOSoul\robstore.sqf";    //Rob Store
+[] execVM "AOSoul\robstore.sqf";    //Rob Store
 //////////////////////////////////////
 player addRating 9999999;
