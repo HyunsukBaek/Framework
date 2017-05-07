@@ -1191,15 +1191,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
-            { "Custom 1", "civ", {
-                "textures\AOSOUL\vehicles\humming_1.paa"
-            }, "call life_donorlevel >= 1" },
-            { "Custom 2", "civ", {
-                "textures\AOSOUL\vehicles\humming_2.paa"
-            }, "call life_donorlevel >= 1" },
-            { "Custom 3", "civ", {
-                "textures\AOSOUL\vehicles\humming_3.paa"
-            }, "call life_donorlevel >= 1" },
             { "Gay Kitty", "civ", {
                 "textures\AOSOUL\vehicles\humming_Kitty.paa"
             }, "call life_donorlevel >= 3" },
