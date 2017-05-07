@@ -7933,7 +7933,7 @@
             <Polish>Odrodzenie możliwe za: %1</Polish>
         </Key>
         <Key ID="STR_Medic_Respawn_2">
-            <Original>You can now respawn</Original>
+            <Original>리스폰가능:리퀘스트한경우 리스폰NO!</Original>
             <Czech>Nyní lze respawn</Czech>
             <Spanish>Ya puedes reaparecer</Spanish>
             <Russian></Russian>
