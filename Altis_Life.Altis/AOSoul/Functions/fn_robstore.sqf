@@ -28,7 +28,7 @@ if(_chance >= 1) then {[1,format["경보! - 주유소: %1 에 강도 발생!", _
 if(_chance >= 1) then {[1,format["경보! - 주유소: %1 에 강도 발생!", _shop]] remoteExec ["life_fnc_broadcast",civilian];};
 
 _cops = (west countSide playableUnits);
-if(_cops < 2) exitWith {[_vault,-1] remoteExec ["disableSerialization;",2]; hint "주유소를 털려면 경관 3명 이상이여야 합니다";};
+if(_cops <= (LIFE_SETTINGS(getNumber,"minimum_cops_gas"))) exitWith {[_vault,-1] remoteExec ["disableSerialization;",2]; hint "주유소를 털기위한 최소 경찰수가 부족합니다";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
