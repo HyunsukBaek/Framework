@@ -1046,7 +1046,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Sticker", "civ",        {"textures\AOSoul\vehicles\suv_sticker.paa"}, "call life_donorlevel >= 2" },
             { "Hello kitty", "civ",    {"textures\AOSoul\vehicles\suv_kitty.paa"}, "call life_donorlevel >= 1" },
-            { "Cube", "civ",           {"textures\AOSoul\vehicles\sub_cube.paa"}, "" },
+            { "Cube", "civ",           {"textures\AOSoul\vehicles\suv_cube.paa"}, "" },
             { "Hunters", "civ",        {"textures\AOSoul\vehicles\suv_hunter.paa"}, "" },
             { "Channel8 News", "civ",  {"textures\AOSoul\vehicles\suv_channel8.paa"}, "call life_donorlevel >= 2" },
             { "VIP", "civ",            {"textures\AOSoul\vehicles\suv_vip.paa"}, "" },
