@@ -22,9 +22,9 @@ if (hasInterface) then {
 [] execVM "AOSoul\CL.sqf"; //돔 네온
 [] execVM "AOSoul\CL2.sqf";
 [] execVM "AOSoul\safezone.sqf";//세이프존 
-setTerrainGrid 40;
-//setViewDistance 1000;
-//setObjectViewDistance [800,50];
+setTerrainGrid 50;
+setViewDistance 1200;
+setObjectViewDistance [1000,50];
 
 //AOSoul Added : sitdown
 MAC_fnc_switchMove = {
