@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14706.609,48.988228,16728.822};
-		dir[]={-0.62641418,-0.50745839,0.5917021};
-		up[]={-0.36890599,0.86167514,0.34846351};
-		aside[]={0.68668437,-1.8090941e-007,0.72696823};
+		pos[]={23304.17,48.519318,24186.418};
+		dir[]={-0.90415508,-0.40893981,0.1236928};
+		up[]={-0.40517122,0.91255784,0.055429511};
+		aside[]={0.13554242,-1.2531746e-007,0.99078369};
 	};
 };
 binarizationWanted=0;
@@ -20767,10 +20767,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13787.92,61.310402,6391.3418};
-						angles[]={0,4.5355525,0};
+						position[]={13787.92,60.284401,6391.3418};
+						angles[]={0.021328852,4.5355525,6.2765174};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -20780,7 +20781,6 @@ class Mission
 					};
 					id=977;
 					type="C_man_polo_3_F";
-					atlOffset=1.026001;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27098,20 +27098,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23247.523,25.574715,24193.17};
-						angles[]={0,1.5003198,0};
+						position[]={23246.59,24.846231,24194.346};
+						angles[]={-0,1.5003198,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level1"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level1"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level1"",0,false,false,"""",' !license_civ_level1 ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level2"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level2"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level2"",0,false,false,"""",' !license_civ_level2 ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level3"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level3"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level3"",0,false,false,"""",' !license_civ_level3 ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level4"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level4"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level4"",0,false,false,"""",' !license_civ_level4 ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level5"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level5"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level5"",0,false,false,"""",' !license_civ_level5 ']; this setVariable [""realname"",""Level Up""];this setVariable [""realname"",""레벨업 상인""];";
+						init="this allowDamage false;  " \n "this enableSimulation false;  " \n " " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level1"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level1"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level1"",0,false,false,"""",' !license_civ_level1 && playerSide isEqualTo civilian'];  " \n " " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level2"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level2"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level2"",0,false,false,"""",' !license_civ_level2 && playerSide isEqualTo civilian'];  " \n " " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level3"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level3"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level3"",0,false,false,"""",' !license_civ_level3 && playerSide isEqualTo civilian'];  " \n " " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level4"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level4"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level4"",0,false,false,"""",' !license_civ_level4 && playerSide isEqualTo civilian'];  " \n " " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""level5"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""level5"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""level5"",0,false,false,"""",' !license_civ_level5 && playerSide isEqualTo civilian'];  " \n " " \n "this setVariable [""realname"",""레벨업 상인""];";
 						name="license_levelshop";
 						disableSimulation=1;
 					};
 					id=3306;
 					type="C_man_polo_4_F";
-					atlOffset=0.82863235;
+					atlOffset=0.10014915;
 					class CustomAttributes
 					{
 						class Attribute0
