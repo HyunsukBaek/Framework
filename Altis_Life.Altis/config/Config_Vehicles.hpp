@@ -57,27 +57,27 @@ class CarShops {
             //HEMTT 박스
             { "B_Truck_01_box_F", "" },
             //HEMTT 수송
-            { "B_Truck_01_transport_F", "" },
+            { "B_Truck_01_transport_F", "license_civ_level1" },
             //HEMTT 수송 덮개
-            { "B_Truck_01_covered_F", "" },
+            { "B_Truck_01_covered_F", "license_civ_level1" },
             //자마크 수송
             { "I_Truck_02_transport_F", "" },
             //자마크 수송(덮개)
-            { "I_Truck_02_covered_F", "" },
+            { "I_Truck_02_covered_F", "license_civ_level1" },
             //템페스트 수송
-            { "O_Truck_03_transport_F", "" },
+            { "O_Truck_03_transport_F", "license_civ_level3" },
             //템페스트 수송(덮개)
-            { "O_Truck_03_covered_F", "" },
+            { "O_Truck_03_covered_F", "license_civ_level3" },
             //템페스트 장치
-            { "O_Truck_03_device_F", "" },
+            { "O_Truck_03_device_F", "license_civ_level3" },
             //트럭 연료
             { "C_Van_01_fuel_F", "" },
             //자마크 연료
-            { "I_Truck_02_fuel_F", "" },
+            { "I_Truck_02_fuel_F", "license_civ_level1" },
             //HEMTT 연료
-            { "B_Truck_01_fuel_F", "" },
+            { "B_Truck_01_fuel_F", "license_civ_level2" },
             //템페스트 연료
-            { "O_Truck_03_fuel_F", "" }
+            { "O_Truck_03_fuel_F", "license_civ_level3" }
 
         };
     };
@@ -89,15 +89,15 @@ class CarShops {
             //M-900
             { "C_Heli_Light_01_civil_F", "" },
             //허밍버드
-            { "B_Heli_Light_01_F", "" },
+            { "B_Heli_Light_01_F", "license_civ_level1" },
             //오르카
-            { "O_Heli_Light_02_unarmed_F", "" },
+            { "O_Heli_Light_02_unarmed_F", "license_civ_level2" },
             //모호크
-            { "I_Heli_Transport_02_F", "" },
+            { "I_Heli_Transport_02_F", "license_civ_level3" },
             //휴론 비무장
-            { "B_Heli_Transport_03_unarmed_F", "" },
+            { "B_Heli_Transport_03_unarmed_F", "license_civ_level4" },
             //Caesar BTT 경비행기
-            { "C_Plane_Civil_01_F", "" } //Apex DLC
+            { "C_Plane_Civil_01_F", "license_civ_level2" } //Apex DLC
         };
     };
 
@@ -109,18 +109,18 @@ class CarShops {
             { "C_Rubberboat", "" },
             { "B_Lifeboat", "" },
             //공격단정 (고무보트와 외형 똑같음)
-            { "O_Boat_Transport_01_F", "" },
-            { "I_Boat_Transport_01_F", "" },
+            { "O_Boat_Transport_01_F", "license_civ_level2" },
+            { "I_Boat_Transport_01_F", "license_civ_level2" },
             //모터 보트
             { "C_Boat_Civil_01_F", "" },
             //SDV 잠수함
-            { "B_SDV_01_F", "" },
-            { "O_SDV_01_F", "" },
-            { "I_SDV_01_F", "" },
+            { "B_SDV_01_F", "license_civ_level1" },
+            { "O_SDV_01_F", "license_civ_level1" },
+            { "I_SDV_01_F", "license_civ_level1" },
             //RHIB(낚시배)
-            { "C_Boat_Transport_02_F", "" }, //Apex DLC
+            { "C_Boat_Transport_02_F", "license_civ_level2" }, //Apex DLC
             //수상 스쿠터
-            { "C_Scooter_Transport_01_F", "" } //Apex DLC
+            { "C_Scooter_Transport_01_F", "license_civ_level1" } //Apex DLC
         };
     };
 
@@ -133,31 +133,25 @@ class CarShops {
             //오프로드
             { "B_G_Offroad_01_F", "" },
             //이프리트
-            { "O_MRAP_02_F", "" },
+            { "O_MRAP_02_F", "license_civ_level2" },
             //Qilin 비무장
             { "O_T_LSV_02_unarmed_F", "" }, //Apex DLC
             //Prowler 비무장
             { "B_T_LSV_01_unarmed_F", "" }, //APEX DLC
             //오프로드 무장
-            { "B_G_Offroad_01_armed_F", "" },
+            { "B_G_Offroad_01_armed_F", "license_civ_level2" },
             //Prowler(무장)
-            { "B_T_LSV_01_armed_F", "" }, //APEX DLC
+            { "B_T_LSV_01_armed_F", "license_civ_level4" }, //APEX DLC
             //Qilin(무장)
-            { "O_T_LSV_02_armed_F", "" }, //APEX DLC
+            { "O_T_LSV_02_armed_F", "license_civ_level5" }, //APEX DLC
             //MH-9 허밍버드(반군)
             { "B_Heli_Light_01_stripped_F", "" },
             //오르카(비무장)
-            { "O_Heli_Light_02_unarmed_F", "" },
+            { "O_Heli_Light_02_unarmed_F", "license_civ_level1" },
             //헬켓(비무장)
-            { "I_Heli_light_03_unarmed_F", "" },
-            //타루 기본
-            { "O_Heli_Transport_04_F", "" },
+            { "I_Heli_light_03_unarmed_F", "license_civ_level1" },
             //타루 벤치
-            { "O_Heli_Transport_04_bench_F", "" },
-            //타루 수송
-            { "O_Heli_Transport_04_covered_F", "" },
-            //타루 화물
-            { "O_Heli_Transport_04_box_F", "" },
+            { "O_Heli_Transport_04_bench_F", "license_civ_level1" },
             //V-44X 블랙피쉬 보병수송
             { "B_T_VTOL_01_infantry_F", "license_civ_level5" },
             //V-44X 블랙피쉬 차량수송
@@ -165,11 +159,11 @@ class CarShops {
             //PO-30 오르카 무장
             { "O_Heli_Light_02_F", "license_civ_level5" },
             //고스트 호크
-            { "B_Heli_Transport_01_F", "license_civ_level5" },
+            { "B_Heli_Transport_01_F", "license_civ_level3" },
             //Mi-48 카이만
             { "O_Heli_Attack_02_F", "license_civ_level5" },
             //WY-55 핼켓(무장)
-            { "I_Heli_light_03_F", "license_civ_level5" }
+            { "I_Heli_light_03_F", "license_civ_level4" }
         };
     };
 
@@ -214,6 +208,8 @@ class CarShops {
             { "O_Heli_Transport_04_repair_F", "" },
             //타루 연료
             { "O_Heli_Transport_04_fuel_F", "" },
+            //타루 수송
+            { "O_Heli_Transport_04_covered_F", "" },
             //타루 의료
             { "O_Heli_Transport_04_medevac_F", "" }
         };
@@ -242,7 +238,7 @@ class CarShops {
             //템페스트 탄약
             { "O_Truck_03_ammo_F", "" },
             //HEMTT 탄약
-            { "B_Truck_01_ammo_F", "" }
+            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -258,20 +254,18 @@ class CarShops {
             { "I_Heli_light_03_unarmed_F", "" },
             //타루 기본
             { "O_Heli_Transport_04_F", "" },
-            //타루 벤치
-            { "O_Heli_Transport_04_bench_F", "" },
             //타루 수송
             { "O_Heli_Transport_04_covered_F", "" },
             //휴론 비무장
             { "B_Heli_Transport_03_unarmed_F", "" },
             //포니
-            { "B_Heli_Light_01_armed_F", "call life_coplevel >= 4" },
+            { "B_Heli_Light_01_armed_F", "call life_coplevel >= 5" },
             //WY-55 핼켓(무장)
             { "I_Heli_light_03_F", "call life_coplevel >= 4" },
             //블랙풋
-            { "B_Heli_Attack_01_F", "call life_coplevel >= 4" },
+            { "B_Heli_Attack_01_F", "call life_coplevel >= 5" },
             //고스트 호크
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" },
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 3" },
             //휴론
             { "B_Heli_Transport_03_F", "call life_coplevel >= 4" }
 
@@ -575,21 +569,25 @@ class LifeCfgVehicles {
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)} || license_civ_rebel";
         price = 6000000;
         textures[] = {
-                { "Black", "cop", {
-                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-                }, "" },
-                { "Beautiful", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Gay_1.paa",
-                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Gay_2.paa",
-                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Gay_3.paa"
-                }, "" },
-                { "Kitty", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Kitty_1.paa",
-                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Kitty_2.paa",
-                    "textures\AOSoul\vehicles\Civ_Ghosthawk_Reb_Kitty_3.paa"
-                }, "" }
+            { "Beautiful", "reb", {
+                "textures\AOSoul\vehicles\ghosthawk_Reb_Gay_1.paa",
+                "textures\AOSoul\vehicles\ghosthawk_Reb_Gay_2.paa",
+                "textures\AOSoul\vehicles\ghosthawk_Reb_Gay_3.paa"
+            }, "" },
+            { "Kitty", "civ", {
+                "textures\AOSoul\vehicles\ghosthawk_Reb_Kitty_1.paa",
+                "textures\AOSoul\vehicles\ghosthawk_Reb_Kitty_2.paa",
+                "textures\AOSoul\vehicles\ghosthawk_Reb_Kitty_3.paa"
+            }, "" },
+            { "KoreanAir", "civ", {
+                "textures\AOSoul\vehicles\ghosthawk_Koreanair1.paa",
+                "textures\AOSoul\vehicles\ghosthawk_Koreanair2.paa"
+            }, "call life_donorlevel >= 1" },
+            { "Cop", "cop", {
+                "textures\AOSoul\vehicles\ghosthawk_cop_white1.paa",
+                "textures\AOSoul\vehicles\ghosthawk_cop_white2.paa"
+            }, "" }
+
         };
     };
 
@@ -605,27 +603,27 @@ class LifeCfgVehicles {
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
         price = 5000000;
         textures[] = {
-                { "Digi Green", "reb", {
-                    "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
-                }, "" },
-                { "Desert Digi", "reb", {
-                    "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
-                }, "" },
-                { "Reb Custom 1", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_1.paa"
-                }, "" },
-                { "Reb Custom 2", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_2.paa"
-                }, "" },
-                { "Reb Custom 3", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_3.paa"
-                }, "" },
-                { "Reb Custom 4", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_4.paa"
-                }, "" },
-                { "Reb Custom 5", "reb", {
-                    "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_5.paa"
-                }, "" }
+            { "Digi Green", "reb", {
+                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
+            }, "" },
+            { "Desert Digi", "reb", {
+                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
+            }, "" },
+            { "Reb Custom 1", "reb", {
+                "textures\AOSoul\vehicles\orca_Reb_Custom_1.paa"
+            }, "" },
+            { "Reb Custom 2", "reb", {
+                "textures\AOSoul\vehicles\orca_Reb_Custom_2.paa"
+            }, "" },
+            { "Reb Custom 3", "reb", {
+                "textures\AOSoul\vehicles\orca_Reb_Custom_3.paa"
+            }, "" },
+            { "Reb Custom 4", "reb", {
+                "textures\AOSoul\vehicles\orca_Reb_Custom_4.paa"
+            }, "" },
+            { "Reb Custom 5", "reb", {
+                "textures\AOSoul\vehicles\orca_Reb_Custom_5.paa"
+            }, "" }
         };
     };
 
@@ -642,10 +640,10 @@ class LifeCfgVehicles {
         price = 8000000;
         textures[] = {
             { "Swat", "cop", {
-                "textures\AOSoul\vehicles\Civ_Hellcat_Cop_Swat_1.paa",
+                "textures\AOSoul\vehicles\hellcat_Cop_Swat_1.paa",
             }, "" },
             { "Dragon", "reb", {
-                "textures\AOSoul\vehicles\Civ_Hellcat_Reb_Dragon_1.paa",
+                "textures\AOSoul\vehicles\hellcat_Reb_Dragon_1.paa",
             }, "" }
         };
     };
@@ -882,10 +880,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "LADY", "civ", {
                 "textures\AOSoul\vehicles\quad_lady.paa"
-            }, "call life_donorlevel > 0" },
+            }, "call life_donorlevel >= 1" },
             { "Cube", "civ", {
                 "textures\AOSoul\vehicles\quad_cube.paa"
-            }, "call life_donorlevel > 0" }
+            }, "call life_donorlevel >= 1" }
         };
     };
 
@@ -969,7 +967,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "EMS UK", "med", {
                 "textures\AOSoul\vehicles\hatchback_EMSUK.paa"
-            }, "call life_donorlevel >= 1" },
+            }, "call life_donorlevel >= 0" },
             { "Police", "cop", {
                 "textures\AOSoul\vehicles\hatchback_cop.paa"
             }, "" },
@@ -1122,13 +1120,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             }, "" },
             { "Reb 1", "reb", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Reb_1.paa"
+                "textures\AOSOUL\vehicles\humming_Reb_1.paa"
             }, "call life_donorlevel >= 2" },
             { "Reb 2", "reb", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Reb_2.paa"
+                "textures\AOSOUL\vehicles\humming_Reb_2.paa"
             }, "call life_donorlevel >= 2" },
             { "Reb 2", "reb", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Reb_3.paa"
+                "textures\AOSOUL\vehicles\humming_Reb_3.paa"
             }, "call life_donorlevel >= 2" }
         };
     };
@@ -1138,9 +1136,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 400000;
         textures[] = {
-            { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
-            }, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
             }, "" },
@@ -1181,20 +1176,27 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
             { "Custom 1", "civ", {
-                "textures\AOSOUL\vehicles\Civ_Humming_1.paa"
+                "textures\AOSOUL\vehicles\humming_1.paa"
             }, "call life_donorlevel >= 1" },
             { "Custom 2", "civ", {
-                "textures\AOSOUL\vehicles\Civ_Humming_2.paa"
+                "textures\AOSOUL\vehicles\humming_2.paa"
             }, "call life_donorlevel >= 1" },
             { "Custom 3", "civ", {
-                "textures\AOSOUL\vehicles\Civ_Humming_3.paa"
+                "textures\AOSOUL\vehicles\humming_3.paa"
             }, "call life_donorlevel >= 1" },
             { "Gay Kitty", "civ", {
-                "textures\AOSOUL\vehicles\Civ_Humming_Kitty.paa"
+                "textures\AOSOUL\vehicles\humming_Kitty.paa"
             }, "call life_donorlevel >= 3" },
-            { "EMS White", "med", {
-                "textures\AOSOUL\vehicles\Humming_Med_White.paa"
-            }, "" }
+            { "EMS YellowBlue", "med", {
+                "textures\AOSOUL\vehicles\humming_EMS_yellow.paa"
+            }, "" },
+            { "EMS Red", "med", {
+                "textures\AOSOUL\vehicles\humming_EMS_red.paa"
+            }, "" },
+            { "LAPD", "cop", {
+                "textures\AOSOUL\vehicles\humming_police_1.paa",
+                "textures\AOSOUL\vehicles\humming_police_2.paa"
+            }, "" },
         };
     };
 
@@ -1218,13 +1220,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" },
             { "EMS Red", "med", {
-               "textures\AOSOUL\vehicles\Orca_EMS_red.paa"
+               "textures\AOSOUL\vehicles\orca_EMS_red.paa"
             }, "" },
             { "Civ Custom 1", "civ", {
-                "textures\AOSoul\vehicles\Civ_Orca_Civ_Custom_1.paa"
+                "textures\AOSoul\vehicles\orca_Custom_1.paa"
             }, "" },
             { "Civ Custom 2", "civ", {
-                "textures\AOSoul\vehicles\Civ_Orca_Civ_Custom_2.paa"
+                "textures\AOSoul\vehicles\orca_Custom_2.paa"
             }, "" },
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
@@ -1233,19 +1235,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Reb Custom 1", "reb", {
-                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_1.paa"
+                "textures\AOSoul\vehicles\orca_Reb_Custom_1.paa"
             }, "" },
             { "Reb Custom 2", "reb", {
-                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_2.paa"
+                "textures\AOSoul\vehicles\orca_Reb_Custom_2.paa"
             }, "" },
             { "Reb Custom 3", "reb", {
-                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_3.paa"
+                "textures\AOSoul\vehicles\orca_Reb_Custom_3.paa"
             }, "" },
             { "Reb Custom 4", "reb", {
-                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_4.paa"
+                "textures\AOSoul\vehicles\orca_Reb_Custom_4.paa"
             }, "" },
             { "Reb Custom 5", "reb", {
-                "textures\AOSoul\vehicles\Civ_Orca_Reb_Custom_5.paa"
+                "textures\AOSoul\vehicles\orca_Reb_Custom_5.paa"
             }, "" }
         };
     };
@@ -1279,10 +1281,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 1300000;
         textures[] = {
             { "Swat", "cop", {
-                "textures\AOSoul\vehicles\Civ_Hellcat_Cop_Swat_1.paa",
+                "textures\AOSoul\vehicles\hellcat_Cop_Swat_1.paa",
             }, "" },
             { "Dragon", "reb", {
-                "textures\AOSoul\vehicles\Civ_Hellcat_Reb_Dragon_1.paa",
+                "textures\AOSoul\vehicles\hellcat_Reb_Dragon_1.paa",
             }, "" }
         };
     };
@@ -1369,7 +1371,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class O_Truck_03_fuel_F {
         vItemSpace = 50;
-        vFuelSpace = 55000;
+        vFuelSpace = 65000;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
         price = 750000;
         textures[] = {};
