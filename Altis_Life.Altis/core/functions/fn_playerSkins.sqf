@@ -40,10 +40,10 @@ switch (playerSide) do {
             _skinName = "textures\AOSoul\clothes\cop\cop_uniform.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) isEqualTo 4) then {
-                    _skinName = "textures\AOSoul\cluthes\cop\cop_uniform_white.jpg";
+                    _skinName = "textures\AOSoul\clothes\cop\cop_uniform_white.jpg";
                 };
                 if (FETCH_CONST(life_coplevel) >= 5) then {
-                    _skinName = "textures\AOSoul\cluthes\cop\cop_uniform_black.jpg";
+                    _skinName = "textures\AOSoul\clothes\cop\cop_uniform_black.jpg";
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
