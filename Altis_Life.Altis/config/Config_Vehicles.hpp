@@ -89,7 +89,8 @@ class CarShops {
             //휴론 비무장
             { "B_Heli_Transport_03_unarmed_F", "license_civ_level4" },
             //Caesar BTT 경비행기
-            { "C_Plane_Civil_01_F", "license_civ_level2" } //Apex DLC
+            { "C_Plane_Civil_01_F", "license_civ_level1" }, //Apex DLC
+            { "C_Plane_Civil_01_racing_F", "call life_donorlevel >= 1" }//Apex DLC
         };
     };
 
@@ -420,6 +421,8 @@ class LifeCfgVehicles {
             }, "" }
         };
     };
+
+    class C_Plane_Civil_01_racing_F : C_Plane_Civil_01_F{};
 
     // Apex DLC
     class B_T_VTOL_01_infantry_F {
