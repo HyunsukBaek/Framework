@@ -54,20 +54,12 @@ class CarShops {
         vehicles[] = {
             //트럭(박스)
             { "C_Van_01_box_F", "" },
+            //자마크 수송(덮개)
+            { "I_Truck_02_covered_F", "" },
             //HEMTT 박스
-            { "B_Truck_01_box_F", "" },
+            { "B_Truck_01_box_F", "license_civ_level1" },
             //HEMTT 수송
             { "B_Truck_01_transport_F", "license_civ_level1" },
-            //HEMTT 수송 덮개
-            { "B_Truck_01_covered_F", "license_civ_level1" },
-            //자마크 수송
-            { "I_Truck_02_transport_F", "" },
-            //자마크 수송(덮개)
-            { "I_Truck_02_covered_F", "license_civ_level1" },
-            //템페스트 수송
-            { "O_Truck_03_transport_F", "license_civ_level3" },
-            //템페스트 수송(덮개)
-            { "O_Truck_03_covered_F", "license_civ_level3" },
             //템페스트 장치
             { "O_Truck_03_device_F", "license_civ_level3" },
             //트럭 연료
@@ -233,6 +225,8 @@ class CarShops {
             { "B_MRAP_01_F", "call life_coplevel >= 2" },
             //헌터 HMG
             { "B_MRAP_01_hmg_F", "call life_coplevel >= 5" },
+            //자마크수송
+            { "I_Truck_02_covered_F", "" },
             //자마크 탄약
             { "I_Truck_02_ammo_F", "" },
             //템페스트 탄약
@@ -648,19 +642,6 @@ class LifeCfgVehicles {
         };
     };
 
-    class B_MRAP_01_hmg_F {
-        vItemSpace = 100;
-        conditions = "";
-        price = 750000;
-        textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
-        };
-    };
-
     class B_Boat_Armed_01_minigun_F {
         vItemSpace = 50;
         conditions = "license_cop_cg || {!(playerSide isEqualTo west)}";
@@ -749,14 +730,14 @@ class LifeCfgVehicles {
     class C_Boat_Civil_01_rescue_F : C_Boat_Civil_01_police_F{};
 
     class B_Truck_01_box_F {
-        vItemSpace = 400;
+        vItemSpace = 350;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
         price = 500000;
         textures[] = { };
     };
 
     class B_Truck_01_transport_F {
-        vItemSpace = 300;
+        vItemSpace = 250;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
         price = 330000;
         textures[] = { };
@@ -776,11 +757,9 @@ class LifeCfgVehicles {
         conditions = "";
         price = 1000000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
+            { "EMS white", "med", {"#(argb,8,8,3)color(1,1,1,0.8)"}, "" },
+            { "Blue", "cop", {"#(argb,8,8,3)color(0.01,0.01,1.53,1)"}, "" },
+            { "Police", "cop", {"textures\AOSoul\vehicles\strider_copblack.paa"}, "" }
         };
     };
     class I_MRAP_03_hmg_F : I_MRAP_03_F{};
@@ -815,6 +794,10 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             }, "" },
             { "Hello kitty", "civ",    {"textures\AOSoul\vehicles\offroad_kitty.paa"}, "" },
+            { "EMS", "med", {
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa"
+            }, "" },
             { "EMS Red", "med",        {"textures\AOSoul\vehicles\offroad_EMS_red.paa"}, "" },
             { "MetroCop", "cop",       {"textures\AOSoul\vehicles\offroad_met_police.paa"}, "" },
             { "UKPD", "cop",           {"textures\AOSoul\vehicles\offroad_uk.paa"}, "" },
@@ -896,8 +879,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             }, "" },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Cola", "civ", {
+                "textures\AOSoul\vehicles\zamak_rebull_front.paa",
+                "textures\AOSoul\vehicles\zamak_redbull_back.paa"
+            }, "" },
+            { "RedBull", "civ", {
+                "textures\AOSoul\vehicles\truckcabredbull.paa",
+                "textures\AOSoul\vehicles\truckbackredbull.paa"
+            }, "" },
+            { "COP", "cop", {
+                "textures\AOSoul\vehicles\zamak_cop_front.paa",
+                "textures\AOSoul\vehicles\zamak_cop_back.paa"
             }, "" }
         };
     };
@@ -1104,14 +1096,38 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 1000000;
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Police", "cop", {
+                "textures\AOSoul\vehicles\hunter_copblack_front.paa",
+                "textures\AOSoul\vehicles\hunter_copblack_back.paa"}
+            , "" },
+            { "Scott police", "cop", {
+                "textures\AOSoul\vehicles\hunter_scotpol_Front.paa",
+                "textures\AOSoul\vehicles\hunter_scotpol_Back.paa"
+            }, "" },
+            { "EMS RED", "med", {
+                "textures\AOSoul\vehicles\hunter_med_red_front.paa",
+                "textures\AOSoul\vehicles\hunter_med_red_back.paa"
             }, "" }
         };
     };
 
-     class B_Heli_Light_01_stripped_F {
+    class B_MRAP_01_hmg_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 750000;
+        textures[] = {
+            { "Police", "cop", {
+                "textures\AOSoul\vehicles\hunter_copblack_front.paa",
+                "textures\AOSoul\vehicles\hunter_copblack_back.paa"}
+            , "" },
+            { "Scott police", "cop", {
+                "textures\AOSoul\vehicles\hunter_scotpol_Front.paa",
+                "textures\AOSoul\vehicles\hunter_scotpol_Back.paa"
+            }, "" },
+        };
+    };
+
+    class B_Heli_Light_01_stripped_F {
         vItemSpace = 60;
         conditions = "";
         price = 400000;
