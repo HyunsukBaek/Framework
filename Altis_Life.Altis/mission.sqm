@@ -263,7 +263,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="Tonic & AOSOUL";
+	author="AOSOUL based on Tonic";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";
@@ -275,7 +275,7 @@ class ScenarioData
 	{
 		gameType="RPG";
 		minPlayers=1;
-		maxPlayers=126;
+		maxPlayers=116;
 	};
 	wreckLimit=3;
 	wreckRemovalMinTime=60;
@@ -357,7 +357,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="AOSOUL RP";
+		briefingName="AOSoul Life Season 3";
 		startWeather=0;
 		startWind=0.29999998;
 		startWindDir=20;
