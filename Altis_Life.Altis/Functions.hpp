@@ -285,8 +285,8 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
-		class huntingKit {};	//AOSOUL Hunting Kit
-		class campFire {};	//AOSOUL Campfire
+        class huntingKit {};	//AOSOUL Hunting Kit
+        class campFire {};	//AOSOUL Campfire
     };
 
     class Medical_System {
@@ -369,8 +369,8 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
-		//AOSOUL Added
-		class blackjack {};  //BlackJack
+        //AOSOUL Added
+        class blackjack {};  //BlackJack
         class BJbet {};  //BlackJack
         class BJhit {};  //BlackJack
         class BJstay {};  //BlackJack
