@@ -883,12 +883,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
             }, "" },
             { "Cola", "civ", {
-                "textures\AOSoul\vehicles\zamak_rebull_front.paa",
-                "textures\AOSoul\vehicles\zamak_redbull_back.paa"
+                "textures\AOSoul\vehicles\zamak_cola_front.paa",
+                "textures\AOSoul\vehicles\zamak_cola_back.paa"
             }, "" },
             { "RedBull", "civ", {
-                "textures\AOSoul\vehicles\truckcabredbull.paa",
-                "textures\AOSoul\vehicles\truckbackredbull.paa"
+                "textures\AOSoul\vehicles\zamak_rebull_front.paa",
+                "textures\AOSoul\vehicles\zamak_redbull_back.paa"
             }, "" },
             { "COP", "cop", {
                 "textures\AOSoul\vehicles\zamak_cop_front.paa",
