@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "huntingKit", "firewood" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "salema", "ornate", "mackerel", "tuna", "mullet", "catshark", "hen", "rooster", "sheep", "goat", "huntingKit", "firewood" };
     };
 
     class med_market {
@@ -608,7 +608,7 @@ class VirtualItems {
         variable = "rabbit";
         displayName = "STR_Item_Rabbit";
         weight = 1;
-        buyPrice = 850;
+        buyPrice = -1;
         sellPrice = 750;
         illegal = false;
         edible = 20;
@@ -631,7 +631,7 @@ class VirtualItems {
         variable = "salema";
         displayName = "STR_Item_Salema";
         weight = 1;
-        buyPrice = 1200;
+        buyPrice = -1;
         sellPrice = 1000;
         illegal = false;
         edible = 30;
@@ -654,7 +654,7 @@ class VirtualItems {
         variable = "ornate";
         displayName = "STR_Item_Ornate";
         weight = 1;
-        buyPrice = 1300;
+        buyPrice = -1;
         sellPrice = 1100;
         illegal = false;
         edible = 25;
@@ -677,7 +677,7 @@ class VirtualItems {
         variable = "mackerel";
         displayName = "STR_Item_Mackerel";
         weight = 2;
-        buyPrice = 2300;
+        buyPrice = -1;
         sellPrice = 1650;
         illegal = false;
         edible = 30;
@@ -700,7 +700,7 @@ class VirtualItems {
         variable = "tuna";
         displayName = "STR_Item_Tuna";
         weight = 3;
-        buyPrice = 6250;
+        buyPrice = -1;
         sellPrice = 5300;
         illegal = false;
         edible = 100;
@@ -723,7 +723,7 @@ class VirtualItems {
         variable = "mullet";
         displayName = "STR_Item_Mullet";
         weight = 2;
-        buyPrice = 4600;
+        buyPrice = -1;
         sellPrice = 3400;
         illegal = false;
         edible = 80;
@@ -746,7 +746,7 @@ class VirtualItems {
         variable = "catshark";
         displayName = "STR_Item_CatShark";
         weight = 3;
-        buyPrice = 9100;
+        buyPrice = -1;
         sellPrice = 8300;
         illegal = false;
         edible = 100;
@@ -769,7 +769,7 @@ class VirtualItems {
         variable = "turtleSoup";
         displayName = "STR_Item_TurtleSoup";
         weight = 2;
-        buyPrice = 12000;
+        buyPrice = -1;
         sellPrice = 10000;
         illegal = false;
         edible = 100;
@@ -792,7 +792,7 @@ class VirtualItems {
         variable = "hen";
         displayName = "STR_Item_Hen";
         weight = 1;
-        buyPrice = 5000;
+        buyPrice = -1;
         sellPrice = 3800;
         illegal = false;
         edible = 65;
@@ -815,7 +815,7 @@ class VirtualItems {
         variable = "rooster";
         displayName = "STR_Item_Rooster";
         weight = 1;
-        buyPrice = 8000;
+        buyPrice = -1;
         sellPrice = 6800;
         illegal = false;
         edible = 45;
@@ -838,7 +838,7 @@ class VirtualItems {
         variable = "sheep";
         displayName = "STR_Item_Sheep";
         weight = 2;
-        buyPrice = 15500;
+        buyPrice = -1;
         sellPrice = 13300;
         illegal = false;
         edible = 100;
@@ -861,7 +861,7 @@ class VirtualItems {
         variable = "goat";
         displayName = "STR_Item_Goat";
         weight = 2;
-        buyPrice = 17500;
+        buyPrice = -1;
         sellPrice = 14000;
         illegal = false;
         edible = 100;
