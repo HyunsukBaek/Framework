@@ -130,7 +130,7 @@ class Clothing {
             { "B_Carryall_ghex_f", "", 7500, "" }, //Apex DLC
             { "B_Bergen_dgtl_f", "", 9500, "" }, //Apex DLC
             { "B_Bergen_tna_f", "", 9500, "" }, //Apex DLC
-            { "B_AssaultPack_sgg", "", 300000, "" }//jetpack
+            { "B_AssaultPack_sgg", "JET PACK", 300000, "" }//jetpack
         };
     };
 
@@ -230,7 +230,7 @@ class Clothing {
             { "B_Carryall_cbr", "", 2500, "" },
             { "B_Parachute", "", 2500, "" },
             { "B_OutdoorPack_blk", "", 2500, "" },
-            { "B_AssaultPack_sgg", "", 300000, ""}//jetpack
+            { "B_AssaultPack_sgg", "JET PACK", 300000, ""}//jetpack
         };
     };
 
@@ -414,7 +414,7 @@ class Clothing {
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
             { "B_Parachute", "낙하산", 37500, "" },
-            { "B_AssaultPack_sgg", "JetPack", 400000, "" }
+            { "B_AssaultPack_sgg", "JET PACK", 300000, "" }
         };
     };
 
@@ -487,7 +487,6 @@ class Clothing {
             { "B_AssaultPack_khk", "", 2000, "" },
             { "B_AssaultPack_dgtl", "", 2000, "" },
             { "B_AssaultPack_rgr", "", 2000, "" },
-            { "B_AssaultPack_sgg", "", 300000, "" },//jetpack
             { "B_AssaultPack_blk", "", 2000, "" },
             { "B_AssaultPack_cbr", "", 2000, "" },
             { "B_AssaultPack_mcamo", "", 2000, "" },
@@ -510,6 +509,7 @@ class Clothing {
             { "B_Carryall_cbr", "", 7500, "" },
             { "B_OutdoorPack_blk", "", 7500, "" },
             { "B_ViperLightHarness_blk_F", "", 17500, "" },
+            { "B_AssaultPack_sgg", "JET PACK", 300000, "" },//jetpack
             { "B_Parachute", "낙하산", 37500, "" }
         };
     };
