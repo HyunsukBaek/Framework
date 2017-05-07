@@ -4,13 +4,10 @@ if (playerSide == independent) exitWith {hint "You must be a cop to purchase thi
 if (playerSide == civilian) exitWith {hint "You must be a cop to purchase this!"};  //cops only
 
 if((FETCH_CONST(life_coplevel)) < 2) exitWith { hint "자동 아이템 세팅 하려면 경찰2레벨 이상되야합니다!"};  //level 2+
-{
-    exitWith { hint "You are not the right level!"};  //level 2+
-};
 
-if (BANK >= 130000) then //100k
+if (life_atmbank >= 130000) then //100k
 {
-    BANK = BANK - 130000;  //100k
+    life_atmbank = life_atmbank - 130000;  //100k
     hintSilent "130000원이 차감되었습니다";
     sleep 2;
     hintSilent "유니폼제외 모두 벗고 새로 세팅합니다. ";
