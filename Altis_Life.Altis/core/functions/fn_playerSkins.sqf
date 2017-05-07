@@ -51,5 +51,14 @@ switch (playerSide) do {
         if (uniform player isEqualTo "U_Rangemaster") then {
             player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
         };
+        if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
+            player setObjectTextureGlobal [0, "textures\AOSOUL\Cloth\Medic\paramedic_uniform_hv.paa"];
+        };
+        if (uniform player isEqualTo "U_B_CombatUniform_mcam_worn") then {
+            player setObjectTextureGlobal [0, "textures\AOSOUL\Cloth\Medic\paramedic_unifrom.paa"];
+        };
+        if (uniform player isEqualTo "U_Competitor") then {
+            player setObjectTextureGlobal [0, "textures\AOSOUL\Cloth\Medic\orange_EMS.paa"];
+        };
     };
 };
