@@ -30,7 +30,9 @@ TEXT HERE<br/><br/>
 			PVP, 저격질, 장비질 보단 상황에 따른 역할극(RPG)을 플레이하는 LIFE서버입니다. (pvp 아닙니다!!)<br/>
 			누군가를 사살하거나 강도짓을 할 때, 그에 따른 상황을 만들어야지만 제재받지 아니합니다.<br/>
 			제 2의 라이프를 본 서버에서 느끼며 재미와 힐링하는 시간 가지길 바랍니다. <br/>
-			유머게시판에  재밌는 RP플레이 영상있으니 참고하세요<br/>카페주소: http://cafa.naver.com/alflrss <br/>
+			유머게시판에  재밌는 RP플레이 영상있으니 참고하세요<br/>
+     카페주소: http://cafa.naver.com/alflrss <br/>
+     디스코드: https://discord.gg/tVyFjzm <br/>
                 "
         ]
     ];
