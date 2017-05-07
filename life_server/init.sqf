@@ -219,22 +219,22 @@ publicVariable "life_attachment_point";
 //MarketSystem
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 
-_markername1="deteteArea1";
+_markername1="deleteArea1";
 _terrainobjects1=nearestTerrainObjects [(getMarkerPos _markername1),[],(getmarkersize _markername1)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects1; 
-_markername2="deteteArea2";
+_markername2="deleteArea1";
 _terrainobjects2=nearestTerrainObjects [(getMarkerPos _markername2),[],(getmarkersize _markername2)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects2; 
-_markername3="deteteArea3";
+_markername3="deleteArea1";
 _terrainobjects3=nearestTerrainObjects [(getMarkerPos _markername3),[],(getmarkersize _markername3)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects3; 
-_markername4="deteteArea4";
+_markername4="deleteArea1";
 _terrainobjects4=nearestTerrainObjects [(getMarkerPos _markername4),[],(getmarkersize _markername4)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects4; 
-_markername5="deteteArea5";
+_markername5="deleteArea1";
 _terrainobjects5=nearestTerrainObjects [(getMarkerPos _markername5),[],(getmarkersize _markername5)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects5; 
-_markername6="deteteArea6";
+_markername6="deleteArea1";
 _terrainobjects6=nearestTerrainObjects [(getMarkerPos _markername6),[],(getmarkersize _markername6)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects6; 
 
