@@ -184,9 +184,9 @@ class WeaponShops {
         items[] = {
             { "FirstAidKit", "", 3000, 1500, "" },
             { "NVGoggles", "", 10000, 1000, "" },
+            { "Rangefinder", "", 10000, 1000, "" },
             { "acc_flashlight", "", 5000, 2000, "" },
             { "acc_pointer_IR", "", 5000, 2000, "" },
-
             { "hgun_Rook40_F", "", 20000, 15000, "" },
             { "hgun_PDW2000_F", "", 60000, 35000, "license_civ_level1" },
             { "SMG_01_F", "", 80000, 45000, "license_civ_level2" },
@@ -245,9 +245,9 @@ class WeaponShops {
             { "NVGoggles_INDEP", "", 10000, 1000, "call life_coplevel >= 1" },
             { "NVGoggles_tna_F", "", 10000, 1000, "license_civ_level2 || call life_coplevel >= 2" },
             { "NVGoggles_OPFOR", "", 10000, 1000, "" },
-            { "NVGogglesB_blk_F", "", 900000, 450000, "license_civ_level3 || call life_coplevel >= 4" },
-            { "NVGogglesB_gry_F", "", 900000, 450000, "call life_donorlevel >= 1" },
-            { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 2" },
+            { "NVGogglesB_blk_F", "", 900000, 450000, "call life_donorlevel >= 4" },
+            { "NVGogglesB_gry_F", "", 900000, 450000, "call life_donorlevel >= 4" },
+            { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 4" },
 
             { "Chemlight_red", "", 1500, 500, "" },
             { "Chemlight_yellow", "", 1500, 500, "" },
@@ -291,13 +291,16 @@ class WeaponShops {
             { "ItemCompass", "", 500, 300, "" },
             { "ItemWatch", "", 500, 30, "" },
             { "FirstAidKit", "", 3000, 1500, "" },
+            { "acc_flashlight", "", 5000, 2000, "" },
+            { "acc_pointer_IR", "", 5000, 2000, "" },
             { "NVGoggles", "", 10000, 1000, "" },
+            { "Rangefinder", "", 10000, 1000, "" },
             { "NVGoggles_INDEP", "", 10000, 1000, "call life_coplevel >= 1" },
             { "NVGoggles_tna_F", "", 10000, 1000, "call life_coplevel >= 2" },
             { "NVGoggles_OPFOR", "", 10000, 1000, "" },
             { "NVGogglesB_blk_F", "", 500000, 300000, "call life_coplevel >= 4" },
-            { "NVGogglesB_gry_F", "", 500000, 300000, "call life_donorlevel >= 1" },
-            { "NVGogglesB_grn_F", "", 500000, 300000, "call life_donorlevel >= 2" },
+            { "NVGogglesB_gry_F", "", 500000, 300000, "call life_donorlevel >= 3" },
+            { "NVGogglesB_grn_F", "", 500000, 300000, "call life_donorlevel >= 3" },
             { "acc_flashlight", "", 5000, 2000, "" },
             { "acc_pointer_IR", "", 5000, 2000, "" },
             { "Chemlight_red", "", 1500, 500, "" },
@@ -553,13 +556,14 @@ class WeaponShops {
             { "ItemCompass", "", 500, 300, "" },
             { "ItemWatch", "", 500, 30, "" },
             { "FirstAidKit", "", 3000, 1500, "" },
+            { "Rangefinder", "", 10000, 1000, "" },
             { "NVGoggles", "", 10000, 1000, "" },
-            { "NVGoggles_INDEP", "", 10000, 1000, "call life_coplevel >= 1" },
-            { "NVGoggles_tna_F", "", 10000, 1000, "license_civ_level2 || call life_coplevel >= 2" },
-            { "NVGoggles_OPFOR", "", 10000, 1000, "" },
-            { "NVGogglesB_blk_F", "", 900000, 450000, "license_civ_level3 || call life_coplevel >= 4" },
-            { "NVGogglesB_gry_F", "", 900000, 450000, "call life_donorlevel >= 1" },
-            { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 2" }
+            { "NVGoggles_INDEP", "", 10000, 1000, "" },
+            { "NVGoggles_tna_F", "", 10000, 1000, "call life_mediclevel >= 2" },
+            { "NVGoggles_OPFOR", "", 10000, 1000, "call life_donorlevel >= 2" },
+            { "NVGogglesB_blk_F", "", 900000, 450000, "call life_mediclevel >= 4" },
+            { "NVGogglesB_gry_F", "", 900000, 450000, "call life_donorlevel >= 4" },
+            { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 4" }
         };
         mags[] = {};
         accs[] = {};
