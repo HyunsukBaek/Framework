@@ -308,7 +308,7 @@ class WeaponShops {
             { "SmokeShellRed", "최루탄", 32000, 16000, "" },
 
             //권총
-            { "hgun_P07_F", $STR_W_items_StunPistol, 5000, 1000, "" },
+            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 5000, 1000, "" },
             { "hgun_P07_khk_F", "", 10000, 5000, "call life_donorlevel >= 1" }, //Apex DLC
             { "hgun_Pistol_heavy_02_F", "", 50000, 25000, "call life_coplevel >= 4" },
             { "SMG_05_F", "", 50000, 25000, "call life_coplevel >= 2" },

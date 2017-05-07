@@ -231,6 +231,7 @@ class Life_Client_Core {
         class slotMachineRewards {};  //Casino
         class slotMachineRandomizer {};  //Casino
         class seatbelt {};  //안전벨트
+        class autoSetPolice {};//캅오토셋
         ////////////////
     };
 
