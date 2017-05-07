@@ -37,7 +37,7 @@ switch (playerSide) do {
 
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
-            _skinName = "textures\cop_uniform.jpg";
+            _skinName = "textures\AOSoul\clothes\cop_uniform.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
                 if (FETCH_CONST(life_coplevel) >= 1) then {
                     _skinName = ["textures\cop_uniform_",(FETCH_CONST(life_coplevel)),".jpg"] joinString "";
@@ -52,13 +52,13 @@ switch (playerSide) do {
             player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
         };
         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
-            player setObjectTextureGlobal [0, "textures\AOSOUL\Cloth\Medic\paramedic_uniform_hv.paa"];
+            player setObjectTextureGlobal [0, "textures\AOSOUL\clothes\Medic\paramedic_uniform_hv.paa"];
         };
         if (uniform player isEqualTo "U_B_CombatUniform_mcam_worn") then {
-            player setObjectTextureGlobal [0, "textures\AOSOUL\Cloth\Medic\paramedic_unifrom.paa"];
+            player setObjectTextureGlobal [0, "textures\AOSOUL\clothes\Medic\paramedic_unifrom.paa"];
         };
         if (uniform player isEqualTo "U_Competitor") then {
-            player setObjectTextureGlobal [0, "textures\AOSOUL\Cloth\Medic\orange_EMS.paa"];
+            player setObjectTextureGlobal [0, "textures\AOSOUL\clothes\Medic\orange_EMS.paa"];
         };
     };
 };
