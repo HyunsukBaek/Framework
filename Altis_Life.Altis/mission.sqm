@@ -292,6 +292,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -306,24 +324,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1843,7 +1843,7 @@ class Mission
 			position[]={14184.423,23.396761,18558.199};
 			name="car_g_3";
 			type="Empty";
-			angle=206.13393;
+			angle=206.13391;
 			id=149;
 		};
 		class Item145
@@ -1853,7 +1853,7 @@ class Mission
 			name="civ_gar_1_3";
 			text="@STR_MAR_Garage";
 			type="o_service";
-			angle=191.32735;
+			angle=191.32733;
 			id=150;
 			atlOffset=-0.035488129;
 		};
@@ -10146,7 +10146,7 @@ class Mission
 			};
 			id=668;
 			type="Land_WoodenTable_large_F";
-			atlOffset=3.3507156;
+			atlOffset=3.3507309;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10188,7 +10188,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Sink_F";
-			atlOffset=3.3504028;
+			atlOffset=3.3504715;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10270,7 +10270,7 @@ class Mission
 			};
 			id=671;
 			type="Land_WoodenTable_small_F";
-			atlOffset=3.3506927;
+			atlOffset=3.3508453;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10352,7 +10352,7 @@ class Mission
 			};
 			id=673;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.92366028;
+			atlOffset=0.92390442;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10393,7 +10393,7 @@ class Mission
 			};
 			id=674;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.78687286;
+			atlOffset=0.787117;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10434,7 +10434,7 @@ class Mission
 			};
 			id=675;
 			type="Land_Pallet_vertical_F";
-			atlOffset=4.6823578;
+			atlOffset=4.6821442;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10598,7 +10598,7 @@ class Mission
 			};
 			id=679;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.81525421;
+			atlOffset=0.81549835;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10762,7 +10762,7 @@ class Mission
 			};
 			id=683;
 			type="Land_Portable_generator_F";
-			atlOffset=3.3508072;
+			atlOffset=3.3508148;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10803,7 +10803,7 @@ class Mission
 			};
 			id=684;
 			type="Land_MetalBarrel_F";
-			atlOffset=3.3506775;
+			atlOffset=3.3507309;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10844,7 +10844,7 @@ class Mission
 			};
 			id=685;
 			type="Land_ExtensionCord_F";
-			atlOffset=3.3511734;
+			atlOffset=3.3512115;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11255,7 +11255,7 @@ class Mission
 			};
 			id=695;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.53199005;
+			atlOffset=0.53200531;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35672,13 +35672,13 @@ class Mission
 				angles[]={0,3.7544839,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,1,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine100.paa""];";
 			};
 			id=1512;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.25069141;
 		};
 		class Item849
 		{
@@ -35696,7 +35696,7 @@ class Mission
 			};
 			id=1513;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.23356819;
+			atlOffset=0.23358727;
 		};
 		class Item850
 		{
@@ -35707,13 +35707,13 @@ class Mission
 				angles[]={0,2.1571934,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine500.paa""];";
 			};
 			id=1514;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.25081539;
 		};
 		class Item851
 		{
@@ -35724,13 +35724,13 @@ class Mission
 				angles[]={0,5.2551007,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false;  this addAction[""Insert Coin"",life_fnc_processCasinoSlots,1,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine100.paa""];";
 			};
 			id=1515;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.25076008;
 		};
 		class Item852
 		{
@@ -35748,7 +35748,7 @@ class Mission
 			};
 			id=1516;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.032942772;
+			atlOffset=0.033082962;
 		};
 		class Item853
 		{
@@ -35759,13 +35759,13 @@ class Mission
 				angles[]={0,0.14884591,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,2,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine1000.paa""];";
 			};
 			id=1517;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.25081253;
 		};
 		class Item854
 		{
@@ -35783,7 +35783,6 @@ class Mission
 			};
 			id=1522;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.24222279;
 		};
 		class Item855
 		{
@@ -35801,7 +35800,6 @@ class Mission
 			};
 			id=1523;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.24222279;
 		};
 		class Item856
 		{
@@ -35812,13 +35810,13 @@ class Mission
 				angles[]={0,2.9217169,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false;this addAction [""Play BlackJack"", life_fnc_blackjack, ' isNull objectParent player ',4];";
 			};
 			id=1524;
 			type="Land_InfoStand_V2_F";
-			atlOffset=1.4276428;
 		};
 		class Item857
 		{
@@ -35836,7 +35834,6 @@ class Mission
 			};
 			id=1525;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.017321587;
 		};
 		class Item858
 		{
@@ -36023,6 +36020,7 @@ class Mission
 			};
 			id=1598;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.00012493134;
 		};
 		class Item869
 		{
@@ -43637,7 +43635,7 @@ class Mission
 			};
 			id=2534;
 			type="Land_ToiletBox_F";
-			atlOffset=-0.01590848;
+			atlOffset=-0.015961409;
 		};
 		class Item1267
 		{
@@ -50707,41 +50705,43 @@ class Mission
 			};
 			id=2950;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.029500425;
+			atlOffset=0.015495777;
 		};
 		class Item1637
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13817.954,-0.44287103,6863.3296};
+				position[]={13817.954,-0.44287109,6863.3296};
 				angles[]={0,1.5459254,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,4,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine500.paa""];";
 			};
 			id=2951;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.56117272;
+			atlOffset=0.0015058517;
 		};
 		class Item1638
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13819.222,-0.44287103,6866.8491};
+				position[]={13819.222,-0.44287109,6866.8491};
 				angles[]={0,2.3626697,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,4,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine500.paa""];";
 			};
 			id=2952;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.80509615;
+			atlOffset=0.0017063618;
 		};
 		class Item1639
 		{
@@ -50758,31 +50758,32 @@ class Mission
 			};
 			id=2953;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.37734997;
+			atlOffset=0.37573934;
 		};
 		class Item1640
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13821.972,-0.44363683,6867.7241};
+				position[]={13821.972,-0.44363689,6867.7241};
 				angles[]={0,3.1964657,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Insert Coin"",life_fnc_processCasinoSlots,3,0,false,false,"""",' !life_is_processing']; this setObjectTexture [0, ""textures\AOSoul\Slots\slotmachine1000.paa""];";
 			};
 			id=2954;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.85364544;
+			atlOffset=0.00094056129;
 		};
 		class Item1641
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13820.454,-0.19081458,6860.2046};
+				position[]={13820.454,-0.19081455,6860.2046};
 				angles[]={0,0.3543193,0};
 			};
 			side="Empty";
@@ -50792,7 +50793,7 @@ class Mission
 			};
 			id=2955;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.34849739;
+			atlOffset=0.25231361;
 		};
 		class Item1642
 		{
@@ -51189,7 +51190,7 @@ class Mission
 			};
 			id=2977;
 			type="Land_Cargo40_white_F";
-			atlOffset=-0.011744738;
+			atlOffset=-0.01174593;
 		};
 		class Item1661
 		{
@@ -51206,7 +51207,7 @@ class Mission
 			};
 			id=2978;
 			type="Land_Cargo40_white_F";
-			atlOffset=-0.0047901869;
+			atlOffset=-0.0047997236;
 		};
 		class Item1662
 		{
@@ -77685,7 +77686,7 @@ class Mission
 			};
 			id=4619;
 			type="Land_Cargo40_grey_F";
-			atlOffset=4.3272972e-005;
+			atlOffset=1.5616417e-005;
 		};
 		class Item3161
 		{
@@ -77702,7 +77703,7 @@ class Mission
 			};
 			id=4620;
 			type="Land_Cargo40_orange_F";
-			atlOffset=-0.0027288198;
+			atlOffset=-0.002751708;
 		};
 		class Item3162
 		{
@@ -77719,7 +77720,7 @@ class Mission
 			};
 			id=4621;
 			type="Land_Cargo40_white_F";
-			atlOffset=-0.00041651726;
+			atlOffset=-0.00041878223;
 		};
 		class Item3163
 		{
@@ -77736,7 +77737,7 @@ class Mission
 			};
 			id=4622;
 			type="Land_Cargo20_red_F";
-			atlOffset=-2.2649765e-005;
+			atlOffset=-2.9563904e-005;
 		};
 		class Item3164
 		{
@@ -84340,7 +84341,7 @@ class Mission
 			fillName="DiagGrid";
 			a=100;
 			b=100;
-			angle=21.678997;
+			angle=21.678995;
 			id=5071;
 			atlOffset=-38.481602;
 		};
@@ -84352,11 +84353,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorBlack";
-			alpha=0.97482562;
+			alpha=0;
 			fillName="DiagGrid";
 			a=150;
 			b=150;
-			angle=43.116768;
+			angle=43.116764;
 			id=5072;
 			atlOffset=-17.51906;
 		};
@@ -84368,11 +84369,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorBlack";
-			alpha=0.97482562;
+			alpha=0;
 			fillName="DiagGrid";
 			a=150;
 			b=150;
-			angle=178.94199;
+			angle=178.94197;
 			id=5073;
 			atlOffset=-17.842993;
 		};
@@ -84384,11 +84385,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorBlack";
-			alpha=0.97482562;
+			alpha=0;
 			fillName="DiagGrid";
 			a=150;
 			b=150;
-			angle=178.94199;
+			angle=178.94197;
 			id=5074;
 			atlOffset=-13.828413;
 		};
@@ -84400,11 +84401,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorBlack";
-			alpha=0.97482562;
+			alpha=0;
 			fillName="DiagGrid";
 			a=150;
 			b=150;
-			angle=178.94199;
+			angle=178.94197;
 			id=5075;
 			atlOffset=-17.486197;
 		};
@@ -84434,11 +84435,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorBlack";
-			alpha=0.97482562;
+			alpha=0;
 			fillName="DiagGrid";
 			a=150;
 			b=150;
-			angle=178.94199;
+			angle=178.94197;
 			id=5077;
 			atlOffset=-21.155678;
 		};
@@ -84450,11 +84451,11 @@ class Mission
 			markerType="RECTANGLE";
 			type="ellipse";
 			colorName="ColorBlack";
-			alpha=0.97482562;
+			alpha=0;
 			fillName="DiagGrid";
 			a=150;
 			b=150;
-			angle=178.94199;
+			angle=178.94197;
 			id=5078;
 			atlOffset=-43.146038;
 		};
@@ -84464,7 +84465,7 @@ class Mission
 			position[]={18281.77,17.322157,17519.238};
 			name="cop_car_6";
 			type="Empty";
-			angle=321.564;
+			angle=321.56396;
 			id=5082;
 		};
 	};
