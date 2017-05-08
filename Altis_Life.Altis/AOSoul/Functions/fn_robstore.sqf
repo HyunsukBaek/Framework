@@ -10,6 +10,10 @@ _action = [_this,2] call BIS_fnc_param;//Action name
 if(side _robber != civilian) exitWith {hint "주유소는 시민만 털수있습니다!"};
 if(_robber distance _shop > 5) exitWith {hint "점원과 5m 이내에서 주유소 강도를 실행할 수 있습니다"};
 
+if (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops_gas"))) exitWith {
+     hint format ["주유소를 털기위한 최소 경찰수가 부족합니다"];
+};
+
 if !(_kassa) then {_kassa = 1000;};
 if (_rip) exitWith {hint "이미 주유소 털리고 있어요!"};
 if (vehicle player != _robber) exitWith {hint "차에서 내리세요!"};
@@ -27,8 +31,6 @@ _chance = random(100);
 if(_chance >= 1) then {[1,format["경보! - 주유소: %1 에 강도 발생!", _shop]] remoteExec ["life_fnc_broadcast",west];};
 if(_chance >= 1) then {[1,format["경보! - 주유소: %1 에 강도 발생!", _shop]] remoteExec ["life_fnc_broadcast",civilian];};
 
-_cops = (west countSide playableUnits);
-if(_cops <= (LIFE_SETTINGS(getNumber,"minimum_cops_gas"))) exitWith {[_vault,-1] remoteExec ["disableSerialization;",2]; hint "주유소를 털기위한 최소 경찰수가 부족합니다";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
