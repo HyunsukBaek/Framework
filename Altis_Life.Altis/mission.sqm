@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=5085;
+		nextID=5158;
 	};
 	class MarkerIDProvider
 	{
-		nextID=244;
+		nextID=268;
 	};
 	class Camera
 	{
-		pos[]={11556.423,199.5824,7022.3999};
-		dir[]={0.0044683353,-0.99611539,0.087971784};
-		up[]={0.050530225,0.088057511,0.99483156};
-		aside[]={0.99871415,-3.7889549e-009,-0.050727591};
+		pos[]={16511.326,112.38333,12644.692};
+		dir[]={0.20753795,-0.77346009,-0.59894192};
+		up[]={0.25324002,0.63383657,-0.73083436};
+		aside[]={-0.94490534,2.7834903e-007,-0.32741481};
 	};
 };
 binarizationWanted=0;
@@ -291,24 +291,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -323,6 +305,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -381,7 +381,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3539;
+		items=3608;
 		class Item0
 		{
 			dataType="Marker";
@@ -84383,6 +84383,1052 @@ class Mission
 			b=150;
 			id=5084;
 			atlOffset=-49.478252;
+		};
+		class Item3539
+		{
+			dataType="Marker";
+			position[]={3757.2598,0,13477.896};
+			name="marker_244";
+			text="gas station 1";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5085;
+			atlOffset=-12.126419;
+		};
+		class Item3540
+		{
+			dataType="Marker";
+			position[]={5019.3232,0,14436.505};
+			name="marker_245";
+			text="gas station 2";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5086;
+			atlOffset=-16.927568;
+		};
+		class Item3541
+		{
+			dataType="Marker";
+			position[]={6198.646,0,15081.54};
+			name="marker_246";
+			text="gas station 3";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5087;
+			atlOffset=-27.022421;
+		};
+		class Item3542
+		{
+			dataType="Marker";
+			position[]={6798.5991,0,15561.654};
+			name="marker_247";
+			text="gas station 4";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5088;
+			atlOffset=-40.945328;
+		};
+		class Item3543
+		{
+			dataType="Marker";
+			position[]={9023.8486,0,15728.789};
+			name="marker_248";
+			text="gas station 5";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5089;
+			atlOffset=-111.78734;
+		};
+		class Item3544
+		{
+			dataType="Marker";
+			position[]={12028.538,0,15830.305};
+			name="marker_249";
+			text="gas station 6";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5090;
+			atlOffset=-27.626822;
+		};
+		class Item3545
+		{
+			dataType="Marker";
+			position[]={14173.29,0,16542.027};
+			name="marker_250";
+			text="gas station 7";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5091;
+			atlOffset=-16.313734;
+		};
+		class Item3546
+		{
+			dataType="Marker";
+			position[]={15297.243,0,17565.916};
+			name="marker_251";
+			text="gas station 8";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5092;
+			atlOffset=-16.392231;
+		};
+		class Item3547
+		{
+			dataType="Marker";
+			position[]={16859.457,0,15468.04};
+			name="marker_252";
+			text="gas station 9";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5093;
+			atlOffset=-12.46849;
+		};
+		class Item3548
+		{
+			dataType="Marker";
+			position[]={20766.053,0,16669.139};
+			name="marker_253";
+			text="gas station 10";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5094;
+			atlOffset=-36.881466;
+		};
+		class Item3549
+		{
+			dataType="Marker";
+			position[]={23379.406,0,19798.963};
+			name="marker_254";
+			text="gas station 11";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5095;
+			atlOffset=-12.85397;
+		};
+		class Item3550
+		{
+			dataType="Marker";
+			position[]={25690.328,0,21388.811};
+			name="marker_255";
+			text="gas station 12";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5096;
+			atlOffset=-20.946199;
+		};
+		class Item3551
+		{
+			dataType="Marker";
+			position[]={17417.246,0,13936.43};
+			name="marker_256";
+			text="gas station 13";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5097;
+			atlOffset=-5.54;
+		};
+		class Item3552
+		{
+			dataType="Marker";
+			position[]={16751.061,0,12512.781};
+			name="marker_257";
+			text="gas station 14";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5098;
+			atlOffset=-12.541325;
+		};
+		class Item3553
+		{
+			dataType="Marker";
+			position[]={19965.436,0,11447.514};
+			name="marker_258";
+			text="gas station 15";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5099;
+			atlOffset=-60.144997;
+		};
+		class Item3554
+		{
+			dataType="Marker";
+			position[]={21230.684,0,7116.8418};
+			name="marker_259";
+			text="gas station 16";
+			type="loc_Fuelstation";
+			colorName="ColorPink";
+			alpha=0.71353126;
+			id=5100;
+			atlOffset=-22.979872;
+		};
+		class Item3555
+		{
+			dataType="Marker";
+			position[]={9205.8672,0,12112.275};
+			name="marker_260";
+			text="gas station 17";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5101;
+			atlOffset=-18.142054;
+		};
+		class Item3556
+		{
+			dataType="Marker";
+			position[]={11831.701,0,14156.248};
+			name="marker_261";
+			text="gas station 18";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5106;
+			atlOffset=-12.53999;
+		};
+		class Item3557
+		{
+			dataType="Marker";
+			position[]={14221.631,0,18302.832};
+			name="marker_262";
+			text="gas station 19";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5107;
+			atlOffset=-18.527393;
+		};
+		class Item3558
+		{
+			dataType="Marker";
+			position[]={5768.8452,0,20085.789};
+			name="marker_263";
+			text="gas station 20";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5108;
+			atlOffset=-222.34904;
+		};
+		class Item3559
+		{
+			dataType="Marker";
+			position[]={8481.8105,0,18260.717};
+			name="marker_264";
+			text="gas station 21";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5109;
+			atlOffset=-177.96153;
+		};
+		class Item3560
+		{
+			dataType="Marker";
+			position[]={14532.495,0,20687.479};
+			name="marker_265";
+			text="gas station 22";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5110;
+			atlOffset=-41.515785;
+		};
+		class Item3561
+		{
+			dataType="Marker";
+			position[]={4001.4009,0,12592.045};
+			name="marker_266";
+			text="gas station 23";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
+			alpha=0.71353126;
+			id=5111;
+			atlOffset=-25.62402;
+		};
+		class Item3562
+		{
+			dataType="Marker";
+			position[]={20499.979,0.074861243,21156.889};
+			name="marker_267";
+			type="loc_Lighthouse";
+			id=5112;
+			atlOffset=135.16513;
+		};
+		class Item3563
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15607.878,30.936779,17227.523};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5113;
+			type="Land_LampAirport_F";
+		};
+		class Item3564
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15553.995,31.015778,17170.955};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5114;
+			type="Land_LampAirport_F";
+			atlOffset=-5.7220459e-006;
+		};
+		class Item3565
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13824.743,33.098732,18991.604};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5115;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00010108948;
+		};
+		class Item3566
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13816.879,32.476021,18939.041};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5116;
+			type="Land_LampAirport_F";
+			atlOffset=2.2888184e-005;
+		};
+		class Item3567
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13774.318,32.971832,18959.105};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5117;
+			type="Land_LampAirport_F";
+			atlOffset=0.00012588501;
+		};
+		class Item3568
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14148.255,31.535271,16298.016};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5118;
+			type="Land_LampAirport_F";
+			atlOffset=2.2888184e-005;
+		};
+		class Item3569
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14226.008,31.904099,16280.249};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5119;
+			type="Land_LampAirport_F";
+			atlOffset=4.3869019e-005;
+		};
+		class Item3570
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23530.037,25.746475,19961.875};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5120;
+			type="Land_LampAirport_F";
+			atlOffset=-3.8146973e-005;
+		};
+		class Item3571
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23525.361,25.630978,19897.754};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5121;
+			type="Land_LampAirport_F";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item3572
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23570.303,25.87022,19931.252};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5122;
+			type="Land_LampAirport_F";
+			atlOffset=-6.9618225e-005;
+		};
+		class Item3573
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17477.762,25.142555,13313.557};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5123;
+			type="Land_LampAirport_F";
+			atlOffset=-1.0490417e-005;
+		};
+		class Item3574
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17491.287,25.234108,13276.576};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5124;
+			type="Land_LampAirport_F";
+			atlOffset=-5.7220459e-005;
+		};
+		class Item3575
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17401.445,24.915779,13274.877};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5125;
+			type="Land_LampAirport_F";
+		};
+		class Item3576
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17305.76,27.54718,13186.649};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5126;
+			type="Land_LampAirport_F";
+			atlOffset=-2.8610229e-005;
+		};
+		class Item3577
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17032.25,28.142532,12895.772};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5127;
+			type="Land_LampAirport_F";
+			atlOffset=-5.9127808e-005;
+		};
+		class Item3578
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17223.691,24.975235,13307.423};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5128;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00012779236;
+		};
+		class Item3579
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9263.1338,53.971325,8042.1157};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5129;
+			type="Land_LampAirport_F";
+			atlOffset=-9.5367432e-005;
+		};
+		class Item3580
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12296.05,136.34036,8879.5508};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5130;
+			type="Land_LampAirport_F";
+			atlOffset=5.3405762e-005;
+		};
+		class Item3581
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16743.553,17.786636,15456.075};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5131;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00012302399;
+		};
+		class Item3582
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16997.727,27.201355,15565.502};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5132;
+			type="Land_LampAirport_F";
+			atlOffset=-3.1471252e-005;
+		};
+		class Item3583
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17178.432,27.898178,15641.467};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5133;
+			type="Land_LampAirport_F";
+			atlOffset=2.8610229e-005;
+		};
+		class Item3584
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17367.211,30.672134,15744.2};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5134;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00074958801;
+		};
+		class Item3585
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17508.891,29.814026,15913.031};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5135;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00015258789;
+		};
+		class Item3586
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17574.328,36.173859,16116.34};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5136;
+			type="Land_LampAirport_F";
+			atlOffset=0.00010871887;
+		};
+		class Item3587
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17641.09,54.430481,16318.787};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5137;
+			type="Land_LampAirport_F";
+			atlOffset=0.0021629333;
+		};
+		class Item3588
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17745.24,54.782043,16632.727};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5138;
+			type="Land_LampAirport_F";
+			atlOffset=0.00029373169;
+		};
+		class Item3589
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17809.85,67.378036,16830.225};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5139;
+			type="Land_LampAirport_F";
+			atlOffset=-8.7738037e-005;
+		};
+		class Item3590
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17897.707,49.731201,17098.211};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5140;
+			type="Land_LampAirport_F";
+			atlOffset=0.0015487671;
+		};
+		class Item3591
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17967.266,53.860947,17311.68};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5141;
+			type="Land_LampAirport_F";
+			atlOffset=0.0012397766;
+		};
+		class Item3592
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18063.078,45.605957,17424.5};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5142;
+			type="Land_LampAirport_F";
+			atlOffset=-0.0027999878;
+		};
+		class Item3593
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18175.104,29.970566,17490.555};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5143;
+			type="Land_LampAirport_F";
+			atlOffset=-3.5737209;
+		};
+		class Item3594
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18355.721,31.693481,17634.465};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5144;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00019645691;
+		};
+		class Item3595
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18481.711,35.095207,17736.74};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5145;
+			type="Land_LampAirport_F";
+			atlOffset=-0.0001335144;
+		};
+		class Item3596
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18503.494,37.400131,17849.977};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5146;
+			type="Land_LampAirport_F";
+			atlOffset=0.00025367737;
+		};
+		class Item3597
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18401.307,25.201546,17946.469};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5147;
+			type="Land_LampAirport_F";
+			atlOffset=-0.00036239624;
+		};
+		class Item3598
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18321.045,16.14222,18019.154};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5148;
+			type="Land_LampAirport_F";
+			atlOffset=-3.0994415e-005;
+		};
+		class Item3599
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16755.275,23.833824,12486.63};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5149;
+			type="Land_LampAirport_F";
+			atlOffset=5.531311e-005;
+		};
+		class Item3600
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16561.117,23.305573,12828.702};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5150;
+			type="Land_LampAirport_F";
+			atlOffset=9.2506409e-005;
+		};
+		class Item3601
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16551.258,23.419113,12741.677};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5151;
+			type="Land_LampAirport_F";
+			atlOffset=6.1035156e-005;
+		};
+		class Item3602
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16627.383,23.468201,12763.302};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5152;
+			type="Land_LampAirport_F";
+			atlOffset=0.00021457672;
+		};
+		class Item3603
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16603.213,23.419083,12712.263};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5153;
+			type="Land_LampAirport_F";
+			atlOffset=3.0517578e-005;
+		};
+		class Item3604
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16654.924,23.419067,12807.018};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5154;
+			type="Land_LampAirport_F";
+			atlOffset=1.5258789e-005;
+		};
+		class Item3605
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16577.238,23.419052,12780.17};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5155;
+			type="Land_LampAirport_F";
+		};
+		class Item3606
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16518.43,22.808872,12775.014};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5156;
+			type="Land_LampAirport_F";
+			atlOffset=-0.0005979538;
+		};
+		class Item3607
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16499.855,14.689053,12561.773};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=5157;
+			type="Land_LampAirport_F";
 		};
 	};
 };
