@@ -412,6 +412,7 @@ class Life_Client_Core {
         class stringfishing {};
         class ElectricFishing {};
         class robstore {};
+        class Ragdoll {};
     };
 
     //Market System

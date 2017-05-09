@@ -688,11 +688,9 @@ switch (_code) do {
         if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
-        if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
+        if(_shift && {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            [] spawn life_fnc_Ragdoll;
         };
     };
 

@@ -178,3 +178,13 @@ DYNAMICMARKET_boughtItems = [];
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
+
+//AOSoul Added
+//Ragdoll Effect Setup
+player addEventHandler ["AnimStateChanged", {
+    if (_this select 1 == "incapacitated") then {
+        player allowDamage false;
+        player setPosWorld getPosWorld player;
+        player allowDamage true;
+    };
+}]; 
