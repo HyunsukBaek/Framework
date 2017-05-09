@@ -22,9 +22,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_C_Poloshirt_blue", "바비", 3000, "" },
-            { "U_C_Poloshirt_burgundy", "김대기기자", 3000, "" },
             { "U_C_Poloshirt_stripped", "게이", 3000, "" },
-            { "U_C_Poloshirt_tricolour", "헬로키티", 3000, "" },
             { "U_C_Poloshirt_salmon", "슈퍼맨", 3000, "" },
             { "U_C_Poloshirt_redwhite", "호랑이", 3000, "" },
             { "U_C_Commoner1_1", "야쿠자", 3000, "" },
@@ -38,6 +36,8 @@ class Clothing {
             { "U_C_WorkerCoveralls", "", 3000, "" },
             { "U_NikosBody", "", 3000, "" },
             { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" },
+            { "U_Competitor", "박대기 기자", 5000, "" },
+            { "U_B_CombatUniform_mcam_vest", "헬로 키티", 10000, "" },
             { "U_C_Man_casual_1_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_2_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_3_F", "", 5000, "" }, //Apex DLC

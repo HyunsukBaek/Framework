@@ -14,14 +14,8 @@ switch (playerSide) do {
             if (uniform player isEqualTo "U_C_Poloshirt_blue") then {
                 player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_Barbie.paa"];
             };
-            if (uniform player isEqualTo "U_C_Poloshirt_burgundy") then {
-                player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_Broadcast.paa"];
-            };
             if (uniform player isEqualTo "U_C_Poloshirt_stripped") then {
                 player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_Gay.paa"];
-            };
-            if (uniform player isEqualTo "U_C_Poloshirt_tricolour") then {
-                player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_HelloKitty.paa"];
             };
             if (uniform player isEqualTo "U_C_Poloshirt_salmon") then {
                 player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_Super.paa"];
@@ -31,6 +25,14 @@ switch (playerSide) do {
             };
             if (uniform player isEqualTo "U_C_Commoner1_1") then {
                 player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\civ_yakuja.paa"];
+            };
+            //기자 복장
+            if (uniform player isEqualTo "U_Competitor") then {
+                player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_Broadcast.paa"];
+            };
+            //키티 복장(고급형)
+            if (uniform player isEqualTo "U_B_CombatUniform_mcam_vest") then {
+                player setObjectTextureGlobal [0, "textures\AOSoul\clothes\civ\Civ_HelloKitty.paa"];
             };
         };
     };
