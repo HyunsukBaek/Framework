@@ -10,3 +10,9 @@ if (LIFE_SETTINGS(getNumber,"player_deathLog") isEqualTo 0) exitWith {};
 
 _this select 0 addMPEventHandler ["MPKilled", {_this call fn_whoDoneIt}];
 ["EastWind", 0] call BIS_fnc_setPPeffectTemplate;
+
+//AOSoul Added
+
+//견인 시스템
+[] execVM "AOSoul\Tow.sqf";
+///////////////////////////////////////

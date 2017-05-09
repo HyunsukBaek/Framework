@@ -184,6 +184,8 @@ class CfgRemoteExec {
         F(TON_fnc_getUpdate,SERVER) //DynMarket
         F(TON_fnc_changePrice, SERVER) //DynMarket
         F(life_fnc_update,CLIENT) //DynMarket
+
+        F(sa_hide_object_global,CLIENT) //Tow Hide object function
     };
 
     class Commands {
