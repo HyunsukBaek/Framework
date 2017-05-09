@@ -50,7 +50,7 @@
 
 // Who can toss and cut ropes
 // 0 = everyone, 1 = cargo only, 2 = pilots only
-SHK_Fastrope_AccessLevel = 0;
+SHK_Fastrope_AccessLevel = 2;
 
 // ["ClassName",["Door_L","Door_R"],[[ropeAttachPosition1],[ropeAttachPosition2]]]
 // Search for the chopper type is done from top to bottom. You can use vehicle base classes,

@@ -50,8 +50,7 @@ SA_TOW_RULES_OVERRIDE = [
                         ["Car", "CAN_TOW", "Car"],
                         ["Car", "CAN_TOW", "Air"],
                         ["Car", "CAN_TOW", "Ship"],
-                        ["Ship", "CAN_TOW", "Ship"],
-                        ["Ship", "CAN_TOW", "Car"]
+                        ["Ship", "CAN_TOW", "Ship"]
                         ];
 SA_TOW_LOCKED_VEHICLES_ENABLED = false;
 // --------------------------------------------------------------------------------------------------------------
