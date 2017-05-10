@@ -83,9 +83,9 @@ class Life_Settings {
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 3; //Maximum number of houses a player can own.
-    houseGarage_buyPrice = 2000000;
-    houseGarage_sellPrice = 1000000;
+    house_limit = 1; //Maximum number of houses a player can own.
+    houseGarage_buyPrice = 3000000;
+    houseGarage_sellPrice = 1500000;
 
     /* Hunting & Fishing System Configurations */
     animaltypes_fish[] = { "Salema_F", "Ornate_random_F", "Mackerel_F", "Tuna_F", "Mullet_F", "CatShark_F", "Turtle_F" }; //Classnames of fish you can catch
