@@ -173,6 +173,7 @@ class CarShops {
             //오프로드
             { "C_Offroad_01_F", "" },
             { "C_Van_01_box_F", "" },
+            { "B_MRAP_01_F", "call life_donorlevel >= 1" },
             //스트라이더
             { "I_MRAP_03_F", "" },
 
@@ -181,7 +182,7 @@ class CarShops {
             //템페스트 의무
             { "O_Truck_03_medical_F", "" },
             //HEMTT 의무
-            { "B_Truck_01_medical_F", "" },
+            { "B_Truck_01_medical_F", "call life_donorlevel >= 2" },
             //자마크 정비
             { "I_Truck_02_box_F", "" },
             //템페스트 정비
