@@ -172,8 +172,10 @@ class CarShops {
             { "C_Offroad_02_unarmed_F", "" }, //Apex DLC
             //오프로드
             { "C_Offroad_01_F", "" },
+            { "C_Van_01_box_F", "" },
             //스트라이더
             { "I_MRAP_03_F", "" },
+
             //자마크 의무
             { "I_Truck_02_medical_F", "" },
             //템페스트 의무
