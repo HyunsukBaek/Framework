@@ -125,6 +125,9 @@ class CarShops {
             { "B_Quadbike_01_F", "" },
             //오프로드
             { "B_G_Offroad_01_F", "" },
+
+            { "C_Offroad_02_unarmed_F", "" }, //Apex DLC
+
             //이프리트
             { "O_MRAP_02_F", "license_civ_level2" },
             //Qilin 비무장
@@ -361,6 +364,12 @@ class LifeCfgVehicles {
             }, "" },
             { "White", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
+            }, "" },
+            { "반군", "civ", {
+                "textures\AOSoul\vehicles\offroad_reb_guk.jpg"
+            }, "" },
+            { "EMS", "med", {
+                "textures\AOSoul\vehicles\offroad_med_aosoul.jpg"
             }, "" }
         };
     };
@@ -1054,7 +1063,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS 119", "med",        {"textures\AOSoul\vehicles\suv_EMS_119.paa"}, "" },
             { "Police112", "cop",      {"textures\AOSoul\vehicles\suv_112.paa"}, "call life_donorlevel >= 2" },
             { "UKPD", "cop",           {"textures\AOSoul\vehicles\suv_police_uk.paa"}, "" },
-            { "LAPD", "cop",           {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" }
+            { "LAPD", "cop",           {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
+            { "Blue poltan", "civ",    {"textures\AOSoul\vehicles\suv_bluepoltan.jpg"}, "" }
         };
     };
 
