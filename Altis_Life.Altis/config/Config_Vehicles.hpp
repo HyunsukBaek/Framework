@@ -1097,12 +1097,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             }, "" },
             { "EMS UK", "med", {
-                "AOSoul\textures\vehicles\Van_01_box_Ambulance_front.paa",
-                "AOSoul\textures\vehicles\Van_01_box_Ambulance_back.paa"
+                "textures\AOSoul\vehicles\Van_01_box_Ambulance_front.paa",
+                "textures\AOSoul\vehicles\Van_01_box_Ambulance_back.paa"
             }, "" },
             { "EMS Red", "med", {
-                "AOSoul\textures\vehicles\Van_01_box_ambred_front.paa",
-                "AOSoul\textures\vehicles\Van_01_box_ambred_back.paa"
+                "textures\AOSoul\vehicles\Van_01_box_ambred_front.paa",
+                "textures\AOSoul\vehicles\Van_01_box_ambred_back.paa"
             }, "call life_donorlevel >= 1" }
         };
     };
