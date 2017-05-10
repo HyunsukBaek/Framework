@@ -203,7 +203,7 @@ class Licenses {
     class level2 {
         variable = "level2";
         displayName = "STR_License_Level2";
-        price = 2000000;
+        price = 1500000;
         illegal = false;
         side = "civ";
     };
