@@ -48,7 +48,10 @@ _canUseControls = {
 for "_i" from 0 to 1 step 0 do {
     waitUntil {!isNull (findDisplay 49)};
     _abortButton = CONTROL(49,104);
-    _abortButton buttonSetAction "[] call SOCK_fnc_updateRequest; [player] remoteExec [""TON_fnc_cleanupRequest"",2];";
+    //AOSoul Added
+    //Outtro
+    _abortButton ctrlSetEventHandler ["ButtonClick","[] spawn life_fnc_outtro; (findDisplay 49) closeDisplay 2; true"];
+    //////////////////////////////////
     _respawnButton = CONTROL(49,1010);
     _fieldManual = CONTROL(49,122);
     private _saveButton = CONTROL(49,103);
