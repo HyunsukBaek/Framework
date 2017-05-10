@@ -1,11 +1,14 @@
 /*
-	File: fn_blackjack.sqf
-	Description: Blackjack
-	Created by Blacklistgaming.org
-        Coder: PapaBear
+    Made by AOSOUL
+    Original Source : Papabear
 */
+#include "..\..\script_macros.hpp"
 if(life_atmbank > 9999999) exitWith {hint "통장에 1천만원 이상 가진 유저는 사용할 수 없습니다."};
 if(life_cash > 999999) exitWith {hint "현금 1백만원 이상 가진 유저는 사용할 수 없습니다."};
+
+if (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops_casino"))) exitWith {
+     hint format ["카지노를 이용하기 위한 최소 경찰수가 부족합니다"];
+};
 
 if(!dialog) then {
 	createDialog "BlackjackGUI";

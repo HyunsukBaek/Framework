@@ -1,14 +1,14 @@
 /*
- File: fn_processCasinoTest.sqf
- 
- Author: Steven for WolfPack Server
-
- Description:
- Master handling for processing casino slots
- */
+    Made by AOSOUL
+*/
+#include "..\..\script_macros.hpp"
 if(life_atmbank > 9999999) exitWith {hint "통장에 1천만원 이상 가진 유저는 사용할 수 없습니다."};
 if(life_cash > 999999) exitWith {hint "현금 1백만원 이상 가진 유저는 사용할 수 없습니다."};
 if( (life_atmbank + life_cash) < 999999) exitWith {hint "자산이 99만원 이하인 유저는 사용할 수 없습니다."};
+
+if (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops_casino"))) exitWith {
+     hint format ["카지노를 이용하기 위한 최소 경찰수가 부족합니다"];
+};
 
 private ["_source","_hasLicense","_ui","_needID","_cP","_cost","_type","_winAmount","_rollA","_rollB","_rollC","_slots","_idxA","_idxB","_idxC"];
 _source = param [0,ObjNull,[ObjNull]];

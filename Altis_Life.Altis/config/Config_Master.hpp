@@ -43,6 +43,7 @@ class Life_Settings {
 
     // aosoul added
     minimum_cops_gas = 4; //Minimum cops required online to rob the gasstation
+    minimum_cops_casino = 3; //카지노 이용 최소 경찰 접속 인원
 
     /*Death settings*/
     drop_weapons_onDeath = false; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
