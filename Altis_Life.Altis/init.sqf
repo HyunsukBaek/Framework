@@ -53,5 +53,9 @@ SA_TOW_RULES_OVERRIDE = [
                         ["Ship", "CAN_TOW", "Ship"]
                         ];
 SA_TOW_LOCKED_VEHICLES_ENABLED = false;
+
+//Cop & Medic Radio disable
+enableRadio false;
+enableSentences false;
 // --------------------------------------------------------------------------------------------------------------
 StartProgress = true;
