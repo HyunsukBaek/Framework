@@ -54,7 +54,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
 	
-    //AOSoul added
+	//AOSoul added
     #include "dialog\statusBar.hpp"
     #include "AOSoul\ais_injury\dialogs\rscTitlesAIS.hpp" // 상처시스템- 환자 업고 이동 가능, 다쳤을때 빨간화면등.
     #include "dialog\slotmachine.hpp"	//슬롯머신
@@ -63,26 +63,14 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
 	
-    //AOSoul added
+	//AOSoul added
     #include "AOSoul\ais_injury\cfgFunctionsAIS.hpp"
-};
-
-//AOSoul  AFAR
-class Params {
-    class AFAR {
-        //paramsArray[0] (Enable/Disable Scripted Radio)
-        title="Addon-Free ArmA Radio (On/Off)";
-        values[]={1,0};
-        texts[]={"On (Default)","Off"};
-        default=1;
-    };
 };
 
 class CfgSounds {
     //AOSoul added AFAR
     #include "AOSoul\AFAR\SFX.hpp"
-    ///////////////////
-
+    
     sounds[] = {};
     class sirenLong {
         name = "sirenLong";
