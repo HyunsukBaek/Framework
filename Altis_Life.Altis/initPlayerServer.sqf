@@ -15,4 +15,11 @@ _this select 0 addMPEventHandler ["MPKilled", {_this call fn_whoDoneIt}];
 
 //견인 시스템
 [] execVM "AOSoul\Tow.sqf";
+
+
+//AFAR
+sleep 2;
+//Makes sure that both TFAR and ACRE2 are not running on the server, and that the AFAR lobby parameter is enabled
+if((!isClass(configFile>>"CfgPatches">>"task_force_radio"))&&{(!isClass(configFile>>"CfgPatches">>"acre_main"))&&(AFAR==1)})then{
+#include "AFAR\f.sqf";call initAFAR;};
 ///////////////////////////////////////
