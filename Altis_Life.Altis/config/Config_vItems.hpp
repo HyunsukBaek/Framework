@@ -11,7 +11,7 @@ class VirtualShops {
     //Virtual Shops
     class market {
         name = "STR_Shops_Market";
-        side = "civ";
+        side = "";
         conditions = "";
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "salema", "ornate", "mackerel", "tuna", "mullet", "catshark", "hen", "rooster", "sheep", "goat", "huntingKit", "firewood" };
     };
@@ -74,7 +74,7 @@ class VirtualShops {
 
     class fishmarket {
         name = "STR_Shops_FishMarket";
-        side = "civ";
+        side = "";
         conditions = "";
         items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark", "stringfishing" };
     };
