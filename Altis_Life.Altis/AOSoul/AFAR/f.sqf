@@ -61,9 +61,9 @@ _nearP=[];
 if(count _nearP>0)then{_c=_nearP select 0;_d1=player distance _c;
 1 enableChannel r_sCH;
 switch(true)do{
-case(_d1>=0&&{_d1<1050}):{hintSilent"Transmitting...";playSound "in1";};
-case(_d1>1050&&{_d1<1200}):{1 enableChannel r_sCH;hintSilent"v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^";playSound "in1";};
-case(_d1>=1200):{0 enableChannel false;1 enableChannel false;2 enableChannel false;3 enableChannel false;4 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};};
+case(_d1>=0&&{_d1<5000}):{hintSilent"Transmitting...";playSound "in1";};
+case(_d1>5000&&{_d1<20000}):{1 enableChannel r_sCH;hintSilent"v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^";playSound "in1";};
+case(_d1>=20000):{0 enableChannel false;1 enableChannel false;2 enableChannel false;3 enableChannel false;4 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};};
 if(_d1>=0&&{_d1<=1200})then{{_x remoteExec["Fuzz",_x];}forEach _nearP;};
 _nearP=[];_c="";_d1=0;}else{1 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};
 }else{0 enableChannel false;1 enableChannel false;2 enableChannel false;3 enableChannel false;4 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};
@@ -88,10 +88,10 @@ _nearP=[];_c="";_d1=0;_r="";
 if(count _nearP>0)then{_c=_nearP select 0;_d1=player distance _c;
 2 enableChannel r_cCH;
 switch(true)do{
-case(_d1>=0&&{_d1<1050}):{hintSilent"Transmitting...";playSound "in0";};
-case(_d1>1050&&{_d1<1200}):{2 enableChannel false;hintSilent"v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^";playSound "in0";};
-case(_d1>=1200):{2 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};};
-if(_d1>=0&&{_d1<=1200})then{{_x remoteExec["Fuzz",_x];}forEach _nearP;};
+case(_d1>=0&&{_d1<5000}):{hintSilent"Transmitting...";playSound "in0";};
+case(_d1>5000&&{_d1<20000}):{2 enableChannel false;hintSilent"v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^";playSound "in0";};
+case(_d1>=20000):{2 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};};
+if(_d1>=0&&{_d1<=20000})then{{_x remoteExec["Fuzz",_x];}forEach _nearP;};
 _nearP=[];_c="";_d1=0;}else{2 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};
 }else{0 enableChannel false;1 enableChannel false;2 enableChannel false;3 enableChannel false;4 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};
 player playAction "HandSignalRadio";
@@ -115,10 +115,10 @@ _nearP=[];
 if(count _nearP>0)then{_c=_nearP select 0;_d1=player distance _c;
 3 enableChannel r_grCH;
 switch(true)do{
-case(_d1>=0&&{_d1<1050}):{hintSilent"Transmitting...";playSound "in1";};
-case(_d1>1050&&{_d1<1200}):{3 enableChannel false;hintSilent"v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^";playSound "in1";};
+case(_d1>=0&&{_d1<5000}):{hintSilent"Transmitting...";playSound "in1";};
+case(_d1>5000&&{_d1<20000}):{3 enableChannel false;hintSilent"v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^";playSound "in1";};
 case(_d1>=1200):{3 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};};
-if(_d1>=0&&{_d1<=1200})then{{_x remoteExec["Fuzz",_x];}forEach _nearP;};
+if(_d1>=0&&{_d1<=20000})then{{_x remoteExec["Fuzz",_x];}forEach _nearP;};
 _nearP=[];_c="";_d1=0;}else{3 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};
 }else{0 enableChannel false;1 enableChannel r_sCH;2 enableChannel false;3 enableChannel false;4 enableChannel false;hintSilent"-----------------------------------------------------";playSound "in2";};
 player playAction "HandSignalRadio";
@@ -168,10 +168,10 @@ if(currentChannel!=1)exitWith{};if(playersNumber playerSide<2)exitWith{0 enableC
 private["_nearP","_c","_d1","_r"];
 if("ItemRadio" in assignedItems player&&alive player&&isAbleToBreathe player&&incapacitatedState player=="")then{
 _nearP=[];
-{if((alive _x)&&(side player==side _x)&&(player distance _x<=1200))then{_nearP set[(count _nearP),_x];};}forEach allPlayers-[player];
+{if((alive _x)&&(side player==side _x)&&(player distance _x<=20000))then{_nearP set[(count _nearP),_x];};}forEach allPlayers-[player];
 if(count _nearP>0)then{_c=_nearP select 0;_d1=player distance _c;
 1 enableChannel r_sCH;
-if(_d1>=0&&{_d1<=1200})then{{_x remoteExec["Hush",_x];}forEach _nearP;};
+if(_d1>=0&&{_d1<=20000})then{{_x remoteExec["Hush",_x];}forEach _nearP;};
 _nearP=[];_c="";_d1=0;
 }else{1 enableChannel r_sCH;};
 _nearP=[];_c="";_d1=0;hintSilent"";playSound"out1";
@@ -189,10 +189,10 @@ if(currentChannel!=2)exitWith{};if(playersNumber playerSide<2)exitWith{0 enableC
 private["_nearP","_c","_d1","_r"];
 if("ItemRadio" in assignedItems player&&alive player&&isAbleToBreathe player&&incapacitatedState player=="")then{
 _nearP=[];
-{if((alive _x)&&(group player==group _x)&&(player distance _x<=1200))then{_nearP set[(count _nearP),_x];};}forEach allPlayers-[player];
+{if((alive _x)&&(group player==group _x)&&(player distance _x<=20000))then{_nearP set[(count _nearP),_x];};}forEach allPlayers-[player];
 if(count _nearP>0)then{_c=_nearP select 0;_d1=player distance _c;
 2 enableChannel r_cCH;
-if(_d1>=0&&{_d1<=1200})then{{_x remoteExec["Hush",_x];}forEach _nearP;};
+if(_d1>=0&&{_d1<=20000})then{{_x remoteExec["Hush",_x];}forEach _nearP;};
 }else{2 enableChannel false;};
 _nearP=[];_c="";_d1=0;hintSilent"";playSound"out1";
 {if(_x isKindOf "Land_PortableLongRangeRadio_F")then{detach _x;deleteVehicle _x;};}forEach attachedObjects vehicle player+[objectParent player];
@@ -208,10 +208,10 @@ if(currentChannel!=3)exitWith{};if(playersNumber playerSide<2)exitWith{0 enableC
 private["_nearP","_c","_d1","_r"];
 if("ItemRadio" in assignedItems player&&alive player&&isAbleToBreathe player&&incapacitatedState player=="")then{
 _nearP=[];
-{if((alive _x)&&(group player==group _x)&&(player distance _x<=1200))then{_nearP set[(count _nearP),_x];};}forEach allPlayers-[player];
+{if((alive _x)&&(group player==group _x)&&(player distance _x<=20000))then{_nearP set[(count _nearP),_x];};}forEach allPlayers-[player];
 if(count _nearP>0)then{_c=_nearP select 0;_d1=player distance _c;
 3 enableChannel r_grCH;
-if(_d1>=0&&{_d1<=1200})then{{_x remoteExec["Hush",_x];}forEach _nearP;};
+if(_d1>=0&&{_d1<=20000})then{{_x remoteExec["Hush",_x];}forEach _nearP;};
 }else{3 enableChannel false;};
 _nearP=[];_c="";_d1=0;hintSilent"";playSound"out1";
 {if(_x isKindOf "Land_PortableLongRangeRadio_F")then{detach _x;deleteVehicle _x;};}forEach attachedObjects vehicle player+[objectParent player];
@@ -311,9 +311,9 @@ if(!isNull objectParent player)then{4 enableChannel r_vCH;}else{4 enableChannel 
 }];
 
 //BRIEFING: Helpful information / instructions for AFAR
-player createDiarySubject["Arma Radio","ArmA Radio"];
-player createDiaryRecord["Arma Radio",["Instructions Manual","
-<font face='PuristaMedium' size=30 shadow='5' color='#808000'>ADDON-FREE ARMA RADIO</font></size><b/><br/>Created by Phronk<br/>
+player createDiarySubject["AOSOUL Radio","AOSOUL Radio"];
+player createDiaryRecord["AOSOUL Radio",["Instructions Manual","
+<font face='PuristaMedium' size=30 shadow='5' color='#808000'>ADDON-FREE AOSOUL RADIO</font></size><b/><br/>Created by SOULFUCKER<br/>
 <font face='PuristaMedium' size=12 color='#8E8E8E'>__________________________________</font></size><br/><br/>
 <font face='PuristaMedium' size=20 color='#808000'>RADIO SETUP</font></size><br/>
      0. Use a PUSH TO TALK key to talk via radio<br/><br/>
@@ -327,7 +327,7 @@ player createDiaryRecord["Arma Radio",["Instructions Manual","
 • PUSH TO TALK key(s) to use radio<br/><br/>
 • Radio channels are <font color='#2AA1D5'>SIDE</font>, <font color='#fffaa3'>COMMAND</font>, <font color='#b6f442'>GROUP</font>, and <font color='#f4c542'>VEHICLE</font><br/><br/>
 • Radio must be equipped to send/receive transmissions<br/><br/>
-• You must be within 1050m of another friendly soldier with a radio<br/><br/>
+• You must be within 20km of another friendly soldier with a radio<br/><br/>
 • Radio static intensifies every 150m away from closest recieving soldier<br/><br/>
 • Only squad leaders can communicate via <font color='#fffaa3'>Command Channel</font><br/><br/>
 • Only squadmates can communicate via <font color='#b6f442'>Group Channel</font><br/><br/>
@@ -336,10 +336,3 @@ player createDiaryRecord["Arma Radio",["Instructions Manual","
 • Cannot communicate if dead or underwater without rebreather<br/><br/>
 • Cannot communicate via radio if incapacitated<br/><br/>
 • Cannot communicate via radio if outside radio range"]];};
-
-/*	Script Version: 0.4
-	SCRIPT BY: Phronk
-	CONTRIBUTIONS:
-		1. Killzone_Kid fixed server globally distribute AFAR variable, in init.sqf
-		2. Larrow helped improve radio keybind detection (inputAction)
-*/
