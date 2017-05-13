@@ -1,5 +1,5 @@
 /*
-    Made by AOSoul
+    Made by AOSOUL
 */
 #include "..\..\script_macros.hpp"
 if(life_atmbank > 9999999) exitWith {hint "통장에 1천만원 이상 가진 유저는 사용할 수 없습니다."};

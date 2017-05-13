@@ -271,7 +271,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="AOSoul based on Tonic";
+	author="AOSOUL based on Tonic";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";

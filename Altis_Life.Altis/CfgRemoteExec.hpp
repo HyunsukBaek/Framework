@@ -166,7 +166,7 @@ class CfgRemoteExec {
 
         /* bis_fnc */
         //AOSoul Added
-        F(TON_fnc_timers,SERVER) //AOSoul Cooking Timer
+        F(TON_fnc_timers,SERVER) //AOSOUL Cooking Timer
         F(bis_fnc_setdate,ANYONE)
         F(bis_fnc_setppeffecttemplate,ANYONE)
         F(bis_fnc_setidentity,ANYONE)
@@ -175,10 +175,10 @@ class CfgRemoteExec {
         F(bis_fnc_setovercast,ANYONE)
         F(bis_fnc_bloodeffect,ANYONE)
         F(bis_fnc_saymessage)
-        F(life_fnc_stringfishing,CLIENT)    //AOSoul StringFishing
-        F(life_fnc_Electricfishing,CLIENT)    //AOSoul ElectricFishing
-        F(life_fnc_robstore,CLIENT)    //AOSoul RobGasStation
-        F(life_fnc_tazed,CLIENT)    //AOSoul Real ragdoll effect
+        F(life_fnc_stringfishing,CLIENT)    //AOSOUL StringFishing
+        F(life_fnc_Electricfishing,CLIENT)    //AOSOUL ElectricFishing
+        F(life_fnc_robstore,CLIENT)    //AOSOUL RobGasStation
+        F(life_fnc_tazed,CLIENT)    //AOSOUL Real ragdoll effect
 
         F(TON_fnc_playerLogged,SERVER) //DynMarket
         F(TON_fnc_getUpdate,SERVER) //DynMarket

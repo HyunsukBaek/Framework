@@ -49,7 +49,7 @@ life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
 
-//AOSoul Added
+//AOSOUL Added
 Life_cooking = false;
 Life_fire = false;
 life_jetpack = false;

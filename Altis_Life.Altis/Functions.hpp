@@ -74,7 +74,7 @@ class Life_Client_Core {
         class unrestrain {};
 
         //AOSoul Added :
-        class cook {};	//AOSoul Cooking
+        class cook {};	//AOSOUL Cooking
         class processCasinoSlots {}; //Casino process
         class JetRocket {}; //JetPack
         //////////////////
@@ -285,8 +285,8 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
-        class huntingKit {};	//AOSoul Hunting Kit
-        class campFire {};	//AOSoul Campfire
+        class huntingKit {};	//AOSOUL Hunting Kit
+        class campFire {};	//AOSOUL Campfire
     };
 
     class Medical_System {
@@ -369,7 +369,7 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
-        //AOSoul Added
+        //AOSOUL Added
         class blackjack {};  //BlackJack
         class BJbet {};  //BlackJack
         class BJhit {};  //BlackJack
@@ -407,7 +407,7 @@ class Life_Client_Core {
     };
 	
     class AOSOULCustom {
-        file = "AOSoul\Functions";
+        file = "AOSOUL\Functions";
         class pee {};
         class stringfishing {};
         class ElectricFishing {};
@@ -418,7 +418,7 @@ class Life_Client_Core {
 
     //Market System
     class DynMarket {
-       file = "AOSoul\DynMarket";
+       file = "AOSOUL\DynMarket";
        class bought {};
        class update {};
        class DisplayPrices {};

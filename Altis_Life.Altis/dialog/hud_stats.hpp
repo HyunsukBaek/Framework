@@ -88,7 +88,7 @@ class playerHUD {
         x = 0.534723 * safezoneW + safezoneX;
     };
 
-    //AOSoul Added Seatbelf
+    //AOSOUL Added Seatbelf
     class LIFE_BAR_SeatBelt: Life_RscPicture
     {
         idc = IDC_LIFE_BAR_SeatBelt;

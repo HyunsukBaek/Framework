@@ -68,9 +68,6 @@ class CfgFunctions {
 };
 
 class CfgSounds {
-    //AOSoul added AFAR
-    #include "AOSoul\AFAR\SFX.hpp"
-    
     sounds[] = {};
     class sirenLong {
         name = "sirenLong";
