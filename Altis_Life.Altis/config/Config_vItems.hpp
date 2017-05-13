@@ -600,7 +600,7 @@ class VirtualItems {
         sellPrice = 300;
         illegal = false;
         edible = -1;
-        cooked = "rabbit";	//AOSOUL
+        cooked = "rabbit";	//AOSoul
         icon = "icons\ico_rabbitRaw.paa";
     };
 
@@ -623,7 +623,7 @@ class VirtualItems {
         sellPrice = 350;
         illegal = false;
         edible = -1;
-        cooked = "salema";	//AOSOUL
+        cooked = "salema";	//AOSoul
         icon = "icons\ico_salemaRaw.paa";
     };
 
@@ -646,7 +646,7 @@ class VirtualItems {
         sellPrice = 900;
         illegal = false;
         edible = -1;
-        cooked = "ornate";	//AOSOUL
+        cooked = "ornate";	//AOSoul
         icon = "icons\ico_ornateRaw.paa";
     };
 
@@ -669,7 +669,7 @@ class VirtualItems {
         sellPrice = 1150;
         illegal = false;
         edible = -1;
-        cooked = "mackerel";	//AOSOUL
+        cooked = "mackerel";	//AOSoul
         icon = "icons\ico_mackerelRaw.paa";
     };
 
@@ -692,7 +692,7 @@ class VirtualItems {
         sellPrice = 4000;
         illegal = false;
         edible = -1;
-        cooked = "tuna";	//AOSOUL
+        cooked = "tuna";	//AOSoul
         icon = "icons\ico_tunaRaw.paa";
     };
 
@@ -715,7 +715,7 @@ class VirtualItems {
         sellPrice = 2500;
         illegal = false;
         edible = -1;
-        cooked = "mullet";	//AOSOUL
+        cooked = "mullet";	//AOSoul
         icon = "icons\ico_mulletRaw.paa";
     };
 
@@ -738,7 +738,7 @@ class VirtualItems {
         sellPrice = 7500;
         illegal = false;
         edible = -1;
-        cooked = "catshark";	//AOSOUL
+        cooked = "catshark";	//AOSoul
         icon = "icons\ico_catsharkRaw.paa";
     };
 
@@ -761,7 +761,7 @@ class VirtualItems {
         sellPrice = 9000;
         illegal = true;
         edible = -1;
-        cooked = "turtle_soup";	//AOSOUL
+        cooked = "turtle_soup";	//AOSoul
         icon = "icons\ico_turtleRaw.paa";
     };
 
@@ -784,7 +784,7 @@ class VirtualItems {
         sellPrice = 3300;
         illegal = false;
         edible = -1;
-        cooked = "hen";	//AOSOUL
+        cooked = "hen";	//AOSoul
         icon = "icons\ico_wholeChickenRaw.paa";
     };
 
@@ -807,7 +807,7 @@ class VirtualItems {
         sellPrice = 6000;
         illegal = false;
         edible = -1;
-        cooked = "rooster";	//AOSOUL
+        cooked = "rooster";	//AOSoul
         icon = "icons\ico_chickenDrumstickRaw.paa";
     };
 
@@ -830,7 +830,7 @@ class VirtualItems {
         sellPrice = 12000;
         illegal = false;
         edible = -1;
-        cooked = "sheep";	//AOSOUL
+        cooked = "sheep";	//AOSoul
         icon = "icons\ico_lambChopRaw.paa";
     };
 
@@ -853,7 +853,7 @@ class VirtualItems {
         sellPrice = 13000;
         illegal = false;
         edible = -1;
-        cooked = "goat";	//AOSOUL
+        cooked = "goat";	//AOSoul
         icon = "icons\ico_muttonLegRaw.paa";
     };
 

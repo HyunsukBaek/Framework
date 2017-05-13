@@ -33,7 +33,7 @@ if (hasInterface) then {
 };
 
 //패스트 로프
-#include "AOSOUL\SHK_Fastrope.sqf";
+#include "AOSoul\SHK_Fastrope.sqf";
 
 ////////////////////////////////////////////////////
 [] execVM "core\init.sqf";

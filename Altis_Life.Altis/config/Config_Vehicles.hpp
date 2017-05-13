@@ -1153,13 +1153,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             }, "" },
             { "Reb 1", "reb", {
-                "textures\AOSOUL\vehicles\humming_Reb_1.paa"
+                "textures\AOSoul\vehicles\humming_Reb_1.paa"
             }, "call life_donorlevel >= 2" },
             { "Reb 2", "reb", {
-                "textures\AOSOUL\vehicles\humming_Reb_2.paa"
+                "textures\AOSoul\vehicles\humming_Reb_2.paa"
             }, "call life_donorlevel >= 2" },
             { "Reb 2", "reb", {
-                "textures\AOSOUL\vehicles\humming_Reb_3.paa"
+                "textures\AOSoul\vehicles\humming_Reb_3.paa"
             }, "call life_donorlevel >= 2" }
         };
     };
@@ -1209,17 +1209,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
             { "Gay Kitty", "civ", {
-                "textures\AOSOUL\vehicles\humming_Kitty.paa"
+                "textures\AOSoul\vehicles\humming_Kitty.paa"
             }, "call life_donorlevel >= 3" },
             { "EMS YellowBlue", "med", {
-                "textures\AOSOUL\vehicles\humming_EMS_yellow.paa"
+                "textures\AOSoul\vehicles\humming_EMS_yellow.paa"
             }, "" },
             { "EMS Red", "med", {
-                "textures\AOSOUL\vehicles\humming_EMS_red.paa"
+                "textures\AOSoul\vehicles\humming_EMS_red.paa"
             }, "" },
             { "LAPD", "cop", {
-                "textures\AOSOUL\vehicles\humming_police_1.paa",
-                "textures\AOSOUL\vehicles\humming_police_2.paa"
+                "textures\AOSoul\vehicles\humming_police_1.paa",
+                "textures\AOSoul\vehicles\humming_police_2.paa"
             }, "" },
         };
     };
@@ -1244,7 +1244,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" },
             { "EMS Red", "med", {
-               "textures\AOSOUL\vehicles\orca_EMS_red.paa"
+               "textures\AOSoul\vehicles\orca_EMS_red.paa"
             }, "" },
             { "Civ Custom 1", "civ", {
                 "textures\AOSoul\vehicles\orca_Custom_1.paa"

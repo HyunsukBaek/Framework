@@ -15,7 +15,7 @@ LIFEctrl(2201) progressSetPosition (1 - (damage player));
 LIFEctrl(2202) progressSetPosition (life_thirst / 100);
 
 
-//AOSOUL Added
+//AOSoul Added
 //SeatBelt
 if(!isNil "life_seatbelt") then {
     if ( vehicle player != player ) then {
