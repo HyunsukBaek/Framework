@@ -54,6 +54,22 @@ SA_TOW_RULES_OVERRIDE = [
                         ];
 SA_TOW_LOCKED_VEHICLES_ENABLED = false;
 
+//AFAR
+if(isServer)then {
+//Automatically detects size of map to set as max range for radio range checks & checks if AFAR is enabled via lobby parameters
+    if((!isClass(configFile>>"CfgPatches">>"task_force_radio")) && 
+    { (!isClass(configFile>>"CfgPatches">>"acre_main"))&&(paramsArray select 0==1) } )then {
+        r_WS=getNumber(configFile>>"CfgWorlds">>worldName>>"mapSize");
+        publicVariable "r_WS";AFAR=1;publicVariable "AFAR";
+
+        //Helps prevent persistent radio static/floating radio bug
+        addMissionEventHandler["HandleDisconnect", { 
+            _me=_this select 0; { if((_x isKindOf "Land_PortableLongRangeRadio_F")||(_x isKindof "Land_HelipadEmpty_F"))then {
+                detach _x;deleteVehicle _x;};}forEach attachedObjects _me;
+        }];
+    };
+};
+
 //Cop & Medic Radio disable
 enableRadio false;
 enableSentences false;

@@ -29,7 +29,7 @@
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
 
-//AOSOUL Added
+//AOSoul Added
 #include "AS_AdminMenu.hpp"
 #include "AS_Refund.hpp"
 #include "slotmachine.hpp"	//Slot

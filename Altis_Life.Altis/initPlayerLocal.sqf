@@ -33,7 +33,16 @@ if (hasInterface) then {
 };
 
 //패스트 로프
-#include "AOSOUL\SHK_Fastrope.sqf";
+#include "AOSoul\SHK_Fastrope.sqf";
+
+
+//AFAR
+sleep 2;
+//Makes sure that both TFAR and ACRE2 are not running on the server, and that the AFAR lobby parameter is enabled
+if((!isClass(configFile>>"CfgPatches">>"task_force_radio"))&& { (!isClass(configFile>>"CfgPatches">>"acre_main"))&&(AFAR==1)})then {
+    #include "AOSoul\AFAR\f.sqf";
+    call initAFAR;
+};
 
 ////////////////////////////////////////////////////
 [] execVM "core\init.sqf";

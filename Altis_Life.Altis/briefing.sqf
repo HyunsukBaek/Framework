@@ -39,7 +39,7 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["changelog",
         [
-            "AOSOUL Life Changelog",
+            "AOSoul Life Changelog",
                 "
 		2016.2 Soul(Fucker) Life 오픈<br/>
 		2016.3 국내 최대 IDC로 서버 영구임대 호스팅 <br/>

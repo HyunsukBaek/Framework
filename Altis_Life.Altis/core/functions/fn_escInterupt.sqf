@@ -75,7 +75,7 @@ for "_i" from 0 to 1 step 0 do {
     _usebleCtrl = call _canUseControls;
     _usebleCtrl spawn _escSync;
     if (_usebleCtrl) then {
-        _respawnButton ctrlEnable false; //Enable the button. Default true. AOSOUL Added
+        _respawnButton ctrlEnable false; //Enable the button. Default true. AOSoul Added
     };
     waitUntil {isNull (findDisplay 49)};
 };

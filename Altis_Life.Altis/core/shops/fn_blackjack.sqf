@@ -1,5 +1,5 @@
 /*
-    Made by AOSOUL
+    Made by AOSoul
     Original Source : Papabear
 */
 #include "..\..\script_macros.hpp"

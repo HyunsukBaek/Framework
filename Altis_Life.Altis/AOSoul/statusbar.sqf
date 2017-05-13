@@ -4,7 +4,7 @@ disableSerialization;
 
 _rscLayer = "statusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["statusBar","PLAIN"];
-systemChat format["Welcome to AOSOUL Life Server", _rscLayer];
+systemChat format["Welcome to AOSoul Life Server", _rscLayer];
 
 [] spawn {
 	sleep 5;
