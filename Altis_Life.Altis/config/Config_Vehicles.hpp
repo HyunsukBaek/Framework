@@ -370,10 +370,10 @@ class LifeCfgVehicles {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
             }, "" },
             { "반군", "reb", {
-                "textures\AOSoul\vehicles\offroad_reb_guk.jpg"
+                "textures\AOSoul\vehicles\offroad_reb_guk.paa"
             }, "" },
             { "EMS", "med", {
-                "textures\AOSoul\vehicles\offroad_med_aosoul.jpg"
+                "textures\AOSoul\vehicles\offroad_med_aosoul.paa"
             }, "" }
         };
     };
@@ -1062,13 +1062,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "5taku", "civ",          {"textures\AOSoul\vehicles\suv_otaku.paa"}, "call life_donorlevel >= 1" },
             { "ghostRider", "civ",     {"textures\AOSoul\vehicles\suv_ghostrider.paa"}, "call life_donorlevel >= 2" },
             { "TAXI", "civ",           {"textures\AOSoul\vehicles\suv_taxi.paa"}, "" },
-            { "EMS red", "med",        {"textures\AOSoul\vehicles\suv_EMS_red.paa"}, "call life_donorlevel >= 1" },
+            { "EMS red", "med",        {"textures\AOSoul\vehicles\suv_EMS_dor2.paa"}, "call life_donorlevel >= 1" },
             { "EMS white", "med",      {"textures\AOSoul\vehicles\suv_EMS_white.paa"}, "" },
             { "EMS 119", "med",        {"textures\AOSoul\vehicles\suv_EMS_119.paa"}, "" },
             { "Police112", "cop",      {"textures\AOSoul\vehicles\suv_112.paa"}, "call life_donorlevel >= 2" },
             { "UKPD", "cop",           {"textures\AOSoul\vehicles\suv_police_uk.paa"}, "" },
             { "LAPD", "cop",           {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
-            { "Blue poltan", "civ",    {"textures\AOSoul\vehicles\suv_bluepoltan.jpg"}, "" }
+            { "Blue poltan", "civ",    {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
+            { "slime", "cop",          {"textures\AOSoul\vehicles\sub_slime.paa"}, "call life_donorlevel >= 4" }
         };
     };
 
