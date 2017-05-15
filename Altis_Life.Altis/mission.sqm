@@ -104,14 +104,13 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Medical",
 	"A3_Structures_F_EPA_Items_Food",
 	"A3_Structures_F_Dominants_Lighthouse",
-	"A3_Structures_F_Civ_SportsGrounds",
-	"A3_Structures_F_Exp_Military_Flags"
+	"A3_Structures_F_Civ_SportsGrounds"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=21;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -259,13 +258,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
-		{
-			className="A3_Structures_F_Exp";
-			name="Arma 3 Apex - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 randomSeed=2639488;
@@ -299,6 +291,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -313,24 +323,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -389,7 +381,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3651;
+		items=3648;
 		class Item0
 		{
 			dataType="Marker";
@@ -1938,7 +1930,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382465;
+			angle=56.382462;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -4945,6 +4937,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4952,7 +4945,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13807,7 +13799,6 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
-			atlOffset=0.2104969;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25689,6 +25680,7 @@ class Mission
 						angles[]={0,0.53848642,6.2823472};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -25697,7 +25689,7 @@ class Mission
 					};
 					id=1938;
 					type="C_man_polo_4_F";
-					atlOffset=0.51200104;
+					atlOffset=0.0003490448;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56424,13 +56416,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
-			atlOffset=0.38829041;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -86056,40 +86048,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12303.556,148.32681,8866.8896};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowdamage false;";
-			};
-			id=5199;
-			type="Flag_Viper_F";
-			atlOffset=2.5243988;
-		};
-		class Item3637
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={12292.219,127.92921,8884.0596};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowdamage false;";
-			};
-			id=5200;
-			type="Flag_Viper_F";
-			atlOffset=0.002456665;
-		};
-		class Item3638
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={9222.0479,65.289337,8044.0054};
 			};
 			side="Empty";
@@ -86102,7 +86060,7 @@ class Mission
 			type="Flag_Blue_F";
 			atlOffset=0.091678619;
 		};
-		class Item3639
+		class Item3637
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86120,7 +86078,7 @@ class Mission
 			type="Land_Cargo_Tower_V3_F";
 			atlOffset=-0.0089988708;
 		};
-		class Item3640
+		class Item3638
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86137,7 +86095,7 @@ class Mission
 			type="Flag_Blue_F";
 			atlOffset=-6.8664551e-005;
 		};
-		class Item3641
+		class Item3639
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86154,7 +86112,7 @@ class Mission
 			type="Flag_Blue_F";
 			atlOffset=-0.0031661987;
 		};
-		class Item3642
+		class Item3640
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86171,24 +86129,7 @@ class Mission
 			type="Land_HelipadSquare_F";
 			atlOffset=0.03679657;
 		};
-		class Item3643
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={12271.719,126.5808,8935.3018};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowdamage false;";
-			};
-			id=5206;
-			type="Flag_Viper_F";
-			atlOffset=-7.6293945e-005;
-		};
-		class Item3644
+		class Item3641
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86205,7 +86146,7 @@ class Mission
 			type="Flag_BI_F";
 			atlOffset=0.095230103;
 		};
-		class Item3645
+		class Item3642
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86222,7 +86163,7 @@ class Mission
 			type="Land_HBarrierWall6_F";
 			atlOffset=-0.067947388;
 		};
-		class Item3646
+		class Item3643
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86239,7 +86180,7 @@ class Mission
 			type="Land_HBarrier_1_F";
 			atlOffset=1.3225861;
 		};
-		class Item3647
+		class Item3644
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86256,18 +86197,18 @@ class Mission
 			type="Land_HBarrier_1_F";
 			atlOffset=1.3047943;
 		};
-		class Item3648
+		class Item3645
 		{
 			dataType="Marker";
 			position[]={22130.934,3.627594,14484.458};
 			name="atm_marker_2_11";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=357.38916;
+			angle=357.38913;
 			id=5214;
 			atlOffset=5.9604645e-006;
 		};
-		class Item3649
+		class Item3646
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86309,7 +86250,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item3650
+		class Item3647
 		{
 			dataType="Object";
 			class PositionInfo
@@ -86324,6 +86265,7 @@ class Mission
 			};
 			id=5216;
 			type="Land_LampDecor_F";
+			atlOffset=-2.3841858e-007;
 		};
 	};
 };
