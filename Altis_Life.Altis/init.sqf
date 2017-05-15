@@ -21,7 +21,7 @@ if (hasInterface) then {
 [] execVM "AOSoul\CL.sqf"; //돔 네온
 [] execVM "AOSoul\CL2.sqf";
 [] execVM "AOSoul\safezone.sqf";//세이프존 
-setTerrainGrid 49;
+setTerrainGrid 50;
 //setViewDistance 1200;
 //setObjectViewDistance [1000,50];
 
