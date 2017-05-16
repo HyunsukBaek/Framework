@@ -90,7 +90,19 @@ class CarShops {
             { "B_Heli_Transport_03_unarmed_F", "license_civ_level4" },
             //Caesar BTT 경비행기
             { "C_Plane_Civil_01_F", "license_civ_level1" }, //Apex DLC
-            { "C_Plane_Civil_01_racing_F", "call life_donorlevel >= 1" }//Apex DLC
+            { "C_Plane_Civil_01_racing_F", "call life_donorlevel >= 1" },//Apex DLC
+
+            //JET
+            { "O_Plane_Fighter_02_F", "license_civ_level5" },
+            { "O_Plane_Fighter_02_Stealth_F", "license_civ_level5" },
+            { "O_Plane_CAS_02_dynamicLoadout_F", "license_civ_level5" },
+            { "I_Plane_Fighter_04_F", "license_civ_level5" },
+            { "I_Plane_Fighter_03_dynamicLoadout_F", "license_civ_level5" },
+            { "O_T_VTOL_02_infantry_dynamicLoadout_F", "license_civ_level5" },
+            { "O_T_VTOL_02_vehicle_dynamicLoadout_F", "license_civ_level5" }
+
+
+
         };
     };
 
@@ -269,7 +281,11 @@ class CarShops {
             //고스트 호크
             { "B_Heli_Transport_01_F", "call life_coplevel >= 3" },
             //휴론
-            { "B_Heli_Transport_03_F", "call life_coplevel >= 4" }
+            { "B_Heli_Transport_03_F", "call life_coplevel >= 4" },
+
+            { "B_Plane_CAS_01_dynamicLoadout_F", "call life_coplevel >= 4" },
+            { "B_Plane_Fighter_01_Stealth_F", "call life_coplevel >= 4" },
+            { "B_Plane_Fighter_01_F", "call life_coplevel >= 4" }
 
         };
     };
@@ -1225,10 +1241,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
-        vItemSpace = 50;
-        price = 900000;
-    };
+    class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {};
 
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 100;
@@ -1428,6 +1441,77 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 200;
         conditions = "";
         price = 600000;
+        textures[] = {};
+    };
+
+    //JET
+    class O_Plane_Fighter_02_F { //shikra
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 80000000;
+        textures[] = {};
+    };
+
+    class O_Plane_Fighter_02_Stealth_F {
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 85000000;
+        textures[] = {};
+    };
+
+    class O_Plane_CAS_02_dynamicLoadout_F { //네오프론
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 70000000;
+        textures[] = {};
+    };
+
+    class I_Plane_Fighter_04_F { //gryphon
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 67000000;
+        textures[] = {};
+    };
+
+    class O_T_VTOL_02_infantry_dynamicLoadout_F {
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 70000000;
+        textures[] = {};
+    };
+
+    class O_T_VTOL_02_vehicle_dynamicLoadout_F {
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 70000000;
+        textures[] = {};
+    };
+
+    class I_Plane_Fighter_03_dynamicLoadout_F { //버자드
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 60000000;
+        textures[] = {};
+    };
+
+    class B_Plane_CAS_01_dynamicLoadout_F { //와이프아웃 //경찰
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 30000000;
+        textures[] = {};
+    };
+
+    class B_Plane_Fighter_01_Stealth_F { //블랙wasp2위장 // 경찰용
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 40000000;
+        textures[] = {};
+    };
+
+    class B_Plane_Fighter_01_F { //블랙wasp2 //경찰
+        vItemSpace = 50;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 40000000;
         textures[] = {};
     };
 };
