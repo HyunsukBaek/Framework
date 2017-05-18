@@ -57,5 +57,8 @@ SA_TOW_LOCKED_VEHICLES_ENABLED = false;
 //Cop & Medic Radio disable
 enableRadio false;
 enableSentences false;
+
+//Ambient Setting
+enableEnvironment false;
 // --------------------------------------------------------------------------------------------------------------
 StartProgress = true;
