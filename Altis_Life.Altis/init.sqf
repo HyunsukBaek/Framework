@@ -59,6 +59,6 @@ enableRadio false;
 enableSentences false;
 
 //Ambient Setting
-enableEnvironment false;
+//enableEnvironment false;
 // --------------------------------------------------------------------------------------------------------------
 StartProgress = true;
