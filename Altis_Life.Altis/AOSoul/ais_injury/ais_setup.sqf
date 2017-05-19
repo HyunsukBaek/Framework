@@ -12,7 +12,7 @@ tcb_ais_pvpMode = false;// Not implemented yet!
 //	v v v v v v v v v v v v  --- Optional Settings --- v v v v v v v v v v v v 
 
 tcb_ais_rambofactor = 1;// A higher value means more damage tolerance. Set to 2 for double damage tolerance. Set to 0.5 for half etc. 1 equates to Vanilla.
-tcb_ais_random_lifetime_factor = 200;// A higher value means you have more time to heal the unit before it bleeds out and dies (50 == means around 1 minute, 100 == means around 3 minutes, 200 == approximately 5 minutes).
+tcb_ais_random_lifetime_factor = 100;// A higher value means you have more time to heal the unit before it bleeds out and dies (50 == means around 1 minute, 100 == means around 3 minutes, 200 == approximately 5 minutes).
 // The time mostly depends on the damage the unit takes before loose consciousness. The time is randomized and not exact.
 tcb_ais_delTime = 0;// Time in seconds until dead bodys are removed. If zero seconds are selected, this feature is disabled. (only units that have been handled by AIS Injury System will be deleted!).
 tcb_ais_allways_walk = false;// If set to true, the units are always able to walk/run. False means broken legs are possible (Vanilla).
