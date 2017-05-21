@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "handcuffs", "keys", "vehiclecutter", "vehiclecutter" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "handcuffs", "keys", "vehiclecutter"};
     };
 };
 

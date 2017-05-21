@@ -1,4 +1,10 @@
+/*
+    Mady by AOSoul
+    2017/05/22
+*/
 #include "..\..\script_macros.hpp"
+
+if (playerSide isEqualTo civilian) exitWith {hint localize "STR_Cop_wantedList_notCop";};
 
 private ["_veh","_locked"];
 _veh = cursorObject;
