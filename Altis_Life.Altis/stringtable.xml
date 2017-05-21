@@ -12207,5 +12207,8 @@
 		<Key ID="STR_Garage_Title_air">
             <Original>비행기 차고</Original>
         </Key>
+		<Key ID="STR_Fishing_Error">
+            <Original>육지에서 서 있는 상태에서만 사용 가능합니다</Original>
+        </Key>
 	</Package>
 </Project>

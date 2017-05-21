@@ -4,6 +4,13 @@
 */
 #include "..\..\script_macros.hpp"
 
+//엑션 제한 걸기
+if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
+if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
+if !(isTouchingGround Player) exitWith {hint localize "STR_Fishing_Error"};
+if !(stance player isEqualTo "STAND") exitWith {hint localize "STR_Fishing_Error"};
+if (life_is_arrested) exitWith {hint localize "STR_Fishing_Error"};
+
 private["_chance"];
 if(Life_fishing) exitwith {};
 Life_fishing = true;

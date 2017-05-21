@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5218;
+		nextID=5269;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17358.691,86.353165,13477.883};
-		dir[]={-0.22334154,-0.098130889,0.96979821};
-		up[]={-0.022024645,0.99517173,0.095635243};
-		aside[]={0.97450089,1.756307e-007,0.22442491};
+		pos[]={26791.682,66.792618,24606.234};
+		dir[]={-0.33989739,-0.83132309,0.43987119};
+		up[]={-0.50837058,0.55563295,0.65789926};
+		aside[]={0.79133064,-3.0494994e-007,0.61147302};
 	};
 };
 binarizationWanted=0;
@@ -381,7 +381,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3641;
+		items=3649;
 		class Item0
 		{
 			dataType="Marker";
@@ -1415,29 +1415,30 @@ class Mission
 		class Item102
 		{
 			dataType="Marker";
-			position[]={26847.824,24.010233,24593.961};
+			position[]={26774.109,20.983154,24637.818};
 			name="airshop_1";
 			text="@STR_MAR_Air_Shop";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 			id=107;
+			atlOffset=-0.10221672;
 		};
 		class Item103
 		{
 			dataType="Marker";
-			position[]={26868.67,24.432938,24567.48};
+			position[]={26798.174,21.666704,24639.631};
 			name="civ_air_2";
 			type="Empty";
-			angle=308.02112;
+			angle=129.01575;
 			id=108;
 		};
 		class Item104
 		{
 			dataType="Marker";
-			position[]={26855.113,24.246786,24554.789};
+			position[]={26775.119,22.046585,24615.229};
 			name="civ_air_2_2";
 			type="Empty";
-			angle=319.56326;
+			angle=129.01598;
 			id=109;
 		};
 		class Item105
@@ -1821,23 +1822,23 @@ class Mission
 		class Item142
 		{
 			dataType="Marker";
-			position[]={25707.689,18.131592,21271.893};
+			position[]={25746.602,16.129883,21202.338};
 			name="car_g_2";
 			type="Empty";
-			angle=313.51974;
+			angle=45.3722;
 			id=147;
-			atlOffset=-0.36264801;
+			atlOffset=-0.00014686584;
 		};
 		class Item143
 		{
 			dataType="Marker";
-			position[]={25706.697,18.269348,21274.23};
+			position[]={25740.195,0.33959961,21208.332};
 			name="civ_gar_1_2";
 			text="@STR_MAR_Garage";
 			type="o_service";
-			angle=168.39319;
+			angle=133.11165;
 			id=148;
-			atlOffset=-0.30900574;
+			atlOffset=-15.901123;
 		};
 		class Item144
 		{
@@ -1930,7 +1931,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382458;
+			angle=56.38245;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -18961,7 +18962,7 @@ class Mission
 			side="Civilian";
 			class Entities
 			{
-				items=144;
+				items=145;
 				class Item0
 				{
 					dataType="Object";
@@ -20813,15 +20814,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={26849.723,24.091494,24593.23};
-						angles[]={0.014660765,2.9989817,0.035988688};
+						position[]={26774.221,21.093462,24637.84};
+						angles[]={0.018657569,2.332231,0.054611351};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2"",""civ_air_2_1""],""civ"",""Carl's Airial Auto's""]];this setVariable [""realname"",""비행기 상점""];";
+						init="this enableSimulation false;    " \n "this allowDamage false;    " \n "this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2"",""civ_air_2_2""],""civ"",""Carl's Airial Auto's""]];   " \n "   " \n "this addAction[localize""STR_Garage_Title_air"",  {   if (life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Air""; createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""civ_air_2_3""; }];     " \n "   " \n "this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""civ_air_2_3""; }];   " \n "   " \n "this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];   " \n "   " \n "this setVariable [""realname"",""비행기 상점 / 차고""];";
 						disableSimulation=1;
 					};
 					id=974;
@@ -24720,7 +24721,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""];this setVariable [""realname"",""물고기 상점""];";
+						init="this allowDamage false;  " \n "this enableSimulation false;  " \n "this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""]; " \n "this setVariable [""realname"",""물고기 상점""];";
 						disableSimulation=1;
 					};
 					id=1926;
@@ -25799,8 +25800,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={25701.477,18.83292,21279.346};
-						angles[]={0,2.6637616,0};
+						position[]={25739.971,16.265564,21208.375};
+						angles[]={6.2791886,2.3058898,6.2432079};
 					};
 					side="Civilian";
 					flags=4;
@@ -25812,7 +25813,7 @@ class Mission
 					};
 					id=1940;
 					type="C_man_polo_4_F";
-					atlOffset=-0.0017776489;
+					atlOffset=0.019729614;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29665,6 +29666,86 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item144
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16490.248,2.2213886,12326.226};
+						angles[]={0.00059801998,5.5899882,6.2805109};
+					};
+					side="Civilian";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this allowDamage false;  " \n "this enableSimulation false;  " \n "this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""]; " \n "this setVariable [""realname"",""물고기 상점""];";
+						disableSimulation=1;
+					};
+					id=5249;
+					type="C_man_polo_4_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -38183,7 +38264,7 @@ class Mission
 			};
 			id=1785;
 			type="Land_LampDecor_F";
-			atlOffset=0.0055422783;
+			atlOffset=0.0055420399;
 		};
 		class Item994
 		{
@@ -86056,7 +86137,7 @@ class Mission
 			name="atm_marker_2_11";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=357.3891;
+			angle=357.38907;
 			id=5214;
 			atlOffset=5.9604645e-006;
 		};
@@ -86133,6 +86214,154 @@ class Mission
 			b=300;
 			id=5217;
 			atlOffset=-216.39853;
+		};
+		class Item3641
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25736.762,28.692511,21194.119};
+				angles[]={0,0.76947826,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5221;
+			type="Land_LampAirport_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item3642
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26763.176,33.517624,24627.246};
+				angles[]={0,1.8645875,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5222;
+			type="Land_LampAirport_F";
+		};
+		class Item3643
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26782.393,33.414921,24650.893};
+				angles[]={0,2.9485245,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5223;
+			type="Land_LampAirport_F";
+		};
+		class Item3644
+		{
+			dataType="Marker";
+			position[]={26788.4,22.04006,24625.561};
+			name="civ_air_2_3";
+			type="Empty";
+			angle=129.01598;
+			id=5244;
+		};
+		class Item3645
+		{
+			dataType="Marker";
+			position[]={16490.338,-1.5314722,12325.947};
+			name="fish_market_2";
+			text="@STR_MAR_Fish_Market";
+			type="mil_box";
+			colorName="ColorGreen";
+			id=5246;
+		};
+		class Item3646
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16489.971,2.2201731,12327};
+				angles[]={0.00059801998,2.7209656,6.2805109};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false;";
+			};
+			id=5247;
+			type="Land_CashDesk_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item3647
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16490.102,3.905761,12326.268};
+				angles[]={0,5.8803983,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5251;
+			type="Land_cargo_addon02_V2_F";
+			atlOffset=1.1381395;
+		};
+		class Item3648
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16492.203,14.636993,12321.056};
+				angles[]={0,5.8951497,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5252;
+			type="Land_LampAirport_F";
+			atlOffset=2.9021015;
 		};
 	};
 };
