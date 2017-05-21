@@ -120,6 +120,12 @@ switch (true) do {
         [] spawn life_fnc_electricfishing;
         closeDialog 0;
     };
+    
+    //Vehicle Cutter - Medic
+    case (_item isEqualTo "vehiclecutter"): {
+        [] spawn life_fnc_vehiclecutter;
+        closeDialog 0;
+    };
 
     default {
         hint localize "STR_ISTR_NotUsable";

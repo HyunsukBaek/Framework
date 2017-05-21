@@ -12186,6 +12186,9 @@
 		<Key ID="STR_AOSOUL_Items_keys">
             <Original>수갑 열쇠</Original>
         </Key>
+		<Key ID="STR_AOSOUL_Items_vehiclecutter">
+            <Original>차량 절단기</Original>
+        </Key>
 		<Key ID="STR_Cook_Closer">
             <Original>요리를 하려면 불 가까이 가세요!!</Original>
         </Key>

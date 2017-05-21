@@ -414,6 +414,7 @@ class Life_Client_Core {
         class robstore {};
         class Ragdoll {};
         class outtro {};
+        class vehiclecutter {};
     };
 
     //Market System

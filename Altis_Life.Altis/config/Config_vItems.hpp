@@ -20,7 +20,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "lockpick" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "vehiclecutter" };
     };
 
     class rebel {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "handcuffs", "keys" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "handcuffs", "keys", "vehiclecutter", "vehiclecutter" };
     };
 };
 
@@ -933,5 +933,16 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\AOSoul\ico_electricfishing.paa";
+    };
+
+    class vehiclecutter {
+        variable = "vehiclecutter";
+        displayName = "STR_AOSOUL_Items_vehiclecutter";
+        weight = 5;
+        buyPrice = 100000;
+        sellPrice = 50000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\ico_VehicleCutter.paa";
     };
 };
