@@ -1,5 +1,6 @@
 /*
-Made by AOS 2017/05/01
+    Mady by AOSoul
+    20170501
 */
 private["_catch"];
 if(Life_fishing) exitwith {};

@@ -1,7 +1,11 @@
+/*
+    Mady by AOSoul
+    20170501
+*/
 private["_chance"];
 if(Life_fishing) exitwith {};
 Life_fishing = true;
-	//���ô� ������
+	//던지는 모션 및 오브젝트, 날아가는 속도 설정
 	player playmove "AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
@@ -10,18 +14,20 @@ Life_fishing = true;
 	_vehicle = createVehicle ["Land_Balloon_01_air_F", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
 	_vel = velocity _vehicle;
 	_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
+	
+	//던질때 효과음 추가 가능
 	playSound3D ["", player, false, getPosASL player, 1, 1, 8]; 
 	
 	sleep 2.5;
 
-	//�ٴڿ� ���ô� ��������
+	//지면에 떨어졌을때 실패
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
 		hint "You lost your bait!!";
 		deletevehicle _vehicle;
 		Life_fishing = false;
 	};
 
-	//�� ������
+	//성공 메세지
 	hint "Successful Cast";
 	playSound3D ["", player, false, getPosASL _vehicle, 25, 1, 85];
 
