@@ -34,6 +34,69 @@ if (_veh isEqualTo "B_Heli_Transport_01_F") then {
     _vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
 };
 
+//AOSoul Added
+//카이만
+if (_veh isEqualTo "O_Heli_Attack_02_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+//헬켓 무장
+if (_veh isEqualTo "I_Heli_light_03_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+//포니
+if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+//블랙풋
+if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+//JET DLC
+if (_veh isEqualTo "O_Plane_Fighter_02_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "O_Plane_Fighter_02_Stealth_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "O_Plane_CAS_02_dynamicLoadout_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "I_Plane_Fighter_04_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "I_Plane_Fighter_03_dynamicLoadout_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "B_Plane_CAS_01_dynamicLoadout_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "B_Plane_Fighter_01_Stealth_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "B_Plane_Fighter_01_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+//Xian
+if (_veh isEqualTo "O_T_VTOL_02_infantry_dynamicLoadout_F") then {
+    _vehicle setvehicleammo 0;
+};
+
+if (_veh isEqualTo "O_T_VTOL_02_vehicle_dynamicLoadout_F") then {
+    _vehicle setvehicleammo 0;
+};
+
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
