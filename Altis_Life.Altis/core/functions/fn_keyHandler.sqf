@@ -688,7 +688,7 @@ switch (_code) do {
         if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
-        if(_shift && {!life_is_arrested}) then
+        if(_shift && {!life_is_arrested} && {isTouchingGround player}&& {stance player isEqualTo "STAND"}) then
         {
             [] spawn life_fnc_Ragdoll;
         };
