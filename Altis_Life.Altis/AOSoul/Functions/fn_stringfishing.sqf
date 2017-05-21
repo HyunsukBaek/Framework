@@ -2,6 +2,8 @@
     Mady by AOSoul
     20170501
 */
+#include "..\..\script_macros.hpp"
+
 private["_chance"];
 if(Life_fishing) exitwith {};
 Life_fishing = true;
