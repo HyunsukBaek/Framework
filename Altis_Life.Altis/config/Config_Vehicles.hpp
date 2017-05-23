@@ -579,14 +579,14 @@ class LifeCfgVehicles {
     class B_Heli_Light_01_armed_F {
         vItemSpace = 50;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
-        price = 2000000;
+        price = 11000000;
         textures[] = {};
     };
 
     class B_Heli_Attack_01_F {
         vItemSpace = 50;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
-        price = 8000000;
+        price = 15000000;
         textures[] = {};
     };
 
@@ -656,14 +656,14 @@ class LifeCfgVehicles {
     class O_Heli_Attack_02_F {
         vItemSpace = 50;
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
-        price = 8000000;
+        price = 26000000;
         textures[] = {};
     };
 
     class I_Heli_light_03_F {
         vItemSpace = 50;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir} || license_civ_rebel";
-        price = 5000000;
+        price = 9000000;
         textures[] = {
             { "Swat", "cop", {
                 "textures\AOSoul\vehicles\hellcat_Cop_Swat_1.paa",

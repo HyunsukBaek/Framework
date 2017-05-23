@@ -35,25 +35,25 @@ if (_veh isEqualTo "B_Heli_Transport_01_F") then {
 };
 
 //AOSoul Added
-//카이만
-if (_veh isEqualTo "O_Heli_Attack_02_F") then {
-    _vehicle setvehicleammo 0;
-};
+//카이만 800 -> 2500만원으로 올리고 삭제.
+//if (_veh isEqualTo "O_Heli_Attack_02_F") then {
+//    _vehicle setvehicleammo 0;
+//};
 
-//헬켓 무장
-if (_veh isEqualTo "I_Heli_light_03_F") then {
-    _vehicle setvehicleammo 0;
-};
+//헬켓 무장 // 500 -> 900으로 올리고 삭제. (경찰헬기도 있기때문에 필요)
+//if (_veh isEqualTo "I_Heli_light_03_F") then {
+//    _vehicle setvehicleammo 0;
+//};
 
-//포니
-if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
-    _vehicle setvehicleammo 0;
-};
+//포니 200-> 1100만원으로 올리고 삭제
+//if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
+//    _vehicle setvehicleammo 0;
+//};
 
-//블랙풋
-if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
-    _vehicle setvehicleammo 0;
-};
+////블랙풋 //클래스명 오류 수정 800->1500만원으로 올림(경찰only)
+//if (_veh isEqualTo "B_Heli_Attack_01_F") then {
+//    _vehicle setvehicleammo 0;
+//};
 
 //JET DLC
 if (_veh isEqualTo "O_Plane_Fighter_02_F") then {
