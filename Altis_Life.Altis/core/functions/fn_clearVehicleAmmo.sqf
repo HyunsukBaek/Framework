@@ -55,47 +55,47 @@ if (_veh isEqualTo "B_Heli_Transport_01_F") then {
 //    _vehicle setvehicleammo 0;
 //};
 
-//JET DLC
-if (_veh isEqualTo "O_Plane_Fighter_02_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "O_Plane_Fighter_02_Stealth_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "O_Plane_CAS_02_dynamicLoadout_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "I_Plane_Fighter_04_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "I_Plane_Fighter_03_dynamicLoadout_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "B_Plane_CAS_01_dynamicLoadout_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "B_Plane_Fighter_01_Stealth_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "B_Plane_Fighter_01_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-//Xian
-if (_veh isEqualTo "O_T_VTOL_02_infantry_dynamicLoadout_F") then {
-    _vehicle setvehicleammo 0;
-};
-
-if (_veh isEqualTo "O_T_VTOL_02_vehicle_dynamicLoadout_F") then {
-    _vehicle setvehicleammo 0;
-};
+//JET DLC 가격이 60000000~90000000 이여서 해제해도 될듯. 경찰에도 밸런스 맞게 추가해놨으니.
+//if (_veh isEqualTo "O_Plane_Fighter_02_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "O_Plane_Fighter_02_Stealth_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "O_Plane_CAS_02_dynamicLoadout_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "I_Plane_Fighter_04_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "I_Plane_Fighter_03_dynamicLoadout_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "B_Plane_CAS_01_dynamicLoadout_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "B_Plane_Fighter_01_Stealth_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "B_Plane_Fighter_01_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+////Xian
+//if (_veh isEqualTo "O_T_VTOL_02_infantry_dynamicLoadout_F") then {
+//    _vehicle setvehicleammo 0;
+//};
+//
+//if (_veh isEqualTo "O_T_VTOL_02_vehicle_dynamicLoadout_F") then {
+//    _vehicle setvehicleammo 0;
+//};
 
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
