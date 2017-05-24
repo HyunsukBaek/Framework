@@ -362,7 +362,7 @@ class WeaponShops {
             { "arifle_CTARS_ghex_F", "",400000, 200000, "call life_coplevel >= 3 && call life_donorlevel >= 2" },
             { "LMG_Zafir_F", "", 800000, 400000, "call life_coplevel >= 5" },
             { "LMG_Mk200_F", "", 800000, 400000, "call life_coplevel >= 4" },
-            { "LMG_Mk200_BI_F", "", 800000, 400000, "call life_coplevel >= 4 && call life_donorlevel >= 1" },
+            { "LMG_Mk200_BI_F", "", 800000, 400000, "call life_coplevel >= 4 && call life_donorlevel >= 3" },
             { "MMG_01_hex_F", "", 800000, 400000, "call life_coplevel >= 5 && call life_donorlevel >= 2" },
             { "MMG_01_tan_F", "", 800000, 400000, "call life_coplevel >= 5" },
             { "LMG_03_F", "", 600000, 300000, "call life_coplevel >= 4 && call life_donorlevel >= 2" },
