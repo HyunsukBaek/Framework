@@ -218,7 +218,7 @@ class WeaponShops {
             { "1Rnd_HE_Grenade_shell", "",  15000, 5000, "" },
             { "1Rnd_SmokeRed_Grenade_shell", "",  5000, 2500, "" },
             //arifle_SDAR_F
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 1000, 500, "" },
+            { "20Rnd_556x45_UW_mag", "", 1000, 500, "" },
             //arifle_AKS_F
             { "30Rnd_545x39_Mag_Tracer_F", "", 5000, 2500, "" },
             //arifle_Katiba
