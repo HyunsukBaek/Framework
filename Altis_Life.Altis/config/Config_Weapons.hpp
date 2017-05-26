@@ -235,7 +235,7 @@ class WeaponShops {
         side = "";
         conditions = "";
         items[] = {
-            { "Binocular", "", 500, 300, "" },
+            { "Binocular", "", 500, -1, "" },
             { "ItemGPS", "", 500, 300, "" },
             { "ItemMap", "", 500, 300, "" },
             { "ItemCompass", "", 500, 300, "" },
@@ -263,7 +263,7 @@ class WeaponShops {
         side = "";
         conditions = "";
         items[] = {
-            { "Binocular", "", 500, 300, "" },
+            { "Binocular", "", 500, -1, "" },
             { "ItemGPS", "", 500, 300, "" },
             { "ItemMap", "", 500, 300, "" },
             { "ItemCompass", "", 500, 300, "" },
@@ -285,7 +285,7 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
-            { "Binocular", "", 500, 300, "" },
+            { "Binocular", "", 500, -1, "" },
             { "ItemGPS", "", 500, 300, "" },
             { "ItemMap", "", 500, 300, "" },
             { "ItemCompass", "", 500, 300, "" },
@@ -551,7 +551,7 @@ class WeaponShops {
         side = "med";
         conditions = "";
         items[] = {
-            { "Binocular", "", 500, 300, "" },
+            { "Binocular", "", 500, -1, "" },
             { "ItemGPS", "", 500, 300, "" },
             { "ItemMap", "", 500, 300, "" },
             { "ItemCompass", "", 500, 300, "" },
