@@ -104,7 +104,7 @@ class WeaponShops {
             { "arifle_SPAR_03_khk_F", "", 370000, 205000, "call life_donorlevel >= 2" },
             { "srifle_DMR_06_camo_F", "", 420000, 240000, "license_civ_level5 || call life_donorlevel >= 3" },
             { "srifle_DMR_06_olive_F", "", 420000, 240000, "license_civ_level5 && call life_donorlevel >= 2" },
-            { "arifle_AKM_F", "", 160000, 165000, "" },
+            { "arifle_AKM_F", "", 160000, 85000, "" },
 
             // 기관총
             { "LMG_Mk200_F", "", 750000, 370000, "license_civ_level4" },
