@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=2;
 	class ItemIDProvider
 	{
 		nextID=5269;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26791.682,66.792618,24606.234};
-		dir[]={-0.33989739,-0.83132309,0.43987119};
-		up[]={-0.50837058,0.55563295,0.65789926};
-		aside[]={0.79133064,-3.0494994e-007,0.61147302};
+		pos[]={16757.631,-4.9087839,8952.3506};
+		dir[]={-0.31140968,-0.72828263,-0.6104964};
+		up[]={-0.33093148,0.68526834,-0.64877081};
+		aside[]={-0.89084297,-5.888287e-007,0.45441222};
 	};
 };
 binarizationWanted=0;
@@ -291,6 +291,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -305,24 +323,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1429,7 +1429,7 @@ class Mission
 			position[]={26798.174,21.666704,24639.631};
 			name="civ_air_2";
 			type="Empty";
-			angle=129.01575;
+			angle=129.01573;
 			id=108;
 		};
 		class Item104
@@ -1825,7 +1825,7 @@ class Mission
 			position[]={25746.602,16.129883,21202.338};
 			name="car_g_2";
 			type="Empty";
-			angle=45.3722;
+			angle=45.372196;
 			id=147;
 			atlOffset=-0.00014686584;
 		};
@@ -1836,7 +1836,7 @@ class Mission
 			name="civ_gar_1_2";
 			text="@STR_MAR_Garage";
 			type="o_service";
-			angle=133.11165;
+			angle=133.11163;
 			id=148;
 			atlOffset=-15.901123;
 		};
@@ -1931,7 +1931,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.38245;
+			angle=56.382446;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -35771,8 +35771,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16121.154,-9.6736755,9741.5781};
-				angles[]={0,2.921716,0};
+				position[]={16757.15,-6.9469047,8950.4873};
+				angles[]={6.0114136,2.921716,0.1909772};
 			};
 			side="Empty";
 			flags=4;
@@ -35782,7 +35782,7 @@ class Mission
 			};
 			id=1525;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.0613451;
+			atlOffset=-0.29276085;
 		};
 		class Item854
 		{
@@ -86249,6 +86249,7 @@ class Mission
 			};
 			id=5222;
 			type="Land_LampAirport_F";
+			atlOffset=1.9073486e-006;
 		};
 		class Item3643
 		{
