@@ -12,6 +12,7 @@ life_interrupted = false;
 
 if (life_action_inUse) exitWith {};
 if (isNull _curTarget) exitWith {}; //Bad type
+if (life_safezone) exitwith {hint localize "STR_AOSOUL_SafeZone";}; //세이프존 사용 불가
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
 if (player distance _curTarget > _distance) exitWith {}; //Too far
 

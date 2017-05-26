@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16757.631,-4.9087839,8952.3506};
-		dir[]={-0.31140968,-0.72828263,-0.6104964};
-		up[]={-0.33093148,0.68526834,-0.64877081};
-		aside[]={-0.89084297,-5.888287e-007,0.45441222};
+		pos[]={3623.7998,35.026962,13129.064};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -291,24 +291,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -323,6 +305,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -1429,7 +1429,7 @@ class Mission
 			position[]={26798.174,21.666704,24639.631};
 			name="civ_air_2";
 			type="Empty";
-			angle=129.01573;
+			angle=129.01572;
 			id=108;
 		};
 		class Item104
@@ -1825,7 +1825,7 @@ class Mission
 			position[]={25746.602,16.129883,21202.338};
 			name="car_g_2";
 			type="Empty";
-			angle=45.372196;
+			angle=45.372192;
 			id=147;
 			atlOffset=-0.00014686584;
 		};
@@ -1836,7 +1836,7 @@ class Mission
 			name="civ_gar_1_2";
 			text="@STR_MAR_Garage";
 			type="o_service";
-			angle=133.11163;
+			angle=133.11162;
 			id=148;
 			atlOffset=-15.901123;
 		};
@@ -1931,7 +1931,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382446;
+			angle=56.382442;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -26732,7 +26732,6 @@ class Mission
 						angles[]={0,5.4651899,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -26741,6 +26740,7 @@ class Mission
 					};
 					id=1953;
 					type="C_man_polo_4_F";
+					atlOffset=1.0181351;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35782,7 +35782,7 @@ class Mission
 			};
 			id=1525;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.29276085;
+			atlOffset=-0.30788994;
 		};
 		class Item854
 		{
@@ -56413,13 +56413,13 @@ class Mission
 		class Item1945
 		{
 			dataType="Trigger";
-			position[]={3627.6328,22.060108,13157.953};
+			position[]={3627.6331,22.060287,13157.953};
 			class Attributes
 			{
 				name="Safe_kav_trigger";
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="player allowdamage false;  " \n "vehicle player allowDamage false;  " \n "life_knockout = false;  " \n "Life_cooking = true; " \n "Life_fire = true; " \n "life_jetpack = true; " \n "Life_fishing = true; " \n "life_knockout = true; " \n "hint ""You are in Safe Zone""; ";
-				onDeactivation="player allowdamage true;  " \n "vehicle player allowDamage true; " \n "life_knockout = true;  " \n "Life_cooking = false; " \n "Life_fire = false; " \n "life_jetpack = false; " \n "Life_fishing = false; " \n "life_knockout = false; " \n "hint ""You left the safe zone."";";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;   " \n "life_knockout = false;   " \n "Life_cooking = true;  " \n "Life_fire = true;  " \n "life_jetpack = true;  " \n "Life_fishing = true;  " \n "life_knockout = true; " \n "life_safezone = true; " \n "hint ""You are in Safe Zone""; ";
+				onDeactivation="player allowdamage true;   " \n "vehicle player allowDamage true;  " \n "life_knockout = true;   " \n "Life_cooking = false;  " \n "Life_fire = false;  " \n "life_jetpack = false;  " \n "Life_fishing = false;  " \n "life_knockout = false;  " \n "life_safezone = false; " \n "hint ""You left the safe zone."";";
 				sizeA=300;
 				sizeB=300;
 				repeatable=1;
@@ -56427,7 +56427,7 @@ class Mission
 			};
 			id=3299;
 			type="EmptyDetectorAreaR50";
-			atlOffset=11.957823;
+			atlOffset=11.958001;
 		};
 		class Item1946
 		{

@@ -10,6 +10,7 @@ if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surr
 if !(isTouchingGround Player) exitWith {hint localize "STR_Fishing_Error"};
 if !(stance player isEqualTo "STAND") exitWith {hint localize "STR_Fishing_Error"};
 if (life_is_arrested) exitWith {hint localize "STR_Fishing_Error"};
+if (life_safezone) exitwith {hint localize "STR_AOSOUL_SafeZone";}; //세이프존 사용 불가
 
 private["_catch"];
 if(Life_fishing) exitwith {};

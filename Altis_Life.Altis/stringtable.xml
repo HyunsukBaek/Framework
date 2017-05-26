@@ -12210,5 +12210,8 @@
 		<Key ID="STR_Fishing_Error">
             <Original>육지에서 서 있는 상태에서만 사용 가능합니다</Original>
         </Key>
+		<Key ID="STR_AOSOUL_SafeZone">
+            <Original>세이프존에서는 사용할 수 없습니다.</Original>
+        </Key>
 	</Package>
 </Project>
