@@ -15,6 +15,7 @@ if(player getVariable["restrained",false]) exitWith {};
 _time = time;
 if(_shooter isKindOf "Man" && alive player) then {
     if(!life_istazed) then {
+        player action ["DropWeapon", "GroundWeaponHolder" createVehicle position player, currentWeapon player];
         life_istazed = true;
         "DynamicBlur" ppEffectEnable true;
         "DynamicBlur" ppEffectAdjust [20];
