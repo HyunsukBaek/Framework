@@ -111,7 +111,7 @@ class WeaponShops {
             { "LMG_Mk200_BI_F", "", 750000, 370000, "license_civ_level4 && call life_donorlevel >= 1" },
             { "MMG_02_camo_F", "", 700000, 370000, "license_civ_level3 || call life_donorlevel >= 2" },
             { "MMG_02_black_F", "", 700000, 350000, "license_civ_level3 && call life_donorlevel >= 1" },
-            { "MMG_02_sand_F", "", 700000, 350000, "license_civ_level3 && call life_donorlevel >= 1" },
+            { "MMG_02_sand_F", "", 700000, 350000, "license_civ_level3 && call life_donorlevel >= 3" },
             { "LMG_03_F", "", 720000, 350000, "license_civ_level4 && call life_donorlevel >= 1" },
             //저격, 대구경
             { "srifle_DMR_02_F", "", 550000, 300000, "license_civ_level4" },
@@ -123,11 +123,11 @@ class WeaponShops {
             { "srifle_DMR_05_hex_F", "", 630000, 330000, "call life_donorlevel >= 3" },
             { "srifle_DMR_05_tan_f", "", 630000, 330000, "call life_donorlevel >= 2" },
             //런쳐
-            { "launch_RPG7_F", "", 630000, 330000, "license_civ_level4" },
-            { "launch_RPG32_F", "", 630000, 330000, "license_civ_level5" },
-            { "launch_RPG32_ghex_F", "", 630000, 330000, "call life_donorlevel >= 2" },
-            { "launch_B_Titan_short_F", "", 630000, 330000, "license_civ_level5 && call life_donorlevel >= 2" },
-            { "launch_NLAW_F", "", 630000, 330000, "license_civ_level4 && call life_donorlevel >= 1" }
+            { "launch_RPG7_F", "", 730000, 330000, "license_civ_level4" },
+            { "launch_RPG32_F", "", 730000, 330000, "license_civ_level5" },
+            { "launch_RPG32_ghex_F", "", 830000, 430000, "call life_donorlevel >= 2" },
+            { "launch_B_Titan_short_F", "", 830000, 330000, "license_civ_level5 && call life_donorlevel >= 2" },
+            { "launch_NLAW_F", "", 870000, 330000, "license_civ_level4 && call life_donorlevel >= 1" }
         };
 
         mags[] = {
@@ -168,7 +168,7 @@ class WeaponShops {
             //launcher
             { "RPG32_F", "", 50000, 25000, "" },
             { "RPG32_HE_F", "", 50000, 25000, "" },
-            { "RPG7_F", "", 20000, 10000, "" },
+            { "RPG7_F", "", 40000, 15000, "" },
             { "Titan_AT", "", 70000, 30000, "" },
             { "Titan_AP", "", 70000, 30000, "" }
         };
@@ -196,7 +196,7 @@ class WeaponShops {
             { "arifle_Mk20_plain_F", "", 150000, 75000, "license_civ_level1" },
             { "arifle_Mk20C_F", "", 150000, 75000, "call life_donorlevel >= 1" },
             { "arifle_Mk20C_plain_F", "", 150000, 75000, "license_civ_level2" },
-            { "arifle_Mk20_GL_F", "", 450000, 250000, "license_civ_level5 && call life_donorlevel >= 2" },
+            { "arifle_Mk20_GL_F", "", 810000, 250000, "license_civ_level5 && call life_donorlevel >= 2" },
             { "arifle_SDAR_F", "", 200000, 100000, "" },
             { "arifle_TRG20_F", "", 150000, 75000, "" },
             { "arifle_TRG21_F", "", 150000, 75000, "license_civ_level1" },
@@ -204,7 +204,7 @@ class WeaponShops {
             //6.5
             { "arifle_Katiba_F", "", 200000, 100000, "license_civ_level2" },
             { "arifle_Katiba_C_F", "", 200000, 100000, "call life_donorlevel >= 1" },
-            { "arifle_Katiba_GL_F", "", 500000, 250000, "license_civ_level5 && call life_donorlevel >= 3" }
+            { "arifle_Katiba_GL_F", "", 950000, 250000, "license_civ_level5 && call life_donorlevel >= 3" }
         };
         mags[] = {
             { "30Rnd_9x21_Red_Mag", "", 5000, 2500, "" },
@@ -215,7 +215,7 @@ class WeaponShops {
             { "30Rnd_556x45_Stanag_red", "",  5000, 2500, "" },
             { "30Rnd_556x45_Stanag_Tracer_Red", "",  5000, 2500, "" },
             //유탄발사기용 // arifle_Mk20_GL_F, arifle_AK12_GL_F
-            { "1Rnd_HE_Grenade_shell", "",  15000, 5000, "" },
+            { "1Rnd_HE_Grenade_shell", "",  45000, 5000, "" },
             { "1Rnd_SmokeRed_Grenade_shell", "",  5000, 2500, "" },
             //arifle_SDAR_F
             { "20Rnd_556x45_UW_mag", "", 1000, 500, "" },
@@ -563,9 +563,30 @@ class WeaponShops {
             { "NVGoggles_OPFOR", "", 10000, 1000, "call life_donorlevel >= 2" },
             { "NVGogglesB_blk_F", "", 900000, 450000, "call life_mediclevel >= 4" },
             { "NVGogglesB_gry_F", "", 900000, 450000, "call life_donorlevel >= 4" },
-            { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 4" }
+            { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 4" },
+            { "hgun_ACPC2_F", "", 120000, 60000, "" },
+            { "hgun_Rook40_F", "", 130000, 65000, "" },
+            { "hgun_Pistol_heavy_01_F", "", 240000, 120000, "" },
+            { "hgun_PDW2000_F", "", 270000, 135000, "" },
+            { "SMG_01_F", "", 390000, 145000, "" },
+            { "SMG_02_F", "", 500000, 250000, "" }
         };
-        mags[] = {};
+        mags[] = {
+            { "9Rnd_45ACP_Mag", "", 2000, 1000, "" },
+            { "11Rnd_45ACP_Mag", "", 3000, 1500, "" },
+            { "30Rnd_9x21_Mag", "", 5000, 2500, "" },
+            { "30Rnd_9x21_Red_Mag", "", 5000, 2500, "" },
+            { "30Rnd_9x21_Yellow_Mag", "", 5000, 2500, "" },
+            { "30Rnd_9x21_Green_Mag", "", 5000, 2500, "" },
+            { "16Rnd_9x21_Mag", "", 3000, 1500, "" },
+            { "16Rnd_9x21_red_Mag", "", 3000, 1500, "" },
+            { "16Rnd_9x21_green_Mag", "", 3000, 1500, "" },
+            { "16Rnd_9x21_yellow_Mag", "", 3000, 1500, "" },
+            { "30Rnd_45ACP_Mag_SMG_01", "", 5000, 1500, "" },
+            { "30Rnd_45ACP_Mag_SMG_01_tracer_green", "", 5000, 1500, "" },
+            { "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "", 5000, 1500, "" },
+            { "30Rnd_45ACP_Mag_SMG_01_Tracer_Yellow", "", 5000, 1500, "" }
+        };
         accs[] = {};
     };
 };
