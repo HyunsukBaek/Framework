@@ -33,16 +33,6 @@ MAC_fnc_switchMove = {
     _object switchMove _anim;
 };
 
-//AOSoul Added : 상처시스템 
-["%1 --- Executing TcB AIS init.sqf",diag_ticktime] call BIS_fnc_logFormat;
-enableSaving [false,false];
-enableTeamswitch false;// TcB AIS wont support teamswitch
-TCB_AIS_PATH = "AOSoul\ais_injury\";
-[] spawn {
-    {   [_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")}forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits}); // execute for every playable unit
-
-};
-
 //Tow Config
 SA_MAX_TOWED_CARGO = 1;
 SA_TOW_SUPPORTED_VEHICLES_OVERRIDE = [ "Ship","Car" ];
