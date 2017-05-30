@@ -27,7 +27,7 @@ _text2 = _display displayCtrl 1102;
 _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'><img image='textures\armalife.jpg' /></t><br /><br />";
 _message = _message + "Welcome to AoSoul 24h Life Mod Server!!!<br />";
-_message = _message + "서버리붓은 06:00, 12:00, 18:00, 23:00 자동으로 됩니다. 착오없으시길바랍니다. <br />";
+_message = _message + "서버리붓은 02:00, 10:00, 16:00, 22:00 자동으로 됩니다. 착오없으시길바랍니다. <br />";
 _message = _message + "차량을 차고에 넣지 않으면 서버리붓 시 자동으로 삭제되오니 주의하세요. <br />";
 _message = _message + " <a href='http://cafe.naver.com/alflrss' color='#56BDD6'>AOSoul Life Homepage 클릭!!</a> <br />위의 카페링크 클릭하여 가입하시고 규칙 및 공지사항 확인하세요.<br />";
 _message = _message + "AOSoul 시즌3!. 카페가입 및 공지사항을 꼭 필독해주세요. <br />디스코드 운영중입니다. https://discord.gg/tVyFjzm <br />아프리카 TV  http://afreeca.com/mixkorea <br /><br />";
