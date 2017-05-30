@@ -4,7 +4,7 @@ disableSerialization;
 
 _rscLayer = "statusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["statusBar","PLAIN"];
-systemChat format["Server Reboot at 05:00, 10:00, 18:00, 23:00", _rscLayer];
+systemChat format["Server Reboot at 04:00, 10:00, 16:00, 22:00", _rscLayer];
 
 [] spawn {
 	sleep 5;
