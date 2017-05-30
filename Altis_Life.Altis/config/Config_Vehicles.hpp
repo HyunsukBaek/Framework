@@ -237,6 +237,8 @@ class CarShops {
             { "C_SUV_01_F", "" },
             //해치백 스포츠
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
+            //오프로드
+            { "C_Offroad_02_unarmed_F", "call life_coplevel >= 3" },
             //스트라이더
             { "I_MRAP_03_F", "" },
             //스트라이더 HMG
@@ -390,6 +392,9 @@ class LifeCfgVehicles {
             }, "" },
             { "EMS", "med", {
                 "textures\AOSoul\vehicles\offroad_med_aosoul.paa"
+            }, "" },
+            { "Cop Offroad", "cop", {
+                "textures\AOSoul\vehicles\offroad_4wdcop.paa"
             }, "" }
         };
     };
