@@ -1091,7 +1091,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "LAPD", "cop",           {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
             { "Blue poltan", "civ",    {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
             { "slime", "cop",          {"textures\AOSoul\vehicles\suv_slime.paa"}, "call life_donorlevel >= 4" },
-            { "Raptor", "cop",          {"textures\AOSoul\vehicles\suv_raptor.paa"}, "call life_donorlevel >= 4" }
+            { "Raptor", "cop",         {"textures\AOSoul\vehicles\suv_raptor.paa"}, "call life_donorlevel >= 4" }
         };
     };
 
