@@ -366,7 +366,11 @@ class Clothing {
             { "U_B_CombatUniform_mcam", "EMS 형광", 1500, "" },
             { "U_B_CombatUniform_mcam_worn", "EMS 녹색", 1500, "" },
             { "U_Competitor", "EMS 주황", 1500, "" },
-            { "U_I_Wetsuit", "EMS wetsuit", 5000, "" }
+            { "U_I_Wetsuit", "EMS wetsuit", 5000, "" },
+            { "U_B_HeliPilotCoveralls", "", 15000, "" },
+            { "U_I_pilotCoveralls", "", 15000, "" },
+            { "U_I_HeliPilotCoveralls", "", 15000, "" }
+
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -382,7 +386,11 @@ class Clothing {
             { "H_RacingHelmet_1_green_F", "", 5000, "" },
             { "H_RacingHelmet_1_blue_F", "", 5000, "" },
             { "H_RacingHelmet_1_orange_F", "", 5000, "" },
-            { "H_Cap_oli", "", 5000, "" }
+            { "H_Cap_oli", "", 5000, "" },
+            { "H_CrewHelmetHeli_B", "", 65000, "" },
+            { "H_CrewHelmetHeli_I", "", 65000, "" },
+            { "H_PilotHelmetHeli_B", "", 5000, "" },
+            { "H_PilotHelmetHeli_I", "", 5000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
