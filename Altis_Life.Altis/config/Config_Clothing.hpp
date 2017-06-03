@@ -388,7 +388,7 @@ class Clothing {
             { "H_RacingHelmet_1_orange_F", "", 5000, "" },
             { "H_Cap_oli", "", 5000, "" },
             { "H_CrewHelmetHeli_B", "", 65000, "" },
-            { "H_CrewHelmetHeli_I", "", 65000, "" },
+            { "H_PilotHelmetFighter_I", "", 165000, "" },
             { "H_PilotHelmetHeli_B", "", 5000, "" },
             { "H_PilotHelmetHeli_I", "", 5000, "" }
         };
