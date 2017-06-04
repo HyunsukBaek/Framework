@@ -108,7 +108,6 @@ class WeaponShops {
 
             // 기관총
             { "LMG_Mk200_F", "", 750000, 370000, "license_civ_level4" },
-            { "LMG_Mk200_BI_F", "", 750000, 370000, "license_civ_level4 && call life_donorlevel >= 1" },
             { "MMG_02_camo_F", "", 700000, 370000, "license_civ_level3 || call life_donorlevel >= 2" },
             { "MMG_02_black_F", "", 700000, 350000, "license_civ_level3 && call life_donorlevel >= 1" },
             { "MMG_02_sand_F", "", 700000, 350000, "license_civ_level3 && call life_donorlevel >= 3" },
