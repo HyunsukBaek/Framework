@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5326;
+		nextID=5333;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16964.512,34.706745,15443.23};
-		dir[]={-0.92207557,-0.33122844,0.20026737};
-		up[]={-0.3236931,0.94354606,0.070304044};
-		aside[]={0.21224855,6.1969331e-008,0.9772355};
+		pos[]={14163.347,34.062347,16314.931};
+		dir[]={0.215453,-0.47147313,-0.85521215};
+		up[]={0.11518455,0.88185477,-0.45720741};
+		aside[]={-0.9697473,-7.9220627e-008,-0.24430642};
 	};
 };
 binarizationWanted=0;
@@ -291,6 +291,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -305,24 +323,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -474,7 +474,7 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={14177.722,19.513849,16289.301};
+			position[]={14170.335,19.564957,16281.616};
 			name="cop_spawn_4";
 			text="@STR_MAR_Police_Air_HQ";
 			type="mil_box";
@@ -1376,7 +1376,7 @@ class Mission
 		class Item98
 		{
 			dataType="Marker";
-			position[]={14166.416,19.370966,16293.32};
+			position[]={14178.69,19.509607,16289.225};
 			name="cop_air_2";
 			type="Empty";
 			angle=131.20648;
@@ -1931,7 +1931,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382427;
+			angle=56.382423;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -4938,6 +4938,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4945,7 +4946,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4979,6 +4979,7 @@ class Mission
 				angles[]={0,1.5760057,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4986,7 +4987,6 @@ class Mission
 			};
 			id=283;
 			type="Land_CashDesk_F";
-			atlOffset=0.63638496;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5598,6 +5598,7 @@ class Mission
 				angles[]={0,2.3506639,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5605,7 +5606,6 @@ class Mission
 			};
 			id=544;
 			type="Land_CashDesk_F";
-			atlOffset=0.47982728;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5680,6 +5680,7 @@ class Mission
 				angles[]={0,1.6144073,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5687,7 +5688,6 @@ class Mission
 			};
 			id=546;
 			type="Land_Atm_02_F";
-			atlOffset=0.75839138;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7227,6 +7227,7 @@ class Mission
 				angles[]={0.0016194459,5.5725899,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -7234,7 +7235,6 @@ class Mission
 			};
 			id=593;
 			type="Land_CncWall1_F";
-			atlOffset=5.1151657;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13357,7 +13357,6 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
-			atlOffset=0.22221565;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13391,13 +13390,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
-			atlOffset=0.55926895;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13558,7 +13557,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
-			atlOffset=0.18610382;
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13801,7 +13800,6 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
-			atlOffset=0.2104969;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21460,7 +21458,7 @@ class Mission
 					};
 					id=985;
 					type="C_man_polo_3_F";
-					atlOffset=0.14599991;
+					atlOffset=0.00017166138;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22067,8 +22065,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14161.371,19.162802,16299.394};
-						angles[]={0.0066671576,2.9989817,0.0026529003};
+						position[]={14165.861,19.163372,16301.583};
+						angles[]={0.0053265258,2.2828722,0.0039967569};
 					};
 					side="Civilian";
 					flags=4;
@@ -24719,6 +24717,7 @@ class Mission
 						angles[]={0,5.2196865,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -24727,7 +24726,7 @@ class Mission
 					};
 					id=1926;
 					type="C_man_polo_4_F";
-					atlOffset=0.45300007;
+					atlOffset=1.3828278e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25682,6 +25681,7 @@ class Mission
 						angles[]={0,0.53848642,6.2823472};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -25690,7 +25690,7 @@ class Mission
 					};
 					id=1938;
 					type="C_man_polo_4_F";
-					atlOffset=0.51200104;
+					atlOffset=0.0003490448;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26732,6 +26732,7 @@ class Mission
 						angles[]={0,5.4651899,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -26740,7 +26741,6 @@ class Mission
 					};
 					id=1953;
 					type="C_man_polo_4_F";
-					atlOffset=1.0181351;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27053,6 +27053,7 @@ class Mission
 						angles[]={0,4.7296853,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -27062,7 +27063,7 @@ class Mission
 					};
 					id=1957;
 					type="C_man_polo_4_F";
-					atlOffset=0.55700016;
+					atlOffset=0.00050735474;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27488,6 +27489,7 @@ class Mission
 						angles[]={0,5.8275671,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""]; " \n "this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];this setVariable [""realname"",""주유소 상점""];";
@@ -27496,7 +27498,7 @@ class Mission
 					};
 					id=3312;
 					type="C_Nikos_aged";
-					atlOffset=0.5720005;
+					atlOffset=5.1498413e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27737,7 +27739,7 @@ class Mission
 					};
 					id=3318;
 					type="C_Nikos_aged";
-					atlOffset=0.18700409;
+					atlOffset=0.00043487549;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38272,6 +38274,7 @@ class Mission
 				angles[]={0.0066682254,0.12159491,0.0013372133};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
@@ -38279,7 +38282,7 @@ class Mission
 			};
 			id=1773;
 			type="Land_LampDecor_F";
-			atlOffset=7.5709257;
+			atlOffset=0.011745453;
 		};
 		class Item982
 		{
@@ -38391,7 +38394,6 @@ class Mission
 			};
 			id=1779;
 			type="Land_LampDecor_F";
-			atlOffset=0.14204597;
 		};
 		class Item988
 		{
@@ -46063,7 +46065,6 @@ class Mission
 			};
 			id=2668;
 			type="Land_CncWall4_F";
-			atlOffset=0.0010800362;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -46097,6 +46098,7 @@ class Mission
 				angles[]={0.0016194459,6.021616,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -46104,7 +46106,6 @@ class Mission
 			};
 			id=2669;
 			type="Land_CncWall4_F";
-			atlOffset=4.6023407;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -46138,6 +46139,7 @@ class Mission
 				angles[]={0.0016194459,5.3936768,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -46145,7 +46147,6 @@ class Mission
 			};
 			id=2670;
 			type="Land_CncWall1_F";
-			atlOffset=5.5482607;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49144,7 +49145,6 @@ class Mission
 			};
 			id=2840;
 			type="Land_LampAirport_F";
-			atlOffset=0.14893532;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56714,13 +56714,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
-			atlOffset=0.38829041;
 			class CustomAttributes
 			{
 				class Attribute0
