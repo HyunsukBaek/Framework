@@ -58,8 +58,6 @@ if (!(_backpack isEqualTo "")) then {_handle = [_backpack,true,false,false,false
 /* Hotfix for losing virtual items on login */
 if (!isNil {(_this select 0)}) then {
     life_maxWeight = life_maxWeight + (round(FETCH_CONFIG2(getNumber,"CfgVehicles",(backpack player),"maximumload") / 4));
-    life_maxWeight = life_maxWeight + (round(FETCH_CONFIG2(getNumber,"CfgVehicles",(vest player),"maximumload") / 4));
-
 };
 
 {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} forEach _items;
