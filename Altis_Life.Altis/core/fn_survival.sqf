@@ -65,7 +65,7 @@ for "_i" from 0 to 1 step 0 do {
         life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");
         _bp = backpack player;
     } else {
-        if (!(backpack player isEqualTo _bp)) then {
+        if (!(backpack player isEqualTo "") && {!(backpack player isEqualTo _bp)}) then {
             _bp = backpack player;
             life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
         };
@@ -73,7 +73,8 @@ for "_i" from 0 to 1 step 0 do {
     
     //AOSoul Added : if add vest then maxweight increase.
     if (!(vest player isEqualTo "")) then {
-        life_maxWeight = life_maxWeight + 26;
+        _vest = vest player;
+        life_maxWeight = life_maxWeight + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_vest,"maximumload") / 4);
     };
 
     /* Check if the player's state changed? */
