@@ -6,7 +6,7 @@
     Description:
     All survival? things merged into one thread.
 */
-private ["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos"];
+private ["_fnc_food","_fnc_water","_foodTime","_waterTime","_bp","_walkDis","_lastPos","_curPos", "_vest"];
 _fnc_food =  {
     if (life_hunger < 2) then {player setDamage 1; hint localize "STR_NOTF_EatMSG_Death";}
     else
@@ -69,6 +69,12 @@ for "_i" from 0 to 1 step 0 do {
             _bp = backpack player;
             life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
         };
+    };
+    
+    //AOSoul Added : if add vest then maxweight increase.
+    if (!(vest player isEqualTo "")) then {
+        _vest = vest player;
+        life_maxWeight = life_maxWeight + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_vest,"maximumload") / 4);
     };
 
     /* Check if the player's state changed? */
