@@ -21,13 +21,13 @@ _mapKey = (actionKeys "ShowMap" select 0);
 _interruptionKeys = [17,30,31,32];//A,S,W,D
 
 //Vault handling...
-if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
+if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
     true;
 };
 
 //AOSoul Added sitdown
-if (_code in (actionKeys "MoveForward")) then {
-    if (!isNull life_sitting) then {
+if(life_sitting) then {
+    if (_code in (actionKeys "MoveForward")) then {
         [] execVM "AOSoul\Chair\standup.sqf";
         _handled = true;
     };

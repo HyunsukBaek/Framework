@@ -56,6 +56,7 @@ life_jetpack = false;
 Life_fishing = false;
 life_seatbelt = false;
 life_safezone = false;
+life_sitting = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
@@ -96,6 +97,7 @@ CASH = 0;
 
 life_istazed = false;
 life_isknocked = false;
+
 life_vehicles = [];
 
 /*

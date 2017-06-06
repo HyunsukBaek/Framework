@@ -25,14 +25,6 @@ setTerrainGrid 50;
 //setViewDistance 1200;
 //setObjectViewDistance [1000,50];
 
-//AOSoul Added : sitdown
-MAC_fnc_switchMove = {
-    private["_object","_anim"];
-    _object = _this select 0;
-    _anim = _this select 1;
-    _object switchMove _anim;
-};
-
 //Tow Config
 SA_MAX_TOWED_CARGO = 1;
 SA_TOW_SUPPORTED_VEHICLES_OVERRIDE = [ "Ship","Car" ];
