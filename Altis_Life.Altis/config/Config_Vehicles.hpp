@@ -898,10 +898,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS", "med", {
                 "textures\AOSoul\vehicles\quad_med.paa"
             }, "" },
-            { "LADY", "civ", {
+            { "LADY_후원1", "civ", {
                 "textures\AOSoul\vehicles\quad_lady.paa"
             }, "call life_donorlevel >= 1" },
-            { "Cube", "civ", {
+            { "Cube_후원1", "civ", {
                 "textures\AOSoul\vehicles\quad_cube.paa"
             }, "call life_donorlevel >= 1" }
         };
@@ -994,16 +994,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS Red", "med", {
                 "textures\AOSoul\vehicles\hatchback_EMS.paa"
             }, "" },
-            { "EMS UK", "med", {
+            { "EMS UK_후원1", "med", {
                 "textures\AOSoul\vehicles\hatchback_EMSUK.paa"
-            }, "call life_donorlevel >= 0" },
+            }, "call life_donorlevel >= 1" },
             { "Police", "cop", {
                 "textures\AOSoul\vehicles\hatchback_cop.paa"
             }, "" },
-            { "LAPD", "cop", {
+            { "LAPD_후원2", "cop", {
                 "textures\AOSoul\vehicles\hatchback_lapd.paa"
             }, "call life_donorlevel >= 2" },
-            { "UKPD", "cop", {
+            { "UKPD_후원1", "cop", {
                 "textures\AOSoul\vehicles\hatchback_UKpolice.paa"
             }, "call life_donorlevel >= 1" }
 
@@ -1048,10 +1048,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "textures\AOSoul\vehicles\hatchback_cop.paa"
             }, "" },
-            { "LAPD", "cop", {
+            { "LAPD_후원2", "cop", {
                 "textures\AOSoul\vehicles\hatchback_lapd.paa"
             }, "call life_donorlevel >= 2" },
-            { "UKPD", "cop", {
+            { "UKPD_후원1", "cop", {
                 "textures\AOSoul\vehicles\hatchback_UKpolice.paa"
             }, "call life_donorlevel >= 1" }
         };
@@ -1071,28 +1071,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
-            { "Sticker", "civ",        {"textures\AOSoul\vehicles\suv_sticker.paa"}, "call life_donorlevel >= 2" },
-            { "Hello kitty", "civ",    {"textures\AOSoul\vehicles\suv_kitty.paa"}, "call life_donorlevel >= 1" },
+            { "Sticker_후원2", "civ",        {"textures\AOSoul\vehicles\suv_sticker.paa"}, "call life_donorlevel >= 2" },
+            { "Hello kitty_후원1", "civ",    {"textures\AOSoul\vehicles\suv_kitty.paa"}, "call life_donorlevel >= 1" },
             { "Cube", "civ",           {"textures\AOSoul\vehicles\suv_cube.paa"}, "" },
             { "Hunters", "civ",        {"textures\AOSoul\vehicles\suv_hunter.paa"}, "" },
-            { "Channel8 News", "civ",  {"textures\AOSoul\vehicles\suv_channel8.paa"}, "call life_donorlevel >= 2" },
+            { "Channel8_후원2", "civ",  {"textures\AOSoul\vehicles\suv_channel8.paa"}, "call life_donorlevel >= 2" },
             { "VIP", "civ",            {"textures\AOSoul\vehicles\suv_vip.paa"}, "" },
             { "Security", "civ",       {"textures\AOSoul\vehicles\suv_security.paa"}, "" },
-            { "Ferrari", "civ",        {"textures\AOSoul\vehicles\suv_ferrari.paa"}, "call life_donorlevel >= 3" },
+            { "Ferrari_후원3", "civ",        {"textures\AOSoul\vehicles\suv_ferrari.paa"}, "call life_donorlevel >= 3" },
             { "blueflames", "civ",     {"textures\AOSoul\vehicles\suv_flames.paa"}, "" },
-            { "5taku", "civ",          {"textures\AOSoul\vehicles\suv_otaku.paa"}, "call life_donorlevel >= 1" },
-            { "ghostRider", "civ",     {"textures\AOSoul\vehicles\suv_ghostrider.paa"}, "call life_donorlevel >= 2" },
+            { "5taku_후원1", "civ",          {"textures\AOSoul\vehicles\suv_otaku.paa"}, "call life_donorlevel >= 1" },
+            { "ghostRider_후원2", "civ",     {"textures\AOSoul\vehicles\suv_ghostrider.paa"}, "call life_donorlevel >= 2" },
             { "TAXI", "civ",           {"textures\AOSoul\vehicles\suv_taxi.paa"}, "" },
-            { "EMS red", "med",        {"textures\AOSoul\vehicles\suv_EMS_dor2.paa"}, "call life_donorlevel >= 1" },
+            { "EMS red_후원1", "med",        {"textures\AOSoul\vehicles\suv_EMS_dor2.paa"}, "call life_donorlevel >= 1" },
             { "EMS white", "med",      {"textures\AOSoul\vehicles\suv_EMS_white.paa"}, "" },
             { "EMS 119", "med",        {"textures\AOSoul\vehicles\suv_EMS_119.paa"}, "" },
-            { "Police112", "cop",      {"textures\AOSoul\vehicles\suv_112.paa"}, "call life_donorlevel >= 2" },
+            { "Police112_후원2", "cop",      {"textures\AOSoul\vehicles\suv_112.paa"}, "call life_donorlevel >= 2" },
             { "UKPD", "cop",           {"textures\AOSoul\vehicles\suv_police_uk.paa"}, "" },
             { "LAPD", "cop",           {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
             { "Blue poltan", "civ",    {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
             { "slime", "cop",          {"textures\AOSoul\vehicles\suv_slime.paa"}, "call life_donorlevel >= 4" },
             { "Raptor", "cop",         {"textures\AOSoul\vehicles\suv_raptor.paa"}, "call life_donorlevel >= 4" },
-            { "Flower", "civ",         {"textures\AOSoul\vehicles\suv_flowerr.paa"}, "call life_donorlevel >= 3" }
+            { "Flower_후원3", "civ",         {"textures\AOSoul\vehicles\suv_flowerr.paa"}, "call life_donorlevel >= 3" }
         };
     };
 
@@ -1125,7 +1125,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\AOSoul\vehicles\Van_01_box_Ambulance_front.paa",
                 "textures\AOSoul\vehicles\Van_01_box_Ambulance_back.paa"
             }, "" },
-            { "EMS Red", "med", {
+            { "EMS Red_후원1", "med", {
                 "textures\AOSoul\vehicles\Van_01_box_ambred_front.paa",
                 "textures\AOSoul\vehicles\Van_01_box_ambred_back.paa"
             }, "call life_donorlevel >= 1" }
@@ -1176,13 +1176,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             }, "" },
-            { "Reb 1", "reb", {
+            { "Reb 1_후원1", "reb", {
                 "textures\AOSoul\vehicles\humming_Reb_1.paa"
-            }, "call life_donorlevel >= 2" },
-            { "Reb 2", "reb", {
+            }, "call life_donorlevel >= 1" },
+            { "Reb 2_후원2", "reb", {
                 "textures\AOSoul\vehicles\humming_Reb_2.paa"
             }, "call life_donorlevel >= 2" },
-            { "Reb 2", "reb", {
+            { "Reb 2_후원2", "reb", {
                 "textures\AOSoul\vehicles\humming_Reb_3.paa"
             }, "call life_donorlevel >= 2" }
         };
@@ -1303,19 +1303,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 2000000;
         textures[] = {
             { "Black", "cop", {
-                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                    "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             }, "" },
             { "Rescue Y", "med", {
-                    "textures\AOSoul\vehicles\Med_Mohawk_Yellow_1.paa",
-                    "textures\AOSoul\vehicles\Med_Mohawk_Yellow_2.paa",
-                    "textures\AOSoul\vehicles\Med_Mohawk_Yellow_3.paa"
+                "textures\AOSoul\vehicles\Med_Mohawk_Yellow_1.paa",
+                "textures\AOSoul\vehicles\Med_Mohawk_Yellow_2.paa",
+                "textures\AOSoul\vehicles\Med_Mohawk_Yellow_3.paa"
             }, "" },
             { "Rescue R", "med", {
-                    "textures\AOSoul\vehicles\Med_Mohawk_Red_1.paa",
-                    "textures\AOSoul\vehicles\Med_Mohawk_Red_2.paa",
-                    "textures\AOSoul\vehicles\Med_Mohawk_Red_3.paa"
+                "textures\AOSoul\vehicles\Med_Mohawk_Red_1.paa",
+                "textures\AOSoul\vehicles\Med_Mohawk_Red_2.paa",
+                "textures\AOSoul\vehicles\Med_Mohawk_Red_3.paa"
             }, "" },
         };
     };
