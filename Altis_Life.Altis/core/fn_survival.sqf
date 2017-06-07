@@ -62,20 +62,12 @@ for "_i" from 0 to 1 step 0 do {
 
     /* Adjustment of carrying capacity based on backpack changes */
     if (backpack player isEqualTo "") then {
-        if (playerSide isEqualTo civilian) then {
-            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeightciv");
-        } else {
-            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");
-        };
+        life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight");
         _bp = backpack player;
     } else {
         if (!(backpack player isEqualTo "") && {!(backpack player isEqualTo _bp)}) then {
             _bp = backpack player;
-            if (playerSide isEqualTo civilian) then {
-                life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeightciv") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
-            } else {
-                life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
-            };
+            life_maxWeight = LIFE_SETTINGS(getNumber,"total_maxWeight") + round(FETCH_CONFIG2(getNumber,"CfgVehicles",_bp,"maximumload") / 4);
         };
     };
 
