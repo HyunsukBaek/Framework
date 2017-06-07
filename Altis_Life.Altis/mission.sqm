@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=6094;
+		nextID=6095;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3184.3123,28.411787,12922.426};
-		dir[]={0.014042223,-0.53255367,-0.84632498};
-		up[]={0.0088345949,0.8463738,-0.5325011};
-		aside[]={-0.9999007,4.3219188e-008,-0.016589979};
+		pos[]={14625.168,25.304403,16770.148};
+		dir[]={-0.34770536,-0.78228414,0.51688725};
+		up[]={-0.43663958,0.62290859,0.6490922};
+		aside[]={0.82974845,-6.4187043e-007,0.55816686};
 	};
 };
 binarizationWanted=0;
@@ -294,6 +294,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -308,24 +326,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -384,7 +384,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4194;
+		items=4190;
 		class Item0
 		{
 			dataType="Marker";
@@ -1934,7 +1934,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382381;
+			angle=56.382378;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -95815,51 +95815,36 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14621.074,20.511181,16774.48};
-				angles[]={0,2.3486416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=6047;
-			type="Land_i_Addon_04_V1_F";
-			atlOffset=1.7794304;
-		};
-		class Item4153
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={14625.779,20.524132,16775.609};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=117441280;
 			};
 			id=6053;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034523;
 		};
-		class Item4154
+		class Item4153
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14623.493,20.524128,16773.248};
+				position[]={14623.68,20.524128,16772.623};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6054;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034485;
 		};
-		class Item4155
+		class Item4154
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95869,13 +95854,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6055;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034504;
 		};
-		class Item4156
+		class Item4155
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95885,13 +95871,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6056;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034428;
 		};
-		class Item4157
+		class Item4156
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95901,13 +95888,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6057;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034447;
 		};
-		class Item4158
+		class Item4157
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95917,29 +95905,31 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6058;
 			type="Land_PortableHelipadLight_01_F";
 			atlOffset=2.5034523;
 		};
-		class Item4159
+		class Item4158
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14621.656,20.524124,16775.205};
+				position[]={14622.998,20.524124,16772.67};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6059;
 			type="Land_PortableHelipadLight_01_F";
 			atlOffset=2.5034447;
 		};
-		class Item4160
+		class Item4159
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95949,13 +95939,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6060;
 			type="Land_PortableHelipadLight_01_F";
 			atlOffset=2.5034485;
 		};
-		class Item4161
+		class Item4160
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95965,13 +95956,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6061;
 			type="Land_PortableHelipadLight_01_F";
 			atlOffset=2.5034485;
 		};
-		class Item4162
+		class Item4161
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95981,13 +95973,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6062;
 			type="PortableHelipadLight_01_green_F";
 			atlOffset=2.5034523;
 		};
-		class Item4163
+		class Item4162
 		{
 			dataType="Object";
 			class PositionInfo
@@ -95997,13 +95990,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6063;
 			type="PortableHelipadLight_01_green_F";
 			atlOffset=2.5034485;
 		};
-		class Item4164
+		class Item4163
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96013,13 +96007,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6064;
 			type="PortableHelipadLight_01_green_F";
 			atlOffset=2.5034485;
 		};
-		class Item4165
+		class Item4164
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96029,13 +96024,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6065;
 			type="PortableHelipadLight_01_green_F";
 			atlOffset=2.5034447;
 		};
-		class Item4166
+		class Item4165
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96045,13 +96041,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6066;
 			type="PortableHelipadLight_01_green_F";
 			atlOffset=2.5034447;
 		};
-		class Item4167
+		class Item4166
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96061,13 +96058,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611213824;
 			};
 			id=6067;
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=2.5034409;
 		};
-		class Item4168
+		class Item4167
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96077,13 +96075,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611213824;
 			};
 			id=6068;
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=2.5034466;
 		};
-		class Item4169
+		class Item4168
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96093,13 +96092,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611213824;
 			};
 			id=6069;
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=2.5034447;
 		};
-		class Item4170
+		class Item4169
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96109,13 +96109,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611213824;
 			};
 			id=6070;
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=2.5034447;
 		};
-		class Item4171
+		class Item4170
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96125,13 +96126,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611213824;
 			};
 			id=6071;
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=2.5034523;
 		};
-		class Item4172
+		class Item4171
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96141,29 +96143,31 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6072;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034447;
 		};
-		class Item4173
+		class Item4172
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14621.324,20.52412,16776.596};
+				position[]={14624.946,20.52412,16776.795};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6073;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034409;
 		};
-		class Item4174
+		class Item4173
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96173,13 +96177,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6074;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034447;
 		};
-		class Item4175
+		class Item4174
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96189,13 +96194,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6075;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034447;
 		};
-		class Item4176
+		class Item4175
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96205,13 +96211,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6076;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034447;
 		};
-		class Item4177
+		class Item4176
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96221,13 +96228,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6077;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034466;
 		};
-		class Item4178
+		class Item4177
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96237,45 +96245,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6078;
 			type="PortableHelipadLight_01_blue_F";
 			atlOffset=2.5034447;
 		};
-		class Item4179
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14625.752,20.524128,16774.715};
-			};
-			side="Empty";
-			class Attributes
-			{
-				aiRadarUsage=1611209984;
-			};
-			id=6079;
-			type="PortableHelipadLight_01_yellow_F";
-			atlOffset=2.5034485;
-		};
-		class Item4180
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14623.449,20.524132,16772.49};
-			};
-			side="Empty";
-			class Attributes
-			{
-				aiRadarUsage=1611209984;
-			};
-			id=6080;
-			type="PortableHelipadLight_01_yellow_F";
-			atlOffset=2.5034523;
-		};
-		class Item4181
+		class Item4178
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96285,13 +96262,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6081;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034447;
 		};
-		class Item4182
+		class Item4179
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96301,61 +96279,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6082;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034447;
 		};
-		class Item4183
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14620.611,20.524128,16771.451};
-			};
-			side="Empty";
-			class Attributes
-			{
-				aiRadarUsage=1611209984;
-			};
-			id=6083;
-			type="PortableHelipadLight_01_yellow_F";
-			atlOffset=2.5034485;
-		};
-		class Item4184
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14620.438,20.524132,16775.105};
-			};
-			side="Empty";
-			class Attributes
-			{
-				aiRadarUsage=1611209984;
-			};
-			id=6084;
-			type="PortableHelipadLight_01_yellow_F";
-			atlOffset=2.2085133;
-		};
-		class Item4185
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14622.854,20.52413,16772.813};
-			};
-			side="Empty";
-			class Attributes
-			{
-				aiRadarUsage=1611209984;
-			};
-			id=6085;
-			type="PortableHelipadLight_01_yellow_F";
-			atlOffset=2.5034504;
-		};
-		class Item4186
+		class Item4180
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96365,13 +96296,14 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 				aiRadarUsage=1611209984;
 			};
 			id=6086;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.5034447;
 		};
-		class Item4187
+		class Item4181
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96383,11 +96315,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6087;
 			type="Land_WoodenTable_large_F";
 		};
-		class Item4188
+		class Item4182
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96404,7 +96337,7 @@ class Mission
 			id=6088;
 			type="Land_PortableLight_double_F";
 		};
-		class Item4189
+		class Item4183
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96421,7 +96354,7 @@ class Mission
 			id=6089;
 			type="Land_PortableLight_double_F";
 		};
-		class Item4190
+		class Item4184
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96438,7 +96371,7 @@ class Mission
 			id=6090;
 			type="Land_PortableLight_double_F";
 		};
-		class Item4191
+		class Item4185
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96456,7 +96389,7 @@ class Mission
 			type="Land_PortableLight_double_F";
 			atlOffset=4.3399868;
 		};
-		class Item4192
+		class Item4186
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96473,7 +96406,7 @@ class Mission
 			id=6092;
 			type="Land_PortableLight_double_F";
 		};
-		class Item4193
+		class Item4187
 		{
 			dataType="Object";
 			class PositionInfo
@@ -96488,6 +96421,41 @@ class Mission
 			};
 			id=6093;
 			type="Land_Laptop_device_F";
+		};
+		class Item4188
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14621.074,20.511181,16774.48};
+				angles[]={0,2.3486416,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;";
+			};
+			id=6047;
+			type="Land_i_Addon_04_V1_F";
+			atlOffset=1.7794304;
+		};
+		class Item4189
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14622.238,20.554821,16771.121};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;";
+				aiRadarUsage=1611209984;
+			};
+			id=6094;
+			type="PortableHelipadLight_01_blue_F";
+			atlOffset=2.5341415;
 		};
 	};
 };
