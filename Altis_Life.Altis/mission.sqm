@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=6491;
+		nextID=6492;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14610.668,23.10751,16905.764};
-		dir[]={-0.73522109,-0.66853702,0.11301};
-		up[]={-0.66076845,0.74363071,0.1015679};
-		aside[]={0.15193331,-3.509922e-007,0.98851192};
+		pos[]={14608.564,20.526012,16900.748};
+		dir[]={-0.58999473,-0.44122535,0.67636693};
+		up[]={-0.29007217,0.8973217,0.33254105};
+		aside[]={0.75366294,3.548339e-006,0.65742809};
 	};
 };
 binarizationWanted=0;
@@ -310,6 +310,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -324,24 +342,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -400,7 +400,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4402;
+		items=4403;
 		class Item0
 		{
 			dataType="Marker";
@@ -1950,7 +1950,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382359;
+			angle=56.382355;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -4957,7 +4957,6 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4965,6 +4964,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4998,7 +4998,6 @@ class Mission
 				angles[]={0,1.5760057,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5006,6 +5005,7 @@ class Mission
 			};
 			id=283;
 			type="Land_CashDesk_F";
+			atlOffset=0.63638496;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5617,7 +5617,6 @@ class Mission
 				angles[]={0,2.3506639,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5625,6 +5624,7 @@ class Mission
 			};
 			id=544;
 			type="Land_CashDesk_F";
+			atlOffset=0.47982728;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5699,7 +5699,6 @@ class Mission
 				angles[]={0,1.6144073,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5707,6 +5706,7 @@ class Mission
 			};
 			id=546;
 			type="Land_Atm_02_F";
+			atlOffset=0.75839138;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7246,7 +7246,6 @@ class Mission
 				angles[]={0.0016194459,5.5725899,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -7254,6 +7253,7 @@ class Mission
 			};
 			id=593;
 			type="Land_CncWall1_F";
+			atlOffset=5.1151657;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13377,6 +13377,7 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
+			atlOffset=0.22221565;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13410,13 +13411,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
+			atlOffset=0.55926895;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13577,7 +13578,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
-			atlOffset=7.6293945e-006;
+			atlOffset=0.18610382;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21478,7 +21479,7 @@ class Mission
 					};
 					id=985;
 					type="C_man_polo_3_F";
-					atlOffset=0.00017166138;
+					atlOffset=0.14599991;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24756,7 +24757,6 @@ class Mission
 						angles[]={0,5.2196865,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -24765,7 +24765,7 @@ class Mission
 					};
 					id=1926;
 					type="C_man_polo_4_F";
-					atlOffset=1.3828278e-005;
+					atlOffset=0.45300007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27092,7 +27092,6 @@ class Mission
 						angles[]={0,4.7296853,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -27102,7 +27101,7 @@ class Mission
 					};
 					id=1957;
 					type="C_man_polo_4_F";
-					atlOffset=0.00050735474;
+					atlOffset=0.55700016;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27528,7 +27527,6 @@ class Mission
 						angles[]={0,5.8275671,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""]; " \n "this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];this setVariable [""realname"",""주유소 상점""];";
@@ -27537,7 +27535,7 @@ class Mission
 					};
 					id=3312;
 					type="C_Nikos_aged";
-					atlOffset=5.1498413e-005;
+					atlOffset=0.5720005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27778,7 +27776,7 @@ class Mission
 					};
 					id=3318;
 					type="C_Nikos_aged";
-					atlOffset=0.00043487549;
+					atlOffset=0.18700409;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37759,7 +37757,6 @@ class Mission
 				angles[]={0.0066682254,0.12159491,0.0013372133};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.40000001;
@@ -37767,7 +37764,7 @@ class Mission
 			};
 			id=1773;
 			type="Land_LampDecor_F";
-			atlOffset=0.011745453;
+			atlOffset=7.5709257;
 		};
 		class Item952
 		{
@@ -37879,6 +37876,7 @@ class Mission
 			};
 			id=1779;
 			type="Land_LampDecor_F";
+			atlOffset=0.14204597;
 		};
 		class Item958
 		{
@@ -40126,7 +40124,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2049;
 			type="Land_ChairPlastic_F";
@@ -40145,7 +40143,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2052;
 			type="Land_ChairPlastic_F";
@@ -40164,7 +40162,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2053;
 			type="Land_ChairPlastic_F";
@@ -40183,7 +40181,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2054;
 			type="Land_ChairPlastic_F";
@@ -40202,7 +40200,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2056;
 			type="Land_ChairPlastic_F";
@@ -40221,7 +40219,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2059;
 			type="Land_ChairPlastic_F";
@@ -40240,7 +40238,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2060;
 			type="Land_ChairPlastic_F";
@@ -40259,7 +40257,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2061;
 			type="Land_ChairPlastic_F";
@@ -40278,7 +40276,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2062;
 			type="Land_ChairPlastic_F";
@@ -40297,7 +40295,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2063;
 			type="Land_ChairPlastic_F";
@@ -40316,7 +40314,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2064;
 			type="Land_ChairPlastic_F";
@@ -40335,7 +40333,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2065;
 			type="Land_ChairPlastic_F";
@@ -40354,7 +40352,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2066;
 			type="Land_ChairPlastic_F";
@@ -40373,7 +40371,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2067;
 			type="Land_ChairPlastic_F";
@@ -40392,7 +40390,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2068;
 			type="Land_ChairPlastic_F";
@@ -40411,7 +40409,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2069;
 			type="Land_ChairPlastic_F";
@@ -40430,7 +40428,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2070;
 			type="Land_ChairPlastic_F";
@@ -40449,7 +40447,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2071;
 			type="Land_ChairPlastic_F";
@@ -41922,7 +41920,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2494;
 			type="Land_ChairWood_F";
@@ -41941,7 +41939,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2495;
 			type="Land_ChairWood_F";
@@ -41960,7 +41958,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2496;
 			type="Land_ChairWood_F";
@@ -41979,7 +41977,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2497;
 			type="Land_ChairWood_F";
@@ -41998,7 +41996,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2498;
 			type="Land_ChairWood_F";
@@ -42017,7 +42015,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2499;
 			type="Land_ChairWood_F";
@@ -42036,7 +42034,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2500;
 			type="Land_ChairWood_F";
@@ -42188,7 +42186,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2508;
 			type="Land_ChairWood_F";
@@ -42207,7 +42205,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2509;
 			type="Land_ChairWood_F";
@@ -42226,7 +42224,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2510;
 			type="Land_ChairWood_F";
@@ -42245,7 +42243,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2511;
 			type="Land_ChairWood_F";
@@ -42710,7 +42708,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2541;
 			type="Land_ChairPlastic_F";
@@ -42728,7 +42726,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2542;
 			type="Land_ChairPlastic_F";
@@ -42747,7 +42745,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2543;
 			type="Land_ChairPlastic_F";
@@ -42766,7 +42764,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2544;
 			type="Land_ChairPlastic_F";
@@ -42785,7 +42783,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2545;
 			type="Land_ChairPlastic_F";
@@ -42804,7 +42802,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2546;
 			type="Land_ChairPlastic_F";
@@ -42823,7 +42821,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2547;
 			type="Land_ChairPlastic_F";
@@ -42842,7 +42840,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2548;
 			type="Land_ChairPlastic_F";
@@ -42861,7 +42859,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2549;
 			type="Land_ChairPlastic_F";
@@ -42880,7 +42878,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2550;
 			type="Land_ChairPlastic_F";
@@ -44188,7 +44186,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=2646;
 			type="Land_ChairPlastic_F";
@@ -44758,6 +44756,7 @@ class Mission
 			};
 			id=2668;
 			type="Land_CncWall4_F";
+			atlOffset=0.0010800362;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44791,7 +44790,6 @@ class Mission
 				angles[]={0.0016194459,6.021616,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -44799,6 +44797,7 @@ class Mission
 			};
 			id=2669;
 			type="Land_CncWall4_F";
+			atlOffset=4.6023407;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44832,7 +44831,6 @@ class Mission
 				angles[]={0.0016194459,5.3936768,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -44840,6 +44838,7 @@ class Mission
 			};
 			id=2670;
 			type="Land_CncWall1_F";
+			atlOffset=5.5482607;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47657,6 +47656,7 @@ class Mission
 			};
 			id=2840;
 			type="Land_LampAirport_F";
+			atlOffset=0.14893532;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54454,7 +54454,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3249;
 			type="Land_ChairWood_F";
@@ -54473,7 +54473,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3250;
 			type="Land_ChairWood_F";
@@ -54492,7 +54492,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3251;
 			type="Land_ChairWood_F";
@@ -54511,7 +54511,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3252;
 			type="Land_ChairWood_F";
@@ -54530,7 +54530,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3253;
 			type="Land_ChairWood_F";
@@ -54549,7 +54549,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3254;
 			type="Land_ChairWood_F";
@@ -54644,7 +54644,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3262;
 			type="Land_ChairWood_F";
@@ -54663,7 +54663,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3263;
 			type="Land_ChairWood_F";
@@ -54682,7 +54682,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3264;
 			type="Land_ChairWood_F";
@@ -54701,7 +54701,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3265;
 			type="Land_ChairWood_F";
@@ -54720,7 +54720,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3266;
 			type="Land_ChairWood_F";
@@ -54739,7 +54739,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3267;
 			type="Land_ChairWood_F";
@@ -54758,7 +54758,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3268;
 			type="Land_ChairWood_F";
@@ -54777,7 +54777,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3270;
 			type="Land_ChairWood_F";
@@ -54796,7 +54796,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3272;
 			type="Land_ChairWood_F";
@@ -54815,7 +54815,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3273;
 			type="Land_ChairWood_F";
@@ -54834,7 +54834,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3274;
 			type="Land_ChairWood_F";
@@ -54853,7 +54853,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3277;
 			type="Land_ChairWood_F";
@@ -54872,7 +54872,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3278;
 			type="Land_ChairWood_F";
@@ -54891,7 +54891,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3279;
 			type="Land_ChairWood_F";
@@ -54909,7 +54909,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3280;
 			type="Land_ChairWood_F";
@@ -54928,7 +54928,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3281;
 			type="Land_ChairWood_F";
@@ -54947,7 +54947,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3282;
 			type="Land_ChairWood_F";
@@ -54966,7 +54966,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3283;
 			type="Land_ChairWood_F";
@@ -55133,13 +55133,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.38829041;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -63578,7 +63578,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3844;
 			type="Land_ChairPlastic_F";
@@ -63597,7 +63597,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3845;
 			type="Land_ChairPlastic_F";
@@ -63616,7 +63616,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3846;
 			type="Land_ChairPlastic_F";
@@ -63635,7 +63635,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=3847;
 			type="Land_ChairPlastic_F";
@@ -92697,7 +92697,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5971;
 			type="Land_ChairPlastic_F";
@@ -92716,7 +92716,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5972;
 			type="Land_ChairPlastic_F";
@@ -92735,7 +92735,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5973;
 			type="Land_ChairPlastic_F";
@@ -92754,7 +92754,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5974;
 			type="Land_ChairPlastic_F";
@@ -92773,7 +92773,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5975;
 			type="Land_ChairPlastic_F";
@@ -92792,7 +92792,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5976;
 			type="Land_ChairPlastic_F";
@@ -92811,7 +92811,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5977;
 			type="Land_ChairPlastic_F";
@@ -92830,7 +92830,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5978;
 			type="Land_ChairPlastic_F";
@@ -92849,7 +92849,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5979;
 			type="Land_ChairPlastic_F";
@@ -92868,7 +92868,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5980;
 			type="Land_ChairPlastic_F";
@@ -92887,7 +92887,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5981;
 			type="Land_ChairPlastic_F";
@@ -92906,7 +92906,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5982;
 			type="Land_ChairPlastic_F";
@@ -92925,7 +92925,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5983;
 			type="Land_ChairPlastic_F";
@@ -92944,7 +92944,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5984;
 			type="Land_ChairPlastic_F";
@@ -92963,7 +92963,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5985;
 			type="Land_ChairPlastic_F";
@@ -92981,7 +92981,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5986;
 			type="Land_ChairPlastic_F";
@@ -93000,7 +93000,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5987;
 			type="Land_ChairPlastic_F";
@@ -93019,7 +93019,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5988;
 			type="Land_ChairPlastic_F";
@@ -93038,7 +93038,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5989;
 			type="Land_ChairPlastic_F";
@@ -93057,7 +93057,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5990;
 			type="Land_ChairPlastic_F";
@@ -93076,7 +93076,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5991;
 			type="Land_ChairPlastic_F";
@@ -93095,7 +93095,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5992;
 			type="Land_ChairPlastic_F";
@@ -93114,7 +93114,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5993;
 			type="Land_ChairPlastic_F";
@@ -93133,7 +93133,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5994;
 			type="Land_ChairPlastic_F";
@@ -93152,7 +93152,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5995;
 			type="Land_ChairPlastic_F";
@@ -93171,7 +93171,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5996;
 			type="Land_ChairPlastic_F";
@@ -93190,7 +93190,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5997;
 			type="Land_ChairPlastic_F";
@@ -93209,7 +93209,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5998;
 			type="Land_ChairPlastic_F";
@@ -93228,7 +93228,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=5999;
 			type="Land_ChairPlastic_F";
@@ -93247,7 +93247,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6000;
 			type="Land_ChairPlastic_F";
@@ -93266,7 +93266,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6001;
 			type="Land_ChairPlastic_F";
@@ -93285,7 +93285,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6002;
 			type="Land_ChairPlastic_F";
@@ -93304,7 +93304,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6003;
 			type="Land_ChairPlastic_F";
@@ -93322,7 +93322,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6004;
 			type="Land_ChairPlastic_F";
@@ -93341,7 +93341,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6005;
 			type="Land_ChairPlastic_F";
@@ -93360,7 +93360,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6006;
 			type="Land_ChairPlastic_F";
@@ -93379,7 +93379,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6007;
 			type="Land_ChairPlastic_F";
@@ -93398,7 +93398,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6008;
 			type="Land_ChairPlastic_F";
@@ -93417,7 +93417,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6009;
 			type="Land_ChairPlastic_F";
@@ -93436,7 +93436,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6010;
 			type="Land_ChairPlastic_F";
@@ -93455,7 +93455,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6011;
 			type="Land_ChairPlastic_F";
@@ -93474,7 +93474,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6012;
 			type="Land_ChairPlastic_F";
@@ -93493,7 +93493,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6013;
 			type="Land_ChairPlastic_F";
@@ -93512,7 +93512,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6014;
 			type="Land_ChairPlastic_F";
@@ -93531,7 +93531,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6015;
 			type="Land_ChairPlastic_F";
@@ -93550,7 +93550,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6016;
 			type="Land_ChairPlastic_F";
@@ -93569,7 +93569,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6017;
 			type="Land_ChairPlastic_F";
@@ -93588,7 +93588,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6018;
 			type="Land_ChairPlastic_F";
@@ -93607,7 +93607,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6019;
 			type="Land_ChairPlastic_F";
@@ -93626,7 +93626,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6020;
 			type="Land_ChairPlastic_F";
@@ -93645,7 +93645,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6021;
 			type="Land_ChairPlastic_F";
@@ -93664,7 +93664,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6022;
 			type="Land_ChairPlastic_F";
@@ -93683,7 +93683,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6023;
 			type="Land_ChairPlastic_F";
@@ -93702,7 +93702,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6024;
 			type="Land_ChairPlastic_F";
@@ -93721,7 +93721,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6025;
 			type="Land_ChairPlastic_F";
@@ -93740,7 +93740,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6026;
 			type="Land_ChairPlastic_F";
@@ -93759,7 +93759,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6027;
 			type="Land_ChairPlastic_F";
@@ -93778,7 +93778,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6028;
 			type="Land_ChairPlastic_F";
@@ -93797,7 +93797,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6029;
 			type="Land_ChairPlastic_F";
@@ -93816,7 +93816,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6030;
 			type="Land_ChairPlastic_F";
@@ -93835,7 +93835,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6031;
 			type="Land_ChairPlastic_F";
@@ -93854,7 +93854,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6032;
 			type="Land_ChairPlastic_F";
@@ -93873,7 +93873,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6033;
 			type="Land_ChairPlastic_F";
@@ -93892,7 +93892,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6034;
 			type="Land_ChairPlastic_F";
@@ -93911,7 +93911,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6035;
 			type="Land_ChairPlastic_F";
@@ -93930,7 +93930,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6036;
 			type="Land_ChairPlastic_F";
@@ -93949,7 +93949,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6037;
 			type="Land_ChairPlastic_F";
@@ -93968,7 +93968,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6038;
 			type="Land_ChairPlastic_F";
@@ -93987,7 +93987,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6039;
 			type="Land_ChairPlastic_F";
@@ -94006,7 +94006,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6040;
 			type="Land_ChairPlastic_F";
@@ -94025,7 +94025,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6041;
 			type="Land_ChairPlastic_F";
@@ -94044,7 +94044,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6042;
 			type="Land_ChairPlastic_F";
@@ -94925,7 +94925,6 @@ class Mission
 				position[]={3690.9663,11.242968,13146.165};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this allowDamage false;";
@@ -94933,6 +94932,7 @@ class Mission
 			};
 			id=6150;
 			type="Land_Camping_Light_F";
+			atlOffset=0.71635628;
 		};
 		class Item4155
 		{
@@ -94949,7 +94949,7 @@ class Mission
 			};
 			id=6151;
 			type="Land_Camping_Light_F";
-			atlOffset=0.49821281;
+			atlOffset=0.4978199;
 		};
 		class Item4156
 		{
@@ -95232,7 +95232,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6170;
 			type="Land_ChairWood_F";
@@ -95248,7 +95248,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6171;
 			type="Land_ChairWood_F";
@@ -95265,7 +95265,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6172;
 			type="Land_ChairWood_F";
@@ -95281,7 +95281,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6173;
 			type="Land_ChairWood_F";
@@ -95299,7 +95299,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6174;
 			type="Land_ChairWood_F";
@@ -95317,7 +95317,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6175;
 			type="Land_ChairWood_F";
@@ -95335,7 +95335,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6176;
 			type="Land_ChairWood_F";
@@ -95353,7 +95353,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6177;
 			type="Land_ChairWood_F";
@@ -95371,7 +95371,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6178;
 			type="Land_ChairWood_F";
@@ -95388,7 +95388,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6179;
 			type="Land_ChairWood_F";
@@ -95406,7 +95406,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction [""<t color='#0099FF'>Sit Down</t>"",""AOSoul\Chair\sitdown.sqf""];";
+				init="this enableSimulation false; this allowDamage false;";
 			};
 			id=6180;
 			type="Land_ChairWood_F";
@@ -96452,6 +96452,7 @@ class Mission
 			};
 			id=6244;
 			type="VR_Billboard_01_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item4239
 		{
@@ -99207,7 +99208,7 @@ class Mission
 			alpha=0.53371525;
 			a=18;
 			b=27;
-			angle=315.63293;
+			angle=315.6329;
 			id=6464;
 			atlOffset=-17.777336;
 		};
@@ -99355,6 +99356,7 @@ class Mission
 			};
 			id=6481;
 			type="Land_BarGate_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item4394
 		{
@@ -99433,7 +99435,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14606.366,18.00149,16902.258};
+				position[]={14606.242,17.759159,16901.961};
 				angles[]={0,5.5018749,0};
 			};
 			side="Empty";
@@ -99445,7 +99447,7 @@ class Mission
 			};
 			id=6487;
 			type="SignAd_SponsorS_F";
-			atlOffset=-0.95544624;
+			atlOffset=-1.197279;
 		};
 		class Item4399
 		{
@@ -99464,7 +99466,7 @@ class Mission
 			};
 			id=6488;
 			type="Land_Wall_IndCnc_2deco_F";
-			atlOffset=-0.73708153;
+			atlOffset=-0.73707771;
 		};
 		class Item4400
 		{
@@ -99502,6 +99504,24 @@ class Mission
 			id=6490;
 			type="Land_Wall_IndCnc_2deco_F";
 			atlOffset=-0.68439293;
+		};
+		class Item4402
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14603.795,18.379036,16906.742};
+				angles[]={0,3.9366727,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false;";
+				aiRadarUsage=467910560;
+			};
+			id=6491;
+			type="Land_ChairPlastic_F";
 		};
 	};
 };
