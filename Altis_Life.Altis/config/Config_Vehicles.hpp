@@ -1086,13 +1086,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS red_후원1", "med",        {"textures\AOSoul\vehicles\suv_EMS_dor2.paa"}, "call life_donorlevel >= 1" },
             { "EMS white", "med",           {"textures\AOSoul\vehicles\suv_EMS_white.paa"}, "" },
             { "EMS 119", "med",             {"textures\AOSoul\vehicles\suv_EMS_119.paa"}, "" },
-            { "EMS119 후원2", "med",          {"textures\AOSoul\vehicles\suv_EMS_kor119.paa"}, "call life_donorlevel >= 2" },
+            { "EMS119 후원2", "med",         {"textures\AOSoul\vehicles\suv_EMS_kor119.paa"}, "call life_donorlevel >= 2" },
             { "KOPD", "cop",                {"textures\AOSoul\vehicles\suv_112.paa"}, "" },
             { "LAPD", "cop",                {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
             { "Blue poltan", "civ",         {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
             { "slime", "cop",               {"textures\AOSoul\vehicles\suv_slime.paa"}, "call life_donorlevel >= 4" },
             { "Raptor", "cop",              {"textures\AOSoul\vehicles\suv_raptor.paa"}, "call life_donorlevel >= 4" },
-            { "Flower_후원3", "civ",         {"textures\AOSoul\vehicles\suv_flowerr.paa"}, "call life_donorlevel >= 3" }
+            { "Flower_후원3", "civ",         {"textures\AOSoul\vehicles\suv_flower.paa"}, "call life_donorlevel >= 3" },
+            { "검찰", "civ",                 {"textures\AOSoul\vehicles\suv_prosec.paa"}, "call life_donorlevel >= 5" }
+
         };
     };
 
