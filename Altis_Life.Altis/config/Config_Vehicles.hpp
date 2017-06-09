@@ -1086,7 +1086,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS red_후원1", "med",        {"textures\AOSoul\vehicles\suv_EMS_dor2.paa"}, "call life_donorlevel >= 1" },
             { "EMS white", "med",           {"textures\AOSoul\vehicles\suv_EMS_white.paa"}, "" },
             { "EMS 119", "med",             {"textures\AOSoul\vehicles\suv_EMS_119.paa"}, "" },
-            { "EMS kor119", "med",          {"textures\AOSoul\vehicles\suv_EMS_kor119.paa"}, "call life_donorlevel >= 2" },
+            { "EMS119 후원2", "med",          {"textures\AOSoul\vehicles\suv_EMS_kor119.paa"}, "call life_donorlevel >= 2" },
             { "KOPD", "cop",                {"textures\AOSoul\vehicles\suv_112.paa"}, "" },
             { "LAPD", "cop",                {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
             { "Blue poltan", "civ",         {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
