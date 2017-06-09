@@ -182,6 +182,8 @@ class CarShops {
             { "C_Hatchback_01_F", "" },
             { "C_Hatchback_01_sport_F", "" },
             { "C_Offroad_02_unarmed_F", "" }, //Apex DLC
+            //SUV
+            { "C_SUV_01_F", "" },
             //오프로드
             { "C_Offroad_01_F", "" },
             { "C_Van_01_box_F", "" },
