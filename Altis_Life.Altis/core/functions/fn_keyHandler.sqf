@@ -891,12 +891,7 @@ switch (_code) do {
             player playMoveNow "";
         };
     };
-    
-    //Esc - 의자에서 일어서기
-    case 1:
-    {
-        if (!isNull life_sitting) then { [] execVM "AOSoul\Chair\standup.sqf"; _handled = true; };
-    };
+
 };
 
 _handled;
