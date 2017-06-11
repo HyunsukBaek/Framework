@@ -389,9 +389,6 @@ class LifeCfgVehicles {
             { "White", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
             }, "" },
-            { "반군", "reb", {
-                "textures\AOSoul\vehicles\offroad_reb_guk.paa"
-            }, "" },
             { "Cop Offroad", "cop", {
                 "textures\AOSoul\vehicles\offroad_4wdcop.paa"
             }, "" }
@@ -899,9 +896,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "LADY_후원1", "civ", {
                 "textures\AOSoul\vehicles\quad_lady.paa"
-            }, "call life_donorlevel >= 1" },
-            { "Cube_후원1", "civ", {
-                "textures\AOSoul\vehicles\quad_cube.paa"
             }, "call life_donorlevel >= 1" }
         };
     };
