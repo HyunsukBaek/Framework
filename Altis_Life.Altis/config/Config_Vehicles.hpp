@@ -383,7 +383,7 @@ class LifeCfgVehicles {
             { "Orange", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_orange_co.paa"
             }, "" },
-            { "Red", "civ", {
+            { "Red", "med", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_red_co.paa"
             }, "" },
             { "White", "civ", {
@@ -391,9 +391,6 @@ class LifeCfgVehicles {
             }, "" },
             { "반군", "reb", {
                 "textures\AOSoul\vehicles\offroad_reb_guk.paa"
-            }, "" },
-            { "EMS", "med", {
-                "textures\AOSoul\vehicles\offroad_med_aosoul.paa"
             }, "" },
             { "Cop Offroad", "cop", {
                 "textures\AOSoul\vehicles\offroad_4wdcop.paa"
