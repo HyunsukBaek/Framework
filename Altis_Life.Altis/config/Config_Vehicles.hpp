@@ -218,6 +218,9 @@ class CarShops {
             { "O_Heli_Light_02_unarmed_F", "" },
             //모호크
             { "I_Heli_Transport_02_F", "" },
+
+            //고스트 호크
+            { "B_Heli_Transport_01_F", "call life_mediclevel >= 4" },
             //타루 수리
             { "O_Heli_Transport_04_repair_F", "" },
             //타루 연료
@@ -613,8 +616,8 @@ class LifeCfgVehicles {
             { "Cop", "cop", {
                 "textures\AOSoul\vehicles\ghosthawk_cop_white1.paa",
                 "textures\AOSoul\vehicles\ghosthawk_cop_white2.paa"
-            }, "" }
-
+            }, "" },
+            { "EMS white", "med", {"#(argb,8,8,3)color(1,1,1,0.8)", "#(argb,8,8,3)color(1,1,1,0.8)", "textures\AOSoul\vehicles\ghosthawk_Reb_Kitty_3.paa"}, "" }
         };
     };
 
