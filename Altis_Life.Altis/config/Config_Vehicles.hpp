@@ -221,6 +221,8 @@ class CarShops {
 
             //고스트 호크
             { "B_Heli_Transport_01_F", "call life_mediclevel >= 4" },
+            //타루 기본
+            { "O_Heli_Transport_04_F", ""},
             //타루 수리
             { "O_Heli_Transport_04_repair_F", "" },
             //타루 연료

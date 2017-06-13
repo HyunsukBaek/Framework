@@ -13,10 +13,14 @@ if (isNil "_vehicle" || isNull _vehicle || !(_vehicle getVariable "lights")) exi
 _lightRed = [20, 0.1, 0.1];
 _lightGreen = [0.1, 20, 0.1];
 _lightBlue = [0.1, 0.1, 20];
+_lightYellow = [20,20,0.1];
 
 _lightleft = "#lightpoint" createVehicle getPos _vehicle;
 sleep 0.2;
+//_lightleft setLightColor _lightGreen;
+//AOSOUL Added
 _lightleft setLightColor _lightGreen;
+/////////////////////////////////////
 _lightleft setLightBrightness 0.2;
 _lightleft setLightAmbient [0.1,0.1,1];
 
@@ -87,6 +91,66 @@ switch (typeOf _vehicle) do
         _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
     };
 
+    //AOSOUL Added
+    case "B_Quadbike_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
+    };
+
+    case "C_Offroad_02_unarmed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
+    };
+
+    case "I_Truck_02_medical_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "O_Truck_03_medical_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "I_Truck_02_box_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "O_Truck_03_repair_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "B_Truck_01_medical_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "B_Truck_01_Repair_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "B_Truck_01_mover_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+    };
+    case "O_Heli_Transport_04_repair_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
+    };
+    case "O_Heli_Transport_04_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+    case "O_Heli_Transport_04_fuel_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+    case "O_Heli_Transport_04_covered_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+    case "O_Heli_Transport_04_medevac_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
+    };
+    ////////////////////////////////////////////////////////
     default 
     {
         _lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
@@ -101,7 +165,10 @@ _lightleft setLightUseFlare true;
 
 _lightright = "#lightpoint" createVehicle getPos _vehicle;
 sleep 0.2;
-_lightright setLightColor _lightGreen;
+//_lightright setLightColor _lightGreen;
+//AOSOUL Added
+_lightright setLightColor _lightYellow;
+/////////////////////////////////////
 _lightright setLightBrightness 0.2;
 _lightright setLightAmbient [0.1,0.1,1];
 
@@ -172,6 +239,66 @@ switch (typeOf _vehicle) do
         _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
     };
 
+    //AOSOUL Added
+    case "B_Quadbike_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
+    };
+
+    case "C_Offroad_02_unarmed_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
+    };
+
+    case "I_Truck_02_medical_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "O_Truck_03_medical_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "I_Truck_02_box_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "O_Truck_03_repair_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "B_Truck_01_medical_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "B_Truck_01_Repair_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "B_Truck_01_mover_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+    };
+    case "O_Heli_Transport_04_repair_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
+    };
+    case "O_Heli_Transport_04_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+    case "O_Heli_Transport_04_fuel_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+    case "O_Heli_Transport_04_covered_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+    case "O_Heli_Transport_04_medevac_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+    //////////////////////////////////////////////////
     default 
     {
         _lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
