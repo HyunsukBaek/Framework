@@ -1,10 +1,6 @@
 /*
- * @Author: XtG Development Team - Since 18th, September, 2010
- * @File Name: fn_leftIndicatorLight.sqf
- * @Description: Spawns a light left side of the vehicle.
- * @Framework: ALRPG FRAMEWORK - Altis Life HD
- * @Disclaimer: All Rights Reserved, We are not affiliated with AltisLifeRPG. AltisLifeRPG is a trademark of Tonic.
- */
+Created by AOSOUL 2017/06/14
+*/
 
 Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed"];
 _vehicle = _this select 0;
