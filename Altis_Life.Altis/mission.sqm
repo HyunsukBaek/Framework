@@ -8,7 +8,7 @@ class EditorData
 	toggles=74;
 	class ItemIDProvider
 	{
-		nextID=7027;
+		nextID=7058;
 	};
 	class MarkerIDProvider
 	{
@@ -388,7 +388,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4458;
+		items=4471;
 		class Item0
 		{
 			dataType="Marker";
@@ -100691,6 +100691,261 @@ class Mission
 			colorName="ColorGreen";
 			id=7026;
 			atlOffset=-17.041517;
+		};
+		class Item4458
+		{
+			dataType="Trigger";
+			position[]={3648.0195,-0.028320313,13110.119};
+			angle=3.1933992;
+			class Attributes
+			{
+				name="Safe_kav_trigger_2";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=25;
+				sizeB=20;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=7038;
+			type="EmptyDetectorAreaR50";
+			atlOffset=-10.233249;
+		};
+		class Item4459
+		{
+			dataType="Trigger";
+			position[]={3698.8262,10.735107,13145.824};
+			class Attributes
+			{
+				name="Safe_kav_trigger_3";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7039;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.15882874;
+		};
+		class Item4460
+		{
+			dataType="Trigger";
+			position[]={3529.637,8.5823259,12999.93};
+			class Attributes
+			{
+				name="Safe_kav_trigger_4";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7047;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4461
+		{
+			dataType="Trigger";
+			position[]={3511.5435,8.3889256,13007.342};
+			class Attributes
+			{
+				name="Safe_kav_trigger_5";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7048;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4462
+		{
+			dataType="Trigger";
+			position[]={3363.3364,4.8168945,13062.744};
+			class Attributes
+			{
+				name="Safe_kav_trigger_6";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7049;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.082920551;
+		};
+		class Item4463
+		{
+			dataType="Trigger";
+			position[]={3479.2852,2.6415389,13230.835};
+			class Attributes
+			{
+				name="Safe_kav_trigger_7";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7050;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4464
+		{
+			dataType="Trigger";
+			position[]={3739.4438,12.764576,13267.086};
+			class Attributes
+			{
+				name="Safe_kav_trigger_8";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7051;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4465
+		{
+			dataType="Trigger";
+			position[]={3760.7297,12.727124,13285.243};
+			class Attributes
+			{
+				name="Safe_kav_trigger_9";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7052;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4466
+		{
+			dataType="Trigger";
+			position[]={3873.0684,19.426598,13229.54};
+			class Attributes
+			{
+				name="Safe_kav_trigger_10";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7053;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4467
+		{
+			dataType="Trigger";
+			position[]={3771.1963,18.85,12986.995};
+			class Attributes
+			{
+				name="Safe_kav_trigger_11";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7054;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item4468
+		{
+			dataType="Trigger";
+			position[]={3648.7939,10.229736,13107.811};
+			class Attributes
+			{
+				name="Safe_kav_trigger_12";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=5;
+				sizeB=5;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7055;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.0024137497;
+		};
+		class Item4469
+		{
+			dataType="Trigger";
+			position[]={3613.7078,10.872803,13067.267};
+			class Attributes
+			{
+				name="Safe_kav_trigger_13";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=10;
+				sizeB=10;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7056;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.33879185;
+		};
+		class Item4470
+		{
+			dataType="Trigger";
+			position[]={3628.2368,10.223877,13174.267};
+			class Attributes
+			{
+				name="Safe_kav_trigger_14";
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				onDeactivation="player allowdamage false;   " \n "vehicle player allowDamage false;";
+				sizeA=10;
+				sizeB=10;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=7057;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.002497673;
 		};
 	};
 };
