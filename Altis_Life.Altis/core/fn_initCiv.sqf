@@ -41,5 +41,6 @@ life_is_alive = true;
 
 //AOSoul Added
 [] execVM "AOSoul\robstore.sqf";    //Rob Store
+[] execVM "AOSoul\AntiVoice.sqf";   //안티 마이크
 //////////////////////////////////////
 player addRating 9999999;
