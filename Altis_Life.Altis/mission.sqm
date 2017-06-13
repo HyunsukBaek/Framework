@@ -35934,7 +35934,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\Casino.jpg""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\Casino.paa""];";
 			};
 			id=1526;
 			type="Land_Billboard_F";
@@ -40124,7 +40124,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\CasinoIntro.jpg""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\CasinoIntro.paa""];";
 			};
 			id=2048;
 			type="Land_Billboard_F";
@@ -88542,7 +88542,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_aosoul.jpg""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_aosoul.paa""];";
 			};
 			id=6096;
 			type="Land_Billboard_F";
@@ -88559,7 +88559,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_police.jpg""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_police.paa""];";
 			};
 			id=6099;
 			type="Land_Billboard_F";
@@ -89468,7 +89468,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_aosoul.jpg""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_aosoul.paa""];";
 			};
 			id=6166;
 			type="Land_Billboard_F";
