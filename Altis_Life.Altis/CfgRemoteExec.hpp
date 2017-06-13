@@ -187,6 +187,9 @@ class CfgRemoteExec {
         F(life_fnc_update,CLIENT) //DynMarket
 
         F(sa_hide_object_global,CLIENT) //Tow Hide object function
+
+        F(life_fnc_leftIndicatorLight,ANYONE)   //Vehicle Indicators
+        F(life_fnc_rightIndicatorLight,ANYONE)  //Vehicle Indicators
     };
 
     class Commands {

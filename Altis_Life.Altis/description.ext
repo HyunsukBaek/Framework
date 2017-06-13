@@ -162,6 +162,18 @@ class CfgSounds {
         sound[] = { "\sounds\alert.ogg", 1.25, 1 };
         titles[] = { };
     };
+	
+	class blinkerclick {
+        name = "blinkerclick";
+        sound[] = {"\sounds\Indicators\blinkerclick_sfx.ogg", 1.0, 1};
+        titles[] = {};
+    };
+    
+    class blinkerstart {
+        name = "blinkerstart";
+        sound[] = {"\sounds\Indicators\blinkerstart_sfx.ogg", 1.0, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {

@@ -19,7 +19,8 @@ if (hasInterface) then {
 [] execVM "AOSoul\DynWeather.sqf"; // 날씨 
 [] execVM "AOSoul\CL.sqf"; //돔 네온
 [] execVM "AOSoul\CL2.sqf";
-[] execVM "AOSoul\safezone.sqf";//세이프존 
+[] execVM "AOSoul\safezone.sqf";//세이프존
+[] execVM "AOSoul\VehicleIndicators\indicatorInit.sqf"; //Vehicle Indicator
 setTerrainGrid 50;
 //setViewDistance 1200;
 //setObjectViewDistance [1000,50];

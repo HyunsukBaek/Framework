@@ -426,5 +426,14 @@ class Life_Client_Core {
        class LoadIntoListbox {};
        class ForcePrice {};
        class DYNMARKET_getPrice {};
-   };
+    };
+
+    //Vehicle Indicators
+    class VehicleIndicators {
+        file = "AOSoul\VehicleIndicators";
+        class leftIndicatorLight {};
+        class rightIndicatorLight {};
+        class startIndicatorLeft {};
+        class startIndicatorRight {};
+    };
 };
