@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3423.27,27.301962,12875.188};
-		dir[]={0.37805945,-0.39951485,0.83514154};
-		up[]={0.1647605,0.91672593,0.36395958};
-		aside[]={0.91100258,3.8533472e-008,-0.4124006};
+		pos[]={3917.3726,58.459896,13178.289};
+		dir[]={-0.50049585,-0.67106968,0.54697156};
+		up[]={-0.45301855,0.74139166,0.49508506};
+		aside[]={0.7377575,-4.3073669e-009,0.67507201};
 	};
 };
 binarizationWanted=0;
@@ -298,24 +298,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -330,6 +312,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -1938,7 +1938,7 @@ class Mission
 			position[]={12282.52,123.74878,8892.7139};
 			name="reb_v_2";
 			type="Empty";
-			angle=56.382298;
+			angle=56.382294;
 			id=157;
 			atlOffset=-0.082374573;
 		};
@@ -30022,7 +30022,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3871.7693,21.214733,13228.027};
+						position[]={3871.769,21.215015,13228.027};
 						angles[]={0,2.3784473,0};
 					};
 					side="Civilian";
@@ -30030,11 +30030,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];this setVariable [""realname"",""마켓 & 잡화점""];";
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];this setVariable [""realname"",""마켓 잡화점""];";
 						disableSimulation=1;
 					};
 					id=7022;
 					type="C_man_polo_4_F";
+					atlOffset=0.0002822876;
 					class CustomAttributes
 					{
 						class Attribute0
