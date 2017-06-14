@@ -42,47 +42,201 @@ switch (typeOf _vehicle) do
 		_lightleft lightAttachObject [_vehicle, [-1.01,-3.45,-0.65]];
 	};
 	
-	case "I_MRAP_03_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.05,-3.2,0.03]];
-	};
-	
-	case "B_Truck_01_transport_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	case "B_Truck_01_covered_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	case "B_Truck_01_fuel_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	case "B_Truck_01_ammo_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	case "B_Truck_01_Repair_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	case "B_Truck_01_mover_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	case "B_Truck_01_box_F":
-	{
-		_lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
-	};
-	
-	
+	////////////////////////////////////////////////////////////
+    case "C_Kart_01_Blu_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.4,-0.8,-0.9]];
+    };
+    
+    case "C_Kart_01_Fuel_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.4,-0.8,-0.9]];
+    };
+    
+    case "C_Kart_01_Red_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.4,-0.8,-0.9]];
+    };
+    
+    case "C_Kart_01_Vrana_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.4,-0.8,-0.9]];
+    };
+    ////////////////////////////////////////////////////////////    
+    case "B_Quadbike_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5,-1,-0.6]];
+    };
+    ////////////////////////////////////////////////////////////
+    case "C_Hatchback_01_sport_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.8,-2.25,-0.25]];
+    };
+    ////////////////////////////////////////////////////////////
+    case "B_G_Offroad_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.9,-3,-0.4]];
+    };
+    
+    case "B_G_Offroad_01_armed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.85,-2.75,-0.8]];
+    };
+    ////////////////////////////////////////////////////////////
+    //자마크 시리즈
+    case "I_Truck_02_covered_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.7,-3.5,-1.2]];
+    };
+    
+    case "I_Truck_02_box_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.7,-3.5,-1.2]];
+    };
+    
+    case "I_Truck_02_ammo_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.7,-3.5,-1.2]];
+    };
+    
+    case "I_Truck_02_fuel_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.7,-3.5,-1.2]];
+    };
+    
+    case "I_Truck_02_medical_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.7,-3.5,-1.2]];
+    };
+    
+    //    
+    case "O_Truck_03_device_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "O_Truck_03_medical_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "O_Truck_03_repair_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };    
+   
+    case "O_Truck_03_ammo_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "O_Truck_03_fuel_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    //
+    case "B_Truck_01_transport_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_covered_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_fuel_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_ammo_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_Repair_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_mover_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_box_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    case "B_Truck_01_medical_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.1,-5.1,-0.62]];
+    };
+    
+    ////////////////////////////////////////////////////////////
+    case "C_Van_01_fuel_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.8,-3.2,-0.9]];
+    };
+    ////////////////////////////////////////////////////////////
+    //헌터
+    case "B_MRAP_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.08,-4.2,-0.8]];
+    };
+    
+    case "B_MRAP_01_hmg_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.08,-4.2,-0.8]];
+    };
+    
+    //이프리트
+    case "O_MRAP_02_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.6,-4.45,-1.3]];
+    };
+    
+    //스트라이더
+    case "I_MRAP_03_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.05,-3.2,0.03]];
+    };
+    
+    case "I_MRAP_03_hmg_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.05,-3.2,0.03]];
+    };
+    ////////////////////////////////////////////////////////////
+    //MB 4WD
+    case "C_Offroad_02_unarmed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.8,-1.6,-0.35]];
+    };
+    
+    //퀄린
+    case "O_T_LSV_02_unarmed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1,-2.35,-0.47]];
+    };
+    
+    case "O_T_LSV_02_armed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1,-2.35,-0.47]];
+    };
+    
+    //Prowler
+    case "B_T_LSV_01_unarmed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.85,-2,-0.8]];
+    };
+    
+    case "B_T_LSV_01_armed_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.85,-2,-0.8]];
+    };
 };
 
 _lightleft setLightAttenuation [0.141, 0, 1000, 15]; 
