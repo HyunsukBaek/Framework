@@ -462,7 +462,12 @@ switch (_code) do {
         if (_ctrlKey) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopHandsUpMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
@@ -470,7 +475,12 @@ switch (_code) do {
         if (_alt) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopHandsUpFemale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
@@ -491,7 +501,12 @@ switch (_code) do {
         if (_ctrlKey) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopSurrenderMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
@@ -499,7 +514,12 @@ switch (_code) do {
         if (_alt) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopSurrenderFemale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
@@ -520,7 +540,12 @@ switch (_code) do {
         if (_ctrlKey) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopMirandaMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
@@ -528,13 +553,18 @@ switch (_code) do {
         if (_alt) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopMirandaFemale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
     };
 
-    //노노 사인 Shift + 4, Cop Thanks (Ctrl + 4)
+    //노노 사인 Shift + 4, Cop Thanks (Ctrl + 4), Cop Save (Alt + 4)
     case 5:
     {
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
@@ -549,13 +579,32 @@ switch (_code) do {
         if (_ctrlKey) then {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
-            if (playerSide in [west]) then {
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
                 [player,"CopThanks"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
+        
+        //Cop Save
+        if (_alt) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
+                [player,"CopSave"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
     };
 
-    //한번 끄덕이기 Shift + 5, Cop Save (Ctrl + 5)
+    //한번 끄덕이기 Shift + 5
     case 6:
     {
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
@@ -564,14 +613,6 @@ switch (_code) do {
         {
             //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
             player playAction "gestureNod";
-        };
-        //Cop Save
-        if (_ctrlKey) then {
-            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
-            life_action_delay = time;
-            if (playerSide in [west]) then {
-                [player,"CopSave"] remoteExec ["life_fnc_say3D",RANY];
-            };
         };
     };
 
