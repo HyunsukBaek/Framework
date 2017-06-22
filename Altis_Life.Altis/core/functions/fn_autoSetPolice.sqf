@@ -45,6 +45,7 @@ if (life_atmbank >= 130000) then //100k
     [true,"handcuffs",1] call life_fnc_handleInv;
     [true,"keys",1] call life_fnc_handleInv;
     [true,"toolkit",2] call life_fnc_handleInv;
+    [true,"vehiclecutter",2] call life_fnc_handleInv;
     //Virtual items, who knows might be used... -check config_master
     hintSilent "모든 장비가 세팅되었습니다! 오늘도 순찰 열심히!!!";
 }
