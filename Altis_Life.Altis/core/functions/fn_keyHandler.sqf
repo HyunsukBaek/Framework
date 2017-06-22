@@ -460,12 +460,16 @@ switch (_code) do {
         };
         //Cop Hands Up Male
         if (_ctrlKey) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopHandsUpMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
         //Cop Hands Up Female
         if (_alt) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopHandsUpFemale"] remoteExec ["life_fnc_say3D",RANY];
             };
@@ -485,12 +489,16 @@ switch (_code) do {
         
         //Cop Surrender Male
         if (_ctrlKey) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopSurrenderMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
         //Cop Surrender Female
         if (_alt) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopSurrenderFemale"] remoteExec ["life_fnc_say3D",RANY];
             };
@@ -510,12 +518,16 @@ switch (_code) do {
         
         //Cop Miranda Male
         if (_ctrlKey) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopMirandaMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
         //Cop Miranda Female
         if (_alt) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopMirandaFemale"] remoteExec ["life_fnc_say3D",RANY];
             };
@@ -535,6 +547,8 @@ switch (_code) do {
         
         //Cop Thanks
         if (_ctrlKey) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopThanks"] remoteExec ["life_fnc_say3D",RANY];
             };
@@ -553,6 +567,8 @@ switch (_code) do {
         };
         //Cop Save
         if (_ctrlKey) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
             if (playerSide in [west]) then {
                 [player,"CopSave"] remoteExec ["life_fnc_say3D",RANY];
             };
