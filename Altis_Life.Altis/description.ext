@@ -182,10 +182,67 @@ class CfgSounds {
         sound[] = {"\sounds\Cop\Cop_VehicleStop_M.ogg", 2, 1};
         titles[] = {};
     };
+	
 	//Cop Stop Vehicle Female
     class CopStopVehicleFemale {
         name = "CopStopVehicleFemale";
         sound[] = {"\sounds\Cop\Cop_VehicleStop_F.ogg", 2, 1};
+        titles[] = {};
+    };
+	
+	//Cop HandsUp Male
+    class CopHandsUpMale {
+        name = "CopHandsUpMale";
+        sound[] = {"\sounds\Cop\Cop_HandsUp_M.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop HandsUp Female
+    class CopHandsUpFemale {
+        name = "CopHandsUpFemale";
+        sound[] = {"\sounds\Cop\Cop_HandsUp_F.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Surrender Male
+    class CopSurrenderMale {
+        name = "CopSurrenderMale";
+        sound[] = {"\sounds\Cop\Cop_Surrender_M.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Surrender Female
+    class CopSurrenderFemale {
+        name = "CopSurrenderFemale";
+        sound[] = {"\sounds\Cop\Cop_Surrender_F.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Miranda Male
+    class CopMirandaMale {
+        name = "CopMirandaMale";
+        sound[] = {"\sounds\Cop\Cop_Miranda_M.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Miranda Female
+    class CopMirandaFemale {
+        name = "CopMirandaFemale";
+        sound[] = {"\sounds\Cop\Cop_Miranda_F.ogg", 1, 1};
+        titles[] = {};
+    };
+	
+	//Cop Thanks
+    class CopThanks {
+        name = "CopThanks";
+        sound[] = {"\sounds\Cop\Cop_Thanks_F.ogg", 1, 1};
+        titles[] = {};
+    };
+	
+	//Cop Save
+    class CopSave {
+        name = "CopSave";
+        sound[] = {"\sounds\Cop\Cop_Save_F.ogg", 1, 1};
         titles[] = {};
     };
 };

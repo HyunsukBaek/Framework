@@ -445,10 +445,10 @@ switch (_code) do {
         };
     };
 
-    //Mobile open Shift + 1
+    //Mobile open Shift + 1, Cop Hands Up M/F (Ctrl + 1 , Alt + 1)
     case 2:
     {
-        if(_shift) then {_handled = true;};
+        //Open Mobile
         if (_shift) then
         {
             if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
@@ -458,12 +458,23 @@ switch (_code) do {
                 createDialog "Life_cell_phone";
             };
         };
+        //Cop Hands Up Male
+        if (_ctrlKey) then {
+            if (playerSide in [west]) then {
+                [player,"CopHandsUpMale"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
+        //Cop Hands Up Female
+        if (_alt) then {
+            if (playerSide in [west]) then {
+                [player,"CopHandsUpFemale"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
     };
 
-    //손인사 높게 Shift + 2
+    //손인사 높게 Shift + 2, Cop Surrender M/F (Ctrl + 2, Alt + 2)
     case 3:
     {
-        if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
         if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
@@ -471,12 +482,24 @@ switch (_code) do {
             //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
             player playAction "gestureHi";
         };
+        
+        //Cop Surrender Male
+        if (_ctrlKey) then {
+            if (playerSide in [west]) then {
+                [player,"CopSurrenderMale"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
+        //Cop Surrender Female
+        if (_alt) then {
+            if (playerSide in [west]) then {
+                [player,"CopSurrenderFemale"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
     };
 
-    //손인사 낮게 Shift + 3
+    //손인사 낮게 Shift + 3, Cop Miranda M/F (Ctrl + 3, Alt + 3)
     case 4:
     {
-        if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
         if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
@@ -484,12 +507,24 @@ switch (_code) do {
             //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
             player playAction "gestureHiC";
         };
+        
+        //Cop Miranda Male
+        if (_ctrlKey) then {
+            if (playerSide in [west]) then {
+                [player,"CopMirandaMale"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
+        //Cop Miranda Female
+        if (_alt) then {
+            if (playerSide in [west]) then {
+                [player,"CopMirandaFemale"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
     };
 
-    //노노 사인 Shift + 4
+    //노노 사인 Shift + 4, Cop Thanks (Ctrl + 4)
     case 5:
     {
-        if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
         if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
@@ -497,18 +532,30 @@ switch (_code) do {
             //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
             player playAction "gestureHiB";
         };
+        
+        //Cop Thanks
+        if (_ctrlKey) then {
+            if (playerSide in [west]) then {
+                [player,"CopThanks"] remoteExec ["life_fnc_say3D",RANY];
+            };
+        };
     };
 
-    //한번 끄덕이기 Shift + 5
+    //한번 끄덕이기 Shift + 5, Cop Save (Ctrl + 5)
     case 6:
     {
-        if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
         if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
         {
             //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
             player playAction "gestureNod";
+        };
+        //Cop Save
+        if (_ctrlKey) then {
+            if (playerSide in [west]) then {
+                [player,"CopSave"] remoteExec ["life_fnc_say3D",RANY];
+            };
         };
     };
 
