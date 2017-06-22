@@ -939,8 +939,8 @@ class VirtualItems {
         variable = "vehiclecutter";
         displayName = "STR_AOSOUL_Items_vehiclecutter";
         weight = 5;
-        buyPrice = 100000;
-        sellPrice = 50000;
+        buyPrice = 30000;
+        sellPrice = 15000;
         illegal = false;
         edible = -1;
         icon = "icons\AOSoul\ico_VehicleCutter.paa";
