@@ -57,6 +57,8 @@ Life_fishing = false;
 life_seatbelt = false;
 life_safezone = false;
 life_sitting = false;
+life_CopWarningActive_male = false;
+life_CopWarningActive_female = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

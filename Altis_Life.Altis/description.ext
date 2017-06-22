@@ -174,6 +174,20 @@ class CfgSounds {
         sound[] = {"\sounds\Indicators\blinkerstart_sfx.ogg", 1.0, 1};
         titles[] = {};
     };
+	
+	//Cop Custom Siren
+	//Cop Stop Vehicle Male
+    class CopStopVehicleMale {
+        name = "CopStopVehicleMale";
+        sound[] = {"\sounds\Cop\Cop_VehicleStop_M.ogg", 2, 1};
+        titles[] = {};
+    };
+	//Cop Stop Vehicle Female
+    class CopStopVehicleFemale {
+        name = "CopStopVehicleFemale";
+        sound[] = {"\sounds\Cop\Cop_VehicleStop_F.ogg", 2, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {

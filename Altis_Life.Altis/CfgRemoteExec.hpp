@@ -190,6 +190,9 @@ class CfgRemoteExec {
 
         F(life_fnc_leftIndicatorLight,ANYONE)   //Vehicle Indicators
         F(life_fnc_rightIndicatorLight,ANYONE)  //Vehicle Indicators
+
+        F(life_fnc_CopCustomSirenM,CLIENT) //Cop Custom Siren Male
+        F(life_fnc_CopCustomSirenF,CLIENT) //Cop Custom Siren Female
     };
 
     class Commands {

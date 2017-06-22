@@ -415,6 +415,8 @@ class Life_Client_Core {
         class Ragdoll {};
         class outtro {};
         class vehiclecutter {};
+        class CopCustomSirenM {};
+        class CopCustomSirenF {};
     };
 
     //Market System

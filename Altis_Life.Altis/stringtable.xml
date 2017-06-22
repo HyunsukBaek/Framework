@@ -12213,5 +12213,17 @@
 		<Key ID="STR_AOSOUL_SafeZone">
             <Original>세이프존에서는 사용할 수 없습니다.</Original>
         </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Male_On">
+            <Original>확성기(남성) On</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Male_Off">
+            <Original>확성기(남성) Off</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Female_On">
+            <Original>확성기(여성) On</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Female_Off">
+            <Original>확성기(여성) Off</Original>
+        </Key>
 	</Package>
 </Project>

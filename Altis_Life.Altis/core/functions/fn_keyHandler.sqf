@@ -206,25 +206,76 @@ switch (_code) do {
 
     //F Key
     case 33: {
-        if (playerSide in [west,independent] && {vehicle player != player}&& {!life_siren_active}&& {((driver vehicle player) == player)}) then {
-            [] spawn {
-                life_siren_active = true;
-                sleep 4.7;
-                life_siren_active = false;
-            };
+        //Original Source
+        if (!_shift && !_ctrlKey) then {
+            if (playerSide in [west,independent] && {vehicle player != player}&& {!life_siren_active}&& {((driver vehicle player) == player)}) then {
+                [] spawn {
+                    life_siren_active = true;
+                    sleep 4.7;
+                    life_siren_active = false;
+                };
 
-            _veh = vehicle player;
-            if (isNil {_veh getVariable "siren"}) then {_veh setVariable ["siren",false,true];};
-            if ((_veh getVariable "siren")) then {
-                titleText [localize "STR_MISC_SirensOFF","PLAIN"];
-                _veh setVariable ["siren",false,true];
-            } else {
-                titleText [localize "STR_MISC_SirensON","PLAIN"];
-                _veh setVariable ["siren",true,true];
-                if (playerSide isEqualTo west) then {
-                    [_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
+                _veh = vehicle player;
+                if (isNil {_veh getVariable "siren"}) then {_veh setVariable ["siren",false,true];};
+                if ((_veh getVariable "siren")) then {
+                    titleText [localize "STR_MISC_SirensOFF","PLAIN"];
+                    _veh setVariable ["siren",false,true];
                 } else {
-                    [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
+                    titleText [localize "STR_MISC_SirensON","PLAIN"];
+                    _veh setVariable ["siren",true,true];
+                    if (playerSide isEqualTo west) then {
+                        [_veh] remoteExec ["life_fnc_copSiren",RCLIENT];
+                    } else {
+                        [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT];
+                    };
+                };
+            };
+        };
+        
+        //AOSOUL Added
+        //Shift + F Stop Vehicle Male
+        if (_shift) then {
+            if (playerSide in [west] && {vehicle player != player}&& {!life_CopWarningActive_male}&& {((driver vehicle player) == player)}) then {
+                [] spawn {
+                    life_CopWarningActive_male = true;
+                    sleep 2;
+                    life_CopWarningActive_male = false;
+                };
+
+                _veh = vehicle player;
+                if (isNil {_veh getVariable "Stop_M"}) then {_veh setVariable ["Stop_M",false,true];};
+                if ((_veh getVariable "Stop_M")) then {
+                    titleText [localize "STR_AOSOUL_CopWarning_Male_Off","PLAIN"];
+                    _veh setVariable ["Stop_M",false,true];
+                } else {
+                    titleText [localize "STR_AOSOUL_CopWarning_Male_On","PLAIN"];
+                    _veh setVariable ["Stop_M",true,true];
+                    if (playerSide isEqualTo west) then {
+                        [_veh] remoteExec ["life_fnc_CopCustomSirenM",RCLIENT];
+                    };
+                };
+            };
+        };
+        //Shift + F Stop Vehicle Female
+        if (_ctrlKey) then {
+            if (playerSide in [west] && {vehicle player != player}&& {!life_CopWarningActive_female}&& {((driver vehicle player) == player)}) then {
+                [] spawn {
+                    life_CopWarningActive_female = true;
+                    sleep 2;
+                    life_CopWarningActive_female = false;
+                };
+
+                _veh = vehicle player;
+                if (isNil {_veh getVariable "Stop_F"}) then {_veh setVariable ["Stop_F",false,true];};
+                if ((_veh getVariable "Stop_F")) then {
+                    titleText [localize "STR_AOSOUL_CopWarning_Female_Off","PLAIN"];
+                    _veh setVariable ["Stop_F",false,true];
+                } else {
+                    titleText [localize "STR_AOSOUL_CopWarning_Female_On","PLAIN"];
+                    _veh setVariable ["Stop_F",true,true];
+                    if (playerSide isEqualTo west) then {
+                        [_veh] remoteExec ["life_fnc_CopCustomSirenF",RCLIENT];
+                    };
                 };
             };
         };
