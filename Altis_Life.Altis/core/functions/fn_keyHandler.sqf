@@ -207,7 +207,7 @@ switch (_code) do {
     //F Key
     case 33: {
         //Original Source
-        if (!_shift && !_ctrlKey) then {
+        if (!_shift && !_ctrlKey && !_alt) then {
             if (playerSide in [west,independent] && {vehicle player != player}&& {!life_siren_active}&& {((driver vehicle player) == player)}) then {
                 [] spawn {
                     life_siren_active = true;
@@ -275,6 +275,31 @@ switch (_code) do {
                     _veh setVariable ["Stop_F",true,true];
                     if (playerSide isEqualTo west) then {
                         [_veh] remoteExec ["life_fnc_CopCustomSirenF",RCLIENT];
+                    };
+                };
+            };
+        };
+        
+        //Alt + F Prison Song
+        if (_alt) then {
+            if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) < 1}) exitWith {hint localize "STR_AOSOUL_LowLevel";};
+            if (playerSide in [west] && {vehicle player != player}&& {!life_CopPrisonSong}&& {((driver vehicle player) == player)}) then {
+                [] spawn {
+                    life_CopPrisonSong = true;
+                    sleep 80;
+                    life_CopPrisonSong = false;
+                };
+
+                _veh = vehicle player;
+                if (isNil {_veh getVariable "Stop_P"}) then {_veh setVariable ["Stop_P",false,true];};
+                if ((_veh getVariable "Stop_P")) then {
+                    titleText [localize "STR_AOSOUL_PrisonSong_Off","PLAIN"];
+                    _veh setVariable ["Stop_P",false,true];
+                } else {
+                    titleText [localize "STR_AOSOUL_PrisonSong_On","PLAIN"];
+                    _veh setVariable ["Stop_P",true,true];
+                    if (playerSide isEqualTo west) then {
+                        [_veh] remoteExec ["life_fnc_CopCustomSirenPrison",RCLIENT];
                     };
                 };
             };
@@ -433,7 +458,7 @@ switch (_code) do {
     //Admin Menu Shift + `
     case 41:
     {
-        if(_shift) then {_handled = true;};
+        //Admin Menu
         if (_shift) then
         {
             if(!_alt && !_ctrlKey && !dialog) then

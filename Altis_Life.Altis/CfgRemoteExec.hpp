@@ -193,6 +193,7 @@ class CfgRemoteExec {
 
         F(life_fnc_CopCustomSirenM,CLIENT) //Cop Custom Siren Male
         F(life_fnc_CopCustomSirenF,CLIENT) //Cop Custom Siren Female
+        F(life_fnc_CopCustomSirenPrison,CLIENT) //Cop Prison Song
     };
 
     class Commands {

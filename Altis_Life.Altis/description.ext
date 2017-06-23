@@ -245,6 +245,13 @@ class CfgSounds {
         sound[] = {"\sounds\Cop\Cop_Save_F.ogg", 1, 1};
         titles[] = {};
     };
+	
+	//Cop Prison Song
+    class CopPrisonSong {
+        name = "CopPrisonSong";
+        sound[] = {"\sounds\Cop\Cop_PrisonSong.ogg", 1.5, 1};
+        titles[] = {};
+    };
 };
 
 class CfgDebriefing {
