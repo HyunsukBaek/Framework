@@ -12225,12 +12225,6 @@
 		<Key ID="STR_AOSOUL_CopWarning_Female_Off">
             <Original>확성기(여성) Off</Original>
         </Key>
-		<Key ID="STR_AOSOUL_PrisonSong_On">
-            <Original>정화의 노래 On</Original>
-        </Key>
-		<Key ID="STR_AOSOUL_PrisonSong_Off">
-            <Original>정화의 노래 Off</Original>
-        </Key>
 		<Key ID="STR_AOSOUL_LowLevel">
             <Original>짬 나노입자는 사용할 수 없습니다</Original>
         </Key>

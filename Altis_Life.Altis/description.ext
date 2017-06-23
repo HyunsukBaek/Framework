@@ -249,7 +249,7 @@ class CfgSounds {
 	//Cop Prison Song
     class CopPrisonSong {
         name = "CopPrisonSong";
-        sound[] = {"\sounds\Cop\Cop_PrisonSong.ogg", 1.5, 1};
+        sound[] = {"\sounds\Cop\Cop_PrisonSong.ogg", 4, 1};
         titles[] = {};
     };
 };

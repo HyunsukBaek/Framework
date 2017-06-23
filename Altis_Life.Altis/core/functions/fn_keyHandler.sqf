@@ -279,31 +279,6 @@ switch (_code) do {
                 };
             };
         };
-        
-        //Alt + F Prison Song
-        if (_alt) then {
-            if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) < 1}) exitWith {hint localize "STR_AOSOUL_LowLevel";};
-            if (playerSide in [west] && {vehicle player != player}&& {!life_CopPrisonSong}&& {((driver vehicle player) == player)}) then {
-                [] spawn {
-                    life_CopPrisonSong = true;
-                    sleep 80;
-                    life_CopPrisonSong = false;
-                };
-
-                _veh = vehicle player;
-                if (isNil {_veh getVariable "Stop_P"}) then {_veh setVariable ["Stop_P",false,true];};
-                if ((_veh getVariable "Stop_P")) then {
-                    titleText [localize "STR_AOSOUL_PrisonSong_Off","PLAIN"];
-                    _veh setVariable ["Stop_P",false,true];
-                } else {
-                    titleText [localize "STR_AOSOUL_PrisonSong_On","PLAIN"];
-                    _veh setVariable ["Stop_P",true,true];
-                    if (playerSide isEqualTo west) then {
-                        [_veh] remoteExec ["life_fnc_CopCustomSirenPrison",RCLIENT];
-                    };
-                };
-            };
-        };
     };
 
     //O Key
@@ -466,6 +441,22 @@ switch (_code) do {
                 //createDialog "life_admin_menu";
                 closeDialog 0;
                 [] spawn life_fnc_openMenu;
+            };
+        };
+        
+        //Cop Prison Song
+        if (_ctrlKey) then {
+            if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            life_action_delay = time;
+            if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) < 1}) exitWith {hint localize "STR_AOSOUL_LowLevel";};
+            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+                [] spawn {
+                    life_AOSOUL_Delay = true;
+                    sleep 3;
+                    life_AOSOUL_Delay = false;
+                };
+                closeDialog 0;
+                [player,"CopHandsUpMale"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
     };

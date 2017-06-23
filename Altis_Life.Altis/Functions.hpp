@@ -417,7 +417,6 @@ class Life_Client_Core {
         class vehiclecutter {};
         class CopCustomSirenM {};
         class CopCustomSirenF {};
-        class CopCustomSirenPrison {};
     };
 
     //Market System
