@@ -449,14 +449,14 @@ switch (_code) do {
             if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             life_action_delay = time;
             if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) < 1}) exitWith {hint localize "STR_AOSOUL_LowLevel";};
-            if (playerSide in [west] && {!life_AOSOUL_Delay}) then {
+            if (playerSide in [west] && {!life_CopPrisonSong}) then {
                 [] spawn {
-                    life_AOSOUL_Delay = true;
-                    sleep 3;
-                    life_AOSOUL_Delay = false;
+                    life_CopPrisonSong = true;
+                    sleep 77;
+                    life_CopPrisonSong = false;
                 };
                 closeDialog 0;
-                [player,"CopHandsUpMale"] remoteExec ["life_fnc_say3D",RANY];
+                [player,"CopPrisonSong"] remoteExec ["life_fnc_say3D",RANY];
             };
         };
     };
