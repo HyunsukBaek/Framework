@@ -206,7 +206,7 @@ class VirtualItems {
         weight = 15;
         buyPrice = 10000;
         sellPrice = 5000;
-        illegal = true;
+        illegal = false;
         edible = -1;
         icon = "icons\ico_spikeStrip.paa";
     };
