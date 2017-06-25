@@ -114,7 +114,48 @@ switch (typeOf _vehicle) do
     case "O_Heli_Transport_04_F": //taru
     {
         _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
-     };
+    };
+    
+    ////////Boat
+    case "C_Boat_Civil_01_police_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-0.6,-1,0.4]];
+    };
+    
+    case "C_Boat_Civil_01_rescue_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-0.6,-1,0.4]];
+    };
+    
+    case "C_Boat_Transport_02_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-0.5,-0.8,0.4]];
+    };
+    
+    case "B_Boat_Armed_01_minigun_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-1.4,1.5,-1.3]];
+    };
+    
+    case "O_Boat_Armed_01_hmg_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-1.4,1.5,-1.3]];
+    };
+    
+    case "B_SDV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-0.6,1.5,-1.6]];
+    };
+    
+    case "O_SDV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-0.6,1.5,-1.6]];
+    };
+    
+    case "I_SDV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [-0.6,1.5,-1.6]];
+    };
 };
 
 _lightleft setLightAttenuation [0.181, 0, 1000, 130];
@@ -224,6 +265,47 @@ switch (typeOf _vehicle) do
     case "O_Heli_Transport_04_F":
     {
         _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+    
+    ////////Boat
+    case "C_Boat_Civil_01_police_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.6,-1,0.4]];
+    };
+    
+    case "C_Boat_Civil_01_rescue_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.6,-1,0.4]];
+    };
+    
+    case "C_Boat_Transport_02_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.5,-0.8,0.4]];
+    };
+    
+    case "B_Boat_Armed_01_minigun_F":
+    {
+        _lightright lightAttachObject [_vehicle, [1.4,1.5,-1.3]];
+    };
+    
+    case "O_Boat_Armed_01_hmg_F":
+    {
+        _lightright lightAttachObject [_vehicle, [1.4,1.5,-1.3]];
+    };
+    
+    case "B_SDV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.6,1.5,-1.6]];
+    };
+    
+    case "O_SDV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.6,1.5,-1.6]];
+    };
+    
+    case "I_SDV_01_F":
+    {
+        _lightright lightAttachObject [_vehicle, [0.6,1.5,-1.6]];
     };
 };
 
