@@ -24,7 +24,7 @@ class Life_Settings {
     save_civilian_position = true; //Save civilian location?
     save_civilian_position_restart = false; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
-    save_civilian_positionStrict = true; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
+    save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
