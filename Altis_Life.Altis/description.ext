@@ -67,13 +67,13 @@ class CfgSounds {
     sounds[] = {};
     class sirenYelp {
         name = "sirenYelp";
-        sound[] = {"\sounds\sirenYelp.ogg", 1.0, 1};
+        sound[] = {"\sounds\sirenYelp.ogg", 2.5, 1};
         titles[] = {};
     };
 
     class medicSiren {
         name = "medicSiren";
-        sound[] = {"\sounds\medicSiren.ogg", 1.75, 1};
+        sound[] = {"\sounds\medicSiren.ogg", 2.5, 1};
         titles[] = {};
     };
 
