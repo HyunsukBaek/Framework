@@ -861,7 +861,7 @@ switch (_code) do {
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
         if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
         life_action_delay = time;
-        if(_shift && {!life_is_arrested} && {isTouchingGround player}) then
+        if(_shift && {!life_is_arrested}) then
         {
             [] spawn life_fnc_Ragdoll;
         };

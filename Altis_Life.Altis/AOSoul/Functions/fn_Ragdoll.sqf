@@ -14,3 +14,9 @@ detach _ragdoll;
     uisleep 3;
     player allowdamage true;
 };
+//
+[] spawn {
+    life_AOSOUL_Delay = true;
+    sleep 3;
+    life_AOSOUL_Delay = false;
+};
