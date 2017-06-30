@@ -206,7 +206,7 @@ life_server_isReady = true;
 publicVariable "life_server_isReady";
 
 /* Initialize hunting zone(s) */
-aiSpawn = ["hunting_zone",30] spawn TON_fnc_huntingZone;
+aiSpawn = ["hunting_zone",60] spawn TON_fnc_huntingZone;
 
 // We create the attachment point to be used for objects to attachTo load virtually in vehicles.
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];
