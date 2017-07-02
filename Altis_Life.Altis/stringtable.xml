@@ -7708,6 +7708,9 @@
             <Portuguese>Esse item não é usável.</Portuguese>
             <Polish>Nie można użyć tej rzeczy.</Polish>
         </Key>
+        <Key ID="STR_ISTR_DrugEffect">
+            <Original>너는 약쟁이!!! 갈증은 50퍼센트 줄지만 8분간 뛸수있다!!</Original>
+        </Key>
     </Package>
     <Package name="Process_Action">
         <Key ID="STR_Process_Oil">

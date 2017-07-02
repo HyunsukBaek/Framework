@@ -146,6 +146,40 @@ switch (true) do {
         [] spawn life_fnc_vehiclecutter;
         closeDialog 0;
     };
+    
+    //마약흡입
+    case (_item in ["cocaine_processed","heroin_processed"]): {
+        if ([false,_item,1] call life_fnc_handleInv) then {
+            life_thirst = life_thirst / 2;
+            if ( life_thirst < 10 ) {
+                life_thirst = 10;
+            };
+            if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
+            if ( (_item isEqualTo "cocaine_processed" || _item isEqualTo "heroin_processed") && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
+                [] spawn {
+                    life_redgull_effect = time;
+                    titleText[localize "STR_ISTR_DrugEffect","PLAIN"];
+
+					if (life_HC_isActive) then { // 마약흡입 범죄 추가
+						[getPlayerUID player,profileName,"390"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
+					} else {
+						[getPlayerUID player,profileName,"390"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
+					};
+
+                    player enableFatigue false;
+                    waitUntil {!alive player || ((time - life_redgull_effect) > (8 * 60))};
+                    player enableFatigue true;
+                };
+            };
+        };
+    };
+
+	//마리화나흡입
+	case (_item isEqualTo "marijuana"): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[] spawn life_fnc_weed;
+        };
+	};
 
     default {
         hint localize "STR_ISTR_NotUsable";

@@ -287,6 +287,7 @@ class Life_Client_Core {
         class storageBox {};
         class huntingKit {};	//AOSoul Hunting Kit
         class campFire {};	//AOSoul Campfire
+        class weed {}; // AOSoul 약빠는 마리화나
     };
 
     class Medical_System {
