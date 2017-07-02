@@ -20,7 +20,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "vehiclecutter" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "vehiclecutter", "broadcastmic" };
     };
 
     class rebel {
@@ -945,4 +945,15 @@ class VirtualItems {
         edible = -1;
         icon = "icons\AOSoul\ico_VehicleCutter.paa";
     };
+
+    class broadcastmic {
+		variable = "broadcastmic";
+		displayName = "STR_Item_broadcastmic";
+		weight = 5;
+		buyPrice = 990000;
+		sellPrice = -1;
+		illegal = false;
+		edible = -1;
+		icon = "icons\AOSoul\ico_mic.paa";
+	};
 };

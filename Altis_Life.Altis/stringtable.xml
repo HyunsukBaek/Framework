@@ -4541,6 +4541,9 @@
             <Russian>Захват шайка укрытие</Russian>
             <German>Gangversteck einnehmen</German>
         </Key>
+        <Key ID="STR_NOTF_couldNotGiveItem">
+        	<Original>이아이템은 남에게 줄 수 없습니다.</Original>
+        </Key>
     </Package>
     <Package name="News_Strings">
         <Key ID="STR_News_AddAction">
@@ -6967,6 +6970,9 @@
             <Italian>Striscia Chiodata</Italian>
             <Portuguese>Tapete de Espinhos</Portuguese>
             <Polish>Kolczatka drogowa</Polish>
+        </Key>
+        <Key ID="STR_Item_broadcastmic">
+            <Original>뉴스마이크</Original>
         </Key>
     </Package>
     <Package name="Life_License">

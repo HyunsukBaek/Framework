@@ -181,6 +181,11 @@ switch (true) do {
         };
 	};
 
+	case (_item isEqualTo "broadcastmic"): {
+		[] spawn life_fnc_newsBroadcast;
+		closeDialog 0;
+	};
+
     default {
         hint localize "STR_ISTR_NotUsable";
     };
