@@ -103,6 +103,18 @@ class Housing {
         class Land_i_Stone_HouseSmall_V2_F : Land_i_Stone_HouseSmall_V1_F{};
         class Land_i_Stone_HouseSmall_V3_F : Land_i_Stone_HouseSmall_V1_F{};
 
+        //AOSoul Added
+        class Land_i_House_Big_02_b_pink_F {
+            price = 1550000;
+            numberCrates = 3;
+            restrictedPos[] = {0,1,2,3,4};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {2,0,3.5};
+        };
+
     };
 
     class Tanoa {
