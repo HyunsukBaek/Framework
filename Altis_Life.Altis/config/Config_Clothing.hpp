@@ -208,12 +208,12 @@ class Clothing {
             { "V_Rangemaster_belt", "", 800, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
             { "V_TacVest_gen_F", "", 1000, "call life_coplevel >= 1" }, //Apex DLC
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" },
-            { "V_PlateCarrier1_blk", "", 1500, "call life_coplevel >= 2" },
+            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 4" },
+            { "V_PlateCarrier1_blk", "", 1500, "call life_coplevel >= 3" },
             { "V_Chestrig_blk", "", 1500, "call life_coplevel >= 2" },
             { "V_RebreatherB", "", 1500, "call life_coplevel >= 2" },
             { "V_RebreatherIA", "", 1500, "call life_donorlevel >= 1" },
-            { "V_PlateCarrierIAGL_dgtl", "", 1500, "call life_donorlevel >= 1" },
+            { "V_PlateCarrierIAGL_dgtl", "", 1500, "call life_donorlevel >= 3" },
             { "V_PlateCarrierSpec_blk", "", 1500, "call life_coplevel >= 4" },
             { "V_Press_F", "", 1500, "call life_coplevel >= 2" }
         };
