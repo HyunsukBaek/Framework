@@ -647,7 +647,10 @@ class LifeCfgVehicles {
                 "textures\AOSoul\vehicles\ghosthawk_cop_white1.paa",
                 "textures\AOSoul\vehicles\ghosthawk_cop_white2.paa"
             }, "" },
-            { "EMS white", "med", {"#(argb,8,8,3)color(1,1,1,0.8)", "#(argb,8,8,3)color(1,1,1,0.8)", "textures\AOSoul\vehicles\ghosthawk_Reb_Kitty_3.paa"}, "" }
+            { "EMS white", "med", {
+				"textures\AOSoul\vehicles\ghosthawk_EMS_kor1.paa",
+				"textures\AOSoul\vehicles\ghosthawk_EMS_kor2.paa"
+			}, "" }
         };
     };
 
@@ -1008,7 +1011,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             }, "" },
-            { "Security", "civ", {
+            { "Security", "cop", {
                 "textures\AOSoul\vehicles\hatchback_secure.paa"
             }, "" },
             { "Subaru", "civ", {
@@ -1017,22 +1020,24 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "monster", "civ", {
                 "textures\AOSoul\vehicles\hatchback_monster.paa"
             }, "" },
-            { "EMS Red", "med", {
-                "textures\AOSoul\vehicles\hatchback_EMS.paa"
+            { "EMS 119", "med", {
+                "textures\AOSoul\vehicles\hatchback_med_119.paa"
             }, "" },
             { "EMS UK_후원1", "med", {
                 "textures\AOSoul\vehicles\hatchback_EMSUK.paa"
             }, "call life_donorlevel >= 1" },
-            { "Police", "cop", {
-                "textures\AOSoul\vehicles\hatchback_cop.paa"
+            { "KORPolice", "cop", {
+                "textures\AOSoul\vehicles\hatchback_cop_kor.paa"
             }, "" },
             { "LAPD_후원2", "cop", {
                 "textures\AOSoul\vehicles\hatchback_lapd.paa"
             }, "call life_donorlevel >= 2" },
             { "UKPD_후원1", "cop", {
                 "textures\AOSoul\vehicles\hatchback_UKpolice.paa"
-            }, "call life_donorlevel >= 1" }
-
+            }, "call life_donorlevel >= 1" },
+            { "TAXI후원2", "civ", {
+                "textures\AOSoul\vehicles\hatchback_altis_taxi.paa"
+            }, "call life_donorlevel >= 2" }
         };
     };
 
@@ -1065,21 +1070,27 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Ferrari", "civ", {
                 "textures\AOSoul\vehicles\hatchback_ferrari.paa"
             }, "" },
-            { "EMS Red", "med", {
-                "textures\AOSoul\vehicles\hatchback_EMS.paa"
+            { "EMS 119", "med", {
+                "textures\AOSoul\vehicles\hatchback_med_119.paa"
             }, "" },
             { "EMS UK", "med", {
                 "textures\AOSoul\vehicles\hatchback_EMSUK.paa"
             }, "call life_donorlevel >= 1" },
-            { "Police", "cop", {
-                "textures\AOSoul\vehicles\hatchback_cop.paa"
+            { "KORPolice", "cop", {
+                "textures\AOSoul\vehicles\hatchback_cop_kor.paa"
             }, "" },
             { "LAPD_후원2", "cop", {
                 "textures\AOSoul\vehicles\hatchback_lapd.paa"
             }, "call life_donorlevel >= 2" },
             { "UKPD_후원1", "cop", {
                 "textures\AOSoul\vehicles\hatchback_UKpolice.paa"
-            }, "call life_donorlevel >= 1" }
+            }, "call life_donorlevel >= 1" },
+            { "Interceptor", "cop", {
+                "textures\AOSoul\vehicles\hatchback_cop_interceptor.paa"
+            }, "call life_donorlevel >= 3" },
+            { "TAXI후원2", "civ", {
+                "textures\AOSoul\vehicles\hatchback_altis_taxi.paa"
+            }, "call life_donorlevel >= 2" }
         };
     };
 
@@ -1118,9 +1129,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Blue poltan", "civ",         {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
             { "slime", "cop",               {"textures\AOSoul\vehicles\suv_slime.paa"}, "call life_donorlevel >= 4" },
             //Test
-            { "Raptor", "cop",              {"textures\AOSoul\vehicles\suv_vip.paa"}, "call life_donorlevel >= 4" },
+            { "Raptor", "cop",              {"textures\AOSoul\vehicles\suv_allblack_raptor.paa"}, "call life_donorlevel >= 4" },
             { "Flower_후원3", "civ",         {"textures\AOSoul\vehicles\suv_vip.paa"}, "call life_donorlevel >= 3" },
-            { "검찰", "civ",                 {"textures\AOSoul\vehicles\suv_vip.paa"}, "call life_donorlevel >= 5" }
+            { "검찰", "civ",                 {"textures\AOSoul\vehicles\suv_prosecutors_office.paa"}, "call life_donorlevel >= 5" },
+            { "KOR119_black", "cop",       {"textures\AOSoul\vehicles\suv_interceptor_cop_black.paa"}, "call life_coplevel >= 5" },
+            { "KOR119_sky", "cop",         {"textures\AOSoul\vehicles\suv_interceptor_cop_sky.paa"}, "call life_donorlevel >= 1" }
+
+
             /*
             { "Raptor", "cop",              {"textures\AOSoul\vehicles\suv_raptor.paa"}, "call life_donorlevel >= 4" },
             { "Flower_후원3", "civ",         {"textures\AOSoul\vehicles\suv_flower.paa"}, "call life_donorlevel >= 3" },
@@ -1162,6 +1177,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS Red_후원1", "med", {
                 "textures\AOSoul\vehicles\Van_01_box_ambred_front.paa",
                 "textures\AOSoul\vehicles\Van_01_box_ambred_back.paa"
+            }, "" },
+            { "AOSoul 택배", "civ", {
+                "textures\AOSoul\vehicles\van_box_delivery_kor_front.paa",
+                "textures\AOSoul\vehicles\van_box_delivery_kor_back.paa"
             }, "call life_donorlevel >= 1" }
         };
     };
@@ -1279,6 +1298,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\AOSoul\vehicles\humming_police_1.paa",
                 "textures\AOSoul\vehicles\humming_police_2.paa"
             }, "" },
+            { "KOR119", "cop", {
+                "textures\AOSoul\vehicles\humming_korpolice.paa",
+                "textures\AOSoul\vehicles\humming_korpolice2.paa"
+            }, "" }
         };
     };
 
