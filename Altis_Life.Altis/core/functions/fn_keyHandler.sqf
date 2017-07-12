@@ -853,7 +853,7 @@ switch (_code) do {
         };
     };
 
-    // Shift + 0
+    // 쓰러지기 Shift + 0
     case 11:
     {
         if(_shift) then {_handled = true;};
@@ -872,7 +872,7 @@ switch (_code) do {
         };
     };
 
-    // Shift + -
+    // 겁먹는 모션 Shift + -
     case 12:
     {
         if(_shift) then {_handled = true;};
@@ -880,9 +880,9 @@ switch (_code) do {
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
         if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
         {
-            [player,"",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "";
-            player playMoveNow "";
+            //[player,"ApanPercMstpSnonWnonDnon_G01",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "ApanPercMstpSnonWnonDnon_G01";
+            //player playMoveNow "ApanPercMstpSnonWnonDnon_G01";
         };
     };
 
