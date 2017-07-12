@@ -234,6 +234,32 @@ class CarShops {
         };
     };
 
+    class med_air_ground {
+        side = "med";
+        conditions = "";
+        vehicles[] = {
+            //허밍버드
+            { "B_Heli_Light_01_F", "" },
+            //오르카
+            { "O_Heli_Light_02_unarmed_F", "" },
+            //모호크
+            { "I_Heli_Transport_02_F", "" },
+
+            //고스트 호크
+            { "B_Heli_Transport_01_F", "call life_mediclevel >= 4" },
+            //타루 기본
+            { "O_Heli_Transport_04_F", ""},
+            //타루 수리
+            { "O_Heli_Transport_04_repair_F", "" },
+            //타루 연료
+            { "O_Heli_Transport_04_fuel_F", "" },
+            //타루 수송
+            { "O_Heli_Transport_04_covered_F", "" },
+            //타루 의료
+            { "O_Heli_Transport_04_medevac_F", "" }
+        };
+    };
+
     class cop_car {
         side = "cop";
         conditions = "";
