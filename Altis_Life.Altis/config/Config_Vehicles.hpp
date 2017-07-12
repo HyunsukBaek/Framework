@@ -238,6 +238,8 @@ class CarShops {
         side = "cop";
         conditions = "";
         vehicles[] = {
+            //쿼드바이크
+            { "B_Quadbike_01_F", "" },
             //오프로드
             { "C_Offroad_01_F", "" },
             //SUV
