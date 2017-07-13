@@ -8,7 +8,7 @@ class EditorData
 	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=7285;
+		nextID=7288;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16726.963,3.7547059,20546.906};
-		dir[]={0.5468204,-0.66400492,-0.51014322};
-		up[]={0.48558351,0.74764627,-0.45301196};
-		aside[]={-0.68221742,-9.8056626e-007,-0.73126936};
+		pos[]={26086.771,74.892372,21225.424};
+		dir[]={0.70698649,-0.69909489,0.10712659};
+		up[]={0.6912179,0.71501285,0.10473586};
+		aside[]={0.1498155,2.1921005e-007,-0.98873043};
 	};
 };
 binarizationWanted=0;
@@ -311,6 +311,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -325,24 +343,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -401,7 +401,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4621;
+		items=4622;
 		class Item0
 		{
 			dataType="Marker";
@@ -25736,6 +25736,7 @@ class Mission
 						angles[]={0,0.53848642,6.2823472};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -25744,7 +25745,7 @@ class Mission
 					};
 					id=1938;
 					type="C_man_polo_4_F";
-					atlOffset=0.51200104;
+					atlOffset=0.0003490448;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -103379,7 +103380,7 @@ class Mission
 			position[]={17467.295,12.747476,13285.714};
 			name="med_air_spawn_2";
 			type="Empty";
-			angle=225.17711;
+			angle=225.17709;
 			id=7201;
 		};
 		class Item4575
@@ -103885,7 +103886,7 @@ class Mission
 			position[]={3156.3191,0,12576.038};
 			name="med_boat_spawn_1";
 			type="Empty";
-			angle=57.78899;
+			angle=57.788986;
 			id=7253;
 			atlOffset=4.4123435;
 		};
@@ -104112,7 +104113,7 @@ class Mission
 			};
 			id=7268;
 			type="Land_LampAirport_F";
-			atlOffset=-1.1920929e-007;
+			atlOffset=-5.9604645e-007;
 		};
 		class Item4611
 		{
@@ -104263,7 +104264,7 @@ class Mission
 			};
 			id=7275;
 			type="Land_Medevac_house_V1_F";
-			atlOffset=0.29719454;
+			atlOffset=0.29719442;
 		};
 		class Item4617
 		{
@@ -104288,7 +104289,7 @@ class Mission
 					};
 					id=7277;
 					type="C_man_p_beggar_F";
-					atlOffset=0.00011718273;
+					atlOffset=0.00011694431;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -104337,7 +104338,7 @@ class Mission
 			{
 			};
 			id=7276;
-			atlOffset=0.00011718273;
+			atlOffset=0.00011694431;
 		};
 		class Item4618
 		{
@@ -104345,7 +104346,7 @@ class Mission
 			position[]={16747.707,-0.78768116,20536.752};
 			name="med_boat_spawn_3";
 			type="Empty";
-			angle=135.29099;
+			angle=135.29097;
 			id=7278;
 			atlOffset=1.7647431;
 		};
@@ -104376,6 +104377,17 @@ class Mission
 			};
 			id=7280;
 			type="Land_LampAirport_F";
+			atlOffset=-4.1723251e-007;
+		};
+		class Item4621
+		{
+			dataType="Marker";
+			position[]={26122.682,19.83066,21253.422};
+			name="peaches_4";
+			text="@STR_MAR_Peaches_Field";
+			type="loc_Tree";
+			colorName="Color3_FD_F";
+			id=7285;
 		};
 	};
 };
