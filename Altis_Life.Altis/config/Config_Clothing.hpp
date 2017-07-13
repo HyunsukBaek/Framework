@@ -366,7 +366,7 @@ class Clothing {
             { "U_B_CombatUniform_mcam", "EMS 형광", 1500, "" },
             { "U_B_CombatUniform_mcam_worn", "EMS 녹색", 1500, "" },
             { "U_Competitor", "EMS 주황", 1500, "" },
-            { "U_I_Wetsuit", "EMS wetsuit", 5000, "" },
+            { "U_B_Wetsuit", "EMS 잠수복", 5000, "" },
             { "U_B_HeliPilotCoveralls", "", 15000, "" },
             { "U_I_pilotCoveralls", "", 15000, "" },
             { "U_I_HeliPilotCoveralls", "", 15000, "" }
