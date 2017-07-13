@@ -134,6 +134,14 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
+
+            //AOSoul Added
+            class Sofia {
+                displayName = $STR_SP_EMS_Sof;
+                spawnMarker = "medic_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
         };
     };
 

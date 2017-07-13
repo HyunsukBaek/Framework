@@ -113,7 +113,7 @@ master_group attachTo[bank_obj,[0,0,0]];
             hospital_assis_2 setPos (_hs modelToWorld [0.0175781,0.0234375,-0.231956]);
         };
     };
-} forEach ["hospital_2","hospital_3"];
+} forEach ["hospital_2","hospital_3","hospital_4"];
 
 {
     if (!isPlayer _x) then {

@@ -10843,6 +10843,9 @@
             <Portuguese>Pyrgos Hospital</Portuguese>
             <Polish>Pyrgos Hospital</Polish>
         </Key>
+		<Key ID="STR_SP_EMS_Sof">
+            <Original>Sofia Hospital</Original>
+        </Key>
         <Key ID="STR_SP_EMS_SE">
             <Original>South East Hospital</Original>
             <Czech>South East Hospital</Czech>
