@@ -9744,7 +9744,7 @@
             <Polish>Kopalnia diamentów</Polish>
         </Key>
         <Key ID="STR_MAR_General_Store">
-            <Original>General Store</Original>
+            <Original>잡화점</Original>
             <Czech>Obchod se smíšeným zbožím</Czech>
             <French>Magasin général</French>
             <Spanish>Tienda General</Spanish>
@@ -9766,7 +9766,7 @@
             <Polish>Sklepy dla cywilów</Polish>
         </Key>
         <Key ID="STR_MAR_Boat_Shop">
-            <Original>Boat Shop</Original>
+            <Original>보트 상점</Original>
             <Czech>Lodní Shop</Czech>
             <French>Magasin de bateaux</French>
             <Spanish>Tienda de Barcos</Spanish>
@@ -9777,7 +9777,7 @@
             <Polish>Sklep z łodziami</Polish>
         </Key>
         <Key ID="STR_MAR_Bruce_Outfits">
-            <Original>Bruce's Outback Outfits</Original>
+            <Original>옷 상점</Original>
             <Czech>Bruceovy Outback Oblečení</Czech>
             <French>Magasin de vêtements de Bruce</French>
             <Spanish>Tienda de Ropa</Spanish>
@@ -9788,7 +9788,7 @@
             <German>Bruce's Outback Outfits</German>
         </Key>
         <Key ID="STR_MAR_Apple_Field">
-            <Original>Apple Field</Original>
+            <Original>사과 채집 지역</Original>
             <Czech>Apple Field</Czech>
             <French>Champs de Pommes</French>
             <Spanish>Campo de Manzanas</Spanish>
@@ -9799,7 +9799,7 @@
             <Polish>Sad jabłkowy</Polish>
         </Key>
         <Key ID="STR_MAR_Peaches_Field">
-            <Original>Peaches Field</Original>
+            <Original>복숭아 채집 지역</Original>
             <Czech>broskve Field</Czech>
             <French>Champs de Pêches</French>
             <Spanish>Campo de Melocotones</Spanish>
@@ -9810,7 +9810,7 @@
             <Polish>Sad brzoskwiniowy</Polish>
         </Key>
         <Key ID="STR_MAR_Market">
-            <Original>Market</Original>
+            <Original>마켓</Original>
             <Czech>Trh</Czech>
             <French>Marché</French>
             <Spanish>Mercado</Spanish>
@@ -9843,7 +9843,7 @@
             <Polish>Maszt nadawczy</Polish>
         </Key>
         <Key ID="STR_MAR_DMV">
-            <Original>DMV</Original>
+            <Original>라이센스 상점</Original>
             <Czech>DMV</Czech>
             <French>Magasin de licences</French>
             <Spanish>Registro de Licencias</Spanish>
@@ -9854,7 +9854,7 @@
             <Italian>Licenze</Italian>
         </Key>
         <Key ID="STR_MAR_Delivery_Missions">
-            <Original>Delivery Missions</Original>
+            <Original>배달미션</Original>
             <Czech>Dodací mise</Czech>
             <French>Missions de livraison</French>
             <Spanish>Misiones de Entrega</Spanish>
@@ -9887,7 +9887,7 @@
             <Italian>Ottieni una missione postale</Italian>
         </Key>
         <Key ID="STR_MAR_Diving_Shop">
-            <Original>Diving Shop</Original>
+            <Original>다이빙 상점</Original>
             <Czech>Potápění Shop</Czech>
             <French>Boutique de plongée</French>
             <Spanish>Tienda de Buceo</Spanish>
@@ -9898,7 +9898,7 @@
             <Italian>Negozio da Sub</Italian>
         </Key>
         <Key ID="STR_MAR_Drug_Dealer">
-            <Original>Drug Dealer</Original>
+            <Original>마약 딜러</Original>
             <Czech>Drug prodejce</Czech>
             <French>Dealer de drogue</French>
             <Spanish>Narcotraficante</Spanish>
