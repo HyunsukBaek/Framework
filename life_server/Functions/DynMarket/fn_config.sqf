@@ -68,7 +68,9 @@ DYNMARKET_Items_Groups =
    ["sheep_raw",-1,8000,15000],
    ["sheep",-1,10000,16000],
    ["goat_raw",-1,10400,15600],
-   ["goat",-1,9200,17000]
+   ["goat",-1,9200,17000],
+   ["snake_raw",-1,2000,4000],
+   ["snakemeat",-1,4000,8000]
   ],
   0.4
  ],
@@ -130,6 +132,8 @@ DYNMARKET_Items_ToTrack        =
  ["sheep",13300],
  ["goat_raw",13000],
  ["goat",14000],
+ ["snake_raw",3000],
+ ["snakemeat",6000],
  //Mined
  ["oil_processed",3500],
  ["copper_refined",2000],

@@ -77,7 +77,7 @@ switch (true) do {
         closeDialog 0;
     };
 
-    case (_item in ["rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon"]): {
+    case (_item in ["rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","snakemeat"]): {
         if (!(M_CONFIG(getNumber,"VirtualItems",_item,"edible") isEqualTo -1)) then {
             if ([false,_item,1] call life_fnc_handleInv) then {
                 _val = M_CONFIG(getNumber,"VirtualItems",_item,"edible");
@@ -123,7 +123,7 @@ switch (true) do {
             closeDialog 0;
         };
     
-    case (_item in ["rabbit_raw","salema_raw","ornate_raw","mackerel_raw","tuna_raw","mullet_raw","catshark_raw","turtle_raw","hen_raw","rooster_raw","sheep_raw","goat_raw"]): {
+    case (_item in ["rabbit_raw","salema_raw","ornate_raw","mackerel_raw","tuna_raw","mullet_raw","catshark_raw","turtle_raw","hen_raw","rooster_raw","sheep_raw","goat_raw","snake_raw"]): {
         if !(typeOf cursorObject isEqualTo "Land_Campfire_F") exitWith {hint "캠프파이어에서 요리를 할 수 있습니다!!"};
             [cursorObject,_item] spawn life_fnc_cook;
             closeDialog 0;

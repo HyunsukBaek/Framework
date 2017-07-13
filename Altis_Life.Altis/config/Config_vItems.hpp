@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "salema", "ornate", "mackerel", "tuna", "mullet", "catshark", "hen", "rooster", "sheep", "goat", "huntingKit", "firewood" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "salema", "ornate", "mackerel", "tuna", "mullet", "catshark", "hen", "rooster", "sheep", "goat", "huntingKit", "firewood", "snake_raw", "snakemeat" };
     };
 
     class med_market {
@@ -868,6 +868,29 @@ class VirtualItems {
         icon = "icons\ico_muttonLeg.paa";
     };
     
+    class snake_raw {
+        variable = "snakeRaw";
+        displayName = "STR_AOSOUL_Animal_Snake_Raw";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 2000;
+        illegal = false;
+        edible = -1;
+        cooked = "snakemeat";    //AOSoul
+        icon = "icons\AOSoul\ico_snakeraw.paa";
+    };
+
+    class snakemeat {
+        variable = "snakemeat";
+        displayName = "STR_AOSOUL_Animal_Snake_Meat";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 4000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_rabbit.paa";
+    };
+
     // custom 
     class handcuffs {
         variable = "handcuffs";

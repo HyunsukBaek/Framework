@@ -12252,5 +12252,11 @@
 		<Key ID="STR_AOSOUL_Marker_W_Hospital">
             <Original>해난 구조대</Original>
         </Key>
+		<Key ID="STR_AOSOUL_Animal_Snake_Raw">
+            <Original>뱀(날것)</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Animal_Snake_Meat">
+            <Original>뱀 고기</Original>
+        </Key>
 	</Package>
 </Project>
