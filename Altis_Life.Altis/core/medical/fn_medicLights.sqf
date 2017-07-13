@@ -150,6 +150,21 @@ switch (typeOf _vehicle) do
     {
         _lightleft lightAttachObject [_vehicle, [-0.5, 0.0, 0.81]];
     };
+    
+    case "C_Boat_Civil_01_rescue_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.5, 0.5, 0.3]];
+    };
+    
+    case "C_Boat_Transport_02_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-1.2, 0.5, -0.2]];
+    };
+    
+    case "I_SDV_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [-0.7,1.3,-1.1]];
+    };
     ////////////////////////////////////////////////////////
     default 
     {
@@ -297,6 +312,21 @@ switch (typeOf _vehicle) do
     case "O_Heli_Transport_04_medevac_F":
     {
         _lightright lightAttachObject [_vehicle, [0.5, 0.0, 0.81]];
+    };
+    
+    case "C_Boat_Civil_01_rescue_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [0.5, 0.5, 0.3]];
+    };
+    
+    case "C_Boat_Transport_02_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [1.2, 0.5, -0.2]];
+    };
+    
+    case "I_SDV_01_F":
+    {
+        _lightleft lightAttachObject [_vehicle, [0.7,1.3,-1.1]];
     };
     //////////////////////////////////////////////////
     default 

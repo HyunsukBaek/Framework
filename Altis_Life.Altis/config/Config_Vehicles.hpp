@@ -260,6 +260,19 @@ class CarShops {
         };
     };
 
+    class med_ship {
+        side = "med";
+        conditions = "";
+        vehicles[] = {
+                //모터보트
+                { "C_Boat_Civil_01_rescue_F", "" },
+                //RHIB 낚시배
+                { "C_Boat_Transport_02_F", "" }, //Apex DLC
+                //SDV 잠수함
+                { "I_SDV_01_F", "" }
+        };
+    };
+
     class cop_car {
         side = "cop";
         conditions = "";

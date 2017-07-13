@@ -142,6 +142,29 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
+
+            //해난 구조대 스폰지역
+            //Kabala
+            class KavalaW {
+                displayName = $STR_SP_EMS_Kav_W;
+                spawnMarker = "medic_spawn_w_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class PyrgosW {
+                displayName = $STR_SP_EMS_Pyr_W;
+                spawnMarker = "medic_spawn_w_2";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class AgiaTriadaW {
+                displayName = $STR_SP_EMS_Agia_W;
+                spawnMarker = "medic_spawn_w_3";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
         };
     };
 

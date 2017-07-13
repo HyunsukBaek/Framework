@@ -10846,6 +10846,15 @@
 		<Key ID="STR_SP_EMS_Sof">
             <Original>Sofia Hospital</Original>
         </Key>
+		<Key ID="STR_SP_EMS_Kav_W">
+            <Original>Kavala Coast</Original>
+        </Key>
+		<Key ID="STR_SP_EMS_Pyr_W">
+            <Original>Pyrgos Coast</Original>
+        </Key>
+		<Key ID="STR_SP_EMS_Agia_W">
+            <Original>AgiaTriada Coast</Original>
+        </Key>
         <Key ID="STR_SP_EMS_SE">
             <Original>South East Hospital</Original>
             <Czech>South East Hospital</Czech>
@@ -12239,6 +12248,9 @@
         </Key>
 		<Key ID="STR_AOSOUL_LowLevel">
             <Original>짬 나노입자는 사용할 수 없습니다</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Marker_W_Hospital">
+            <Original>해난 구조대</Original>
         </Key>
 	</Package>
 </Project>
