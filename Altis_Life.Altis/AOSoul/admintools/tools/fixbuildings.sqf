@@ -1,1 +1,1 @@
-titleText ["Fixing buildings","PLAIN DOWN"];titleFadeOut 2;_repair = (getPosATL player) nearObjects ["Building", 300];_fix=0;_break=1;{_x setDammage _fix} forEach _repair;
+/*	Made by AOSoul	문의 : http://cafe.naver.com/alflrss*/titleText ["Fixing buildings","PLAIN DOWN"];titleFadeOut 2;_repair = (getPosATL player) nearObjects ["Building", 300];_fix=0;_break=1;{_x setDammage _fix} forEach _repair;
