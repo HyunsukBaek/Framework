@@ -21,6 +21,8 @@ if (hasInterface) then {
 [] execVM "AOSoul\CL2.sqf";
 [] execVM "AOSoul\safezone.sqf";//세이프존
 [] execVM "AOSoul\VehicleIndicators\indicatorInit.sqf"; //Vehicle Indicator
+[] execVM "AOSoul\dlc_unlocker.sqf";	//DLC Unlocker
+
 setTerrainGrid 50;
 //setViewDistance 1200;
 //setObjectViewDistance [1000,50];
