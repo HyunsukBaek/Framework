@@ -309,6 +309,9 @@ class WeaponShops {
             { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, -1, "" },
             { "SmokeShellRed", "최루탄", 32000, 16000, "" },
 
+            //플레어 건
+            { "hgun_PDW2000_F", "플레어 건", 30000, 15000, "" },
+            
             //권총
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 5000, 1000, "" },
             { "hgun_P07_khk_F", "", 10000, 5000, "call life_donorlevel >= 1" }, //Apex DLC
