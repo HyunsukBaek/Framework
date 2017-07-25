@@ -187,7 +187,7 @@ class WeaponShops {
             { "acc_flashlight", "", 5000, -1, "" },
             { "acc_pointer_IR", "", 5000, -1, "" },
             { "hgun_Rook40_F", "", 20000, 15000, "" },
-            { "hgun_PDW2000_F", "플레어 건", 60000, 35000, "license_civ_level1" },
+            { "hgun_PDW2000_F", "플레어 건", 70000, 35000, "license_civ_level1" },
             { "SMG_01_F", "", 80000, 45000, "license_civ_level2" },
             { "SMG_02_F", "", 90000, 50000, "license_civ_level3" },
             //5.56
@@ -310,7 +310,7 @@ class WeaponShops {
             { "SmokeShellRed", "최루탄", 32000, 16000, "" },
 
             //플레어 건
-            { "hgun_PDW2000_F", "플레어 건", 30000, 15000, "" },
+            { "hgun_PDW2000_F", "플레어 건", 70000, 35000, "" },
             
             //권총
             { "hgun_P07_snds_F", $STR_W_items_StunPistol, 5000, 1000, "" },
@@ -569,7 +569,7 @@ class WeaponShops {
             { "hgun_ACPC2_F", "", 120000, 60000, "" },
             { "hgun_Rook40_F", "", 130000, 65000, "" },
             { "hgun_Pistol_heavy_01_F", "", 240000, 120000, "" },
-            { "hgun_PDW2000_F", "플레어 건", 270000, 135000, "" },
+            { "hgun_PDW2000_F", "플레어 건", 70000, 35000, "" },
             { "SMG_01_F", "", 390000, 145000, "" },
             { "SMG_02_F", "", 500000, 250000, "" }
         };
