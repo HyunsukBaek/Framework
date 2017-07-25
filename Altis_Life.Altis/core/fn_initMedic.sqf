@@ -17,3 +17,7 @@ if ((FETCH_CONST(life_medicLevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualT
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+//AOSoul Added
+[] execVM "AOSoul\FlareGun.sqf";	//FlareGun
+////////////////////////////////////////////
