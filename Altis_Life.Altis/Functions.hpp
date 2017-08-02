@@ -77,6 +77,7 @@ class Life_Client_Core {
         class cook {};	//AOSoul Cooking
         class processCasinoSlots {}; //Casino process
         class JetRocket {}; //JetPack
+        class medicjet {};	//Medic Jetpack
         //////////////////
     };
 

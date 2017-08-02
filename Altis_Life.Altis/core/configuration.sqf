@@ -61,6 +61,7 @@ life_CopWarningActive_male = false;
 life_CopWarningActive_female = false;
 life_CopPrisonSong = false;
 life_AOSOUL_Delay = false;
+life_medicjet = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

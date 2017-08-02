@@ -422,7 +422,7 @@ class Clothing {
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
             { "B_Parachute", "낙하산", 37500, "" },
-            { "B_AssaultPack_sgg", "JET PACK", 300000, "" }
+            { "B_Carryall_oucamo", "JET PACK", 300000, "" }
         };
     };
 
