@@ -68,7 +68,7 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
-            { "FirstAidKit", "", 3000, -1, "" },
+            { "FirstAidKit", "", 8000, -1, "" },
             { "NVGoggles", "", 10000, 1000, "" },
             { "acc_flashlight", "", 5000, -1, "" },
             { "acc_pointer_IR", "", 5000, -1, "" },
@@ -181,7 +181,7 @@ class WeaponShops {
         side = "civ";
         conditions = "";
         items[] = {
-            { "FirstAidKit", "", 3000, -1, "" },
+            { "FirstAidKit", "", 8000, -1, "" },
             { "NVGoggles", "", 10000, 1000, "" },
             { "Rangefinder", "", 10000, -1, "" },
             { "acc_flashlight", "", 5000, -1, "" },
@@ -239,7 +239,7 @@ class WeaponShops {
             { "ItemMap", "", 500, -1, "" },
             { "ItemCompass", "", 500, -1, "" },
             { "ItemWatch", "", 500, -1, "" },
-            { "FirstAidKit", "", 3000, -1, "" },
+            { "FirstAidKit", "", 8000, -1, "" },
             { "NVGoggles", "", 10000, 1000, "" },
             { "NVGoggles_INDEP", "", 10000, 1000, "call life_coplevel >= 1" },
             { "NVGoggles_tna_F", "", 10000, 1000, "license_civ_level2 || call life_coplevel >= 2" },
@@ -267,7 +267,7 @@ class WeaponShops {
             { "ItemMap", "", 500, -1, "" },
             { "ItemCompass", "", 500, -1, "" },
             { "ItemWatch", "", 500, -1, "" },
-            { "FirstAidKit", "", 3000, -1, "" },
+            { "FirstAidKit", "", 8000, -1, "" },
             { "NVGoggles", "", 10000, 1000, "" },
             { "Chemlight_red", "", 1500, 500, "" },
             { "Chemlight_yellow", "", 1500, 500, "" },
@@ -289,7 +289,7 @@ class WeaponShops {
             { "ItemMap", "", 500, -1, "" },
             { "ItemCompass", "", 500, -1, "" },
             { "ItemWatch", "", 500, -1, "" },
-            { "FirstAidKit", "", 3000, -1, "" },
+            { "FirstAidKit", "", 8000, -1, "" },
             { "acc_flashlight", "", 5000, -1, "" },
             { "acc_pointer_IR", "", 5000, -1, "" },
             { "Rangefinder", "", 10000, -1, "" },
@@ -557,7 +557,7 @@ class WeaponShops {
             { "ItemMap", "", 500, -1, "" },
             { "ItemCompass", "", 500, -1, "" },
             { "ItemWatch", "", 500, -1, "" },
-            { "FirstAidKit", "", 3000, -1, "" },
+            { "FirstAidKit", "", 8000, -1, "" },
             { "Rangefinder", "", 10000, -1, "" },
             { "NVGoggles", "", 10000, 1000, "" },
             { "NVGoggles_INDEP", "", 10000, 1000, "" },
