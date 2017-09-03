@@ -645,6 +645,7 @@ switch (_code) do {
         };
     };
 
+    /*
     //앉았다 느리게 일어나기 Shifh + 7
     case 8:
     {
@@ -670,6 +671,7 @@ switch (_code) do {
             player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
         };
     };
+    */
 
     //팔굽혀펴기 Shifh + 9
     case 10:
