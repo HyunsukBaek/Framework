@@ -83,7 +83,7 @@ class Life_Settings {
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 5; //Maximum number of houses a player can own.
+    house_limit = 2; //Maximum number of houses a player can own.
     houseGarage_buyPrice = 3000000;
     houseGarage_sellPrice = 1500000;
 
