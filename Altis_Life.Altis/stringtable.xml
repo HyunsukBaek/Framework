@@ -11012,7 +11012,7 @@
             <Polish>Upojenie publiczny</Polish>
         </Key>
         <Key ID="STR_Crime_487">
-            <Original>특수절도</Original>
+            <Original>기물파손</Original>
             <Czech>velká loupež</Czech>
             <French>Vol de voiture</French>
             <Spanish>Robo Mayor</Spanish>
@@ -11023,7 +11023,7 @@
             <German>Auto Diebstahl</German>
         </Key>
         <Key ID="STR_Crime_488">
-            <Original>절도</Original>
+            <Original>못생김</Original>
             <Czech>Petty Theft</Czech>
             <French>Petit vol</French>
             <Spanish>Robo Menor</Spanish>
@@ -11034,7 +11034,7 @@
             <German>Kleiner Diebstahl</German>
         </Key>
         <Key ID="STR_Crime_480">
-            <Original>뻑치기</Original>
+            <Original>아리랑치기</Original>
             <Czech>Zavinit nehodu a ujet</Czech>
             <French>Délit de fuite</French>
             <Spanish>Pega y Corre</Spanish>
@@ -11177,7 +11177,7 @@
             <Polish>Nie przestrzegając sygnalizacji czy</Polish>
         </Key>
         <Key ID="STR_Crime_4">
-            <Original>과속</Original>
+            <Original>기물파손</Original>
             <Czech>rychlá jízda</Czech>
             <Spanish>Exceso de Velocidad</Spanish>
             <Russian></Russian>
@@ -11321,7 +11321,7 @@
             <German>Illegale Kleidung</German>
         </Key>
         <Key ID="STR_Crime_17">
-            <Original>닉네임숨김</Original>
+            <Original>노상방뇨</Original>
             <Czech>Schovává tvář (Mask)</Czech>
             <Spanish>Ocultar su Cara (Máscara)</Spanish>
             <Italian>Nascondere faccia (Mask)</Italian>
@@ -11398,7 +11398,7 @@
             <Polish>Rezerwa Federalna łamanie</Polish>
         </Key>
         <Key ID="STR_Crime_24">
-            <Original>시민살인</Original>
+            <Original>살인</Original>
             <Czech>Zabíjení civilní</Czech>
             <Spanish>Homicidio de un Civil</Spanish>
             <Italian>Uccisione di un civile</Italian>
@@ -11409,7 +11409,7 @@
             <German>Töten eines Zivilen</German>
         </Key>
         <Key ID="STR_Crime_25">
-            <Original>공무원살인</Original>
+            <Original>살인</Original>
             <Czech>Zabití vojáka</Czech>
             <Spanish>Homicidio de un Soldado</Spanish>
             <Russian></Russian>
