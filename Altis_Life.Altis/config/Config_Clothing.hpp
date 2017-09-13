@@ -38,6 +38,18 @@ class Clothing {
             { "U_NikosAgedBody", $STR_C_Civ_Niko, 5000, "" },
             { "U_Competitor", "박대기 기자", 5000, "" },
             { "U_B_CombatUniform_mcam_vest", "헬로 키티", 10000, "" },
+
+			{ "U_C_ConstructionCoverall_Vrana_F", "", 5000, "" },
+			{ "U_C_ConstructionCoverall_Red_F", "", 5000, "call life_donorlevel >= 1" },
+			{ "U_C_ConstructionCoverall_Blue_F", "", 5000, "call life_donorlevel >= 1" },
+			{ "U_C_ConstructionCoverall_Black_F", "", 5000, "" },
+            { "U_C_IDAP_Man_TeeShorts_F", "", 15000, "" },
+            { "U_C_IDAP_Man_cargo_F", "", 15000, "" },
+            { "U_C_IDAP_Man_Jeans_F", "", 15000, "" },
+            { "U_C_IDAP_Man_Tee_F", "", 15000, "" },
+            { "U_C_IDAP_Man_casual_F", "", 15000, "" },
+            { "U_C_IDAP_Man_shorts_F", "", 15000, "" },
+
             { "U_C_Man_casual_1_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_2_F", "", 5000, "" }, //Apex DLC
             { "U_C_Man_casual_3_F", "", 5000, "" }, //Apex DLC
@@ -59,6 +71,19 @@ class Clothing {
             { "H_Cap_oli", "", 1500, "" },
             { "H_Cap_red", "", 1500, "" },
             { "H_Cap_tan", "", 1500, "" },
+
+            { "H_HeadSet_white_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_red_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_orange_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_yellow_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_black_F", "", 21500, "call life_donorlevel >= 1" },
+
+            { "H_Construction_basic_vrana_F", "", 32000, "" },
+            { "H_Construction_basic_yellow_F", "", 32000, "call life_donorlevel >= 2" },
+            { "H_Construction_basic_orange_F", "", 32000, "call life_donorlevel >= 1" },
+            { "H_PASGT_basic_blue_press_F", "", 22000, "" },
+            { "H_PASGT_neckprot_blue_press_F", "", 22000, "" },
+
             { "H_Helmet_Skate", "", 1500, "" }, //Apex DLC
             { "H_Bandanna_gry", "", 2000, "" },
             { "H_Bandanna_sgg", "", 2000, "" },
@@ -74,7 +99,11 @@ class Clothing {
             { "H_Booniehat_grn", "", 2000, "" },
             { "H_RacingHelmet_1_red_F", "", 2000, "" },
             { "H_RacingHelmet_1_white_F", "", 2000, "" },
-            { "H_RacingHelmet_2_F", "", 2000, "" }
+            { "H_RacingHelmet_2_F", "", 2000, "" },
+            { "H_Cap_surfer", "", 2000, "" },
+            { "H_PASGT_basic_white_F", "", 2000, "" },
+            { "H_Hat_Safari_sand_F", "", 32000, "call life_donorlevel >= 1" },
+            { "H_Hat_Safari_olive_F", "", 32000, "call life_donorlevel >= 2" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -127,6 +156,13 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
+
+            { "B_LegStrapBag_olive_F", "", 6500, "" },
+            { "B_LegStrapBag_coyote_F", "", 6500, "" },
+            { "B_Messenger_Olive_F", "", 7500, "" },
+            { "B_Messenger_Coyote_F", "", 7500, "" },
+            { "B_Messenger_Gray_F", "", 7500, "" },
+
             { "B_Carryall_ghex_f", "", 7500, "" }, //Apex DLC
             { "B_Bergen_dgtl_f", "", 9500, "" }, //Apex DLC
             { "B_Bergen_tna_f", "", 9500, "" }, //Apex DLC
@@ -165,7 +201,7 @@ class Clothing {
             { "H_MilCap_gen_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_tna_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_oucamo", "", 1200, "call life_coplevel >= 2" },
-            
+            { "H_Cap_Black_IDAP_F", "", 5000, "call life_coplevel >= 3" },
             { "H_Beret_Colonel", "", 4500, "call life_coplevel >= 2" },
             { "H_Bandanna_khk", "", 4500, "call life_donorlevel >= 1" },
             { "H_HelmetB_light", "", 4500, "call life_coplevel >= 2" },
@@ -174,9 +210,22 @@ class Clothing {
             { "H_PilotHelmetHeli_O", "", 4500, "call life_donorlevel >= 2" },
             { "H_HelmetB_light_black", "", 4500, "call life_coplevel >= 2" },
             { "H_HelmetB_black", "", 4500, "call life_coplevel >= 2" },
+            { "H_Construction_basic_black_F", "", 32000, "call life_donorlevel >= 2" },
+            { "H_HeadSet_white_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_red_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_orange_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_yellow_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_black_F", "", 21500, "call life_donorlevel >= 1" },
             { "H_RacingHelmet_4_F", "", 4500, "call life_donorlevel >= 2" },
             { "H_HelmetO_ViperSP_ghex_F", "", 399000, "call life_coplevel >= 2" },
-            
+            { "H_Beret_gen_F", "", 2000, "call life_donorlevel >= 2" },
+            { "H_HeadBandage_clean_F", "", 2000, "" },
+            { "H_HeadBandage_bloody_F", "", 2000, "" },
+            { "H_HeadBandage_stained_F", "", 2000, "" },
+            { "H_Hat_Safari_sand_F", "", 32000, "call life_donorlevel >= 1" },
+            { "H_Hat_Safari_olive_F", "", 32000, "call life_donorlevel >= 2" },
+
+
 			         //AOSoul Added
             { "H_CrewHelmetHeli_B", "방독면", 5200, "call life_coplevel >= 1" }
         };
@@ -184,6 +233,7 @@ class Clothing {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
             { "G_Squares", "", 1000, "" },
             { "G_Shades_Blue", "", 1000, "" },
+            { "G_WirelessEarpiece_F", "", 2000, "" },
             { "G_Sport_Blackred", "", 1000, "" },
             { "G_Sport_Checkered", "", 1000, "" },
             { "G_Sport_Blackyellow", "", 1000, "" },
@@ -230,6 +280,9 @@ class Clothing {
             { "B_Carryall_cbr", "", 2500, "" },
             { "B_Parachute", "", 2500, "" },
             { "B_OutdoorPack_blk", "", 2500, "" },
+            { "B_Messenger_Black_F", "", 2500, "" },
+            { "B_Messenger_Gray_F", "", 2500, "" },
+            { "B_LegStrapBag_black_F", "", 2500, "" },
             { "B_AssaultPack_sgg", "JET PACK", 300000, ""}//jetpack
         };
     };
@@ -369,7 +422,7 @@ class Clothing {
             { "U_B_Wetsuit", "EMS 잠수복", 5000, "" },
             { "U_B_HeliPilotCoveralls", "", 15000, "" },
             { "U_I_pilotCoveralls", "", 15000, "" },
-            { "U_I_HeliPilotCoveralls", "", 15000, "" }
+			{ "U_C_Paramedic_01_F", "", 15000, "call life_mediclevel >= 3" }
 
         };
         headgear[] = {
@@ -383,14 +436,30 @@ class Clothing {
             { "H_Bandanna_surfer", "", 1000, "" },
             { "H_Bandanna_blu", "", 1000, "" },
             { "H_Cap_marshal", "", 1000, "" },
+            { "H_Cap_Orange_IDAP_F", "", 5000, "" },
+            { "H_Cap_White_IDAP_F", "", 5000, "" },
             { "H_RacingHelmet_1_green_F", "", 5000, "" },
             { "H_RacingHelmet_1_blue_F", "", 5000, "" },
             { "H_RacingHelmet_1_orange_F", "", 5000, "" },
             { "H_Cap_oli", "", 5000, "" },
+            { "H_Hat_Safari_sand_F", "", 32000, "call life_donorlevel >= 1" },
+            { "H_Hat_Safari_olive_F", "", 32000, "call life_donorlevel >= 2" },
+            { "H_Construction_basic_vrana_F", "", 32000, "call life_donorlevel >= 1" },
+            { "H_Construction_basic_yellow_F", "", 32000, "call life_donorlevel >= 2" },
+            { "H_Construction_basic_orange_F", "", 32000, "call life_donorlevel >= 1" },
+            { "H_Construction_basic_red_F", "", 32000, "call life_donorlevel >= 2" },
+            { "H_HeadSet_white_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_red_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_orange_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_yellow_F", "", 21500, "call life_donorlevel >= 1" },
+            { "H_HeadSet_black_F", "", 21500, "call life_donorlevel >= 1" },
             { "H_CrewHelmetHeli_B", "", 65000, "" },
             { "H_PilotHelmetFighter_I", "", 165000, "" },
             { "H_PilotHelmetHeli_B", "", 5000, "" },
-            { "H_PilotHelmetHeli_I", "", 5000, "" }
+            { "H_PilotHelmetHeli_I", "", 5000, "" },
+            { "H_HeadBandage_clean_F", "", 2000, "" },
+            { "H_HeadBandage_bloody_F", "", 2000, "" },
+            { "H_HeadBandage_stained_F", "", 2000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -399,6 +468,12 @@ class Clothing {
             { "G_Sport_Checkered", "", 1000, "" },
             { "G_Sport_Blackyellow", "", 1000, "" },
             { "G_Sport_BlackWhite", "", 1000, "" },
+
+            { "G_Respirator_white_F", "", 2000, "" },
+            { "G_Respirator_blue_F", "", 2000, "" },
+            { "G_Respirator_yellow_F", "", 2000, "" },
+            { "G_EyeProtectors_F", "", 2000, "" },
+
             { "G_Squares", "", 1000, "" },
             { "G_Aviator", "", 1000, "" },
             { "G_Lady_Mirror", "", 1000, "" },
@@ -421,8 +496,12 @@ class Clothing {
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
             { "B_Carryall_cbr", "", 7500, "" },
+            { "B_Messenger_IDAP_F", "", 17500, "" },
             { "B_Parachute", "낙하산", 37500, "" },
+            { "C_IDAP_UAV_06_medical_backpack_F", "", 900000, "" },
+            { "C_UAV_06_medical_backpack_F", "", 50000, "" },
             { "B_Carryall_oucamo", "JET PACK", 300000, "" }
+
         };
     };
 
@@ -455,6 +534,8 @@ class Clothing {
             { "H_Shemag_olive", "", 850, "" },
             { "H_HelmetO_ocamo", "", 2500, "" },
             { "H_MilCap_oucamo", "", 12000, "" },
+			{ "H_PASGT_basic_olive_F", "", 10000, "" },
+			{ "H_PASGT_basic_blue_F", "", 10000, "" },
             { "H_CrewHelmetHeli_B", "Gas Mask", 90000, "" },
             { "H_HelmetO_ViperSP_hex_F", "특수목적hex", 590000, "" }
         };
