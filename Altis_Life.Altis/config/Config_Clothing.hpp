@@ -498,8 +498,7 @@ class Clothing {
             { "B_Carryall_cbr", "", 7500, "" },
             { "B_Messenger_IDAP_F", "", 17500, "" },
             { "B_Parachute", "낙하산", 37500, "" },
-            { "C_IDAP_UAV_06_medical_backpack_F", "", 900000, "" },
-            { "C_UAV_06_medical_backpack_F", "", 50000, "" },
+            { "I_UAV_06_medical_backpack_F", "", 900000, "" },
             { "B_Carryall_oucamo", "JET PACK", 300000, "" }
 
         };
