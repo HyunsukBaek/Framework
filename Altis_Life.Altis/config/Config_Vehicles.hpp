@@ -32,6 +32,9 @@ class CarShops {
             { "C_Hatchback_01_sport_F", "license_civ_level2" },
             //트럭 기본
             { "C_Van_01_transport_F", "" },
+            { "C_IDAP_Van_02_transport_F", "" },
+            { "C_Van_02_transport_F", "" },
+            { "C_Van_02_service_F", "" },
             //오프로드
             { "C_Offroad_02_unarmed_F", "" } //Apex DLC
         };
@@ -190,6 +193,8 @@ class CarShops {
             { "B_MRAP_01_F", "call life_donorlevel >= 1" },
             //스트라이더
             { "I_MRAP_03_F", "" },
+            { "C_Van_02_medevac_F", "" },
+            { "C_IDAP_Van_02_medevac_F", "" },
 
             //자마크 의무
             { "I_Truck_02_medical_F", "" },
@@ -1591,4 +1596,42 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 40000000;
         textures[] = {};
     };
+
+    class C_Van_02_transport_F {
+        vItemSpace = 110;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 1250000;
+        textures[] = {};
+    };
+
+	class C_IDAP_Van_02_transport_F {
+		vItemSpace = 110;
+		conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+		price = 1350000;
+        textures[] = {};
+    };
+
+	class C_Van_02_medevac_F {
+		vItemSpace = 110;
+		conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+		price = 800000;
+        textures[] = {};
+    };
+
+	class C_IDAP_Van_02_medevac_F {
+		vItemSpace = 110;
+		conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+		price = 750000;
+        textures[] = {};
+    };
+
+	class C_Van_02_service_F {
+		vItemSpace = 120;
+		conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+		price = 1750000;
+        textures[] = {};
+    };
+};
+
+
 };
