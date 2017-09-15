@@ -1632,6 +1632,3 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
 };
-
-
-};
