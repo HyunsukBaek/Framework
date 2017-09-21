@@ -176,6 +176,7 @@ class CfgRemoteExec {
         F(bis_fnc_setovercast,ANYONE)
         F(bis_fnc_bloodeffect,ANYONE)
         F(bis_fnc_saymessage,ANYONE)
+        F(bis_fnc_initleaflet,ANYONE)
         F(life_fnc_stringfishing,CLIENT)    //AOSoul StringFishing
         F(life_fnc_Electricfishing,CLIENT)    //AOSoul ElectricFishing
         F(life_fnc_robstore,CLIENT)    //AOSoul RobGasStation
