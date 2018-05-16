@@ -47,7 +47,9 @@ life_pos_exist = false;
 life_pos_attach = [];
 life_civ_position = [];
 life_markers = false;
+life_markers_active = false;
 life_canpay_bail = true;
+life_storagePlacing = scriptNull;
 
 //AOSoul Added
 Life_cooking = false;

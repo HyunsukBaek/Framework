@@ -2,7 +2,7 @@
 //0 = Default behavior, available only in editor
 //1 = Available in SP and for hosts / logged in admins
 //2 = Available for everyone
-
+ 
 //Channel Number
 //0 = Global
 //1 = Side
@@ -62,7 +62,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
 };
-
+ 
 class CfgSounds {
     sounds[] = {};
     class sirenYelp {
