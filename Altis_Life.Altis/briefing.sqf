@@ -44,7 +44,7 @@ TEXT HERE<br/><br/>
 		2016.2 Soul(Fucker) Life 오픈<br/>
 		2016.3 국내 최대 IDC로 서버 영구임대 호스팅 <br/>
 		2016.4 최고 동시접속인원 70명 돌파<br/>
-		2016.4 휴식기에 있던 AOS 님을 초빙, The AOSoul 로 AOS와 Soul 카페/서버 통합<br/>
+		2016.4 The AOSoul 로 AOS와 Soul 카페/서버 통합<br/>
 		2016.5 최고 동접 80명 돌파 <br/>
 		2016.6 서버 업그레이드<br/>
 		2016.6 테스크포스 애로우헤드 라디오(TFAR) 애드온 도입 <br/>
@@ -57,6 +57,8 @@ TEXT HERE<br/><br/>
 		2016.12 서버접속 GUID 6000명 돌파<br/>
 		2016.12 Altis 맵에서 Metropolis 맵으로 변경, 컨텐츠 추가<br/>
 		2017.5 3시즌 시작<br/>
+		2017.10 x시즌 시작<br/>
+		2018.5 all new 시즌 시작<br/>
                 "
         ]
     ];
