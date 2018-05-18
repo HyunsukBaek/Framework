@@ -23,7 +23,6 @@ call {
         hint localize "STR_NOTF_didNotSelectItemToGive";
     };
 
-
     private _unit = lbData [2023, lbCurSel 2023];
     _unit = call compile format ["%1",_unit];
 
@@ -46,9 +45,6 @@ call {
 
     [_unit, _value, _item, player] remoteExecCall ["life_fnc_receiveItem", _unit];
     private _type = M_CONFIG(getText,"VirtualItems",_item,"displayName");
-    
-    if (localize _type isEqualTo "뉴스마이크") exitWith {hint localize "STR_NOTF_couldNotGiveItem";ctrlShow[2002,true];};// 마이크 남에게 주지 못함
-    
     hint format [localize "STR_NOTF_youGaveItem", _unit getVariable ["realname", name _unit], _value, localize _type];
 
     [] call life_fnc_p_updateMenu;

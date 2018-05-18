@@ -17,10 +17,10 @@ _handled = false;
 
 _interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 //hint str _code;
-_interruptionKeys = [17,30,31,32];//A,S,W,D
+_interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
-if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
+if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute") || _code in (actionKeys "SitDown") || _code in (actionKeys "Throw") || _code in (actionKeys "GetIn") || _code in (actionKeys "GetOut") || _code in (actionKeys "Fire") || _code in (actionKeys "ReloadMagazine") || _code in [16,18]) && ((player getVariable ["restrained",false]) || (player getVariable ["playerSurrender",false]) || life_isknocked || life_istazed)) exitWith {
     true;
 };
 
@@ -42,7 +42,7 @@ if (!(count (actionKeys "User10") isEqualTo 0) && {(inputAction "User10" > 0)}) 
     //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
     if (!life_action_inUse) then {
         [] spawn {
-        private "_handle";
+            private "_handle";
             _handle = [] spawn life_fnc_actionKeyHandler;
             waitUntil {scriptDone _handle};
             life_action_inUse = false;
@@ -100,7 +100,7 @@ if (life_container_active) exitwith {
 switch (_code) do {
     // -- Disable commander/tactical view
     if (LIFE_SETTINGS(getNumber,"disableCommanderView") isEqualTo 1) then {
-    private _CommandMode = actionKeys "tacticalView";
+        private _CommandMode = actionKeys "tacticalView";
 
         if (_code in _CommandMode) then {
             hint localize "STR_NOTF_CommanderView";
@@ -111,9 +111,9 @@ switch (_code) do {
     //Space key for Jumping
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};
-        if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")}&& {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {speed player > 2}&& {!life_is_arrested}&& {((velocity player) select 2) < 2.5}&& {time - jumpActionTime > 1.5}) then {
+        if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
             jumpActionTime = time; //Update the time.
-            [player] remoteExec ["life_fnc_jumpFnc",RANY];//Global execution
+            [player] remoteExec ["life_fnc_jumpFnc",RANY]; //Global execution
             _handled = true;
         };
     };
@@ -148,8 +148,8 @@ switch (_code) do {
     //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
     case _interactionKey: {
         if (!life_action_inUse) then {
-            [] spawn {
-            private "_handle";
+            [] spawn  {
+                private "_handle";
                 _handle = [] spawn life_fnc_actionKeyHandler;
                 waitUntil {scriptDone _handle};
                 life_action_inUse = false;
@@ -160,7 +160,7 @@ switch (_code) do {
     //Restraining (Shift + R)
     case 19: {
         if (_shift) then {_handled = true;};
-        if (_shift && playerSide isEqualTo west && {!isNull cursorObject}&& {cursorObject isKindOf "Man"}&& {(isPlayer cursorObject)}&& {(side cursorObject in [civilian,independent])}&& {alive cursorObject}&& {cursorObject distance player < 3.5}&& {!(cursorObject getVariable "Escorting")}&& {!(cursorObject getVariable "restrained")}&& {speed cursorObject < 1}) then {
+        if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
             [] call life_fnc_restrainAction;
         };
     };
@@ -183,7 +183,7 @@ switch (_code) do {
                     [vehicle player] spawn life_fnc_openInventory;
                 };
             } else {
-            private "_list";
+                private "_list";
                 _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
                 if (!(isNil "_list")) then {
                     _house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
@@ -194,7 +194,7 @@ switch (_code) do {
                     };
                 } else {
                     _list = ["landVehicle","Air","Ship"];
-                    if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 7}&& {isNull objectParent player}&& {alive cursorObject}&& {!life_action_inUse}) then {
+                    if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 7} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
                         if (cursorObject in life_vehicles || {locked cursorObject isEqualTo 0}) then {
                             [cursorObject] spawn life_fnc_openInventory;
                         };
@@ -208,7 +208,7 @@ switch (_code) do {
     case 38: {
         //If cop run checks for turning lights on.
         if (_shift && playerSide in [west,independent]) then {
-            if (!(isNull objectParent player) && (typeOf vehicle player) in ["C_Offroad_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Offroad_02_unarmed_F","I_MRAP_03_F","I_MRAP_03_hmg_F","B_MRAP_01_F","B_MRAP_01_hmg_F","I_Truck_02_covered_F","I_Truck_02_ammo_F","O_Truck_03_ammo_F","B_Truck_01_ammo_F","B_Heli_Light_01_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","I_Heli_light_03_unarmed_F","O_Heli_Transport_04_F","O_Heli_Transport_04_covered_F","B_Heli_Transport_03_unarmed_F","B_Heli_Light_01_armed_F","I_Heli_light_03_F","B_Heli_Attack_01_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Plane_CAS_01_dynamicLoadout_F","B_Plane_Fighter_01_Stealth_F","B_Plane_Fighter_01_F","B_Boat_Transport_01_F","C_Boat_Civil_01_police_F","C_Boat_Civil_01_rescue_F","C_Boat_Transport_02_F","B_Boat_Armed_01_minigun_F","O_Boat_Armed_01_hmg_F","B_SDV_01_F","O_SDV_01_F","I_SDV_01_F","B_Quadbike_01_F","I_Truck_02_medical_F","O_Truck_03_medical_F","I_Truck_02_box_F","O_Truck_03_repair_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","B_Truck_01_mover_F","O_Heli_Transport_04_repair_F","O_Heli_Transport_04_fuel_F","O_Heli_Transport_04_medevac_F"]) then {
+            if (!(isNull objectParent player) && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
                 if (!isNil {vehicle player getVariable "lights"}) then {
                     if (playerSide isEqualTo west) then {
                         [vehicle player] call life_fnc_sirenLights;
@@ -220,7 +220,7 @@ switch (_code) do {
             };
         };
 
-        if (!_alt && !_ctrlKey) then {[] call life_fnc_radar;};
+        if (!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
     };
 
     //Y Player Menu
@@ -259,53 +259,6 @@ switch (_code) do {
                     _jip = [_veh] remoteExec ["life_fnc_medicSiren",RCLIENT,true];
                 };
                 _veh setVariable ["sirenJIP",_jip,true];
-            };
-        };
-        
-        //AOSOUL Added
-        //Shift + F Stop Vehicle Male
-        if (_shift) then {
-            if (playerSide in [west] && {vehicle player != player}&& {!life_CopWarningActive_male}&& {((driver vehicle player) == player)}) then {
-                [] spawn {
-                    life_CopWarningActive_male = true;
-                    sleep 2;
-                    life_CopWarningActive_male = false;
-                };
-
-                _veh = vehicle player;
-                if (isNil {_veh getVariable "Stop_M"}) then {_veh setVariable ["Stop_M",false,true];};
-                if ((_veh getVariable "Stop_M")) then {
-                    titleText [localize "STR_AOSOUL_CopWarning_Male_Off","PLAIN"];
-                    _veh setVariable ["Stop_M",false,true];
-                } else {
-                    titleText [localize "STR_AOSOUL_CopWarning_Male_On","PLAIN"];
-                    _veh setVariable ["Stop_M",true,true];
-                    if (playerSide isEqualTo west) then {
-                        [_veh] remoteExec ["life_fnc_CopCustomSirenM",RCLIENT];
-                    };
-                };
-            };
-        };
-        //ctrl + F Stop Vehicle Female
-        if (_ctrlKey) then {
-            if (playerSide in [west] && {vehicle player != player}&& {!life_CopWarningActive_female}&& {((driver vehicle player) == player)}) then {
-                [] spawn {
-                    life_CopWarningActive_female = true;
-                    sleep 2;
-                    life_CopWarningActive_female = false;
-                };
-
-                _veh = vehicle player;
-                if (isNil {_veh getVariable "Stop_F"}) then {_veh setVariable ["Stop_F",false,true];};
-                if ((_veh getVariable "Stop_F")) then {
-                    titleText [localize "STR_AOSOUL_CopWarning_Female_Off","PLAIN"];
-                    _veh setVariable ["Stop_F",false,true];
-                } else {
-                    titleText [localize "STR_AOSOUL_CopWarning_Female_On","PLAIN"];
-                    _veh setVariable ["Stop_F",true,true];
-                    if (playerSide isEqualTo west) then {
-                        [_veh] remoteExec ["life_fnc_CopCustomSirenF",RCLIENT];
-                };
             };
         };
     };

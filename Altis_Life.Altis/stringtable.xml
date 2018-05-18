@@ -4574,6 +4574,9 @@
             <Russian>Захват шайка укрытие</Russian>
             <German>Gangversteck einnehmen</German>
         </Key>
+        <Key ID="STR_NOTF_couldNotGiveItem">
+        	<Original>이아이템은 남에게 줄 수 없습니다.</Original>
+        </Key>
         <Key ID="STR_NOTF_emptyArray_levelCheck">
             <Original>An empty array was passed to fn_levelCheck.sqf</Original>
             <Czech>An empty array was passed to fn_levelCheck.sqf</Czech>
@@ -4584,9 +4587,6 @@
             <Portuguese>An empty array was passed to fn_levelCheck.sqf</Portuguese>
             <Russian>An empty array was passed to fn_levelCheck.sqf</Russian>
             <German>Ein leeres Feld wurde an fn_levelCheck.sqf übergeben.</German>
-        </Key>
-        <Key ID="STR_NOTF_couldNotGiveItem">
-        	<Original>이아이템은 남에게 줄 수 없습니다.</Original>
         </Key>
     </Package>
     <Package name="News_Strings">
@@ -5776,7 +5776,7 @@
             <Polish>Dzwięk został ustawiony w tryb wyciszony!</Polish>
         </Key>
         <Key ID="STR_MISC_overviewText">
-            <Original>AOSoul 라이프 카페/공지확인 필수</Original>
+            <Original>AOSoul 라이프 시즌3 카페/공지확인 필수</Original>
             <Czech>Mód RPG hra vyvinutá Tonic.</Czech>
             <French>Un mode de jeu de RPG développé par Tonic.</French>
             <Spanish>Un modo de juego de rol desarrollado por Tonic.</Spanish>

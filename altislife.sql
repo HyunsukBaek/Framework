@@ -197,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `containers` (
 --
 -- Table structure for table `wanted`
 -- Needed for extDB latest update on git
---
+-- 
 
 CREATE TABLE IF NOT EXISTS `wanted` (
   `wantedID` varchar(64) NOT NULL,

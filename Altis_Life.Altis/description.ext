@@ -2,7 +2,7 @@
 //0 = Default behavior, available only in editor
 //1 = Available in SP and for hosts / logged in admins
 //2 = Available for everyone
- 
+
 //Channel Number
 //0 = Global
 //1 = Side
@@ -62,7 +62,7 @@ class RscTitles {
 class CfgFunctions {
     #include "Functions.hpp"
 };
- 
+
 class CfgSounds {
     sounds[] = {};
     class sirenYelp {
@@ -103,13 +103,13 @@ class CfgSounds {
 
     class lockCarSound {
         name = "lockCarSound";
-        sound[] = {"\sounds\carLock.ogg", 0.4, 1};
+        sound[] = {"\sounds\carLock.ogg", 1.0, 1};
         titles[] = {};
     };
 
     class unlockCarSound {
         name = "unlockCarSound";
-        sound[] = {"\sounds\carUnlock.ogg", 0.4, 1};
+        sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
     
