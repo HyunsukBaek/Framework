@@ -1196,7 +1196,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "textures\AOSoul\vehicles\Van_01_box_ambred_front.paa",
                 "textures\AOSoul\vehicles\Van_01_box_ambred_back.paa"
             }, "" },
-            { "AOSoul 택배", "civ", {
+            { "택배", "civ", {
                 "textures\AOSoul\vehicles\van_box_delivery_kor_front.paa",
                 "textures\AOSoul\vehicles\van_box_delivery_kor_back.paa"
             }, "call life_donorlevel >= 1" }

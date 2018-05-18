@@ -5776,7 +5776,7 @@
             <Polish>Dzwięk został ustawiony w tryb wyciszony!</Polish>
         </Key>
         <Key ID="STR_MISC_overviewText">
-            <Original>AOSoul 라이프 시즌3 카페/공지확인 필수</Original>
+            <Original>Untitled Life 카페/공지확인 필수</Original>
             <Czech>Mód RPG hra vyvinutá Tonic.</Czech>
             <French>Un mode de jeu de RPG développé par Tonic.</French>
             <Spanish>Un modo de juego de rol desarrollado por Tonic.</Spanish>
@@ -10637,7 +10637,7 @@
         
         <!--  AOSoul Added  -->
         <Key ID="STR_MAR_FED_aoscasino">
-            <Original>Federal Reserve - AOSoul Casino</Original>
+            <Original>Federal Reserve - Casino</Original>
         </Key>
         <Key ID="STR_MAR_FED_illcasino">
             <Original>Federal Reserve - illegal Casino</Original>

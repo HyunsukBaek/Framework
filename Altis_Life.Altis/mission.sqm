@@ -283,7 +283,7 @@ class AddonsMetaData
 randomSeed=2639488;
 class ScenarioData
 {
-	author="AOSoul based on Tonic";
+	author="Untitled based on AOSoul and Tonic";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";
@@ -377,7 +377,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="AOSoul Life Season 3";
+		briefingName="Untitled Life";
 		startWeather=0;
 		startWind=0.29999998;
 		startWindDir=20;
@@ -33124,7 +33124,7 @@ class Mission
 			dataType="Marker";
 			position[]={16665.891,79.40181,13583.036};
 			name="marker_361";
-			text="AOSoul CASINO";
+			text="CASINO";
 			type="mil_end";
 			colorName="ColorBlue";
 			alpha=0.96676362;
@@ -46531,7 +46531,7 @@ class Mission
 			dataType="Marker";
 			position[]={13813.982,80.165283,6864.4028};
 			name="marker_371";
-			text="AOSoul CASINO( illegal )";
+			text="CASINO( illegal )";
 			type="mil_end";
 			colorName="ColorRed";
 			alpha=0.96676362;
@@ -73089,7 +73089,7 @@ class Mission
 			dataType="Marker";
 			position[]={22145.916,0,14463.863};
 			name="jail";
-			text="AOSoul Jail";
+			text="Jail";
 			type="loc_Ruin";
 			colorName="ColorRed";
 			angle=132.37794;
@@ -90402,7 +90402,7 @@ class Mission
 			dataType="Marker";
 			position[]={14598.349,0,16903.859};
 			name="marker_273";
-			text="AOSoul Court. ";
+			text="Court. ";
 			type="u_installation";
 			colorName="ColorBlue";
 			id=6463;

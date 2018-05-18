@@ -25,7 +25,7 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["credits",
         [
-            "AOSoul",
+            "Untitled",
                 "
 			PVP, 저격질, 장비질 보단 상황에 따른 역할극(RPG)을 플레이하는 LIFE서버입니다. (pvp 아닙니다!!)<br/>
 			누군가를 사살하거나 강도짓을 할 때, 그에 따른 상황을 만들어야지만 제재받지 아니합니다.<br/>
@@ -39,7 +39,7 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["changelog",
         [
-            "AOSoul Life Changelog",
+            "Untitled Life Changelog",
                 "
 		2016.2 Soul(Fucker) Life 오픈<br/>
 		2016.3 국내 최대 IDC로 서버 영구임대 호스팅 <br/>
