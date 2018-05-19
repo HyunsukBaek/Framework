@@ -85506,7 +85506,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_aosoul.paa""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_untitled.jpg""];";
 			};
 			id=6096;
 			type="Land_Billboard_F";
@@ -86414,7 +86414,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_aosoul.paa""];";
+				init="this enableSimulation false; this allowDamage false;this setObjectTexture [0, ""textures\AOSoul\board\notice_untitled.jpg""];";
 			};
 			id=6166;
 			type="Land_Billboard_F";

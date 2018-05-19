@@ -32,7 +32,7 @@ TEXT HERE<br/><br/>
 			제 2의 라이프를 본 서버에서 느끼며 재미와 힐링하는 시간 가지길 바랍니다. <br/>
 			유머게시판에  재밌는 RP플레이 영상있으니 참고하세요<br/>
      카페주소: http://cafa.naver.com/alflrss <br/>
-     디스코드: https://discord.gg/tVyFjzm <br/>
+     디스코드: https://discord.gg/EpM6yYK <br/>
                 "
         ]
     ];
@@ -57,8 +57,8 @@ TEXT HERE<br/><br/>
 		2016.12 서버접속 GUID 6000명 돌파<br/>
 		2016.12 Altis 맵에서 Metropolis 맵으로 변경, 컨텐츠 추가<br/>
 		2017.5 3시즌 시작<br/>
-		2017.10 x시즌 시작<br/>
-		2018.5 all new 시즌 시작<br/>
+		2017.10 x시즌 시작 - los santos map<br/>
+		2018.5 all new 시즌 - untitled life - no addon시작<br/>
                 "
         ]
     ];
