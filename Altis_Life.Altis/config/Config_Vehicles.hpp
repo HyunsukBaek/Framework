@@ -1144,10 +1144,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "EMS119 후원2", "med",         {"textures\AOSoul\vehicles\suv_EMS_kor119.paa"}, "call life_donorlevel >= 2" },
             { "KOPD", "cop",                {"textures\AOSoul\vehicles\suv_112.paa"}, "" },
             { "LAPD", "cop",                {"textures\AOSoul\vehicles\suv_lapd.paa"}, "" },
-            { "Blue poltan", "civ",         {"textures\AOSoul\vehicles\suv_bluepoltan.paa"}, "" },
-            { "slime", "cop",               {"textures\AOSoul\vehicles\suv_slime.paa"}, "call life_donorlevel >= 4" },
             //Test
-            { "Raptor", "cop",              {"textures\AOSoul\vehicles\suv_allblack_raptor.paa"}, "call life_donorlevel >= 4" },
+            { "Raptor", "cop",              {"textures\AOSoul\vehicles\suv_allblack_raptor.paa"}, "call life_donorlevel >= 5" },
             { "Flower_후원3", "civ",         {"textures\AOSoul\vehicles\suv_vip.paa"}, "call life_donorlevel >= 3" },
             { "검찰", "civ",                 {"textures\AOSoul\vehicles\suv_prosecutors_office.paa"}, "call life_donorlevel >= 5" },
             { "KOR119_black", "cop",       {"textures\AOSoul\vehicles\suv_interceptor_cop_black.paa"}, "call life_coplevel >= 5" },
