@@ -127,7 +127,7 @@ private _offset = switch (typeOf _vehicle) do {
     };
 };
 
-_lightRight lightAttachObject [_vehicle, _offset];
+_lightLeft lightAttachObject [_vehicle, _offset];
 
 _lightLeft setLightAttenuation [0.181, 0, 1000, 130];
 _lightLeft setLightIntensity 10;
@@ -243,7 +243,7 @@ _offset = switch (typeOf _vehicle) do {
     };    
     case "I_SDV_01_F":
     {
-        [0.6,1.5,-1.6]];
+        [0.6,1.5,-1.6];
     };
 };
 
