@@ -8,6 +8,7 @@
 */
 private ["_value"];
 _value = parseNumber(ctrlText 2702);
+exitWith {hint "시스템점검으로 갱자금 입금이 불가능합니다, Deposit is not available cause of maintenence"};
 group player setVariable ["gbank_in_use_by",player,true];
 
 //Series of stupid checks
