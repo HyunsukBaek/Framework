@@ -183,7 +183,7 @@ class VirtualItems {
         displayName = "STR_Item_FuelE";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 500;
+        sellPrice = -1;
         illegal = false;
         edible = -1;
         icon = "icons\ico_fuelEmpty.paa";
@@ -193,7 +193,7 @@ class VirtualItems {
         variable = "fuelFull";
         displayName = "STR_Item_FuelF";
         weight = 5;
-        buyPrice = 2500;
+        buyPrice = 10000;
         sellPrice = 1500;
         illegal = false;
         edible = -1;
