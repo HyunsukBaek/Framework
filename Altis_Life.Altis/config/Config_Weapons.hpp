@@ -126,7 +126,8 @@ class WeaponShops {
             { "launch_RPG32_F", "", 730000, 330000, "license_civ_level5" },
             { "launch_RPG32_ghex_F", "", 830000, 430000, "call life_donorlevel >= 2" },
             { "launch_B_Titan_short_F", "", 830000, 330000, "license_civ_level5 && call life_donorlevel >= 2" },
-            { "launch_NLAW_F", "", 870000, 330000, "license_civ_level4 && call life_donorlevel >= 1" }
+            { "launch_NLAW_F", "", 870000, 330000, "license_civ_level4 && call life_donorlevel >= 1" },
+			{ "launch_MRAWS_sand_F", "", 999999, -1, "license_civ_level3 && call life_donorlevel >= 3" }
         };
         mags[] = {
             { "30Rnd_580x42_Mag_Tracer_F", "", 5000, 2500, "" },
