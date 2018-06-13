@@ -113,7 +113,7 @@ class Life_Settings {
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 100000; //Amount of cash in bank for new cops
-    bank_civ = 200000; //Amount of cash in bank for new civillians
+    bank_civ = 100000; //Amount of cash in bank for new civillians
     bank_med = 100000; //Amount of cash in bank for new medics
 
     paycheck_cop = 30000; //Payment for cops
