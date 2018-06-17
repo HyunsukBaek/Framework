@@ -68,19 +68,19 @@ class GPS_Localization {
 	};
 	//keys
 	class STR_quicknav_open_key {
-		kr="열기/닫기 네비게이션";
+		kr="퀵 네비 열기/닫기";
 		en="Open/Close nav. rapide";
 		fr="Ouvrir/Fermer nav. rapide";
 		pl = "Otwórz/zamknij szybko nawigację";
 	};
 	class STR_quicknav_switch_key {
-		kr="다음 퀵 네비게이션 tab";
+		kr="퀵 내비 목적지 변경";
 		en="Next quicknav tab";
 		fr="Prochain nav. rapide";
 		pl = "Następna zakładka nawigacji";
 	};
 	class STR_quicknav_execute_key {
-		kr="퀵 네비게이션 실행";
+		kr="퀵 네비 실행";
 		en="Execute quicknav";
 		fr="Exécuter nav. rapide";
 		pl = "Wykonaj quicknav"; //?
