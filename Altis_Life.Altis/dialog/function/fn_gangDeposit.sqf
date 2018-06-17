@@ -8,7 +8,6 @@
 */
 private ["_value"];
 _value = parseNumber(ctrlText 2702);
-exitWith {hint "Deposit is not available cause of maintenence";};
 group player setVariable ["gbank_in_use_by",player,true];
 
 //Series of stupid checks

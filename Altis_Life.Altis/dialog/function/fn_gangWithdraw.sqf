@@ -8,7 +8,6 @@
 */
 private ["_value"];
 _value = parseNumber(ctrlText 2702);
-exitWith {hint "Withdraw is not available cause of maintenence";};
 _gFund = GANG_FUNDS;
 group player setVariable ["gbank_in_use_by",player,true];
 
