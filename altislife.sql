@@ -34,32 +34,32 @@ DELIMITER $$
 -- CURRENT_USER function returns the name of the current user in the SQL Server database.
 --
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`root` PROCEDURE `resetLifeVehicles`()
 BEGIN
   UPDATE `vehicles` SET `active`= 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`root` PROCEDURE `deleteDeadVehicles`()
 BEGIN
   DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`root` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`root` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldContainers`()
+CREATE DEFINER=`root` PROCEDURE `deleteOldContainers`()
 BEGIN
   DELETE FROM `containers` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldWanted`()
+CREATE DEFINER=`root` PROCEDURE `deleteOldWanted`()
 BEGIN
   DELETE FROM `wanted` WHERE `active` = 0;
 END$$
@@ -222,7 +222,7 @@ INSERT INTO `dynmarket` VALUES (1,'[]');
 -- Reloads the privileges from the grant tables in the MySQL system database.
 --
 
-CREATE USER IF NOT EXISTS `arma3`@`localhost` IDENTIFIED BY 'changeme';
+CREATE USER IF NOT EXISTS `arma3`@`localhost` IDENTIFIED BY 'qorgustjr83!';
 GRANT SELECT, UPDATE, INSERT, EXECUTE ON `altislife`.* TO 'arma3'@'localhost';
 FLUSH PRIVILEGES;
 
