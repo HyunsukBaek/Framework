@@ -21,6 +21,7 @@ if (hasInterface) then {
 [] execVM "AOSoul\CL2.sqf";
 [] execVM "AOSoul\safezone.sqf";//세이프존
 [] execVM "AOSoul\VehicleIndicators\indicatorInit.sqf"; //Vehicle Indicator
+[] execVM "AOSoul\A3GPS\init.sqf"; // GPS NAVI
 
 setTerrainGrid 50;
 //setViewDistance 1200;

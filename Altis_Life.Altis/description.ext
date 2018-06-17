@@ -38,6 +38,8 @@ enableDebugConsole = 1;
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "AOSoul\AS_AdminMenu\spectating.hpp"
+#include "AOSoul\A3GPS\config.hpp"
+
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -57,6 +59,8 @@ class RscTitles {
 	//AOSoul added
     #include "dialog\statusBar.hpp"
     #include "dialog\slotmachine.hpp"	//슬롯머신
+    #include "AOSoul\A3GPS\menu\hud.hpp"
+	#include "AOSoul\A3GPS\menu\quickNav.hpp"
 };
 
 class CfgFunctions {

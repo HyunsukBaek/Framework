@@ -44,3 +44,39 @@ life_is_alive = true;
 [] execVM "AOSoul\AntiVoice.sqf";   //안티 마이크
 [] execVM "AOSoul\FlareGun.sqf";	//FlareGun
 player addRating 9999999;
+
+[missionNameSpace,"gps_functions_compiled",{
+  player addAction ["Open GPS",gps_menu_fnc_loadGPSMenu];
+}] call bis_fnc_addScriptedEventHandler;
+
+[missionNamespace,"gps_loaded",{
+	[
+		"Navigate to marker_1",
+		{
+		      ["marker_1"] spawn gps_fnc_main;
+		}
+	] call gps_menu_fnc_addQuickNavOption;
+}] call bis_fnc_addScriptedEventHandler;
+
+
+[missionNamespace,"gps_menu_opening",{
+        params ["_menuType"];
+        _return = switch(_menuType) do {
+             case "menu_main" : {
+                  "ItemGPS" in assignedItems player
+             };
+             case "menu_nav": {
+                  "ItemGPS" in assignedItems player
+             };
+             case "menu_options": {
+                  "ItemGPS" in assignedItems player
+             };
+             case "menu_controls": {
+                  "ItemGPS" in assignedItems player
+             };
+             case "quick_nav" : {
+                   true
+             };
+        };
+        _return;
+}] call bis_fnc_addScriptedEventHandler;

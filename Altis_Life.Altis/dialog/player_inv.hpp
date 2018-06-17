@@ -358,6 +358,37 @@ class playerSettings {
          colorDisabled[] = {1,0,0,0.1};
          };
 
+         class Navi_ICON: life_RscPicture
+         {
+         idc = 980022;
+//          text = "icons\AOSoul\tablet\navi.paa";
+         text = "icons\AOSoul\tablet\mapnavi.paa"; //--- ToDo: Localize;
+         x = 0.619433 * safezoneW + safezoneX;
+         y = 0.6988 * safezoneH + safezoneY;
+         w = 0.0315 * safezoneW;
+         h = 0.056 * safezoneH;
+         };
+
+         class Navi_GPS: life_RscButtonMenu
+         {
+         idc = -1;
+         x = 0.620746 * safezoneW + safezoneX;
+         y = 0.7016 * safezoneH + safezoneY;
+         w = 0.028875 * safezoneW;
+         h = 0.0504 * safezoneH;
+         onButtonClick = "createDialog ""GPS_menu"";";
+         tooltip = "Open GPS"; //--- ToDo: Localize;
+         colorBackground[] = {-1,-1,-1,-1};
+         colorBackgroundFocused[] = {1,1,1,0.12};
+         colorBackground2[] = {0.75,0.75,0.75,0.2};
+         color[] = {1,1,1,1};
+         colorFocused[] = {0,0,0,0};
+         color2[] = {0,0,0,0};
+         colorText[] = {1,1,1,1};
+         colorDisabled[] = {1,0,0,0.1};
+         };
+
+
          class ButtonGang_ICON: life_RscPicture
          {
          idc = 1207;
