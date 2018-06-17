@@ -27,6 +27,3 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 //AOSoul Added
 [] execVM "AOSoul\FlareGun.sqf";	//FlareGun
 ////////////////////////////////////////////
-[missionNameSpace,"gps_functions_compiled",{
-  player addAction ["Open GPS",gps_menu_fnc_loadGPSMenu];
-}] call bis_fnc_addScriptedEventHandler;

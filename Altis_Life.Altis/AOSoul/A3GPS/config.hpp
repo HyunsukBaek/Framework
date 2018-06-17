@@ -16,7 +16,7 @@
 class CfgGPS {
 	//default user options
 	default_marker_color[] = {0,1,1,1};
-	default_lang = "en";
+	default_lang = "kr";
 
 	//quicknav
 	// see https://community.bistudio.com/wiki/DIK_KeyCodes for the keys number

@@ -376,7 +376,7 @@ class playerSettings {
          y = 0.7016 * safezoneH + safezoneY;
          w = 0.028875 * safezoneW;
          h = 0.0504 * safezoneH;
-         onButtonClick = "createDialog ""GPS_menu"";";
+         onButtonClick = "[] call gps_menu_fnc_loadGPSMenu;";
          tooltip = "Open GPS"; //--- ToDo: Localize;
          colorBackground[] = {-1,-1,-1,-1};
          colorBackgroundFocused[] = {1,1,1,0.12};
