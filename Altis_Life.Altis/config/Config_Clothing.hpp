@@ -126,7 +126,12 @@ class Clothing {
             { "G_Lady_Blue", "", 2000, "" }
         };
         vests[] = {
-            { "NONE", $STR_C_Remove_vests, 0, "" }
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+			{ "V_Pocketed_olive_F", "", 5000, "" }, //멀티포켓조끼 (올리브)  Laws of War DLC
+			{ "V_Pocketed_coyote_F", "", 5000, "" }, //멀티포켓조끼 (코요테)  Laws of War DLC
+            { "V_Safety_yellow_F", "", 30000, "" }, //안전조끼 (황색)  Laws of War DLC
+            { "V_Safety_orange_F", "", 30000, "" }, //안전조끼 (주황색)  Laws of War DLC
+            { "V_Safety_blue_F", "", 30000, "" }    //안전조끼 (청색)  Laws of War DLC
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -377,10 +382,13 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_Rangemaster_belt", "", 5000, "" },
-            { "V_TacVest_khk", "", 20000, "" },
-            { "V_BandollierB_cbr", "", 10000, "" },
-            { "V_HarnessO_brn", "", 15000, "" }
+            { "V_Rangemaster_belt", "", 5000, "" }, //사격벨트 (라벨에는 안팔음)
+			{ "V_BandollierB_cbr", "", 10000, "" },
+			{ "V_HarnessO_brn", "", 15000, "" },   //LBV 하네스 (기본)
+			{ "V_HarnessOGL_brn", "", 16000, "" }, //LBV 유탄수 하네스 (기본)
+			{ "V_TacVest_khk", "", 20000, "" }, //전술조끼 (카키)
+			{ "V_TacVest_oli", "", 25000, "" }, //전술조끼 (올리브)
+			{ "V_TacVest_camo", "", 25000, "" } //전술조끼 (위장)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -486,6 +494,9 @@ class Clothing {
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_RebreatherB", "", 5000, "" }
+            { "V_Safety_yellow_F", "", 30000, "" }, //안전조끼 (황색)  Laws of War DLC
+            { "V_Safety_orange_F", "", 30000, "" }, //안전조끼 (주황색)  Laws of War DLC
+            { "V_Safety_blue_F", "", 30000, "" }    //안전조끼 (청색)  Laws of War DLC
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -564,10 +575,11 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_BandollierB_cbr", "", 4500, "" },
-            { "V_HarnessO_brn", "", 7500, "" },
-            { "V_TacVest_khk", "", 12500, "" },
-            { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC
+            { "V_BandollierB_cbr", "", 10000, "" },
+            { "V_HarnessO_brn", "", 15000, "" },
+			{ "V_Chestrig_khk", "", 16000, "" }, //체스트리그 카키스킨 (갱하이드에 없음)
+            { "V_TacVest_khk", "", 20000, "" },
+            { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC (갱하이드에 없음)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
