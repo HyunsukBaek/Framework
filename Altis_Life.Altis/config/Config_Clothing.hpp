@@ -377,10 +377,10 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_Rangemaster_belt", "", 1900, "" },
-            { "V_TacVest_khk", "", 1900, "" },
-            { "V_BandollierB_cbr", "", 1900, "" },
-            { "V_HarnessO_brn", "", 7900, "" }
+            { "V_Rangemaster_belt", "", 5000, "" },
+            { "V_TacVest_khk", "", 20000, "" },
+            { "V_BandollierB_cbr", "", 10000, "" },
+            { "V_HarnessO_brn", "", 15000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
