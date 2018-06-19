@@ -529,7 +529,7 @@ class Clothing {
             { "U_IG_leader", "", 15340, "" },
             { "U_O_PilotCoveralls", "", 15610, "" },
             { "U_O_CombatUniform_ocamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Hex) [CSAT]
-			{ "U_O_CombatUniform_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Urban) [CSAT] U_O_T_Soldier_F
+			{ "U_O_CombatUniform_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Urban)
 			{ "U_O_T_Soldier_F", "", 20000, "call life_donorlevel >= 1" }, //U_O_T_Soldier_F
 			{ "U_O_officer_noInsignia_hex_F", "", 30000, "" }, //Light Fatigues (Hex)
 			{ "U_O_GhillieSuit", "", 50000, "" },
