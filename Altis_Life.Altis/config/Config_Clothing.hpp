@@ -386,9 +386,9 @@ class Clothing {
 			{ "V_BandollierB_cbr", "", 10000, "" },
 			{ "V_HarnessO_brn", "", 15000, "" },   //LBV 하네스 (기본)
 			{ "V_HarnessOGL_brn", "", 16000, "" }, //LBV 유탄수 하네스 (기본)
-			{ "V_TacVest_khk", "", 20000, "" }, //전술조끼 (카키)
-			{ "V_TacVest_oli", "", 25000, "" }, //전술조끼 (올리브)
-			{ "V_TacVest_camo", "", 25000, "" } //전술조끼 (위장)
+			{ "V_TacVest_khk", "", 20000, "" }, //Tactical Vest (Khaki)
+			{ "V_TacVest_oli", "", 25000, "" }, //Tactical Vest (Olive)
+			{ "V_TacVest_camo", "", 25000, "" } //Tactical Vest (Camo)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -577,9 +577,14 @@ class Clothing {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_BandollierB_cbr", "", 10000, "" },
             { "V_HarnessO_brn", "", 15000, "" },
-			{ "V_Chestrig_khk", "", 16000, "" }, //체스트리그 카키스킨 (갱하이드에 없음)
-            { "V_TacVest_khk", "", 20000, "" },
-            { "V_TacChestrig_grn_F", "", 17500, "" } //Apex DLC (갱하이드에 없음)
+			{ "V_Chestrig_khk", "", 16000, "" }, //Chest Rig (Khaki) (No gang)
+			{ "V_Chestrig_rgr", "", 16000, "" }, //Chest Rig (Green) (No gang)
+			{ "V_TacChestrig_grn_F", "", 17500, "" }, //Apex DLC Tactical Chest Rig (Green) (No gang)
+            { "V_TacChestrig_oli_F", "", 17500, "" }, //Apex DLC Tactical Chest Rig (Olive) (No gang)
+            { "V_TacChestrig_cbr_F", "", 17500, "" }, //Apex DLC Tactical Chest Rig (Coyote) (No gang)
+			{ "V_TacVest_khk", "", 20000, "" }, // Tactical Vest (Khaki)
+			{ "V_TacVest_oli", "", 25000, "" }, // Tactical Vest (Olive)
+			{ "V_TacVest_camo", "", 25000, "" } // Tactical Vest (Camo)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
