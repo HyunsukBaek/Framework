@@ -360,8 +360,10 @@ class Clothing {
             { "H_ShemagOpen_tan", "", 2000, "" },
             { "H_Shemag_olive", "", 2000, "" },
             { "H_ShemagOpen_khk", "", 2000, "" },
-            { "H_HelmetO_ocamo", "", 2000, "" },
-            { "H_MilCap_oucamo", "", 2000, "" },
+            { "H_HelmetO_ocamo", "", 15000, "call life_donorlevel >= 1" }, // Protector Helmet (Hex) , Armor Level III
+			{ "H_HelmetO_ghex_F", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Green Hex) , Armor Level III
+			{ "H_HelmetO_oucamo", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
+            { "H_MilCap_oucamo", "", 12000, "" },
             { "H_Bandanna_camo", "", 2000, "" }
         };
         goggles[] = {
@@ -526,7 +528,11 @@ class Clothing {
             { "U_I_G_resistanceLeader_F", "", 11500, "" },
             { "U_IG_leader", "", 15340, "" },
             { "U_O_PilotCoveralls", "", 15610, "" },
-            { "U_O_SpecopsUniform_ocamo", "", 17500, "" },
+            { "U_O_CombatUniform_ocamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Hex) [CSAT]
+			{ "U_O_CombatUniform_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Urban) [CSAT] U_O_T_Soldier_F
+			{ "U_O_T_Soldier_F", "", 20000, "call life_donorlevel >= 1" }, //U_O_T_Soldier_F
+			{ "U_O_officer_noInsignia_hex_F", "", 30000, "" }, //Light Fatigues (Hex)
+			{ "U_O_GhillieSuit", "", 50000, "" },
             { "U_O_GhillieSuit", "", 50000, "" },
             { "U_B_T_Soldier_F", "", 50000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_1_F", "", 50000, "" }, //Apex DLC
@@ -534,7 +540,10 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_3_F", "", 50032, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_4_F", "", 50020, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 52000, "" } //Apex DLC
+            { "U_I_C_Soldier_Camo_F", "", 52000, "" }, //Apex DLC
+            { "U_O_OfficerUniform_ocamo", "", 80000, "" }, //Officer Fatigues (Hex)
+            { "U_O_T_Officer_F", "", 100000, "" }, //Officer Fatigues (Green Hex) [CSAT]
+			{ "U_I_OfficerUniform", "", 300000, "" } //Combat Fatigues [AAF] (Officer)
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -543,9 +552,16 @@ class Clothing {
             { "H_ShemagOpen_tan", "", 850, "" },
             { "H_Shemag_olive", "", 850, "" },
             { "H_HelmetO_ocamo", "", 2500, "" },
-            { "H_MilCap_oucamo", "", 12000, "" },
 			{ "H_PASGT_basic_olive_F", "", 10000, "" },
 			{ "H_PASGT_basic_blue_F", "", 10000, "" },
+            { "H_MilCap_oucamo", "", 12000, "" },
+			{ "H_MilCap_ocamo", "", 12000, "" }, //Military Cap (Hex) , No Armor
+			{ "H_MilCap_ghex_F", "", 12000, "" }, //Military Cap (Green Hex) , No Armor
+			{ "H_MilCap_dgtl", "", 12000, "" }, //Military Cap [AAF] , No Armor
+            { "H_HelmetO_ocamo", "", 15000, "call life_donorlevel >= 1" }, // Protector Helmet (Hex) , Armor Level III
+			{ "H_HelmetO_ghex_F", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Green Hex) , Armor Level III
+			{ "H_HelmetO_oucamo", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
+			{ "H_HelmetB_TI_tna_F", "", 50000, "" }, // Stealth Combat Helmet , Armor Level II
             { "H_CrewHelmetHeli_B", "Gas Mask", 90000, "" },
             { "H_HelmetO_ViperSP_hex_F", "특수목적hex", 590000, "" }
         };
