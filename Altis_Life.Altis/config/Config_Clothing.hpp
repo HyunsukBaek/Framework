@@ -493,7 +493,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_RebreatherB", "", 5000, "" }
+            { "V_RebreatherB", "", 5000, "" },
             { "V_Safety_yellow_F", "", 30000, "" }, //안전조끼 (황색)  Laws of War DLC
             { "V_Safety_orange_F", "", 30000, "" }, //안전조끼 (주황색)  Laws of War DLC
             { "V_Safety_blue_F", "", 30000, "" }    //안전조끼 (청색)  Laws of War DLC
