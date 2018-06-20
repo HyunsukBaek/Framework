@@ -558,7 +558,6 @@ class Clothing {
             { "U_B_T_Soldier_F", "", 35000, "" }, //Apex DLC
 			{ "U_B_CombatUniform_mcam_worn", "", 35000, "" }, //Worn Combat Fatigues (MTP)
 			{ "U_O_GhillieSuit", "", 50000, "" },
-            { "U_O_GhillieSuit", "", 50000, "" },
 			{ "U_O_officer_noInsignia_hex_F", "", 30000, "" }, //Light Fatigues (Hex)
             { "U_O_OfficerUniform_ocamo", "", 80000, "" }, //Officer Fatigues (Hex)
             { "U_O_T_Officer_F", "", 100000, "" }, //Officer Fatigues (Green Hex) [CSAT]
