@@ -360,16 +360,19 @@ class Clothing {
             { "U_C_WorkerCoveralls", "", 5000, "" },
             { "U_I_PilotCoveralls", "", 5000, "" },
             { "U_IG_leader", "", 5000, "" },
-          		{ "U_I_GhillieSuit", "", 50000, "" }
+          	{ "U_I_GhillieSuit", "", 50000, "" },
+            { "U_O_CombatUniform_ocamo", "", 40000, "call life_donorlevel >= 1" }, //Fatigues (Hex) [CSAT]
+			{ "U_O_CombatUniform_oucamo", "", 40000, "call life_donorlevel >= 1" }, //Fatigues (Urban)
+			{ "U_O_T_Soldier_F", "", 40000, "call life_donorlevel >= 1" } //U_O_T_Soldier_F
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_ShemagOpen_tan", "", 2000, "" },
             { "H_Shemag_olive", "", 2000, "" },
             { "H_ShemagOpen_khk", "", 2000, "" },
-            { "H_HelmetO_ocamo", "", 15000, "call life_donorlevel >= 1" }, // Protector Helmet (Hex) , Armor Level III
-			{ "H_HelmetO_ghex_F", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Green Hex) , Armor Level III
-			{ "H_HelmetO_oucamo", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
+            { "H_HelmetO_ocamo", "", 20000, "call life_donorlevel >= 1" }, // Protector Helmet (Hex) , Armor Level III
+			{ "H_HelmetO_ghex_F", "", 20000, "call life_donorlevel >= 1" }, //Protector Helmet (Green Hex) , Armor Level III
+			{ "H_HelmetO_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
             { "H_MilCap_oucamo", "", 12000, "" },
             { "H_Bandanna_camo", "", 2000, "" }
         };
@@ -565,7 +568,6 @@ class Clothing {
             { "H_ShemagOpen_khk", "", 800, "" },
             { "H_ShemagOpen_tan", "", 850, "" },
             { "H_Shemag_olive", "", 850, "" },
-            { "H_HelmetO_ocamo", "", 2500, "" },
 			{ "H_PASGT_basic_olive_F", "", 10000, "" },
 			{ "H_PASGT_basic_blue_F", "", 10000, "" },
             { "H_MilCap_oucamo", "", 12000, "" },
