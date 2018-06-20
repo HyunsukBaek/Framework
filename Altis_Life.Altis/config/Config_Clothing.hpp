@@ -550,6 +550,11 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_4_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Camo_F", "", 30000, "" }, //Apex DLC
+			{ "U_BG_Guerilla1_1", "", 30000, "" }, //Guerilla Garment
+			{ "U_BG_Guerilla2_1", "", 30000, "" }, //Guerilla Outfit (Plain, Dark)
+			{ "U_BG_Guerilla2_2", "", 30000, "" }, //Guerilla Outfit (Pattern)
+			{ "U_BG_Guerilla2_3", "", 30000, "" }, //Guerilla Outfit (Plain, Light)
+			{ "U_BG_Guerrilla_6_1", "", 30000, "" }, //Guerilla Apparel
             { "U_B_T_Soldier_F", "", 35000, "" }, //Apex DLC
 			{ "U_B_CombatUniform_mcam_worn", "", 35000, "" }, //Worn Combat Fatigues (MTP)
 			{ "U_O_GhillieSuit", "", 50000, "" },
