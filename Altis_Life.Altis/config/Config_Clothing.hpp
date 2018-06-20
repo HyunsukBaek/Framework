@@ -581,6 +581,9 @@ class Clothing {
 			{ "H_HelmetO_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
 			{ "H_HelmetB_TI_tna_F", "", 50000, "" }, // Stealth Combat Helmet , Armor Level II
             { "H_CrewHelmetHeli_B", "Gas Mask", 90000, "" },
+			{ "H_PilotHelmetFighter_B", "", 200000, "call life_donorlevel >= 1" }, //Pilot Helmet [NATO] Armor Level III
+			{ "H_PilotHelmetFighter_O", "", 200000, "call life_donorlevel >= 1" }, //Pilot Helmet [CSAT] Armor Level III
+			{ "H_PilotHelmetFighter_I", "", 200000, "call life_donorlevel >= 1" }, //Pilot Helmet [AAF] Armor Level III
             { "H_HelmetO_ViperSP_hex_F", "특수목적hex", 590000, "" }
         };
         goggles[] = {
