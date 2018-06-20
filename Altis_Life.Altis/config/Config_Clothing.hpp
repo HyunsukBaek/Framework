@@ -127,11 +127,17 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-			{ "V_Pocketed_olive_F", "", 5000, "" }, //멀티포켓조끼 (올리브)  Laws of War DLC
-			{ "V_Pocketed_coyote_F", "", 5000, "" }, //멀티포켓조끼 (코요테)  Laws of War DLC
+			{ "V_Pocketed_olive_F", "", 5000, "" }, //Multi-Pocket Vest (Olive)  Laws of War DLC
+			{ "V_Pocketed_coyote_F", "", 5000, "" }, //Multi-Pocket Vest (Coyote)  Laws of War DLC
+			{ "V_Pocketed_black_F", "", 30000, "call life_donorlevel >= 1" }, //Multi-Pocket Vest (Black) Laws of War DLC
             { "V_Safety_yellow_F", "", 30000, "" }, //안전조끼 (황색)  Laws of War DLC
             { "V_Safety_orange_F", "", 30000, "" }, //안전조끼 (주황색)  Laws of War DLC
-            { "V_Safety_blue_F", "", 30000, "" }    //안전조끼 (청색)  Laws of War DLC
+            { "V_Safety_blue_F", "", 30000, "" },    //안전조끼 (청색)  Laws of War DLC
+            { "V_DeckCrew_green_F", "", 50000, "call life_donorlevel >= 1" }, //Deck Crew Vest (Green)
+            { "V_DeckCrew_red_F", "", 50000, "call life_donorlevel >= 1" }, //Deck Crew Vest (Red)
+            { "V_DeckCrew_white_F", "", 50000, "call life_donorlevel >= 1" }, //Deck Crew Vest (White)
+            { "V_DeckCrew_brown_F", "", 50000, "call life_donorlevel >= 1" }, //Deck Crew Vest (Brown)
+            { "V_DeckCrew_violet_F", "", 50000, "call life_donorlevel >= 1" } //Deck Crew Vest (Violet)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -183,7 +189,6 @@ class Clothing {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_Rangemaster", $STR_C_Cop_uniforms, 1250, "" },
             { "U_B_CombatUniform_mcam_tshirt", "", 1250, "call life_coplevel >= 1" },
-            { "U_B_CombatUniform_mcam_worn", "", 1250, "call life_coplevel >= 2" },
             { "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" },
             { "U_B_CTRG_1", "Black Uniform", 1250, "call life_coplevel >= 1" },
             { "U_B_PilotCoveralls", "", 1250, "call life_coplevel >= 1}" },
@@ -193,7 +198,9 @@ class Clothing {
             { "U_Marshal", "Marshal", 5550, "call life_coplevel >= 5" },
             { "U_NikosAgedBody", "시민2", 10550, "call life_coplevel >= 3" },
             { "U_B_CTRG_Soldier_3_F", "", 490000, "call life_coplevel >= 1" },
-            { "U_B_CTRG_Soldier_F", "", 490000, "call life_coplevel >= 1" }
+            { "U_B_CTRG_Soldier_F", "", 490000, "call life_coplevel >= 1" },
+			{ "U_B_GEN_Soldier_F", "", 30000, "call life_coplevel >= 1" }, //Gendarmerie Uniform
+			{ "U_B_GEN_Commander_F", "", 30000, "call life_coplevel >= 3" } //Gendarmerie Commander Uniform
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -206,7 +213,6 @@ class Clothing {
             { "H_MilCap_gen_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_tna_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
             { "H_MilCap_oucamo", "", 1200, "call life_coplevel >= 2" },
-            { "H_Cap_Black_IDAP_F", "", 5000, "call life_coplevel >= 3" },
             { "H_Beret_Colonel", "", 4500, "call life_coplevel >= 2" },
             { "H_Bandanna_khk", "", 4500, "call life_donorlevel >= 1" },
             { "H_HelmetB_light", "", 4500, "call life_coplevel >= 2" },
@@ -270,7 +276,8 @@ class Clothing {
             { "V_RebreatherIA", "", 1500, "call life_donorlevel >= 1" },
             { "V_PlateCarrierIAGL_dgtl", "", 1500, "call life_donorlevel >= 3" },
             { "V_PlateCarrierSpec_blk", "", 1500, "call life_coplevel >= 4" },
-            { "V_Press_F", "", 1500, "call life_coplevel >= 2" }
+            { "V_Press_F", "", 1500, "call life_coplevel >= 2" },
+            { "V_DeckCrew_blue_F", "", 50000, "call life_donorlevel >= 1" } // Deck Crew Vest (Blue)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -385,9 +392,11 @@ class Clothing {
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_Rangemaster_belt", "", 5000, "" }, //사격벨트 (라벨에는 안팔음)
-			{ "V_BandollierB_cbr", "", 10000, "" },
-			{ "V_HarnessO_brn", "", 15000, "" },   //LBV 하네스 (기본)
-			{ "V_HarnessOGL_brn", "", 16000, "" }, //LBV 유탄수 하네스 (기본)
+            { "V_BandollierB_cbr", "", 10000, "" }, //Slash Bandolier (Coyote) No Armor
+			{ "V_BandollierB_khk", "", 10000, "" }, //Slash Bandolier (Khaki) No Armor
+			{ "V_BandollierB_rgr", "", 10000, "" }, //Slash Bandolier (Green) No Armor
+			{ "V_BandollierB_oli", "", 10000, "" }, //Slash Bandolier (Olive) No Armor
+			{ "V_BandollierB_blk", "", 30000, "call life_donorlevel >= 1" }, //Slash Bandolier (Black) No Armor
 			{ "V_TacVest_khk", "", 20000, "" }, //Tactical Vest (Khaki)
 			{ "V_TacVest_oli", "", 25000, "" }, //Tactical Vest (Olive)
 			{ "V_TacVest_camo", "", 25000, "" } //Tactical Vest (Camo)
@@ -469,7 +478,8 @@ class Clothing {
             { "H_PilotHelmetHeli_I", "", 5000, "" },
             { "H_HeadBandage_clean_F", "", 2000, "" },
             { "H_HeadBandage_bloody_F", "", 2000, "" },
-            { "H_HeadBandage_stained_F", "", 2000, "" }
+            { "H_HeadBandage_stained_F", "", 2000, "" },
+			{ "H_Cap_Black_IDAP_F", "", 10000, "" } //Cap (Black) [IDAP] 	No Armor
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -496,9 +506,12 @@ class Clothing {
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_RebreatherB", "", 5000, "" },
-            { "V_Safety_yellow_F", "", 30000, "" }, //안전조끼 (황색)  Laws of War DLC
-            { "V_Safety_orange_F", "", 30000, "" }, //안전조끼 (주황색)  Laws of War DLC
-            { "V_Safety_blue_F", "", 30000, "" }    //안전조끼 (청색)  Laws of War DLC
+			{ "V_Plain_medical_F", "", 10000, "" }, //Identification Vest [IDAP]
+			{ "V_Plain_crystal_F", "", 10000, "" }, //	Identification Vest (Red Crystal)
+            { "V_Safety_yellow_F", "", 30000, "" }, // 안전조끼 (황색)  Laws of War DLC
+            { "V_Safety_orange_F", "", 30000, "" }, // 안전조끼 (주황색)  Laws of War DLC
+            { "V_Safety_blue_F", "", 30000, "" },    // 안전조끼 (청색)  Laws of War DLC
+            { "V_DeckCrew_yellow_F", "", 50000, "call life_donorlevel >= 1" } // Deck Crew Vest (Yellow)
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -524,26 +537,27 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_IG_Guerilla1_1", "", 5000, "" },
-            { "U_I_G_Story_Protagonist_F", "", 7500, "" },
-            { "U_I_G_resistanceLeader_F", "", 11500, "" },
-            { "U_IG_leader", "", 15340, "" },
-            { "U_O_PilotCoveralls", "", 15610, "" },
-            { "U_O_CombatUniform_ocamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Hex) [CSAT]
-			{ "U_O_CombatUniform_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Fatigues (Urban)
-			{ "U_O_T_Soldier_F", "", 20000, "call life_donorlevel >= 1" }, //U_O_T_Soldier_F
-			{ "U_O_officer_noInsignia_hex_F", "", 30000, "" }, //Light Fatigues (Hex)
+            { "U_I_G_Story_Protagonist_F", "", 8000, "" },
+            { "U_I_G_resistanceLeader_F", "", 12000, "" },
+            { "U_IG_leader", "", 15000, "" },
+            { "U_O_PilotCoveralls", "", 15000, "" },
+            { "U_I_C_Soldier_Bandit_1_F", "", 30000, "" }, //Apex DLC
+            { "U_I_C_Soldier_Bandit_2_F", "", 30000, "" }, //Apex DLC
+            { "U_I_C_Soldier_Bandit_3_F", "", 30000, "" }, //Apex DLC
+            { "U_I_C_Soldier_Bandit_4_F", "", 30000, "" }, //Apex DLC
+            { "U_I_C_Soldier_Bandit_5_F", "", 30000, "" }, //Apex DLC
+            { "U_I_C_Soldier_Camo_F", "", 30000, "" }, //Apex DLC
+            { "U_B_T_Soldier_F", "", 35000, "" }, //Apex DLC
+			{ "U_B_CombatUniform_mcam_worn", "", 35000, "" }, //Worn Combat Fatigues (MTP)
 			{ "U_O_GhillieSuit", "", 50000, "" },
             { "U_O_GhillieSuit", "", 50000, "" },
-            { "U_B_T_Soldier_F", "", 50000, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_1_F", "", 50000, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_2_F", "", 51000, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_3_F", "", 50032, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_4_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Bandit_5_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 52000, "" }, //Apex DLC
+			{ "U_O_officer_noInsignia_hex_F", "", 30000, "" }, //Light Fatigues (Hex)
             { "U_O_OfficerUniform_ocamo", "", 80000, "" }, //Officer Fatigues (Hex)
             { "U_O_T_Officer_F", "", 100000, "" }, //Officer Fatigues (Green Hex) [CSAT]
-			{ "U_I_OfficerUniform", "", 300000, "" } //Combat Fatigues [AAF] (Officer)
+			{ "U_I_OfficerUniform", "", 300000, "" }, //Combat Fatigues [AAF] (Officer)
+            { "U_O_CombatUniform_ocamo", "", 40000, "call life_donorlevel >= 1" }, //Fatigues (Hex) [CSAT]
+			{ "U_O_CombatUniform_oucamo", "", 40000, "call life_donorlevel >= 1" }, //Fatigues (Urban)
+			{ "U_O_T_Soldier_F", "", 40000, "call life_donorlevel >= 1" } //U_O_T_Soldier_F
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -558,9 +572,11 @@ class Clothing {
 			{ "H_MilCap_ocamo", "", 12000, "" }, //Military Cap (Hex) , No Armor
 			{ "H_MilCap_ghex_F", "", 12000, "" }, //Military Cap (Green Hex) , No Armor
 			{ "H_MilCap_dgtl", "", 12000, "" }, //Military Cap [AAF] , No Armor
-            { "H_HelmetO_ocamo", "", 15000, "call life_donorlevel >= 1" }, // Protector Helmet (Hex) , Armor Level III
-			{ "H_HelmetO_ghex_F", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Green Hex) , Armor Level III
-			{ "H_HelmetO_oucamo", "", 15000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
+			{ "H_HelmetB_tna_F", "", 15000, "" }, //Combat Helmet (Tropic) 	Armor Level II
+			{ "H_HelmetB_grass", "", 15000, "" }, //Combat Helmet (Grass) 	Armor Level II
+            { "H_HelmetO_ocamo", "", 20000, "call life_donorlevel >= 1" }, // Protector Helmet (Hex) , Armor Level III
+			{ "H_HelmetO_ghex_F", "", 20000, "call life_donorlevel >= 1" }, //Protector Helmet (Green Hex) , Armor Level III
+			{ "H_HelmetO_oucamo", "", 20000, "call life_donorlevel >= 1" }, //Protector Helmet (Urban) , Armor Level III
 			{ "H_HelmetB_TI_tna_F", "", 50000, "" }, // Stealth Combat Helmet , Armor Level II
             { "H_CrewHelmetHeli_B", "Gas Mask", 90000, "" },
             { "H_HelmetO_ViperSP_hex_F", "특수목적hex", 590000, "" }
@@ -591,14 +607,18 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
-            { "V_BandollierB_cbr", "", 10000, "" },
+            { "V_BandollierB_cbr", "", 10000, "" }, //Slash Bandolier (Coyote) No Armor
+			{ "V_BandollierB_khk", "", 10000, "" }, //Slash Bandolier (Khaki) No Armor
+			{ "V_BandollierB_rgr", "", 10000, "" }, //Slash Bandolier (Green) No Armor
+			{ "V_BandollierB_oli", "", 10000, "" }, //Slash Bandolier (Olive) No Armor
+			{ "V_BandollierB_blk", "", 30000, "call life_donorlevel >= 1" }, //Slash Bandolier (Black) No Armor
             { "V_HarnessO_brn", "", 15000, "" },
 			{ "V_Chestrig_khk", "", 16000, "" }, //Chest Rig (Khaki) (No gang)
 			{ "V_Chestrig_rgr", "", 16000, "" }, //Chest Rig (Green) (No gang)
 			{ "V_TacChestrig_grn_F", "", 17500, "" }, //Apex DLC Tactical Chest Rig (Green) (No gang)
             { "V_TacChestrig_oli_F", "", 17500, "" }, //Apex DLC Tactical Chest Rig (Olive) (No gang)
             { "V_TacChestrig_cbr_F", "", 17500, "" }, //Apex DLC Tactical Chest Rig (Coyote) (No gang)
-			{ "V_TacVest_khk", "", 20000, "" }, // Tactical Vest (Khaki)
+			{ "V_TacVest_khk", "", 25000, "" }, // Tactical Vest (Khaki)
 			{ "V_TacVest_oli", "", 25000, "" }, // Tactical Vest (Olive)
 			{ "V_TacVest_camo", "", 25000, "" } // Tactical Vest (Camo)
         };
