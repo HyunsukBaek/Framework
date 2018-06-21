@@ -539,17 +539,16 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_IG_Guerilla1_1", "", 5000, "" },
             { "U_I_G_Story_Protagonist_F", "", 8000, "" },
             { "U_I_G_resistanceLeader_F", "", 12000, "" },
-            { "U_IG_leader", "", 15000, "" },
-            { "U_O_PilotCoveralls", "", 15000, "" },
+            { "U_O_PilotCoveralls", "", 30000, "" },
             { "U_I_C_Soldier_Bandit_1_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_2_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_3_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_4_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Camo_F", "", 30000, "" }, //Apex DLC
+			{ "U_IG_leader", "", 30000, "" },
 			{ "U_BG_Guerilla1_1", "", 30000, "" }, //Guerilla Garment
 			{ "U_BG_Guerilla2_1", "", 30000, "" }, //Guerilla Outfit (Plain, Dark)
 			{ "U_BG_Guerilla2_2", "", 30000, "" }, //Guerilla Outfit (Pattern)
