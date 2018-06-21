@@ -979,15 +979,4 @@ class VirtualItems {
 		edible = -1;
 		icon = "icons\AOSoul\ico_mic.paa";
 	};
-
-    class grape {
-		variable = "grape";
-		displayName = "STR_Item_grape";
-		weight = 2;
-		buyPrice = 500;
-		sellPrice = 100;
-		illegal = false;
-		edible = -1;
-		icon = "icons\AOSoul\ico_grape.paa";
-	};
 };
