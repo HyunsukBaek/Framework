@@ -541,7 +541,6 @@ class Clothing {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_I_G_Story_Protagonist_F", "", 8000, "" },
             { "U_I_G_resistanceLeader_F", "", 12000, "" },
-            { "U_O_PilotCoveralls", "", 30000, "" },
             { "U_I_C_Soldier_Bandit_1_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_2_F", "", 30000, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_3_F", "", 30000, "" }, //Apex DLC
@@ -554,6 +553,11 @@ class Clothing {
 			{ "U_BG_Guerilla2_2", "", 30000, "" }, //Guerilla Outfit (Pattern)
 			{ "U_BG_Guerilla2_3", "", 30000, "" }, //Guerilla Outfit (Plain, Light)
 			{ "U_BG_Guerrilla_6_1", "", 30000, "" }, //Guerilla Apparel
+			{ "U_I_C_Soldier_Para_1_F", "", 30000, "" }, //Paramilitary Garb (Tee)
+			{ "U_I_C_Soldier_Para_2_F", "", 30000, "" }, //Paramilitary Garb (Jacket)
+			{ "U_I_C_Soldier_Para_3_F", "", 30000, "" }, //Paramilitary Garb (Shirt)
+			{ "U_I_C_Soldier_Para_4_F", "", 30000, "" }, //Paramilitary Garb (Tank Top)
+			{ "U_I_C_Soldier_Para_5_F", "", 30000, "" }, //Paramilitary Garb (Shorts)
             { "U_B_T_Soldier_F", "", 35000, "" }, //Apex DLC
 			{ "U_B_CombatUniform_mcam_worn", "", 35000, "" }, //Worn Combat Fatigues (MTP)
 			{ "U_O_GhillieSuit", "", 50000, "" },
@@ -563,7 +567,10 @@ class Clothing {
 			{ "U_I_OfficerUniform", "", 300000, "" }, //Combat Fatigues [AAF] (Officer)
             { "U_O_CombatUniform_ocamo", "", 40000, "call life_donorlevel >= 1" }, //Fatigues (Hex) [CSAT]
 			{ "U_O_CombatUniform_oucamo", "", 40000, "call life_donorlevel >= 1" }, //Fatigues (Urban)
-			{ "U_O_T_Soldier_F", "", 40000, "call life_donorlevel >= 1" } //U_O_T_Soldier_F
+			{ "U_O_T_Soldier_F", "", 40000, "call life_donorlevel >= 1" }, //U_O_T_Soldier_F
+            { "U_I_pilotCoveralls", "", 80000, "call life_donorlevel >= 1" }, //Pilot Coveralls [AAF]
+			{ "U_O_PilotCoveralls", "", 100000, "call life_donorlevel >= 1" }, //Pilot Coveralls [CSAT]
+			{ "U_B_PilotCoveralls", "", 80000, "call life_donorlevel >= 1" } //Pilot Coveralls [NATO]
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
