@@ -307,7 +307,9 @@ class CarShops {
             //템페스트 탄약
             { "O_Truck_03_ammo_F", "" },
             //HEMTT 탄약
-            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" }
+            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" },
+			//헌병대 오프로드
+			{ "B_GEN_Offroad_01_gen_F ", "call life_coplevel >= 1" }
         };
     };
 
@@ -1627,6 +1629,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		vItemSpace = 120;
 		conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
 		price = 1750000;
+        textures[] = {};
+    };
+
+	class B_GEN_Offroad_01_gen_F {
+		vItemSpace = 150;
+		conditions = "";
+		price = 300000;
         textures[] = {};
     };
 };
