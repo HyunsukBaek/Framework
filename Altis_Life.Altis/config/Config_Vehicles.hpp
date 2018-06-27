@@ -309,7 +309,9 @@ class CarShops {
             //HEMTT 탄약
             { "B_Truck_01_ammo_F", "call life_coplevel >= 4" },
 			//헌병대 오프로드
-			{ "B_GEN_Offroad_01_gen_F ", "call life_coplevel >= 1" }
+			{ "B_GEN_Offroad_01_gen_F", "call life_coplevel >= 1" },
+            //헌병대 밴 (수송)
+			{ "B_GEN_Van_02_vehicle_F", "call life_coplevel >= 1" }
         };
     };
 
@@ -1631,11 +1633,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		price = 1750000;
         textures[] = {};
     };
-
+//헌병대 오프로드
 	class B_GEN_Offroad_01_gen_F {
 		vItemSpace = 150;
 		conditions = "";
 		price = 300000;
         textures[] = {};
     };
+//헌병대 밴 (수송)
+		class B_GEN_Van_02_vehicle_F {
+			vItemSpace = 200;
+			conditions = "";
+			price = 1000000;
+	        textures[] = {};
+	};
 };
