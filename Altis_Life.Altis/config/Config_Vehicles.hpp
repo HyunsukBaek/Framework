@@ -311,7 +311,7 @@ class CarShops {
 			//헌병대 오프로드
 			{ "B_GEN_Offroad_01_gen_F", "call life_coplevel >= 1" },
             //헌병대 밴 (수송)
-			{ "B_GEN_Van_02_vehicle_F", "call life_coplevel >= 1" }
+			{ "B_GEN_Van_02_transport_F", "call life_coplevel >= 1" }
         };
     };
 
@@ -1641,7 +1641,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
 //헌병대 밴 (수송)
-		class B_GEN_Van_02_vehicle_F {
+		class B_GEN_Van_02_transport_F {
 			vItemSpace = 200;
 			conditions = "";
 			price = 1000000;
