@@ -208,8 +208,11 @@ class CarShops {
             { "O_Truck_03_repair_F", "" },
             //HEMTT 정비
             { "B_Truck_01_Repair_F", "" },
-            //HEMTT 기본형 토우트럭으로 활용
-            { "B_Truck_01_mover_F", "" }
+            //HEMTT 기본형 토우트럭으로 활용 I_UGV_01_F
+            { "B_Truck_01_mover_F", "" },
+
+            //I_UGV_01_F 메딕 지상용 드론
+            { "I_UGV_01_F", "" }
         };
     };
 
