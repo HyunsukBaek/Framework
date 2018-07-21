@@ -1641,10 +1641,17 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
 //헌병대 밴 (수송)
-		class B_GEN_Van_02_transport_F {
-			vItemSpace = 200;
-			conditions = "";
-			price = 1000000;
-	        textures[] = {};
+	class B_GEN_Van_02_transport_F {
+		vItemSpace = 200;
+		conditions = "";
+		price = 1000000;
+	    textures[] = {};
 	};
+//Dron Medic
+	class I_UGV_01_F {
+		vItemSpace = 100;
+		conditions = "";
+		price = 200000;
+	    textures[] = {};
+    };
 };
